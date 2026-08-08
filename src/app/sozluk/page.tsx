@@ -79,19 +79,19 @@ export default function Dictionary() {
 
       <main className="min-h-screen bg-bg-primary pt-32 pb-24 relative transition-colors duration-300">
         {/* Red Thread vertical detail */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-burgundy-primary/20"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           {/* Header */}
           <div className="mb-12">
             <Link 
               href="/"
-              className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-burgundy-primary uppercase hover:translate-x-[-4px] transition-transform duration-200 mb-6"
+              className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-navy-primary uppercase hover:translate-x-[-4px] transition-transform duration-200 mb-6"
             >
               <ArrowLeft size={14} /> {t('dictionary.backBtn')}
             </Link>
 
-            <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-burgundy-primary uppercase block mb-3">
+            <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('dictionary.badge')}
             </span>
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4">
@@ -114,7 +114,7 @@ export default function Dictionary() {
                 placeholder={t('dictionary.searchPlaceholder')}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200"
+                className="w-full pl-10 pr-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
               />
             </div>
 
@@ -144,8 +144,8 @@ export default function Dictionary() {
                       onClick={() => setSelectedLetter(letter)}
                       className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer ${
                         isSelected 
-                          ? 'bg-burgundy-primary text-bg-primary shadow-sm' 
-                          : 'text-text-secondary hover:text-burgundy-primary hover:bg-burgundy-primary/5 border border-stone-200/40 dark:border-white/5'
+                          ? 'bg-navy-primary text-white shadow-sm' 
+                          : 'text-text-secondary hover:text-navy-primary hover:bg-navy-primary/5 border border-stone-200/40 dark:border-white/5'
                       }`}
                     >
                       {letter}
@@ -169,16 +169,16 @@ export default function Dictionary() {
                 return (
                   <div 
                     key={item.slug} 
-                    className="p-6 border border-stone-200/60 dark:border-white/10 bg-white/[0.02] dark:bg-white/[0.03] rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex flex-col justify-between group relative"
+                    className="p-6 border border-stone-200/60 dark:border-white/10 bg-white/[0.02] dark:bg-white/[0.03] rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex flex-col justify-between group relative"
                   >
                     {/* Small red thread accent in the corner */}
-                    <div className="absolute top-0 right-0 w-8 h-[1px] bg-burgundy-primary/20 group-hover:bg-burgundy-primary/50 transition-all duration-300"></div>
-                    <div className="absolute top-0 right-0 w-[1px] h-8 bg-burgundy-primary/20 group-hover:bg-burgundy-primary/50 transition-all duration-300"></div>
+                    <div className="absolute top-0 right-0 w-8 h-[1px] bg-navy-primary/20 group-hover:bg-navy-primary/50 transition-all duration-300"></div>
+                    <div className="absolute top-0 right-0 w-[1px] h-8 bg-navy-primary/20 group-hover:bg-navy-primary/50 transition-all duration-300"></div>
 
                     <div>
                       {/* Top Row: Category Tag */}
                       <div className="flex justify-between items-start gap-4 mb-4">
-                        <span className="inline-flex px-2.5 py-1 bg-burgundy-primary/5 text-burgundy-primary dark:text-burgundy-light border border-burgundy-primary/10 rounded-full text-[0.62rem] font-sans font-bold tracking-wider uppercase">
+                        <span className="inline-flex px-2.5 py-1 bg-navy-primary/5 text-navy-primary dark:text-navy-light border border-navy-primary/10 rounded-full text-[0.62rem] font-sans font-bold tracking-wider uppercase">
                           {kategori}
                         </span>
                         <span className="text-[0.65rem] font-sans font-bold text-text-muted/65 tracking-widest uppercase">
@@ -187,7 +187,7 @@ export default function Dictionary() {
                       </div>
 
                       {/* Term Title */}
-                      <h3 className="text-lg font-serif font-bold text-text-primary mb-3 leading-snug group-hover:text-burgundy-primary transition-colors duration-300">
+                      <h3 className="text-lg font-serif font-bold text-text-primary mb-3 leading-snug group-hover:text-navy-primary transition-colors duration-300">
                         {kavram}
                       </h3>
 
@@ -200,7 +200,7 @@ export default function Dictionary() {
                     {/* Bottom: Legal Source Badge */}
                     {dayanak && (
                       <div className="pt-4 border-t border-stone-200/60 dark:border-white/5 flex items-center gap-2 mt-auto">
-                        <ShieldAlert size={12} className="text-burgundy-primary dark:text-burgundy-light flex-shrink-0" />
+                        <ShieldAlert size={12} className="text-navy-primary dark:text-navy-light flex-shrink-0" />
                         <span className="text-[0.62rem] font-sans font-medium text-text-muted leading-none">
                           {language === 'tr' ? 'Dayanak' : 'Basis'}: {dayanak}
                         </span>
@@ -211,12 +211,12 @@ export default function Dictionary() {
               })}
             </div>
           ) : (
-            <div className="text-center py-16 border border-dashed border-burgundy-primary/10 rounded-2xl bg-white/[0.01] dark:bg-white/[0.02]">
+            <div className="text-center py-16 border border-dashed border-navy-primary/10 rounded-2xl bg-white/[0.01] dark:bg-white/[0.02]">
               <Scale size={32} className="mx-auto text-text-muted mb-4 animate-pulse" />
               <p className="text-sm text-text-secondary font-light">{t('dictionary.noResults')}</p>
               <button 
                 onClick={() => { setSearchTerm(''); setSelectedLetter(allLabel); }}
-                className="text-xs text-burgundy-primary font-sans font-semibold tracking-wider uppercase mt-4 hover:underline cursor-pointer"
+                className="text-xs text-navy-primary font-sans font-semibold tracking-wider uppercase mt-4 hover:underline cursor-pointer"
               >
                 {t('dictionary.clearFilters')}
               </button>

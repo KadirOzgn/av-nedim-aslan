@@ -8,7 +8,7 @@ type Language = 'tr' | 'en';
 interface LanguageContextProps {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (keyPath: string) => any;
+  t: (keyPath: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);

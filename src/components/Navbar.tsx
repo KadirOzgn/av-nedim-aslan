@@ -11,21 +11,18 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof document !== 'undefined') {
+      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    }
+    return 'light';
+  });
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Detect theme on mount
-    const root = document.documentElement;
-    if (root.classList.contains('dark')) {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
@@ -111,9 +108,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 sm:px-6 md:px-8 ${
       scrolled 
-        ? 'bg-bg-primary/95 backdrop-blur-md py-3 border-b border-burgundy-primary/10 shadow-sm' 
+        ? 'bg-bg-primary/95 backdrop-blur-md py-3 border-b border-navy-primary/10 shadow-sm' 
         : 'bg-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -123,10 +120,10 @@ export default function Navbar() {
           onClick={(e) => handleLinkClick(e, 'home')}
           className="flex items-center gap-3 group"
         >
-          <AslanLogo size={44} className="text-burgundy-primary transition-transform duration-300 group-hover:scale-105" />
+          <AslanLogo size={44} className="text-navy-primary transition-transform duration-300 group-hover:scale-105" />
           <div className="flex flex-col items-start">
             <span className="text-base md:text-lg font-serif font-extrabold tracking-widest text-text-primary leading-none mb-1">ASLAN</span>
-            <span className="text-[0.5rem] md:text-[0.55rem] font-sans font-bold tracking-[0.25em] text-burgundy-primary uppercase leading-none">
+            <span className="text-[0.5rem] md:text-[0.55rem] font-sans font-bold tracking-[0.25em] text-navy-primary uppercase leading-none">
               {t('nav.lawFirm')}
             </span>
           </div>
@@ -141,8 +138,8 @@ export default function Navbar() {
                 onClick={(e) => handleLinkClick(e, 'home')}
                 className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                   pathname === '/' && activeSection === 'home'
-                    ? 'text-burgundy-primary border-burgundy-primary'
-                    : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
                 }`}
               >
                 {t('nav.home')}
@@ -153,8 +150,8 @@ export default function Navbar() {
                 href="/hakkimizda" 
                 className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                   pathname === '/hakkimizda'
-                    ? 'text-burgundy-primary border-burgundy-primary'
-                    : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
                 }`}
               >
                 {t('nav.about')}
@@ -165,8 +162,8 @@ export default function Navbar() {
                   href="/faaliyet-alanlari" 
                   className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                     pathname === '/faaliyet-alanlari'
-                      ? 'text-burgundy-primary border-burgundy-primary'
-                      : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                      ? 'text-navy-primary border-navy-primary'
+                      : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
                 >
                   {t('nav.practice')}
@@ -177,8 +174,8 @@ export default function Navbar() {
                 href="/makaleler" 
                 className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                   pathname === '/makaleler' || pathname.startsWith('/makaleler/')
-                    ? 'text-burgundy-primary border-burgundy-primary'
-                    : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
                 }`}
               >
                 {t('nav.articles')}
@@ -189,8 +186,8 @@ export default function Navbar() {
                 href="/sozluk" 
                 className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                   pathname === '/sozluk'
-                    ? 'text-burgundy-primary border-burgundy-primary'
-                    : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
                 }`}
               >
                 {t('nav.sozluk')}
@@ -201,8 +198,8 @@ export default function Navbar() {
                 href="/iletisim" 
                 className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
                   pathname === '/iletisim'
-                    ? 'text-burgundy-primary border-burgundy-primary'
-                    : 'text-text-secondary border-transparent hover:text-burgundy-primary'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
                 }`}
               >
                 {t('nav.contact')}
@@ -211,10 +208,10 @@ export default function Navbar() {
           </ul>
 
           {/* Premium Language Dropdown Menu */}
-          <div className="relative border-l border-burgundy-primary/20 pl-4" ref={dropdownRef}>
+          <div className="relative border-l border-navy-primary/20 pl-4" ref={dropdownRef}>
             <button 
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-              className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-burgundy-primary transition-colors focus:outline-none cursor-pointer"
+              className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors focus:outline-none cursor-pointer"
               aria-label="Dil Değiştir"
             >
               <span>{language === 'tr' ? '🇹🇷 TR' : '🇬🇧 EN'}</span>
@@ -222,16 +219,16 @@ export default function Navbar() {
             </button>
             
             {langDropdownOpen && (
-              <div className="absolute right-0 mt-2.5 w-28 bg-bg-primary border border-burgundy-primary/10 rounded-sm shadow-md py-1 animate-fade-in">
+              <div className="absolute right-0 mt-2.5 w-28 bg-bg-primary border border-navy-primary/10 rounded-sm shadow-md py-1 animate-fade-in">
                 <button 
                   onClick={() => handleLangSelect('tr')}
-                  className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-burgundy-primary/5 transition-colors flex items-center gap-2 ${language === 'tr' ? 'text-burgundy-primary font-bold bg-burgundy-primary/5' : 'text-text-secondary'}`}
+                  className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-navy-primary/5 transition-colors flex items-center gap-2 ${language === 'tr' ? 'text-navy-primary font-bold bg-navy-primary/5' : 'text-text-secondary'}`}
                 >
                   <span>🇹🇷</span> Türkçe
                 </button>
                 <button 
                   onClick={() => handleLangSelect('en')}
-                  className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-burgundy-primary/5 transition-colors flex items-center gap-2 ${language === 'en' ? 'text-burgundy-primary font-bold bg-burgundy-primary/5' : 'text-text-secondary'}`}
+                  className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-navy-primary/5 transition-colors flex items-center gap-2 ${language === 'en' ? 'text-navy-primary font-bold bg-navy-primary/5' : 'text-text-secondary'}`}
                 >
                   <span>🇬🇧</span> English
                 </button>
@@ -242,7 +239,7 @@ export default function Navbar() {
           {/* Theme Toggle - Okuma Modu */}
           <button 
             onClick={toggleTheme}
-            className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-burgundy-primary transition-colors focus:outline-none cursor-pointer"
+            className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors focus:outline-none cursor-pointer"
             aria-label="Okuma Modu Değiştir"
           >
             {theme === 'light' ? (
@@ -289,7 +286,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className={`fixed top-0 right-0 w-64 h-screen bg-bg-primary border-l border-burgundy-primary/10 shadow-lg p-8 z-40 transform transition-transform duration-300 lg:hidden ${
+      <div className={`fixed top-0 right-0 w-full sm:w-80 md:w-96 h-screen bg-bg-primary border-l border-navy-primary/10 shadow-lg p-8 z-40 transform transition-transform duration-300 lg:hidden ${
         mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex justify-end mb-8">
@@ -304,7 +301,7 @@ export default function Navbar() {
               href="/" 
               onClick={(e) => handleLinkClick(e, 'home')}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/' && activeSection === 'home' ? 'text-burgundy-primary' : 'text-text-secondary'
+                pathname === '/' && activeSection === 'home' ? 'text-navy-primary' : 'text-text-secondary'
               }`}
             >
               {t('nav.home')}
@@ -315,7 +312,7 @@ export default function Navbar() {
               href="/hakkimizda" 
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/hakkimizda' ? 'text-burgundy-primary' : 'text-text-secondary'
+                pathname === '/hakkimizda' ? 'text-navy-primary' : 'text-text-secondary'
               }`}
             >
               {t('nav.about')}
@@ -325,7 +322,7 @@ export default function Navbar() {
             <Link 
               href="/faaliyet-alanlari" 
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${ 
-                pathname === '/faaliyet-alanlari' ? 'text-burgundy-primary' : 'text-text-secondary' 
+                pathname === '/faaliyet-alanlari' ? 'text-navy-primary' : 'text-text-secondary' 
               }`}
             >
               {t('nav.practice')}
@@ -336,7 +333,7 @@ export default function Navbar() {
               href="/makaleler" 
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/makaleler' || pathname.startsWith('/makaleler/') ? 'text-burgundy-primary' : 'text-text-secondary'
+                pathname === '/makaleler' || pathname.startsWith('/makaleler/') ? 'text-navy-primary' : 'text-text-secondary'
               }`}
             >
               {t('nav.articles')}
@@ -347,7 +344,7 @@ export default function Navbar() {
               href="/sozluk" 
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/sozluk' ? 'text-burgundy-primary' : 'text-text-secondary'
+                pathname === '/sozluk' ? 'text-navy-primary' : 'text-text-secondary'
               }`}
             >
               {t('nav.sozluk')}
@@ -358,7 +355,7 @@ export default function Navbar() {
               href="/iletisim" 
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/iletisim' ? 'text-burgundy-primary' : 'text-text-secondary'
+                pathname === '/iletisim' ? 'text-navy-primary' : 'text-text-secondary'
               }`}
             >
               {t('nav.contact')}

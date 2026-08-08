@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function RedThreadLine() {
+export default function NavyThreadLine() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -24,13 +24,13 @@ export default function RedThreadLine() {
   return (
     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-full pointer-events-none z-0 hidden md:block">
       {/* Background track line */}
-      <div className="w-full h-full bg-navy-primary/5"></div>
-      
+      <div className="w-full h-full bg-navy-primary/5" />
+
       {/* Scroll-animated filled line */}
       <div 
         className="absolute top-0 left-0 w-full bg-navy-primary transition-all duration-75 ease-out"
         style={{ height: `${scrollProgress}%` }}
-      ></div>
+      />
     </div>
   );
 }

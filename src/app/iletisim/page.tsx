@@ -3,10 +3,10 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
-import { useLanguage } from '@/context/LanguageContext';
+
 
 export default function ContactPage() {
-  const { t } = useLanguage();
+
 
   return (
     <>

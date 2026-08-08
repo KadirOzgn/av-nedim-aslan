@@ -16,15 +16,15 @@ export default function AboutPage() {
 
       <main className="min-h-screen bg-bg-primary pt-32 pb-24 relative transition-colors duration-300">
         {/* Red Thread vertical detail */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-burgundy-primary/20"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           {/* Header */}
           <div className="mb-16 text-center">
-            <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-burgundy-primary uppercase block mb-3">
+            <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('about.badge')}
             </span>
-            <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-burgundy-primary">
+            <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
               {t('nav.about')}
             </h1>
           </div>
@@ -33,7 +33,7 @@ export default function AboutPage() {
             
             {/* Left Image Column */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-72 h-96 md:w-80 md:h-[400px] border border-burgundy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300">
+              <div className="relative w-72 h-96 md:w-80 md:h-[400px] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300">
                 <div className="relative w-full h-full">
                   <Image 
                     src="/nedim-aslan-2.jpg" 
@@ -44,8 +44,8 @@ export default function AboutPage() {
                   />
                 </div>
                 {/* Corner accents */}
-                <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-burgundy-primary"></div>
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-burgundy-primary"></div>
+                <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 border-navy-primary"></div>
+                <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-navy-primary"></div>
               </div>
             </div>
 
@@ -64,24 +64,24 @@ export default function AboutPage() {
               </p>
 
               {/* Social Channels */}
-              <div className="flex gap-4 mt-8 border-t border-burgundy-primary/10 pt-6 w-full justify-start">
+              <div className="flex gap-4 mt-8 border-t border-navy-primary/10 pt-6 w-full justify-start">
                 <a 
                   href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-burgundy-primary transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors cursor-pointer"
                 >
-                  <LinkedInIcon size={16} className="text-burgundy-primary" />
+                  <LinkedInIcon size={16} className="text-navy-primary" />
                   LinkedIn
                 </a>
-                <span className="text-burgundy-primary/20">|</span>
+                <span className="text-navy-primary/20">|</span>
                 <a 
                   href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-burgundy-primary transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors cursor-pointer"
                 >
-                  <InstagramIcon size={16} className="text-burgundy-primary" />
+                  <InstagramIcon size={16} className="text-navy-primary" />
                   Instagram
                 </a>
               </div>
@@ -91,24 +91,24 @@ export default function AboutPage() {
 
           {/* Value Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 border border-burgundy-primary/10 bg-burgundy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-burgundy-primary/30 transition-all duration-300">
-              <div className="w-10 h-10 bg-burgundy-primary/5 text-burgundy-primary flex items-center justify-center rounded-lg mb-4">
+            <div className="p-6 border border-navy-primary/10 bg-navy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-navy-primary/30 transition-all duration-300">
+              <div className="w-10 h-10 bg-navy-primary/5 text-navy-primary flex items-center justify-center rounded-lg mb-4">
                 <Shield size={20} />
               </div>
               <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-2">{t('about.value1Title')}</h4>
               <p className="text-xs text-text-secondary font-light leading-relaxed">{t('about.value1Desc')}</p>
             </div>
 
-            <div className="p-6 border border-burgundy-primary/10 bg-burgundy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-burgundy-primary/30 transition-all duration-300">
-              <div className="w-10 h-10 bg-burgundy-primary/5 text-burgundy-primary flex items-center justify-center rounded-lg mb-4">
+            <div className="p-6 border border-navy-primary/10 bg-navy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-navy-primary/30 transition-all duration-300">
+              <div className="w-10 h-10 bg-navy-primary/5 text-navy-primary flex items-center justify-center rounded-lg mb-4">
                 <Eye size={20} />
               </div>
               <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-2">{t('about.value2Title')}</h4>
               <p className="text-xs text-text-secondary font-light leading-relaxed">{t('about.value2Desc')}</p>
             </div>
 
-            <div className="p-6 border border-burgundy-primary/10 bg-burgundy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-burgundy-primary/30 transition-all duration-300">
-              <div className="w-10 h-10 bg-burgundy-primary/5 text-burgundy-primary flex items-center justify-center rounded-lg mb-4">
+            <div className="p-6 border border-navy-primary/10 bg-navy-bg/40 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 flex flex-col items-center text-center hover:border-navy-primary/30 transition-all duration-300">
+              <div className="w-10 h-10 bg-navy-primary/5 text-navy-primary flex items-center justify-center rounded-lg mb-4">
                 <Award size={20} />
               </div>
               <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-2">{t('about.value3Title')}</h4>

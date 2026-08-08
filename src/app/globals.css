@@ -8,13 +8,14 @@
   --color-text-secondary: #2b2b2b;
   --color-text-muted: #78716c;
   
-  --color-burgundy-primary: #8b0000;
-  --color-burgundy-secondary: #a30000;
-  --color-burgundy-light: #fca5a5;
-  --color-burgundy-bg: rgba(139, 0, 0, 0.04);
-  
-  --color-border-primary: rgba(139, 0, 0, 0.12);
-  --color-border-primary-hover: rgba(139, 0, 0, 0.28);
+  --color-navy-primary: #0B132B;
+  --color-navy-secondary: #1C2541;
+  --color-navy-light: #3A506B;
+  --color-navy-accent: #5BC0BE;
+  --color-navy-bg: rgba(11, 19, 43, 0.04);
+
+  --color-border-primary: rgba(11, 19, 43, 0.12);
+  --color-border-primary-hover: rgba(11, 19, 43, 0.28);
 
   --font-serif: var(--font-serif), Georgia, serif;
   --font-sans: var(--font-sans), system-ui, sans-serif;
@@ -34,12 +35,14 @@
   --color-text-secondary: #cbd5e1;
   --color-text-muted: #94a3b8;
   
-  --color-burgundy-primary: #e05555;
-  --color-burgundy-secondary: #c84040;
-  --color-burgundy-light: #fca5a5;
-  --color-burgundy-bg: rgba(224, 85, 85, 0.06);
-  --color-border-primary: rgba(224, 85, 85, 0.22);
-  --color-border-primary-hover: rgba(224, 85, 85, 0.45);
+  /* In dark mode, navy-primary must be LIGHTER than background for visibility */
+  --color-navy-primary: #4A7CCA;
+  --color-navy-secondary: #3561A8;
+  --color-navy-light: #6BA3E8;
+  --color-navy-accent: #5BC0BE;
+  --color-navy-bg: rgba(74, 124, 202, 0.08);
+  --color-border-primary: rgba(74, 124, 202, 0.25);
+  --color-border-primary-hover: rgba(74, 124, 202, 0.45);
 }
 
 html {
@@ -63,11 +66,11 @@ body {
   background: var(--color-bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 0, 0, 0.2);
+  background: var(--color-navy-primary);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-burgundy-primary);
+  background: var(--color-navy-secondary);
 }
 
 /* Text styles */
@@ -80,6 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Custom focus ring for form inputs */
 .form-input-focus:focus {
   outline: none;
-  border-color: #8b0000;
-  box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.1);
+  border-color: var(--color-navy-primary);
+  box-shadow: 0 0 0 2px rgba(11, 19, 43, 0.1);
 }

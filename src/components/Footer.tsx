@@ -12,16 +12,16 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-stone-900 dark:bg-stone-950 text-stone-400 border-t border-burgundy-primary/20 pt-16 pb-8 transition-colors duration-300">
+    <footer className="bg-stone-900 dark:bg-stone-950 text-stone-400 border-t border-navy-primary/20 pt-16 pb-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
         
         {/* Column 1: Logo & Disclaimer */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <AslanLogo size={40} className="text-burgundy-light" />
+            <AslanLogo size={40} className="text-navy-light" />
             <div className="flex flex-col items-start">
               <span className="text-base font-serif font-extrabold tracking-widest text-stone-100 leading-none mb-1">ASLAN</span>
-              <span className="text-[0.5rem] font-sans font-bold tracking-[0.25em] text-burgundy-light uppercase leading-none">
+              <span className="text-[0.5rem] font-sans font-bold tracking-[0.25em] text-navy-light uppercase leading-none">
                 {t('nav.lawFirm')}
               </span>
             </div>
@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-8 h-8 rounded-full bg-stone-850 hover:bg-burgundy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
+              className="w-8 h-8 rounded-full bg-stone-850 hover:bg-navy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
               aria-label="LinkedIn"
             >
               <LinkedInIcon size={15} />
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-8 h-8 rounded-full bg-stone-850 hover:bg-burgundy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
+              className="w-8 h-8 rounded-full bg-stone-850 hover:bg-navy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
               aria-label="Instagram"
             >
               <InstagramIcon size={15} />
@@ -55,7 +55,7 @@ export default function Footer() {
 
         {/* Column 2: Quick Links */}
         <div>
-          <h3 className="text-stone-200 text-xs font-sans font-semibold tracking-widest uppercase mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:height-[1px] after:bg-burgundy-light">
+          <h3 className="text-stone-200 text-xs md:text-sm font-sans font-semibold tracking-widest uppercase mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:height-[1px] after:bg-navy-light">
             {t('footer.quickMenu')}
           </h3>
           <ul className="list-none pl-0 flex flex-col gap-3 m-0">
@@ -89,20 +89,20 @@ export default function Footer() {
 
         {/* Column 3: Contact */}
         <div>
-          <h3 className="text-stone-200 text-xs font-sans font-semibold tracking-widest uppercase mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:height-[1px] after:bg-burgundy-light">
+          <h3 className="text-stone-200 text-xs font-sans font-semibold tracking-widest uppercase mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:height-[1px] after:bg-navy-light">
             {t('footer.contactInfo')}
           </h3>
           <ul className="list-none pl-0 flex flex-col gap-4 text-sm m-0">
             <li className="flex gap-3 items-start">
-              <Phone size={16} className="text-burgundy-light mt-0.5 flex-shrink-0" />
+              <Phone size={16} className="text-navy-light mt-0.5 flex-shrink-0" />
               <span>0546 263 8990</span>
             </li>
             <li className="flex gap-3 items-start">
-              <Mail size={16} className="text-burgundy-light mt-0.5 flex-shrink-0" />
+              <Mail size={16} className="text-navy-light mt-0.5 flex-shrink-0" />
               <span>info@nedimaslan.av.tr</span>
             </li>
             <li className="flex gap-3 items-start">
-              <MapPin size={16} className="text-burgundy-light mt-0.5 flex-shrink-0" />
+              <MapPin size={16} className="text-navy-light mt-0.5 flex-shrink-0" />
               <span className="leading-relaxed">Göztepe Mahallesi, Bosna Caddesi No: 242, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
             </li>
           </ul>

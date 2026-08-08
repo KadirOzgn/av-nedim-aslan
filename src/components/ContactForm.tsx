@@ -72,16 +72,16 @@ export default function ContactForm() {
     }
   };
   return (
-    <section id="contact" className="py-24 bg-bg-primary relative border-t border-burgundy-primary/10">
+    <section id="contact" className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
       {/* Red Thread vertical detail */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-burgundy-primary/20"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-16">
-          <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-burgundy-primary uppercase block mb-3">
+          <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
             {t('contact.badge')}
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-burgundy-primary">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
             {t('contact.title')}
           </h2>
           <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed">
@@ -94,8 +94,8 @@ export default function ContactForm() {
           <div className="flex flex-col gap-6 justify-between h-full">
             <div className="flex flex-col gap-4">
               {/* Phone Card */}
-              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
-                <div className="w-10 h-10 bg-burgundy-primary/5 dark:bg-burgundy-primary/10 text-burgundy-primary dark:text-burgundy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
+              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
+                <div className="w-10 h-10 bg-navy-primary/5 dark:bg-navy-primary/10 text-navy-primary dark:text-navy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
                   <Phone size={18} />
                 </div>
                 <div>
@@ -106,8 +106,8 @@ export default function ContactForm() {
               </div>
 
               {/* Email Card */}
-              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
-                <div className="w-10 h-10 bg-burgundy-primary/5 dark:bg-burgundy-primary/10 text-burgundy-primary dark:text-burgundy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
+              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
+                <div className="w-10 h-10 bg-navy-primary/5 dark:bg-navy-primary/10 text-navy-primary dark:text-navy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
                   <Mail size={18} />
                 </div>
                 <div>
@@ -117,8 +117,8 @@ export default function ContactForm() {
               </div>
 
               {/* Address Card */}
-              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
-                <div className="w-10 h-10 bg-burgundy-primary/5 dark:bg-burgundy-primary/10 text-burgundy-primary dark:text-burgundy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
+              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
+                <div className="w-10 h-10 bg-navy-primary/5 dark:bg-navy-primary/10 text-navy-primary dark:text-navy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
                   <MapPin size={18} />
                 </div>
                 <div>
@@ -131,8 +131,8 @@ export default function ContactForm() {
               </div>
 
               {/* Office Hours Card */}
-              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
-                <div className="w-10 h-10 bg-burgundy-primary/5 dark:bg-burgundy-primary/10 text-burgundy-primary dark:text-burgundy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
+              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
+                <div className="w-10 h-10 bg-navy-primary/5 dark:bg-navy-primary/10 text-navy-primary dark:text-navy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
                   <Clock size={18} />
                 </div>
                 <div>
@@ -143,8 +143,8 @@ export default function ContactForm() {
               </div>
 
               {/* Social Media Card */}
-              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-burgundy-primary/40 dark:hover:border-burgundy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
-                <div className="w-10 h-10 bg-burgundy-primary/5 dark:bg-burgundy-primary/10 text-burgundy-primary dark:text-burgundy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
+              <div className="p-5 bg-white/[0.02] dark:bg-white/[0.03] border border-stone-200/60 dark:border-white/10 rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex gap-4 items-start">
+                <div className="w-10 h-10 bg-navy-primary/5 dark:bg-navy-primary/10 text-navy-primary dark:text-navy-light flex items-center justify-center rounded-xl flex-shrink-0 transition-colors">
                   <LinkedInIcon size={18} />
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function ContactForm() {
                       href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-full bg-burgundy-primary/5 dark:bg-white/5 hover:bg-burgundy-primary hover:text-bg-primary dark:hover:bg-burgundy-primary dark:hover:text-bg-primary transition-all duration-300 flex items-center justify-center text-burgundy-primary dark:text-burgundy-light"
+                      className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-navy-primary hover:text-white dark:hover:bg-navy-primary dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
                       aria-label="LinkedIn"
                     >
                       <LinkedInIcon size={16} />
@@ -163,7 +163,7 @@ export default function ContactForm() {
                       href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-full bg-burgundy-primary/5 dark:bg-white/5 hover:bg-burgundy-primary hover:text-bg-primary dark:hover:bg-burgundy-primary dark:hover:text-bg-primary transition-all duration-300 flex items-center justify-center text-burgundy-primary dark:text-burgundy-light"
+                      className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-navy-primary hover:text-white dark:hover:bg-navy-primary dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
                       aria-label="Instagram"
                     >
                       <InstagramIcon size={16} />
@@ -189,14 +189,14 @@ export default function ContactForm() {
               {/* Custom Pin Overlay with Lion Logo */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-20 mt-[-20px]">
                 {/* Glowing pulse ring */}
-                <div className="absolute w-12 h-12 rounded-full bg-burgundy-primary/25 animate-ping"></div>
+                <div className="absolute w-12 h-12 rounded-full bg-navy-primary/25 animate-ping"></div>
                 
                 {/* Pin Container */}
-                <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-burgundy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
-                  <AslanLogo size={24} className="text-bg-primary" />
+                <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-navy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
+                  <AslanLogo size={24} className="text-white" />
                   
                   {/* Pin point tail */}
-                  <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-burgundy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
+                  <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-navy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
                 </div>
               </div>
 
@@ -218,8 +218,8 @@ export default function ContactForm() {
 
           {/* Form Column */}
           <div className="p-8 md:p-10 border border-stone-200/60 dark:border-white/10 bg-white/[0.01] dark:bg-white/[0.02] backdrop-blur-sm shadow-sm relative rounded-2xl flex flex-col justify-between h-full">
-            <div className="absolute top-0 right-0 w-8 h-[1px] bg-burgundy-primary/30 dark:bg-burgundy-primary/50"></div>
-            <div className="absolute top-0 right-0 w-[1px] h-8 bg-burgundy-primary/30 dark:bg-burgundy-primary/50"></div>
+            <div className="absolute top-0 right-0 w-8 h-[1px] bg-navy-primary/30 dark:bg-navy-primary/50"></div>
+            <div className="absolute top-0 right-0 w-[1px] h-8 bg-navy-primary/30 dark:bg-navy-primary/50"></div>
 
             <div>
               <h3 className="text-xl font-serif font-bold text-text-primary mb-2">{t('contact.formTitle')}</h3>
@@ -235,9 +235,9 @@ export default function ContactForm() {
                       name="name" 
                       value={formData.name} 
                       onChange={handleChange}
-                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary dark:focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200" 
+                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
                     />
-                    {errors.name && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.name}</span>}
+                    {errors.name && <span className="text-[0.65rem] text-red-600 dark:text-red-400 mt-1 block">{errors.name}</span>}
                   </div>
 
                   <div>
@@ -249,7 +249,7 @@ export default function ContactForm() {
                       value={formData.phone} 
                       onChange={handleChange}
                       placeholder="0 (555) 000 00 00"
-                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary dark:focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200" 
+                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
                     />
                     {errors.phone && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.phone}</span>}
                   </div>
@@ -263,7 +263,7 @@ export default function ContactForm() {
                     name="email" 
                     value={formData.email} 
                     onChange={handleChange}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary dark:focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
                   />
                   {errors.email && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.email}</span>}
                 </div>
@@ -276,7 +276,7 @@ export default function ContactForm() {
                     name="subject" 
                     value={formData.subject} 
                     onChange={handleChange}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary dark:focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
                   />
                 </div>
 
@@ -288,7 +288,7 @@ export default function ContactForm() {
                     value={formData.message} 
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-burgundy-primary dark:focus:border-burgundy-primary focus:ring-1 focus:ring-burgundy-primary transition-all duration-200 resize-y" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200 resize-y" 
                   ></textarea>
                   {errors.message && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.message}</span>}
                 </div>
@@ -296,7 +296,7 @@ export default function ContactForm() {
                 <button 
                   type="submit" 
                   disabled={status === 'loading'}
-                  className="w-full py-3.5 bg-burgundy-primary text-bg-primary hover:bg-burgundy-secondary font-sans font-semibold tracking-widest text-xs uppercase transition-all duration-300 rounded-xl cursor-pointer disabled:opacity-50 mt-2 shadow-sm hover:shadow-md"
+                  className="w-full py-3.5 bg-navy-primary text-white hover:bg-navy-secondary font-sans font-semibold tracking-widest text-xs uppercase transition-all duration-300 rounded-xl cursor-pointer disabled:opacity-50 mt-2 shadow-sm hover:shadow-md"
                 >
                   {status === 'loading' ? t('contact.formSending') : t('contact.formSend')}
                 </button>
@@ -308,7 +308,7 @@ export default function ContactForm() {
                 )}
 
                 {status === 'error' && (
-                  <div className="p-4 bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 text-xs font-semibold text-center rounded-xl mt-2">
+                  <div className="p-4 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800/30 text-xs font-semibold text-center rounded-xl mt-2">
                     {t('contact.formError')}
                   </div>
                 )}

@@ -64,7 +64,7 @@ export default function AboutPage() {
               </p>
 
               {/* Social Channels */}
-              <div className="flex gap-4 mt-8 border-t border-navy-primary/10 pt-6 w-full justify-start">
+              <div className="flex gap-4 mt-8 border-t border-navy-primary/10 pt-6 w-full justify-center lg:justify-start">
                 <a 
                   href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
                   target="_blank" 

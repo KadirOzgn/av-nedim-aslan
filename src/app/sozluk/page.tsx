@@ -110,9 +110,9 @@ export default function Dictionary() {
             </div>
 
             {/* A-Z Alphabet Filter */}
-            <div className="border-t border-b border-stone-200/60 dark:border-white/10 py-4">
-              <div className="flex flex-wrap gap-1.5 items-center justify-start">
-                <span className="text-[0.65rem] font-sans font-semibold tracking-wider text-text-muted uppercase mr-3">
+            <div className="border-t border-b border-stone-200/60 dark:border-white/10 py-4 overflow-hidden">
+              <div className="flex flex-row overflow-x-auto gap-1.5 items-center justify-start pb-1.5 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap scrollbar-none">
+                <span className="text-[0.65rem] font-sans font-semibold tracking-wider text-text-muted uppercase mr-3 shrink-0">
                   {t('dictionary.filterLabel') || "HARF SEÇİN:"}
                 </span>
                 {alphabet.map((letter) => {
@@ -124,7 +124,7 @@ export default function Dictionary() {
                     return (
                       <span
                         key={letter}
-                        className="px-2 py-1 text-xs font-sans font-medium tracking-wider rounded-lg text-text-muted/30 cursor-not-allowed select-none"
+                        className="px-2 py-1 text-xs font-sans font-medium tracking-wider rounded-lg text-text-muted/30 cursor-not-allowed select-none shrink-0"
                       >
                         {letter}
                       </span>
@@ -135,7 +135,7 @@ export default function Dictionary() {
                     <button
                       key={letter}
                       onClick={() => setSelectedLetter(isAll ? 'TÜMÜ' : letter)}
-                      className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer ${
+                      className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer shrink-0 ${
                         isSelected 
                           ? 'bg-navy-primary text-white shadow-sm' 
                           : 'text-text-secondary hover:text-navy-primary hover:bg-navy-primary/5 border border-stone-200/40 dark:border-white/5'

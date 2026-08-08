@@ -13,19 +13,56 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
   const { language } = useLanguage();
   const [copiedPlatform, setCopiedPlatform] = useState<'gemini' | 'chatgpt' | null>(null);
 
-  const handleSummary = async (platform: 'gemini' | 'chatgpt') => {
+  const copyFallback = (text: string) => {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed"; // Avoid scrolling to bottom
+    textArea.style.opacity = "0";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      return true;
+    } catch (err) {
+      console.error('Fallback copy failed:', err);
+      return false;
+    } finally {
+      document.body.removeChild(textArea);
+    }
+  };
+
+  const handleSummary = (platform: 'gemini' | 'chatgpt') => {
     const basePrompt = language === 'en'
       ? `Please summarize this legal article in general terms and extract the key points:\n\nTitle: ${title}\n\nContent:\n${content}`
       : `Lütfen şu hukuki makaleyi genel hatlarıyla özetle ve önemli noktalarını çıkar:\n\nBaşlık: ${title}\n\nİçerik:\n${content}`;
 
-    try {
-      await navigator.clipboard.writeText(basePrompt);
-      setCopiedPlatform(platform);
-      setTimeout(() => setCopiedPlatform(null), 3000);
-    } catch (err) {
-      console.error("Clipboard copy failed:", err);
-    }
+    const performCopy = () => {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(basePrompt)
+          .then(() => {
+            setCopiedPlatform(platform);
+            setTimeout(() => setCopiedPlatform(null), 3000);
+          })
+          .catch((err) => {
+            console.error("Clipboard API failed, using fallback:", err);
+            if (copyFallback(basePrompt)) {
+              setCopiedPlatform(platform);
+              setTimeout(() => setCopiedPlatform(null), 3000);
+            }
+          });
+      } else {
+        if (copyFallback(basePrompt)) {
+          setCopiedPlatform(platform);
+          setTimeout(() => setCopiedPlatform(null), 3000);
+        }
+      }
+    };
 
+    // Run copy block
+    performCopy();
+
+    // Synchronous redirect to bypass browser popup blockers (especially Safari/iOS)
     const url = platform === 'gemini'
       ? 'https://gemini.google.com/app'
       : 'https://chatgpt.com';

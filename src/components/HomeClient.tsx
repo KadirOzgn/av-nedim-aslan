@@ -111,7 +111,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                   fill
                   sizes="(max-w-768px) 320px, 384px"
                   priority
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-lg"
+                  className="object-cover animate-color-breathe rounded-lg"
                 />
               </div>
               <div className="absolute -top-1 -right-1 w-4 h-4 border-t-2 border-r-2 border-navy-primary"></div>

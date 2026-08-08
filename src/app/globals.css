@@ -98,3 +98,16 @@ h1, h2, h3, h4, h5, h6 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+@keyframes colorBreathe {
+  0%, 100% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(0%);
+  }
+}
+
+.animate-color-breathe {
+  animation: colorBreathe 8s ease-in-out infinite;
+}

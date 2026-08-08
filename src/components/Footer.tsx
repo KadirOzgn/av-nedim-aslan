@@ -112,7 +112,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-start">
               <MapPin size={16} className="text-navy-light mt-0.5 flex-shrink-0" />
-              <span className="leading-relaxed">Göztepe Mahallesi, Bosna Caddesi No: 242, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
+              <span className="leading-relaxed">Göztepe Mahallesi, Bosna Caddesi No: 24/2, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
             </li>
           </ul>
         </div>

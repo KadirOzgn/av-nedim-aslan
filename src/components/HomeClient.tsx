@@ -302,7 +302,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 </div>
                 <div className="flex gap-3 items-start">
                   <MapPin size={16} className="text-navy-primary mt-1" />
-                  <span>Göztepe Mahallesi, Bosna Caddesi No: 242, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
+                  <span>Göztepe Mahallesi, Bosna Caddesi No: 24/2, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
                 </div>
                 <div className="flex gap-3 items-center mt-2">
                   <a 
@@ -339,7 +339,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
             <div className="flex flex-col gap-4 sm:gap-5 w-full">
               <div className="h-52 sm:h-60 md:h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.689626359556!2d28.824578115439408!3d41.04278997929729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa35d8869c9b5%3A0xcdcd56b0c20a9a14!2zR8O2enRlcGUsIEJvc25hIENkLiBObzoyNDIsIDM0MjE4IEJhxJ9jModeslarL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
@@ -372,7 +372,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
 
                 {/* Clickable Overlay Link to Google Maps */}
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=G%C3%B6ztepe+Mahallesi%2C+Bosna+Caddesi+No%3A+242%2C+Kemero%C4%9Fullar%C4%B1+%C4%B0%C5%9F+Merkezi%2C+Ba%C4%9Fc%C4%B1lar+%2F+%C4%B0stanbul"
+                  href="https://www.google.com/maps/search/?api=1&query=G%C3%B6ztepe+Mahallesi%2C+Bosna+Caddesi+No%3A+24%2F2%2C+Kemero%C4%9Fullar%C4%B1+%C4%B0%C5%9F+Merkezi%2C+Ba%C4%9Fc%C4%B1lar+%2F+%C4%B0stanbul"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="absolute inset-0 bg-transparent z-10 cursor-pointer"

@@ -3,16 +3,8 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
-import { LinkedInIcon } from '@/components/Icons';
+import { LinkedInIcon, InstagramIcon, WhatsAppIcon } from '@/components/Icons';
 import AslanLogo from '@/components/AslanLogo';
-
-const InstagramIcon = ({ size = 16 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-    <circle cx="12" cy="12" r="5" />
-    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
-  </svg>
-);
 
 export default function ContactForm() {
   const { t } = useLanguage();
@@ -167,6 +159,15 @@ export default function ContactForm() {
                       aria-label="Instagram"
                     >
                       <InstagramIcon size={16} />
+                    </a>
+                    <a 
+                      href="https://wa.me/qr/NIZTP7IGZ24SP1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
+                      aria-label="WhatsApp"
+                    >
+                      <WhatsAppIcon size={16} />
                     </a>
                   </div>
                 </div>

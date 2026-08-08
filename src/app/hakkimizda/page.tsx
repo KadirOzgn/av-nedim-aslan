@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Shield, Eye, Award } from 'lucide-react';
-import { LinkedInIcon, InstagramIcon } from '@/components/Icons';
+import { LinkedInIcon, InstagramIcon, WhatsAppIcon } from '@/components/Icons';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/context/LanguageContext';
@@ -83,6 +83,16 @@ export default function AboutPage() {
                 >
                   <InstagramIcon size={16} className="text-navy-primary" />
                   Instagram
+                </a>
+                <span className="text-navy-primary/20">|</span>
+                <a 
+                  href="https://wa.me/qr/NIZTP7IGZ24SP1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-emerald-600 transition-colors cursor-pointer"
+                >
+                  <WhatsAppIcon size={16} className="text-emerald-500" />
+                  WhatsApp
                 </a>
               </div>
             </div>

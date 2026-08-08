@@ -9,16 +9,8 @@ import Footer from '@/components/Footer';
 import NavyThreadLine from '@/components/NavyThreadLine';
 import AslanLogo from '@/components/AslanLogo';
 import { useLanguage } from '@/context/LanguageContext';
-import { LinkedInIcon } from '@/components/Icons';
+import { LinkedInIcon, InstagramIcon, WhatsAppIcon } from '@/components/Icons';
 import { ArticleMetadata } from '@/lib/mdx';
-
-const InstagramIcon = ({ size = 16 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-    <circle cx="12" cy="12" r="5" />
-    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
-  </svg>
-);
 
 interface HomeClientProps {
   articles: ArticleMetadata[];
@@ -330,6 +322,15 @@ export default function HomeClient({ articles }: HomeClientProps) {
                     aria-label="Instagram"
                   >
                     <InstagramIcon size={16} />
+                  </a>
+                  <a 
+                    href="https://wa.me/qr/NIZTP7IGZ24SP1" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full bg-navy-primary/10 hover:bg-emerald-500 hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary hover:border-emerald-500"
+                    aria-label="WhatsApp"
+                  >
+                    <WhatsAppIcon size={16} />
                   </a>
                 </div>
               </div>

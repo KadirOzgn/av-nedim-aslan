@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import AslanLogo from './AslanLogo';
 import { useLanguage } from '@/context/LanguageContext';
 
-import { InstagramIcon, LinkedInIcon } from '@/components/Icons';
+import { InstagramIcon, LinkedInIcon, WhatsAppIcon } from '@/components/Icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -49,6 +49,15 @@ export default function Footer() {
               aria-label="Instagram"
             >
               <InstagramIcon size={15} />
+            </a>
+            <a 
+              href="https://wa.me/qr/NIZTP7IGZ24SP1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-8 h-8 rounded-full bg-stone-850 hover:bg-emerald-500 hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
+              aria-label="WhatsApp"
+            >
+              <WhatsAppIcon size={15} />
             </a>
           </div>
         </div>

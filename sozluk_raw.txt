@@ -1,0 +1,3663 @@
+ASLAN HUKUKTÜRK HUKUK SÖZLÜĞÜ
+Nihai Site Sürümü — 901 Benzersiz Terim
+Editoryal ve Kaynaklandırma Notu
+Bu sözlükteki tanımlar, internet sitesi kullanımı için özgün ve kısa açıklamalar hâlinde hazırlanmıştır. Aynı başlıkla tekrar eden terimler ayıklanmış; yazım, terim kullanımı ve kaynak gösterimleri standardize edilmiştir. Kanunda açık dayanağı bulunan kavramlarda ilgili mevzuat ve mümkün olan yerlerde madde numarası, dilsel veya tarihî terimlerde Türk Dil Kurumu sözlükleri ve yerleşik hukuk terminolojisi, UYAP ve yargı pratiğine özgü ifadelerde ise resmî yargı uygulaması esas alınmıştır. Bu sözlük genel bilgilendirme amaçlıdır; somut uyuşmazlıklarda yürürlükteki mevzuatın güncel resmî metni ayrıca kontrol edilmelidir. Son editoryal kontrol tarihi: 8 Ağustos 2026.
+A
+Aciz
+Borçlunun borçlarını karşılamaya yetecek malvarlığının bulunmaması veya cebri icra sonunda alacağın tamamen tahsil edilememesi hâlini ifade eder.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu, m.143 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Aciz belgesi
+İcra takibinde alacağın tamamen veya kısmen tahsil edilemediğini gösteren ve kanunun belirli sonuçlar bağladığı belgedir; İİK'daki kanuni terim “borç ödemeden aciz vesikası”dır.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu, m.105 ve m.143.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Aciz vesikası
+Borçlunun haczedilebilir mallarının alacağı karşılamaması üzerine kanuni şartlarla düzenlenen ve alacaklıya İcra ve İflas Kanununda belirtilen hakları sağlayan belgedir.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu, m.105 ve m.143.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Açık artırma
+Bir malın, rekabet eden teklifler alınarak en uygun teklif üzerinden satışına yönelik yöntemdir.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu, satış hükümleri; 6098 sayılı Türk Borçlar Kanunu, artırma yoluyla satış hükümleri.
+Kaynak Türü: Mevzuat — İcra/Borçlar Hukuku
+Adalet
+Hak ve hukuka uygunluk, hakların gözetilmesi ve uyuşmazlıkların hukuk düzeni içinde hakkaniyete uygun biçimde çözümlenmesi düşüncesini ifade eder.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; Türkiye Cumhuriyeti Anayasası.
+Kaynak Türü: TDK + Anayasal Hukuk
+Adem
+Yokluk veya bulunmama anlamında, özellikle eski hukuk dilinde birleşik terimlerde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Adem-i ifa
+Bir borcun veya sözleşmeden doğan edimin yerine getirilmemesini anlatan eski hukuk ifadesidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu; TDK/resmî hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Adli kontrol
+Ceza muhakemesinde tutuklama yerine veya kanundaki şartlarla şüpheli ya da sanık hakkında uygulanabilen yükümlülüklerden oluşan koruma tedbiridir.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.109 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Adli para cezası
+Kanunda öngörülen gün sayısının, kişinin ekonomik ve şahsi hâlleri dikkate alınarak belirlenen günlük miktarla çarpılması suretiyle hesaplanan ceza türüdür.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.52.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Adli sicil
+Kesinleşmiş ceza mahkûmiyetleri ve kanunda gösterilen diğer kararların kaydedildiği resmî kayıt sistemidir.
+Kaynak: 5352 sayılı Adlî Sicil Kanunu.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Adli tatil
+Kanunda belirtilen tarihler arasında yargı mercilerinde yalnızca kanunen sayılan dava ve işlerin görüldüğü dönemdir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.102-104; 2577 sayılı İYUK, m.61.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Adli yardım
+Yargılama giderlerini karşılayamayacak durumda olan kişilerin, kanuni şartlarla yargılama giderlerinden geçici olarak muaf tutulmasını ve diğer kolaylıklardan yararlanmasını sağlayan kurumdur.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.334 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Ağır ceza mahkemesi
+Kanunda sayılan ağır suçlara ve ceza sınırları itibarıyla görev alanına giren işlere bakan ilk derece ceza mahkemesidir.
+Kaynak: 5235 sayılı Kanun
+Kaynak Türü: Mevzuat — Yargı
+Ahde vefa
+Tarafların geçerli biçimde kurdukları sözleşmeye bağlı kalmaları gerektiğini ifade eden sözleşme hukuku ilkesidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu, sözleşme hükümleri; yerleşik hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Ahkâm
+Hükümler, kurallar anlamında kullanılan eski hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Ahz
+Alma veya teslim alma anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Aile konutu
+Eşlerin ortak yaşamlarını sürdürdükleri ve kanunun özel koruma sağladığı konuttur.
+Kaynak: 4721 sayılı TMK m.194
+Kaynak Türü: Mevzuat — Aile
+Aile konutu şerhi
+Malik olmayan eşin, aile konutu olarak özgülenen taşınmaz hakkında kanuni korumanın tapu kütüğünde görünür hâle gelmesini istemesi üzerine verilen şerhtir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.194.
+Kaynak Türü: Mevzuat — Aile/Eşya Hukuku
+Akabinde
+Bir olay veya işlemin hemen ardından, sonrasında anlamına gelen ve hukukî metinlerde de kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Akdi
+Bir sözleşmeye ilişkin veya sözleşmeden doğan anlamındadır.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu; Türk Dil Kurumu sözlükleri.
+Kaynak Türü: Mevzuat + TDK — Borçlar Hukuku
+Akit
+Tarafların karşılıklı ve birbirine uygun irade açıklamalarıyla kurdukları sözleşme için kullanılan geleneksel hukuk terimidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu, m.1; Türk Dil Kurumu sözlükleri.
+Kaynak Türü: Mevzuat + TDK — Borçlar Hukuku
+Alacağın devri
+Alacaklının sahip olduğu alacak hakkını kanuni şartlarla üçüncü kişiye geçirmesidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu, m.183 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Alacak
+Borç ilişkisinde alacaklının borçludan bir verme, yapma veya yapmama edimini isteme yetkisidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Alacaklı
+Borç ilişkisinde edimin yerine getirilmesini isteme hakkına sahip taraftır.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Aleniyet
+Bir işlem, kayıt veya yargılamanın kanunun öngördüğü ölçüde açık ve erişilebilir olmasını ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.141; 6100 sayılı HMK, m.28.
+Kaynak Türü: Mevzuat — Anayasa/Usul
+Altsoy
+Bir kişinin çocukları, torunları ve aşağı doğru devam eden soyunu ifade eder.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, hısımlık ve miras hükümleri.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Alt işveren
+Bir işverenden işyerinde yürütülen mal veya hizmet üretimine ilişkin yardımcı işlerde ya da belirli şartlarla asıl işin bir bölümünde iş alan ve işçilerini bu işte çalıştıran işverendir.
+Kaynak: 4857 sayılı İş Kanunu, m.2.
+Kaynak Türü: Mevzuat — İş Hukuku
+Amir hüküm
+Tarafların iradeleriyle aksini kararlaştıramadıkları emredici hukuk kuralıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu ve ilgili özel mevzuat; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Amme
+Kamu anlamında kullanılan eski hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Amme alacağı
+Devlete, il özel idarelerine, belediyelere ve kanunun kapsamına aldığı kamu tüzel kişilerine ait belirli kamu alacaklarını ifade eder.
+Kaynak: 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun, m.1.
+Kaynak Türü: Mevzuat — Kamu/İcra Hukuku
+Anayasa
+Devletin temel yapısını, organlarını, yetkilerini ve temel hak ve özgürlükleri düzenleyen en üst hukuk normudur.
+Kaynak: Türkiye Cumhuriyeti Anayasası, özellikle m.11.
+Kaynak Türü: Mevzuat — Anayasa Hukuku
+Anayasa Mahkemesi
+Anayasa ile kendisine verilen norm denetimi, bireysel başvuru ve diğer yargısal görevleri yerine getiren yüksek mahkemedir.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.146 ve devamı; 6216 sayılı Kanun.
+Kaynak Türü: Mevzuat — Anayasa Hukuku
+Ana para
+Faiz, gider ve diğer feriler dışında kalan asıl para borcudur.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu; 3095 sayılı Kanuni Faiz ve Temerrüt Faizine İlişkin Kanun.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Anlaşmalı boşanma
+Evliliği en az bir yıl sürmüş eşlerin birlikte başvurması veya bir eşin diğerinin davasını kabul etmesi ve kanundaki diğer şartların gerçekleşmesiyle verilen boşanma kararıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.166/3.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Arabulucu
+Arabuluculuk faaliyetini yürüten, tarafları sistematik tekniklerle bir araya getiren, tarafsız ve bağımsız üçüncü kişidir.
+Kaynak: 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu, m.2.
+Kaynak Türü: Mevzuat — Arabuluculuk
+Arabuluculuk
+Tarafların çözüm üretmesine yardımcı olan tarafsız üçüncü kişinin katıldığı alternatif uyuşmazlık çözüm yöntemidir.
+Kaynak: 6325 sayılı HUAK m.2
+Kaynak Türü: Mevzuat — Arabuluculuk
+Arama
+Ceza muhakemesinde şüpheli veya sanığın yakalanması ya da suç delillerinin elde edilmesi amacıyla kişi, konut, işyeri veya diğer yerlerde kanuni şartlarla yapılan koruma tedbiridir.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.116 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Ara karar
+Mahkemenin yargılamayı sona erdirmeyen, davanın yürütülmesi ve hazırlanmasına ilişkin verdiği karardır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu ve usul hukuku terminolojisi.
+Kaynak Türü: Mevzuat — Medeni Usul
+Arz
+Bir hususu yetkili veya üst makama sunma anlamında resmî ve hukukî yazışmalarda kullanılan ifadedir.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; resmî yazışma terminolojisi.
+Kaynak Türü: TDK + Resmî Yazışma
+Asliye ceza mahkemesi
+Ceza yargısında kanunların ayrıca başka bir mahkemeyi görevlendirmediği suçlara ilişkin davalara bakan ilk derece mahkemesidir.
+Kaynak: 5235 sayılı Kanun, m.11 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Ceza Yargısı
+Asliye hukuk mahkemesi
+Kanunların başka bir mahkemeyi görevli kılmadığı özel hukuk uyuşmazlıklarında genel görevli ilk derece hukuk mahkemesidir.
+Kaynak: 5235 sayılı Kanun; 6100 sayılı HMK m.2
+Kaynak Türü: Mevzuat — Yargı
+Asli müdahale
+Dava konusu hak veya şey üzerinde hak iddia eden üçüncü kişinin taraflara karşı ayrı dava açmasıdır.
+Kaynak: 6100 sayılı HMK m.65
+Kaynak Türü: Mevzuat — Usul
+Avans faizi
+Ticari işlerde kanuni şartlarla uygulanabilen faiz türüdür.
+Kaynak: 3095 sayılı Kanun; 6102 sayılı TTK
+Kaynak Türü: Mevzuat — Ticaret
+Avukat
+Yargı organları, hakemler, resmî ve özel kişi veya kurumlar önünde hukuki ilişkilerin düzenlenmesine ve hakların korunmasına hizmet eden serbest meslek mensubudur.
+Kaynak: 1136 sayılı Avukatlık Kanunu, m.1-2.
+Kaynak Türü: Mevzuat — Avukatlık Hukuku
+Ayıp
+Satılanın veya eserin sözleşmede kararlaştırılan ya da dürüstlük kuralına göre beklenen nitelikleri taşımaması gibi eksiklikleri ifade eder.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu, satış ve eser sözleşmesi hükümleri.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Ayıplı hizmet
+Sözleşmede belirlenen veya objektif olarak bulunması gereken özellikleri taşımayan hizmettir.
+Kaynak: 6502 sayılı TKHK m.13
+Kaynak Türü: Mevzuat — Tüketici
+Ayıplı mal
+Tüketiciye teslimi anında taraflarca kararlaştırılmış örnek veya modele uygun olmayan ya da objektif olarak sahip olması gereken özellikleri taşımayan maldır.
+Kaynak: 6502 sayılı Tüketicinin Korunması Hakkında Kanun, m.8.
+Kaynak Türü: Mevzuat — Tüketici Hukuku
+Ayırt etme gücü
+Kişinin akla uygun biçimde davranma yeteneğini ifade eder.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.13.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Ayni hak
+Bir eşya üzerinde doğrudan hâkimiyet sağlayan ve kural olarak herkese karşı ileri sürülebilen mutlak haktır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, eşya hukuku hükümleri.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Ayrılık
+Evlilik devam etmekle birlikte eşlerin ortak hayatı sürdürme yükümlülüğünün mahkeme kararıyla belirli süre için kaldırılmasıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.167 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+
+B
+Bağışlama
+Bağışlayanın sağlararası sonuç doğurmak üzere malvarlığından bağışlanana karşılıksız kazandırma yapmayı üstlendiği sözleşmedir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu, m.285 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Bakiye
+Bir hesap, borç veya ödemeden sonra geriye kalan miktardır.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; borç ve ticaret hukuku terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Basit yargılama usulü
+Kanunda belirtilen dava ve işlerde dilekçe ve tahkikat aşamalarının daha sade yürütüldüğü yargılama usulüdür.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.316 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Belge
+Uyuşmazlık konusu vakıaları ispata elverişli yazılı veya basılı metin, elektronik veri, görüntü, ses kaydı ve benzeri bilgi taşıyıcılarını kapsayan ispat aracıdır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.199.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Belirsiz alacak davası
+Dava açıldığı tarihte alacağın miktar veya değerinin davacıdan beklenemeyecek ölçüde tam ve kesin belirlenemediği hâllerde açılabilen dava türüdür.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.107.
+Kaynak Türü: Mevzuat — Medeni Usul
+Beraat
+Sanık hakkında yüklenen fiilin kanunda suç olarak tanımlanmaması, suçun sanık tarafından işlenmediğinin sabit olması veya CMK'da sayılan diğer nedenlerin bulunması hâlinde verilen hüküm türüdür.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.223/2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Beyan
+Kişinin bir vakıa, talep, irade veya hukuki durum hakkındaki açıklamasıdır.
+Kaynak: 6100 sayılı HMK ve 5271 sayılı CMK; Türk Dil Kurumu sözlükleri.
+Kaynak Türü: Mevzuat + TDK — Genel Hukuk
+Beyanname
+Belirli bilgi ve açıklamaların yetkili makama bildirilmesi amacıyla düzenlenen belgedir.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; ilgili vergi, gümrük ve özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Beyyine
+Delil ve ispat aracı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Bila
+Olmaksızın veya -sız/-siz anlamı veren, eski hukuk ve resmî yazışma dilinde birleşik ifadelerde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Bilâhare
+Daha sonra veya sonradan anlamında, özellikle eski karar ve dilekçe dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK
+Bila bedel
+Herhangi bir bedel alınmaksızın, karşılıksız anlamında kullanılan eski hukuk ifadesidir.
+Kaynak: TDK/resmî hukuk terminolojisi; 6098 sayılı TBK'nın karşılıksız kazandırmalara ilişkin hükümleri.
+Kaynak Türü: TDK + Mevzuat
+Bila faiz
+Faiz işletilmeksizin veya faiz alınmaksızın anlamına gelen hukukî ifade.
+Kaynak: Türk Dil Kurumu sözlükleri; 3095 sayılı Kanun ve borçlar hukuku terminolojisi.
+Kaynak Türü: TDK + Mevzuat
+Bila ikmal
+Eksik bir işlem veya belgenin tamamlanması sağlanmaksızın anlamında kullanılan eski resmî hukuk ifadesidir.
+Kaynak: Resmî hukuk/yargı terminolojisi; TDK sözlükleri.
+Kaynak Türü: TDK + Yargı Uygulaması
+Bila itiraz
+Herhangi bir itiraz ileri sürülmeksizin anlamında kullanılan hukukî ifade.
+Kaynak: Türk Dil Kurumu sözlükleri; hukuk uygulaması.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Bilcümle
+Bütün, tüm, tamamı anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK
+Bilirkişi
+Çözümü hukuk dışında özel veya teknik bilgiyi gerektiren hâllerde oy ve görüşüne başvurulan kişidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.266 ve devamı; 6754 sayılı Bilirkişilik Kanunu.
+Kaynak Türü: Mevzuat — Bilirkişilik/Usul
+Bilirkişi raporu
+Bilirkişinin görevlendirildiği teknik veya özel bilgi alanındaki inceleme, tespit ve görüşlerini mahkemeye sunduğu rapordur.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.279 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Medeni Usul
+Binaenaleyh
+Bundan dolayı, bu nedenle anlamında eski karar ve dilekçe dilinde kullanılan bağlaçtır.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Bittabi
+Doğal olarak, elbette anlamında eski resmî ve hukukî metinlerde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Bizzat
+Bir işin temsilci aracılığı olmaksızın kişinin kendisi tarafından yapılmasını ifade eder.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; ilgili usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Bono
+Düzenleyenin belirli bir bedeli kayıtsız ve şartsız ödeme vaadini içeren kambiyo senedidir.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu, m.776 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Borca itiraz
+Borçlunun ilamsız takipte takip konusu borcun bulunmadığını veya sona erdiğini ileri sürerek ödeme emrine itiraz etmesidir.
+Kaynak: 2004 sayılı İİK m.62 ve devamı
+Kaynak Türü: Mevzuat — İcra
+Borç
+Bir hukuki ilişkide borçlunun alacaklıya karşı yerine getirmekle yükümlü olduğu edimi ifade eder.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Borçlu
+Bir borç ilişkisinde belirli bir edimi yerine getirmekle yükümlü olan kişidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Borçlar/İcra Hukuku
+Borçtan kurtulma davası
+İtirazın geçici kaldırılmasından sonra borçlunun kanuni sürede borçlu olmadığını ispat amacıyla açabildiği davadır.
+Kaynak: 2004 sayılı İİK m.69
+Kaynak Türü: Mevzuat — İcra
+Borç ilişkisi
+Bir veya birden fazla alacak hakkı ile bunlara karşılık gelen borç ve yan yükümlülükleri içeren hukuki ilişkidir.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Boşanma
+Geçerli bir evliliğin kanunda öngörülen sebeplerden biriyle hâkim kararı sonucunda sona ermesidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.161 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Bozma
+Üst derece mahkemesinin incelediği kararı hukuka aykırı bularak kaldırması ve kanuni sonucuna göre dosya hakkında yeniden işlem yapılmasını sağlamasıdır.
+Kaynak: 6100 sayılı HMK, temyiz hükümleri; 5271 sayılı CMK, temyiz hükümleri.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Bölge adliye mahkemesi
+Adli yargıda ilk derece mahkemelerinin kanunda belirtilen kararlarına karşı istinaf incelemesi yapan ikinci derece mahkemesidir.
+Kaynak: 5235 sayılı Kanun; 6100 sayılı HMK ve 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Bölge idare mahkemesi
+İdari yargıda istinaf başvurularını ve kanunla verilen diğer görevleri inceleyen yargı merciidir.
+Kaynak: 2576 sayılı Kanun; 2577 sayılı İdari Yargılama Usulü Kanunu.
+Kaynak Türü: Mevzuat — İdari Yargı
+Butlan
+Bir hukuki işlemin kanunda öngörülen geçerlilik şartlarındaki ağır eksiklik nedeniyle geçersiz olmasını ifade eden hukuk kavramıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu; 6098 sayılı Türk Borçlar Kanunu, özellikle m.27.
+Kaynak Türü: Mevzuat — Medeni/Borçlar Hukuku
+
+C
+Cari
+Devam eden, yürürlükte bulunan veya belirli bir döneme ilişkin güncel durumu ifade eden terimdir.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; ticaret ve borçlar hukuku terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Cari hesap
+İki kişinin herhangi bir hukuki sebep veya ilişkiden doğan alacaklarını ayrı ayrı istemekten karşılıklı olarak vazgeçip bunları kalem kalem hesaba geçirerek hesap sonunda çıkacak bakiyeyi istemeyi kararlaştırdıkları sözleşmedir.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu, m.89 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Cebren
+Bir işlemin kişinin rızasına bağlı olmaksızın kamu gücü veya zorlama yoluyla gerçekleştirilmesini anlatır.
+Kaynak: Türk Dil Kurumu sözlükleri; 2004 sayılı İcra ve İflas Kanunu.
+Kaynak Türü: TDK + Mevzuat
+Cebri icra
+Bir borç veya yükümlülüğün devletin yetkili icra organları aracılığıyla zorla yerine getirilmesini sağlayan hukukî mekanizmadır.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Celse
+Mahkemenin duruşma için yaptığı oturumu ifade eden, uygulamada yaygın hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; yargı terminolojisi.
+Kaynak Türü: TDK + Yargı Uygulaması
+Ceman
+Toplam olarak, bir arada anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Cevaba cevap dilekçesi
+Davacının davalının cevap dilekçesine karşı açıklama ve karşı beyanlarını sunduğu ikinci dilekçedir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.136.
+Kaynak Türü: Mevzuat — Medeni Usul
+Cevap dilekçesi
+Davalının dava dilekçesine karşı savunmalarını, vakıalarını ve delillerini sunduğu temel usul dilekçesidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.126 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Ceza
+Suç karşılığında kanunla öngörülen yaptırımı ifade eder; Türk Ceza Kanununda temel cezalar hapis ve adli para cezasıdır.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.45.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ceza davası
+Bir suç isnadının mahkeme önünde incelenerek sanığın cezai sorumluluğu hakkında hüküm kurulmasını amaçlayan kamu davasıdır.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, özellikle m.170 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Ceza ehliyeti
+Kişinin işlediği fiil nedeniyle cezai sorumluluğunun bulunup bulunmadığını etkileyen yaş, akıl hastalığı ve benzeri koşullarla bağlantılı hukuki değerlendirmeyi ifade eder.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.31-34 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ceza hukuku
+Hangi fiillerin suç oluşturduğunu, bunlara uygulanacak ceza ve güvenlik tedbirlerini ve ceza sorumluluğunun temel esaslarını düzenleyen hukuk dalıdır.
+Kaynak: 5237 sayılı Türk Ceza Kanunu.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ceza muhakemesi
+Bir suç şüphesinin öğrenilmesinden başlayarak soruşturma, kovuşturma ve kanun yolları dâhil cezai uyuşmazlığın usulüne uygun biçimde çözülmesine ilişkin süreçtir.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Ceza sorumluluğu
+Bir kişinin işlediği suç teşkil eden fiil nedeniyle ceza hukuku bakımından sorumlu tutulabilmesini ifade eder.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, genel hükümler.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ceza sorumluluğunun şahsiliği
+Kimsenin başkasının fiilinden dolayı ceza sorumluluğu taşımamasını ifade eden temel ilkedir.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.20.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ceza zamanaşımı
+Kesinleşmiş cezanın kanunda belirlenen süre içinde infaz edilmemesi hâlinde infaza ilişkin kanuni sonucu doğuran zamanaşımıdır.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.68 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Ciro
+Emre yazılı kıymetli evrattan doğan hakların devri veya kanunun tanıdığı diğer işlevler için senet üzerine yapılan yazılı işlemdir.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu, poliçe ve diğer kambiyo senetlerine ilişkin hükümler.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Ciro eden
+Kıymetli evrak üzerindeki hakkı ciro yoluyla devreden kişidir.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu, kambiyo senetleri hükümleri.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Cumhuriyet başsavcılığı
+Cumhuriyet savcılarının görev yaptığı ve ceza soruşturmalarının yürütülmesi başta olmak üzere kanunla verilen görevleri yerine getiren adli teşkilat birimidir.
+Kaynak: 5235 sayılı Kanun; 5271 sayılı Ceza Muhakemesi Kanunu.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Cumhuriyet savcısı
+Suç haberini alan, soruşturmayı yürüten, delilleri toplayan ve yeterli şüphe hâlinde kamu davası açan yargı mensubudur.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.160 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Cürmümeşhut
+Suçüstü hâlini ifade eden eski hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; 5271 sayılı CMK m.2'deki suçüstü kavramı.
+Kaynak Türü: TDK + Mevzuat
+Cürüm
+Suç anlamında kullanılan eski hukuk terimidir; güncel ceza mevzuatında genel terim olarak 'suç' kullanılmaktadır.
+Kaynak: Türk Dil Kurumu sözlükleri; tarihî ceza hukuku terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Cüzi halefiyet
+Bir kişinin başka bir kişinin belirli bir hakkına veya belirli malvarlığı unsuruna hukuken geçmesini ifade eder.
+Kaynak: 4721 sayılı Türk Medeni Kanunu; 6098 sayılı Türk Borçlar Kanunu; yerleşik hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Medeni/Borçlar Hukuku
+Cüzi icra
+Borçlunun bütün malvarlığının tasfiyesi yerine belirli mal ve haklarının haczedilip paraya çevrilmesine dayanan cebri icra anlayışını ifade eder.
+Kaynak: 2004 sayılı İcra ve İflas Kanunu; icra hukuku terminolojisi.
+Kaynak Türü: Mevzuat — İcra Hukuku
+
+Ç
+Çalışma belgesi
+İşten ayrılan işçiye işveren tarafından verilen ve işin çeşidi ile süresini gösteren belgedir.
+Kaynak: 4857 sayılı İş Kanunu, m.28.
+Kaynak Türü: Mevzuat — İş Hukuku
+Çalışma koşulları
+İş ilişkisinde ücret, çalışma süresi, işin görülme biçimi ve benzeri hak ve yükümlülükleri belirleyen koşulların genel adıdır.
+Kaynak: 4857 sayılı İş Kanunu, özellikle m.22 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — İş Hukuku
+Çalışma süresi
+İşçinin çalıştırıldığı işte geçirdiği ve mevzuat uyarınca çalışma süresinden sayılan süreleri ifade eder.
+Kaynak: 4857 sayılı İş Kanunu, m.63 ve ilgili yönetmelik.
+Kaynak Türü: Mevzuat — İş Hukuku
+Çap
+Taşınmazın sınırlarını, konumunu veya kadastro bilgilerini gösteren plan ya da belge için uygulamada kullanılan terimdir.
+Kaynak: 3402 sayılı Kadastro Kanunu; tapu ve kadastro mevzuatı; TDK.
+Kaynak Türü: Mevzuat + TDK — Taşınmaz Hukuku
+Çek
+Belirli şekil şartlarını taşıyan ve muhatap bankaya belirli bir bedelin ödenmesi yönünde talimat içeren kambiyo senedidir.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu, m.780 ve devamı; 5941 sayılı Çek Kanunu.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Çekişmeli boşanma
+Eşlerin boşanma veya boşanmanın ferileri üzerinde anlaşamadığı ve boşanma sebebinin mahkemece yargılama sonucunda değerlendirildiği boşanma davasını ifade eder.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.161 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Çekişmeli yargı
+Bir hakkın veya hukuki ilişkinin tarafları arasında uyuşmazlık bulunması üzerine mahkemenin uyuşmazlığı çözmesine yönelik yargısal faaliyettir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu; medeni usul hukuku terminolojisi.
+Kaynak Türü: Mevzuat — Medeni Usul
+Çekişmesiz yargı
+Kanunun saydığı veya niteliği gereği klasik anlamda karşı taraflı uyuşmazlık bulunmayan yargısal işlere ilişkin yargı faaliyetidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.382 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Çelişmeli yargılama
+Tarafların iddia, savunma ve delillerden haberdar edilip bunlara karşı görüş bildirebilmesini esas alan adil yargılanma unsurudur.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.36; AİHS m.6; usul mevzuatı.
+Kaynak Türü: Anayasa + Uluslararası Sözleşme
+Çocuk
+Ceza hukuku bakımından henüz on sekiz yaşını doldurmamış kişidir.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.6; 5395 sayılı Çocuk Koruma Kanunu, m.3.
+Kaynak Türü: Mevzuat — Ceza/Çocuk Hukuku
+Çocuk ağır ceza mahkemesi
+Kanunla belirlenen suçlara ilişkin olarak suça sürüklenen çocuklar hakkında yargılama yapan ihtisas mahkemesidir.
+Kaynak: 5395 sayılı Çocuk Koruma Kanunu; 5235 sayılı Kanun.
+Kaynak Türü: Mevzuat — Çocuk Ceza Hukuku
+Çocuk mahkemesi
+Kanunun görev alanına verdiği suça sürüklenen çocuklara ilişkin dava ve işleri gören ihtisas mahkemesidir.
+Kaynak: 5395 sayılı Çocuk Koruma Kanunu.
+Kaynak Türü: Mevzuat — Çocuk Hukuku
+Çocuk teslimi
+Velayet veya kişisel ilişki kararlarının çocuk üstün yararı gözetilerek yerine getirilmesine ilişkin adli destek sürecini ifade eder.
+Kaynak: 5395 sayılı Çocuk Koruma Kanunu ve çocuk teslimine ilişkin güncel hükümler.
+Kaynak Türü: Mevzuat — Aile/Çocuk Hukuku
+
+D
+Dahili davalı
+Uygulamada, yargılama sırasında davaya davalı sıfatıyla dâhil edilmek istenen kişi için kullanılan ifadedir; taraf değişikliği ve dava arkadaşlığı kuralları ayrıca değerlendirilir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, taraf değişikliği ve dava arkadaşlığı hükümleri.
+Kaynak Türü: Mevzuat + Yargı Uygulaması
+Dain
+Alacaklı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Dava
+Bir hakkın korunması, ihlalin giderilmesi veya bir hukuki durumun belirlenmesi amacıyla mahkemeden hukuki koruma talep edilmesidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu.
+Kaynak Türü: Mevzuat — Medeni Usul
+Davacı
+Mahkemeden kendi lehine hukuki koruma talep ederek davayı açan taraftır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu.
+Kaynak Türü: Mevzuat — Medeni Usul
+Davadan feragat
+Davacının talep sonucundan kısmen veya tamamen vazgeçmesidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.307 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Davalı
+Davacının hukuki koruma talebini kendisine yönelttiği taraftır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu.
+Kaynak Türü: Mevzuat — Medeni Usul
+Davanın açılmamış sayılması
+Kanunda belirtilen usuli durumlarda davanın doğurduğu sonuçların ortadan kalkmasına ilişkin karardır.
+Kaynak: 6100 sayılı HMK, ilgili hükümler
+Kaynak Türü: Mevzuat — Usul
+Davanın geri alınması
+Davacının, davalının açık rızasıyla davasını takipten vazgeçerek geri almasıdır.
+Kaynak: 6100 sayılı HMK m.123
+Kaynak Türü: Mevzuat — Usul
+Davaya cevap
+Davalının dava dilekçesinde ileri sürülen taleplere ve vakıalara karşı savunmalarını mahkemeye bildirmesidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.126 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Davayı kabul
+Davalının davacının talep sonucuna kısmen veya tamamen muvafakat etmesidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.308 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava arkadaşlığı
+Birden fazla kişinin aynı davada davacı veya davalı tarafında birlikte yer almasıdır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.57 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava değeri
+Davanın konusu para veya para ile değerlendirilebilen bir hak olduğunda, usul ve harç bakımından esas alınan parasal değerdir.
+Kaynak: 6100 sayılı HMK; 492 sayılı Harçlar Kanunu.
+Kaynak Türü: Mevzuat — Medeni Usul/Harç
+Dava dilekçesi
+Davacının mahkemeden istediği hukuki korumayı, vakıalarını, delillerini ve talep sonucunu kanuni unsurlarla sunduğu dilekçedir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.119.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava ehliyeti
+Kişinin bir davayı kendisi veya yetkili temsilcisi aracılığıyla takip edebilme usul hukuku ehliyetidir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.51.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava konusu
+Mahkemeden hakkında hukuki koruma istenen hak, hukuki ilişki veya talep sonucuyla bağlantılı uyuşmazlık konusudur.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava şartı
+Mahkemenin davanın esası hakkında inceleme yapabilmesi için bulunması gereken kanuni koşullardan biridir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.114-115.
+Kaynak Türü: Mevzuat — Medeni Usul
+Dava şartı arabuluculuk
+Kanunun belirlediği uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulmasını dava şartı hâline getiren düzenlemedir.
+Kaynak: 6325 sayılı HUAK m.18/A ve ilgili özel kanunlar.
+Kaynak Türü: Mevzuat — Arabuluculuk
+Deavi
+Davalar anlamında eski hukuk dilinde kullanılan çoğul terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; tarihî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Defaten
+Bir defada, tek seferde anlamında hukukî ve resmî metinlerde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Def'i
+Borcu veya hakkı ortadan kaldırmadan, karşı tarafın talebinin yerine getirilmesine engel olan savunma imkânıdır.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu ve ilgili özel hükümler; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar/Usul
+Delil
+Uyuşmazlık bakımından önem taşıyan vakıaların doğru olup olmadığının belirlenmesine yarayan ispat aracıdır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.187 ve devamı; 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Delil başlangıcı
+İddia konusu hukuki işlemin tamamen ispatına yeterli olmamakla birlikte işlemi muhtemel gösteren ve kendisine karşı ileri sürülen kişi veya temsilcisince verilmiş belge niteliğindeki ispat aracıdır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.202.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Delil tespiti
+Henüz dava açılmadan veya görülmekte olan davada ileride incelenmesi zorlaşabilecek delilin önceden tespit edilmesini sağlayan geçici hukuki korumadır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.400 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Denetimli serbestlik
+Şüpheli, sanık veya hükümlünün kanunda öngörülen yükümlülük ve denetim altında toplum içinde izlenmesine ilişkin infaz ve ceza adaleti sistemidir.
+Kaynak: 5402 sayılı Denetimli Serbestlik Hizmetleri Kanunu; 5275 sayılı Kanun.
+Kaynak Türü: Mevzuat — İnfaz Hukuku
+Derakap
+Hemen ardından veya gecikmeksizin anlamında eski resmî ve hukukî metinlerde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Derdest
+Bir dava veya işin hâlen görülmekte ve sonuçlanmamış olduğunu ifade eder.
+Kaynak: Türk Dil Kurumu sözlükleri; 6100 sayılı HMK m.114/1-ı.
+Kaynak Türü: TDK + Mevzuat
+Derdestlik
+Aynı davanın daha önce açılmış ve hâlen görülmekte bulunması durumudur; HMK bakımından dava şartları arasında değerlendirilir.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.114/1-ı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Derkenar
+Bir belge veya yazının kenarına düşülen açıklayıcı kayıt; yargı uygulamasında kararın kesinleşmesi veya kanun yolu durumuna ilişkin kayıtlar için de kullanılan terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; yargı terminolojisi.
+Kaynak Türü: TDK + Yargı Uygulaması
+Dermeyan
+Bir iddia, itiraz, savunma veya hukuki sebebi ileri sürme anlamında kullanılan eski hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Derpiş etmek
+Bir ihtimali veya sonucu öngörmek, göz önünde bulundurmak anlamında hukukî metinlerde kullanılan ifadedir.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Deruhte etmek
+Bir görev, borç veya yükümlülüğü üzerine almak, üstlenmek anlamındadır.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Deyn
+Borç anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; tarihî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Dilekçe
+Bir talep, başvuru, iddia veya savunmanın yetkili makama yazılı biçimde sunulduğu belgedir.
+Kaynak: 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun; 6100 sayılı HMK ve diğer usul mevzuatı.
+Kaynak Türü: Mevzuat — Genel/Usul
+Disiplin cezası
+Kamu görevlisi, meslek mensubu, öğrenci veya belirli statüdeki kişinin tabi olduğu disiplin kurallarını ihlal etmesi hâlinde kanun veya düzenlemeye göre uygulanan yaptırımdır.
+Kaynak: İlgili özel mevzuat; örn. 657 sayılı Devlet Memurları Kanunu m.125.
+Kaynak Türü: Mevzuat — Disiplin Hukuku
+Doktrin
+Hukuk biliminde akademisyen ve hukukçular tarafından ortaya konulan bilimsel görüş ve değerlendirmelerin bütününü ifade eder.
+Kaynak: Türk Dil Kurumu sözlükleri; hukuk bilimi terminolojisi.
+Kaynak Türü: TDK + Hukuk Bilimi
+Dolandırıcılık
+Hileli davranışlarla bir kimseyi aldatıp onun veya başkasının zararına, kendisine veya başkasına yarar sağlama fiilinin kanundaki şartlarla oluşturduğu suçtur.
+Kaynak: 5237 sayılı Türk Ceza Kanunu, m.157-158.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Dosya kapatma
+Yargı veya icra dosyasının sonuçlanma nedenine göre sistem ve kalem kayıtlarında kapalı duruma alınmasını ifade eden uygulama terimidir.
+Kaynak: UYAP/yargı ve icra kalemi uygulaması
+Kaynak Türü: UYAP Uygulaması
+Dosya yenileme
+İşlemden kaldırılmış davanın kanuni süre içinde tarafça yeniden işleme konulmasıdır.
+Kaynak: 6100 sayılı HMK m.150
+Kaynak Türü: Mevzuat — Usul
+Duruşma
+Mahkemenin tarafları ve ilgilileri dinlediği, delilleri değerlendirdiği ve yargılama işlemlerini gerçekleştirdiği oturumdur.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Duruşma günü
+Mahkemenin taraf ve ilgilileri dinlemek veya yargısal işlemleri yürütmek üzere belirlediği tarihtir.
+Kaynak: HMK; CMK; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Duruşma tutanağı
+Duruşmada yapılan işlemlerin, beyanların ve kanunen kayda geçirilmesi gereken hususların yazıldığı resmî tutanaktır.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.154 ve devamı; 5271 sayılı CMK m.219 ve devamı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Dürüstlük kuralı
+Herkesin haklarını kullanırken ve borçlarını yerine getirirken dürüstlük kurallarına uyması gerektiğini öngören temel özel hukuk ilkesidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.2.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+
+E
+Ecrimisil
+Bir malın hak sahibinin rızası ve hukuki bir hak olmaksızın kullanılması nedeniyle, şartları oluştuğunda istenebilen kullanım karşılığı veya haksız işgal tazminatı niteliğindeki bedeli ifade eder.
+Kaynak: 4721 sayılı Türk Medeni Kanunu ve haksız kullanım hükümleri; 2886 sayılı Kanun m.75 kamu taşınmazları bakımından.
+Kaynak Türü: Mevzuat — Eşya/İdare Hukuku
+Eda
+Bir borcun veya yükümlülüğün yerine getirilmesini ifade eden hukuk terimidir.
+Kaynak: Türk Dil Kurumu sözlükleri; 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: TDK + Mevzuat
+Eda davası
+Davacının, davalının bir şeyi vermeye, yapmaya veya yapmamaya mahkûm edilmesini talep ettiği dava türüdür.
+Kaynak: 6100 sayılı Hukuk Muhakemeleri Kanunu, m.105.
+Kaynak Türü: Mevzuat — Medeni Usul
+Edim
+Borçlunun borç ilişkisi gereğince yerine getirmekle yükümlü olduğu verme, yapma veya yapmama davranışıdır.
+Kaynak: 6098 sayılı Türk Borçlar Kanunu.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Edinilmiş mal
+Edinilmiş mallara katılma rejiminde eşin rejim süresince emek karşılığı edinimleri ve kanunda sayılan diğer değerlerdir.
+Kaynak: 4721 sayılı TMK m.219
+Kaynak Türü: Mevzuat — Aile
+Ehliyet
+Hukukta kişinin hak ve borçlara sahip olabilmesi veya kendi işlemleriyle hak kazanıp borç altına girebilmesiyle ilgili hukuki yeterliliklerin genel ifadesidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.8 ve devamı.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Ehven
+Diğerine göre daha hafif, daha uygun veya daha az sakıncalı anlamında kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK
+Ehvenişer
+İki olumsuz seçenek arasında daha az sakıncalı olanı anlatan geleneksel ifadedir.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK
+Ek karar
+Mahkemenin kanuni şartlarda asıl karardan sonra tamamlayıcı veya ayrı bir konuda verdiği kararı ifade eden genel uygulama terimidir.
+Kaynak: 6100 sayılı HMK m.305/A ve ilgili mevzuat
+Kaynak Türü: Mevzuat — Usul
+Ek süre
+Kanunun izin verdiği hâllerde bir işlemin yapılabilmesi için tanınan ilave süredir.
+Kaynak: İlgili usul mevzuatı
+Kaynak Türü: Mevzuat — Usul
+Elbirliği mülkiyeti
+Kanun veya kanunda öngörülen sözleşmeler uyarınca oluşan toplulukta ortakların belirlenmiş payları olmaksızın malın tamamına birlikte malik olduğu mülkiyet türüdür.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.701 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Elektronik imza
+Başka bir elektronik veriye eklenen veya elektronik veriyle mantıksal bağlantısı bulunan ve kimlik doğrulama amacıyla kullanılan elektronik veridir.
+Kaynak: 5070 sayılı Elektronik İmza Kanunu, m.3.
+Kaynak Türü: Mevzuat — Bilişim Hukuku
+Elektronik tebligat
+Tebligatın kanunda belirtilen elektronik usulle muhatabın elektronik tebligat adresine yapılmasıdır.
+Kaynak: 7201 sayılı Tebligat Kanunu m.7/a
+Kaynak Türü: Mevzuat — Tebligat
+El atmanın önlenmesi
+Mülkiyet veya başka bir ayni hakka yönelik haksız müdahalenin sona erdirilmesini amaçlayan hukuki koruma talebidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, özellikle m.683.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+El koyma
+Ceza muhakemesinde ispat aracı olarak yararlı görülen veya eşya ya da kazanç müsaderesine konu olabilecek malvarlığı değerinin yetkili makamın tasarrufu altına alınmasıdır.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.123 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Emanet
+Korunmak, saklanmak veya belirli amaçla geri verilmek üzere bir kişiye bırakılan şey için kullanılan genel terimdir.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; 6098 sayılı TBK saklama sözleşmesi hükümleri.
+Kaynak Türü: TDK + Mevzuat
+Emredici hukuk kuralı
+Tarafların aksini kararlaştırmasına izin vermeyen ve uyulması zorunlu hukuk kuralıdır.
+Kaynak: 4721 sayılı TMK; 6098 sayılı TBK m.27 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Emsal
+Benzer olay, işlem veya uyuşmazlık için karşılaştırma ve değerlendirme ölçütü olarak ele alınan örnektir.
+Kaynak: Türk Dil Kurumu Güncel Türkçe Sözlük; hukuk uygulaması.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Emsal karar
+Benzer maddi ve hukuki mesele hakkında daha önce verilmiş ve yeni uyuşmazlığın değerlendirilmesinde yararlanılabilen yargı kararıdır.
+Kaynak: Yargı uygulaması; ilgili usul ve yüksek mahkeme mevzuatı.
+Kaynak Türü: Yargı Uygulaması
+Emtia
+Ticarete konu olabilen mal veya ticari eşya anlamında kullanılan terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; 6102 sayılı Türk Ticaret Kanunu terminolojisi.
+Kaynak Türü: TDK + Mevzuat
+Ergin
+Kural olarak on sekiz yaşın doldurulmasıyla kazanılan ve kanunun ayrıca evlenme veya mahkeme kararıyla kazanılmasına imkân tanıdığı medeni hukuk statüsüdür.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.11-12.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Ergin kılınma
+On beş yaşını dolduran küçüğün kendi isteği ve velisinin rızasıyla, menfaati gerektiriyorsa mahkemece ergin sayılmasına karar verilmesidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.12.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Esas
+Yargılamada uyuşmazlığın maddi ve hukuki özünü; ayrıca mahkemede açılan dava veya işin kaydedildiği esas numarası sistemini ifade edebilir.
+Kaynak: 6100 sayılı HMK ve yargı teşkilatı terminolojisi.
+Kaynak Türü: Mevzuat + Yargı Uygulaması
+Esastan kabul
+Mahkemenin uyuşmazlığın esasını inceleyerek davacının talebini tamamen veya ilgili ölçüde haklı bulmasıdır.
+Kaynak: 6100 sayılı HMK ve ilgili maddi hukuk mevzuatı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Esastan ret
+Mahkemenin usuli engel nedeniyle değil, uyuşmazlığın maddi ve hukuki esasını inceleyerek talebi haklı bulmaması sonucunda verdiği ret kararını ifade eder.
+Kaynak: 6100 sayılı HMK ve ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Esas hakkında mütalaa
+Ceza yargılamasında Cumhuriyet savcısının delillerin ortaya konulmasından sonra suçun sübutu ve uygulanmasını istediği hükümler hakkındaki görüşüdür.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.216 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Esas numarası
+Mahkeme veya yargı merciinde açılan dava ya da işin ilgili yıl içindeki kayıt sırasını gösteren dosya numarasıdır.
+Kaynak: Yargı teşkilatı ve UYAP uygulaması; ilgili kalem mevzuatı.
+Kaynak Türü: Yargı/UYAP Uygulaması
+Esbab
+Sebepler anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Esbab-ı mucibe
+Bir kararın veya hukuki sonucun dayandığı gerekçeler ve nedenler anlamında eski hukuk dilinde kullanılan ifadedir.
+Kaynak: Türk Dil Kurumu sözlükleri; yargı terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Eşya
+Üzerinde bireysel hâkimiyet kurulabilen ve ayni haklara konu olabilen maddi varlıkları ifade eden temel eşya hukuku kavramıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, eşya hukuku hükümleri.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Eşya hukuku
+Mülkiyet, zilyetlik, tapu sicili ve sınırlı ayni haklar başta olmak üzere kişilerin eşya üzerindeki hâkimiyet ilişkilerini düzenleyen özel hukuk dalıdır.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, Dördüncü Kitap.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Evlat edinme
+Kanundaki şartlar ve yetkili mahkeme kararıyla evlat edinen ile evlatlık arasında soybağına benzer hukuki bağ kurulmasını sağlayan kurumdur.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.305 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Evleviyet
+Öncelik veya bir hususun diğerine göre daha güçlü biçimde geçerli olması anlamında kullanılan hukukî terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Evleviyetle
+Öncelikle veya daha güçlü bir gerekçeyle anlamında karar ve dilekçe dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Evlilik
+Kanunun öngördüğü şekil ve şartlarla iki kişinin evlenme iradelerini açıklaması sonucunda kurulan aile hukuku ilişkisidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, evlenme hükümleri.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Evlilik birliği
+Evlilikle eşler arasında kurulan ve karşılıklı hak, yükümlülük ve ortak yaşam düzenini içeren hukuki birliktir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.185 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Evlilik birliğinin temelinden sarsılması
+Ortak hayatı sürdürmeleri eşlerden beklenemeyecek derecede evlilik birliğinin sarsılması hâlinde boşanmaya dayanak olabilen genel boşanma sebebidir.
+Kaynak: 4721 sayılı Türk Medeni Kanunu, m.166.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Ezcümle
+Başlıca, özellikle veya örneğin anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: Türk Dil Kurumu sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+
+F
+Fahiş
+Ölçüsüz, aşırı veya olağan sınırların belirgin biçimde üzerinde olan durumları anlatır.
+Kaynak: TDK Güncel Türkçe Sözlük; hukuk terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Fahiş bedel
+Piyasa veya olağan değerle karşılaştırıldığında aşırı yüksek kabul edilen bedeli ifade eder.
+Kaynak: 6098 sayılı TBK; 6502 sayılı TKHK; hukuk uygulaması.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+Fahiş zarar
+Bir işlem veya davranış sonucunda olağan ölçünün belirgin biçimde üzerinde ortaya çıkan zarar için kullanılan değerlendirme ifadesidir.
+Kaynak: 6098 sayılı TBK; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Fail
+Suç teşkil eden fiili gerçekleştiren kişidir.
+Kaynak: 5237 sayılı TCK, m.37 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Faiz
+Para borcunun kullanılması veya ödenmesindeki gecikme karşılığında kanun ya da sözleşme gereğince ödenen feri edimdir.
+Kaynak: 6098 sayılı TBK; 3095 sayılı Kanun.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Faktoring
+Mal veya hizmet satışından doğmuş veya doğacak alacakların faktoring şirketince devralınması ve finansman, tahsilat veya garanti hizmetleri sağlanmasına dayanan finansal işlemdir.
+Kaynak: 6361 sayılı Finansal Kiralama, Faktoring, Finansman ve Tasarruf Finansman Şirketleri Kanunu.
+Kaynak Türü: Mevzuat — Finans Hukuku
+Fatura
+Satılan mal veya yapılan iş karşılığında müşterinin borçlandığı tutarı göstermek üzere düzenlenen ticari belgedir.
+Kaynak: 213 sayılı Vergi Usul Kanunu, m.229 ve devamı.
+Kaynak Türü: Mevzuat — Vergi/Ticaret Hukuku
+Faydalı model
+Yeni ve sanayiye uygulanabilir buluşlara kanuni şartlarla sağlanan sınai mülkiyet korumasıdır.
+Kaynak: 6769 sayılı Sınai Mülkiyet Kanunu, m.142 ve devamı.
+Kaynak Türü: Mevzuat — Sınai Mülkiyet
+Fazlaya ilişkin haklar
+Talebin belirli kısmı dava edilirken kalan hakların saklı tutulduğunu ifade eden uygulama terimidir.
+Kaynak: 6100 sayılı HMK; yargı uygulaması
+Kaynak Türü: Mevzuat + Uygulama
+Fek
+Haciz, rehin, ipotek veya benzeri hukuki kaydın kaldırılmasını ifade eden uygulama terimidir.
+Kaynak: İİK, TMK ve tapu/icra uygulaması.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+Fek yazısı
+Haciz, ipotek, rehin veya benzeri kaydın kaldırılmasına yönelik yetkili kişi ya da merci yazısıdır.
+Kaynak: İİK, TMK ve ilgili sicil uygulaması.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+Feragat
+Davacının talep sonucundan kısmen veya tamamen vazgeçmesidir.
+Kaynak: 6100 sayılı HMK, m.307 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Feragat beyanı
+Davacının dava konusu talep sonucundan vazgeçtiğini mahkemeye bildiren usul beyanıdır.
+Kaynak: 6100 sayılı HMK, m.307-311.
+Kaynak Türü: Mevzuat — Medeni Usul
+Feri
+Asıl hak, borç veya talebe bağlı olarak varlık ve sonuç doğuran ikincil nitelikteki hususu ifade eder.
+Kaynak: 6098 sayılı TBK ve hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Feri müdahale
+Üçüncü kişinin, davayı kazanmasında hukuki yararı bulunan taraf yanında ve ona yardımcı olmak amacıyla davaya katılmasıdır.
+Kaynak: 6100 sayılı HMK, m.66 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Feri müdahil
+Feri müdahale yoluyla taraflardan birinin yanında davaya katılan üçüncü kişidir.
+Kaynak: 6100 sayılı HMK, m.66 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Fesih
+Sürekli borç ilişkisini kural olarak ileriye etkili biçimde sona erdiren bozucu yenilik doğuran irade açıklamasıdır.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Fesih bildirimi
+Sürekli borç veya iş ilişkisinin sona erdirilmesine yönelik tek taraflı irade açıklamasıdır.
+Kaynak: 4857 sayılı İş Kanunu; 6098 sayılı TBK
+Kaynak Türü: Mevzuat — İş/Borçlar
+Fezleke
+Bir soruşturma, olay veya dosya hakkında temel bilgi ve değerlendirmeleri özetleyen resmî belge için kullanılan terimdir.
+Kaynak: TDK sözlükleri; ceza ve idare uygulaması.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Fiil
+Hukuki sonuç bağlanan insan davranışını; ceza hukukunda ise suç tipinin hareket unsurunu ifade edebilir.
+Kaynak: 5237 sayılı TCK; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Fiil ehliyeti
+Kişinin kendi fiilleriyle hak edinebilmesi ve borç altına girebilmesi yeteneğidir.
+Kaynak: 4721 sayılı TMK, m.9-16.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Fikri mülkiyet
+Eser, marka, patent, tasarım ve benzeri fikrî veya sınai ürünler üzerindeki hakların genel adıdır.
+Kaynak: 5846 sayılı FSEK; 6769 sayılı SMK.
+Kaynak Türü: Mevzuat — Fikri Mülkiyet
+Fuzuli işgal
+Bir taşınmazın haklı ve geçerli hukuki sebep olmaksızın kullanılması veya işgal edilmesidir.
+Kaynak: 2886 sayılı Kanun m.75; TMK ve ilgili uygulama.
+Kaynak Türü: Mevzuat — Taşınmaz/İdare Hukuku
+
+G
+Gabin
+Aşırı yararlanma kurumunun eski hukuk dilindeki adıdır.
+Kaynak: 6098 sayılı TBK m.28; TDK/hukuk terminolojisi
+Kaynak Türü: Mevzuat + Eski Dil
+Gaip
+Ölüm tehlikesi içinde kaybolan veya kendisinden uzun zamandan beri haber alınamayan ve hakkında gaiplik kararı verilebilecek kişidir.
+Kaynak: 4721 sayılı TMK, m.32 ve devamı.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Gaiplik
+Kanundaki şartların gerçekleşmesi üzerine kişinin ölümü hakkında kuvvetli olasılık bulunması nedeniyle mahkemece verilen karara bağlı hukuki durumdur.
+Kaynak: 4721 sayılı TMK, m.32 ve devamı.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Gayrikabil
+Mümkün veya elverişli olmayan anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri; eski hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Gayrikabil-i rücu
+Geri alınması mümkün olmayan anlamında eski hukuk dilinde kullanılan ifadedir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Gayrimenkul
+Taşınmaz anlamında kullanılan geleneksel hukuk terimidir.
+Kaynak: TDK sözlükleri; 4721 sayılı TMK taşınmaz mülkiyeti hükümleri.
+Kaynak Türü: TDK + Mevzuat
+Gayrisafi
+Herhangi bir kesinti yapılmadan önceki toplam miktarı ifade eder.
+Kaynak: TDK Güncel Türkçe Sözlük; vergi ve ticaret mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Gecikme faizi
+Bir para borcunun zamanında ödenmemesi nedeniyle kanun veya sözleşme uyarınca işletilen faizdir.
+Kaynak: 6098 sayılı TBK; 3095 sayılı Kanun; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Geçici haciz
+Kanunda öngörülen hâllerde belirli süre veya koşulla uygulanan haciz niteliğindeki icra tedbirini ifade eden genel terimdir.
+Kaynak: 2004 sayılı İİK, ilgili hükümler
+Kaynak Türü: Mevzuat — İcra
+Geçici hukuki koruma
+Nihai hükümden önce hakkın etkili biçimde korunması amacıyla verilen ihtiyati tedbir, ihtiyati haciz ve benzeri korumaların genel adıdır.
+Kaynak: 6100 sayılı HMK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Usul/İcra Hukuku
+Geçici iş göremezlik
+Sigortalının hastalık, iş kazası, meslek hastalığı veya analık nedeniyle geçici süreyle çalışamaması durumunu ifade eder.
+Kaynak: 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu.
+Kaynak Türü: Mevzuat — Sosyal Güvenlik
+Geçici koruma
+Ülkesinden ayrılmaya zorlanmış, geri dönemeyen ve kitlesel olarak sınıra gelen veya sınırı geçen yabancılara kanuni çerçevede sağlanan koruma statüsüdür.
+Kaynak: 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu, m.91; Geçici Koruma Yönetmeliği.
+Kaynak Türü: Mevzuat — Yabancılar Hukuku
+Geçit hakkı
+Taşınmazından genel yola yeterli geçidi bulunmayan malikin, kanuni şartlarla komşularından tam bedel karşılığında geçit isteme hakkıdır.
+Kaynak: 4721 sayılı TMK, m.747.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Genel haciz yolu
+Rehinle temin edilmemiş para ve teminat alacaklarının ilamsız icra yoluyla takip edilmesinde kullanılan temel takip yoludur.
+Kaynak: 2004 sayılı İİK, m.42 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Genel işlem koşulları
+Bir sözleşme yapılırken düzenleyenin ileride çok sayıdaki benzer sözleşmede kullanmak amacıyla önceden tek başına hazırladığı sözleşme hükümleridir.
+Kaynak: 6098 sayılı TBK, m.20 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Gerekçe
+Mahkeme veya idari makamın vardığı sonucun dayandığı maddi ve hukuki nedenlerin açıklamasıdır.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.141; ilgili usul mevzuatı.
+Kaynak Türü: Anayasa + Mevzuat
+Gerekçeli karar
+Mahkemenin hüküm sonucunun dayandığı vakıa, delil ve hukuki nedenleri gösteren karar metnidir.
+Kaynak: Anayasa m.141; 6100 sayılı HMK m.297; 5271 sayılı CMK m.230.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Gıyap
+Bir tarafın veya ilgilinin bulunmaması/yokluğu anlamında geleneksel hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; tarihî usul terminolojisi
+Kaynak Türü: TDK — Eski Hukuk Dili
+Gider avansı
+Davacının dava açarken tebligat ve diğer yargılama işlemleri için yatırması gereken avanstır.
+Kaynak: 6100 sayılı HMK m.120
+Kaynak Türü: Mevzuat — Usul
+Görev
+Bir uyuşmazlığın hangi tür veya derecedeki mahkeme tarafından görüleceğini belirleyen usul kuralıdır.
+Kaynak: 6100 sayılı HMK m.1 ve devamı; teşkilat kanunları
+Kaynak Türü: Mevzuat — Usul
+Görevsizlik kararı
+Mahkemenin uyuşmazlığı görmeye görevli olmadığını tespit ederek verdiği usule ilişkin karardır.
+Kaynak: 6100 sayılı HMK, m.20 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Medeni Usul
+Gözaltı
+Yakalanan kişinin soruşturma yönünden zorunlu olması ve kanuni şartların bulunması hâlinde belirli süreyle özgürlüğünün kısıtlanmasıdır.
+Kaynak: 5271 sayılı CMK, m.91.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Güvence
+Bir borcun veya yükümlülüğün yerine getirilmesini teminat altına alan para, mal, hak veya hukuki mekanizmadır.
+Kaynak: 6098 sayılı TBK; 6100 sayılı HMK; ilgili mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Güvence hesabı
+Kanunda belirtilen zorunlu sigorta hâllerinde belirli zararların karşılanmasına yönelik güvence mekanizmasıdır.
+Kaynak: 5684 sayılı Sigortacılık Kanunu m.14
+Kaynak Türü: Mevzuat — Sigorta
+Güvenlik tedbiri
+Suçla bağlantılı olarak kanunda öngörülen ve ceza yanında veya bazı hâllerde bağımsız uygulanabilen yaptırım türüdür.
+Kaynak: 5237 sayılı TCK, m.53 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+
+H
+Haciz
+Kesinleşmiş icra takibinde borcun tahsili amacıyla borçlunun haczi mümkün mal ve haklarına icra organınca hukuken el konulmasıdır.
+Kaynak: 2004 sayılı İİK, m.78 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Haciz ihbarnamesi
+Borçlunun üçüncü kişideki alacak veya malının haczi üzerine üçüncü kişiye gönderilen ve kanuni sonuçlar doğuran icra bildirgesidir.
+Kaynak: 2004 sayılı İİK, m.89.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Haciz müzekkeresi
+Bir mal, hak veya alacağın haczi amacıyla ilgili kişi ya da kuruma gönderilen icra yazısını ifade eden uygulama terimidir.
+Kaynak: 2004 sayılı İİK; UYAP/icra uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Haczedilmezlik
+Kanunun borçlunun belirli mal, hak veya gelirlerinin tamamen ya da kısmen haczedilemeyeceğini öngörmesidir.
+Kaynak: 2004 sayılı İİK, m.82-83 ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Hak
+Hukuk düzeninin kişiye tanıdığı ve koruduğu yetki veya hukuken korunan menfaat alanını ifade eden temel kavramdır.
+Kaynak: TDK Güncel Türkçe Sözlük; 4721 sayılı TMK ve ilgili mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Hakaret
+Bir kimsenin onur, şeref ve saygınlığını rencide edebilecek nitelikte somut fiil veya olgu isnadı ya da sövme suretiyle işlenebilen suçtur.
+Kaynak: 5237 sayılı TCK, m.125 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Hâkim
+Uyuşmazlıkları bağımsız ve tarafsız biçimde hukuk kurallarına göre karara bağlamakla görevli yargı mensubudur.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.138 ve devamı; 2802 sayılı Kanun.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Hâkimin reddi
+Tarafsızlığından şüpheyi gerektiren kanuni sebeplerin bulunması hâlinde hâkimin davaya bakmamasının talep edilmesidir.
+Kaynak: 6100 sayılı HMK, m.36 ve devamı; 5271 sayılı CMK m.24 ve devamı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Haksız fiil
+Kusurlu ve hukuka aykırı bir fiille başkasına zarar verilmesi hâlinde, kanuni şartlarla tazminat sorumluluğu doğuran davranıştır.
+Kaynak: 6098 sayılı TBK, m.49 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Haksız rekabet
+Rakipler, tedarik edenler ve müşteriler arasındaki ilişkileri etkileyen aldatıcı veya dürüstlük kuralına aykırı davranış ve ticari uygulamalardır.
+Kaynak: 6102 sayılı TTK, m.54 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Hak düşürücü süre
+Kanunda öngörülen sürenin geçmesiyle belirli bir hakkın veya hukuki imkânın kullanılmasını sona erdiren süredir.
+Kaynak: İlgili maddi hukuk ve usul mevzuatı.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Hak ehliyeti
+Her insanın hukuk düzeninin sınırları içinde haklara ve borçlara ehil olmasını ifade eder.
+Kaynak: 4721 sayılı TMK, m.8.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Halef
+Bir hakkın veya hukuki konumun önceki sahibinin yerine geçen kişidir.
+Kaynak: 6098 sayılı TBK; 4721 sayılı TMK; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Halefiyet
+Bir kişinin kanun, sözleşme veya ödeme nedeniyle başka kişinin belirli haklarına hukuken geçmesidir.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Hapis cezası
+Suç karşılığında kişinin özgürlüğünün kanuni süreyle kısıtlanmasını öngören ceza türüdür.
+Kaynak: 5237 sayılı TCK, m.46 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Hapis hakkı
+Kanunun şartları gerçekleştiğinde alacaklıya zilyetliğindeki borçluya ait taşınırı alacağı güvence altına alınana kadar alıkoyma yetkisi veren haktır.
+Kaynak: 4721 sayılı TMK m.950 ve devamı
+Kaynak Türü: Mevzuat — Eşya
+Harç
+Kanunda belirtilen yargı, noter, tapu ve benzeri işlemler nedeniyle alınan kamu geliridir.
+Kaynak: 492 sayılı Harçlar Kanunu.
+Kaynak Türü: Mevzuat — Mali Hukuk
+Hâsılat kirası
+Güncel TBK terminolojisinde ürün kirası olarak düzenlenen, kiraya verenin ürün veren bir şeyin veya hakkın kullanılmasını ve ürünlerin devşirilmesini kiracıya bıraktığı sözleşmenin eski adıdır.
+Kaynak: 6098 sayılı TBK, m.357 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Hasım
+Dava veya uyuşmazlığın karşı tarafını ifade etmek için kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; usul hukuku terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Hata
+İrade açıklamasında veya hukuki işlem kurulurken kişinin gerçeğe aykırı bir tasavvurla hareket etmesini ifade edebilir.
+Kaynak: 6098 sayılı TBK, m.30 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Hâvi
+İçeren, kapsayan anlamında eski resmî ve hukukî metinlerde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Haysiyet
+Kişinin toplum içindeki saygınlığı ve kişilik değerleriyle bağlantılı kavramdır.
+Kaynak: TDK; 4721 sayılı TMK kişiliğin korunması hükümleri; 5237 sayılı TCK m.125.
+Kaynak Türü: TDK + Mevzuat
+Hile
+Bir kişiyi hukuki işlem yapmaya yöneltmek amacıyla kasten yanıltmayı; ceza hukukunda ise bazı suçların işlenme yöntemini ifade edebilir.
+Kaynak: 6098 sayılı TBK m.36; 5237 sayılı TCK ilgili hükümler.
+Kaynak Türü: Mevzuat — Borçlar/Ceza Hukuku
+Hizmet sözleşmesi
+İşçinin işverene bağımlı olarak belirli veya belirli olmayan süreyle iş görmeyi, işverenin de ücret ödemeyi üstlendiği sözleşmedir.
+Kaynak: 6098 sayılı TBK, m.393 ve devamı; 4857 sayılı İş Kanunu.
+Kaynak Türü: Mevzuat — İş/Borçlar Hukuku
+Hukuk
+Toplumsal ilişkileri düzenleyen ve devlet yaptırımıyla desteklenen kurallar bütününü ifade eder.
+Kaynak: TDK Güncel Türkçe Sözlük; Türkiye Cumhuriyeti Anayasası ve genel mevzuat.
+Kaynak Türü: TDK + Genel Hukuk
+Hukuki dinlenilme hakkı
+Yargılamanın taraflarının bilgi sahibi olma, açıklama ve ispat hakkı ile mahkemenin açıklamaları dikkate alarak gerekçeli değerlendirme yapmasını içeren usul güvencesidir.
+Kaynak: 6100 sayılı HMK, m.27.
+Kaynak Türü: Mevzuat — Medeni Usul
+Hukuki işlem
+Bir veya birden fazla kişinin hukuki sonuç doğurmaya yönelik irade açıklamasıyla kurulan işlemdir.
+Kaynak: 4721 sayılı TMK; 6098 sayılı TBK; genel hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Özel Hukuk
+Hukuki yarar
+Davacının mahkemeden istediği hukuki korumaya güncel ve korunmaya değer bir ihtiyaç duymasını ifade eden dava şartıdır.
+Kaynak: 6100 sayılı HMK, m.114/1-h.
+Kaynak Türü: Mevzuat — Medeni Usul
+Husumet
+Bir davanın doğru kişiye karşı yöneltilmesi ve taraf sıfatıyla bağlantılı olarak kullanılan usul ve maddi hukuk kavramıdır.
+Kaynak: 6100 sayılı HMK; yerleşik hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+Hükmen
+Mahkeme hükmü veya yargı kararı yoluyla anlamında kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; yargı terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Hükmün açıklanmasının geri bırakılması
+Ceza muhakemesinde, 8 Ağustos 2026 itibarıyla yürürlükte bulunan CMK m.231 çerçevesinde kanuni şartlar gerçekleştiğinde kurulan hükmün sanık hakkında belirli koşullarla hukuki sonuç doğurmamasını sağlayan kurumdur. Anayasa Mahkemesinin 10/7/2025 tarihli E.2024/98, K.2025/149 sayılı kararıyla HAGB düzenlemeleri iptal edilmiş olup iptal hükümleri 30 Eylül 2026 tarihinde yürürlüğe gireceğinden bu tarihten sonraki kullanımda güncel mevzuat ayrıca kontrol edilmelidir.
+Kaynak: 5271 sayılı Ceza Muhakemesi Kanunu, m.231; Anayasa Mahkemesi, E.2024/98, K.2025/149, 10/7/2025 (Resmî Gazete: 31/12/2025).
+Kaynak Türü: Mevzuat + Anayasa Mahkemesi Norm Denetimi
+Hükmün kesinleşmesi
+Bir hükme karşı olağan kanun yollarının tüketilmesi veya başvuru süresinin geçirilmesi sonucunda hükmün kesin hâle gelmesidir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Hüküm
+Mahkemenin uyuşmazlığın esasını veya yargılamayı sona erdiren hususu karara bağlayan nihai yargısal iradesidir.
+Kaynak: 6100 sayılı HMK, m.294 ve devamı; 5271 sayılı CMK m.223.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Hüküm fıkrası
+Mahkeme kararının taraflara yüklenen hak ve borçları, kabul veya ret sonucunu açıkça gösteren sonuç bölümüdür.
+Kaynak: 6100 sayılı HMK m.297; 5271 sayılı CMK
+Kaynak Türü: Mevzuat — Usul
+Hüküm özeti
+Kararın temel sonucunu veya hüküm fıkrasını özetleyen kayıt ya da metni ifade eden uygulama terimidir.
+Kaynak: Yargı/UYAP uygulaması
+Kaynak Türü: UYAP/Yargı Uygulaması
+
+I
+Iskat
+Düşürme, sona erdirme veya bir hak ya da sıfatı ortadan kaldırma anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; resmî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Islah
+Taraflardan birinin yapmış olduğu usul işlemlerini kanunun öngördüğü sınırlar içinde tamamen veya kısmen düzeltmesidir.
+Kaynak: 6100 sayılı HMK, m.176 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Islah dilekçesi
+Tarafın usul işlemini ıslah ettiğini ve değişikliğin kapsamını mahkemeye bildirdiği dilekçedir.
+Kaynak: 6100 sayılı HMK m.176 ve devamı
+Kaynak Türü: Mevzuat — Usul
+Israrlı takip
+Bir kişiye ısrarlı biçimde fiziken veya iletişim araçlarıyla ulaşmaya çalışarak ciddi huzursuzluk ya da güvenlik endişesi oluşturmayı suç olarak düzenleyen fiildir.
+Kaynak: 5237 sayılı TCK m.123/A
+Kaynak Türü: Mevzuat — Ceza
+
+İ
+İbare
+Bir metinde yer alan söz, ifade veya söz dizisini anlatır.
+Kaynak: TDK Güncel Türkçe Sözlük; hukuk metinleri terminolojisi.
+Kaynak Türü: TDK
+İbra
+Bir borcun veya sorumluluğun alacaklının iradesiyle tamamen ya da kısmen sona erdirilmesini ifade eder.
+Kaynak: 6098 sayılı TBK m.132 ve ilgili hükümler
+Kaynak Türü: Mevzuat — Borçlar
+İbraz
+Belge, senet veya delilin yetkili kişi ya da makama sunulmasıdır.
+Kaynak: 6100 sayılı HMK; 6102 sayılı TTK; TDK sözlükleri.
+Kaynak Türü: Mevzuat + TDK
+İcap
+Sözleşmenin kurulması amacıyla yapılan ve kabul edildiğinde sözleşmeyi kurmaya elverişli öneri için geleneksel hukuk terimidir; TBK'da 'öneri' terimi kullanılır.
+Kaynak: 6098 sayılı TBK, m.3 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+İcbar
+Bir kişiyi belirli davranışa zorlama anlamında kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; ilgili ceza ve özel hukuk mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+İcra
+Bir borcun veya mahkeme hükmünün yetkili devlet organları aracılığıyla yerine getirilmesini sağlayan hukuki süreçtir.
+Kaynak: 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İcra emri
+İlamlı icrada borçluya ilam gereğinin belirlenen süre içinde yerine getirilmesini bildiren icra belgesidir.
+Kaynak: 2004 sayılı İİK, m.32 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İcra inkâr tazminatı
+İtirazın iptali gibi kanunda belirtilen hâllerde şartları oluştuğunda borçlu veya alacaklı aleyhine hükmedilebilen icra hukukuna özgü tazminattır.
+Kaynak: 2004 sayılı İİK, özellikle m.67.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İcra mahkemesi
+İcra ve iflas dairelerinin işlemlerine yönelik şikâyet ve itirazlar ile kanunun verdiği diğer işleri gören özel görevli mahkemedir.
+Kaynak: 2004 sayılı İİK, m.4 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İcra müdürlüğü
+Cebri icra takip ve işlemlerini kanuna göre yürüten adli teşkilat birimidir.
+Kaynak: 2004 sayılı İİK
+Kaynak Türü: Mevzuat — İcra
+İcra takibi
+Alacaklının alacağını devletin cebri icra organları aracılığıyla tahsil etmek amacıyla başlattığı takip sürecidir.
+Kaynak: 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İddianame
+Cumhuriyet savcısının yeterli şüphe hâlinde kamu davası açmak üzere mahkemeye sunduğu belgedir.
+Kaynak: 5271 sayılı CMK m.170
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+İfa
+Borçlanılan edimin borca uygun biçimde yerine getirilmesidir.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+İfa imkânsızlığı
+Borcun konusunu oluşturan edimin objektif veya borçluya ilişkin nedenlerle yerine getirilemez hâle gelmesini ifade eder.
+Kaynak: 6098 sayılı TBK, özellikle m.27, m.136 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+İflas
+Kanunda belirtilen borçlunun haczi mümkün malvarlığının topluca tasfiye edilerek alacaklıların tatminini amaçlayan külli icra yoludur.
+Kaynak: 2004 sayılı İİK, iflas hükümleri.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+İfraz
+Bir taşınmazın imar ve kadastro mevzuatındaki şartlarla birden fazla parsele ayrılması işlemidir.
+Kaynak: 3194 sayılı İmar Kanunu; 3402 sayılı Kadastro Kanunu; tapu mevzuatı.
+Kaynak Türü: Mevzuat — Taşınmaz Hukuku
+İhbar
+Bir olay, hak, talep veya durumun ilgili kişiye ya da yetkili makama bildirilmesidir.
+Kaynak: TDK; ilgili iş, ceza ve borçlar mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+İhbar tazminatı
+Belirsiz süreli iş sözleşmesinin kanuni bildirim sürelerine uyulmaksızın feshedilmesi hâlinde şartları oluştuğunda ödenen tazminattır.
+Kaynak: 4857 sayılı İş Kanunu, m.17.
+Kaynak Türü: Mevzuat — İş Hukuku
+İhlal
+Bir hakka, yükümlülüğe veya hukuk kuralına aykırı davranılmasıdır.
+Kaynak: TDK Güncel Türkçe Sözlük; ilgili mevzuat.
+Kaynak Türü: TDK + Mevzuat
+İhmal
+Hukuken gerekli dikkat, özen veya davranışın gösterilmemesini ifade eder.
+Kaynak: 5237 sayılı TCK; 6098 sayılı TBK; TDK.
+Kaynak Türü: Mevzuat + TDK
+İhtilaf
+Uyuşmazlık, anlaşmazlık anlamında hukuk dilinde kullanılan terimdir.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+İhtirazi kayıt
+Bir işlem veya ödeme yapılırken belirli hak, itiraz veya taleplerden vazgeçilmediğini açıkça belirten çekincedir.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat; hukuk uygulaması.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+İhtiyati haciz
+Rehinle temin edilmemiş ve kural olarak vadesi gelmiş para alacağının tahsilini güvence altına almak için borçlunun malvarlığına geçici olarak el konulmasını sağlayan korumadır.
+Kaynak: 2004 sayılı İİK, m.257 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İhtiyati tedbir
+Hakkın elde edilmesinin zorlaşması, imkânsızlaşması veya ciddi zararın doğması tehlikesinde uyuşmazlık konusu hakkında verilen geçici hukuki korumadır.
+Kaynak: 6100 sayılı HMK, m.389 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+İkame
+Yerine koyma; hukuk uygulamasında özellikle 'dava ikame etmek' biçiminde dava açmak anlamında kullanılan terimdir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+İkmal
+Eksik olan bir işlem, belge veya unsurun tamamlanması anlamında hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; yargı terminolojisi
+Kaynak Türü: TDK + Uygulama
+İkrar
+Bir tarafın, diğer tarafça ileri sürülen ve kendisi aleyhine hukuki sonuç doğurabilecek vakıanın doğru olduğunu kabul etmesidir.
+Kaynak: 6100 sayılı HMK, m.188.
+Kaynak Türü: Mevzuat — İspat Hukuku
+İktisap
+Bir hak, mal veya hukuki statünün kazanılması anlamında kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; 4721 sayılı TMK ve ilgili mevzuat.
+Kaynak Türü: TDK + Mevzuat
+İlam
+Mahkeme hükmünün taraflara verilen, kanuni unsurları taşıyan onaylı örneğini ifade eder.
+Kaynak: 6100 sayılı HMK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Usul/İcra Hukuku
+İlamlı icra
+Mahkeme ilamı veya kanunen ilam niteliğinde kabul edilen belgeye dayanılarak yürütülen cebri icra yoludur.
+Kaynak: 2004 sayılı İİK, m.24 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İlamsız icra
+Kural olarak mahkeme ilamına ihtiyaç olmaksızın para ve teminat alacaklarının takip edilebildiği cebri icra yoludur.
+Kaynak: 2004 sayılı İİK, m.42 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İlga
+Bir hukuk kuralının yürürlükten kaldırılması anlamında kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; mevzuat terminolojisi
+Kaynak Türü: TDK + Mevzuat
+İltizam
+Üstlenme, gerekli görme veya tarihî bağlamda belirli gelirlerin tahsilini üstlenme anlamlarında kullanılan eski hukuk terimidir.
+Kaynak: TDK sözlükleri; tarihî hukuk terminolojisi
+Kaynak Türü: TDK — Eski Hukuk Dili
+İmza
+Bir kişinin kimliğini ve belge üzerindeki irade açıklamasını göstermeye yarayan kişisel işarettir.
+Kaynak: 6098 sayılı TBK m.15; 6100 sayılı HMK; 5070 sayılı Elektronik İmza Kanunu.
+Kaynak Türü: Mevzuat — Genel Hukuk
+İntifa hakkı
+Hak sahibine başkasına ait mal, hak veya malvarlığı üzerinde kullanma ve yararlanma yetkisi sağlayan sınırlı ayni haktır.
+Kaynak: 4721 sayılı TMK, m.794 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+İntikal
+Bir hak, mal veya hukuki konumun bir kişiden diğerine geçmesini ifade eder.
+Kaynak: 4721 sayılı TMK; ilgili vergi ve tapu mevzuatı; TDK.
+Kaynak Türü: Mevzuat + TDK
+İptal
+Bir hukuki işlem, karar veya tasarrufun kanuni sebeple hukuki etkisinin ortadan kaldırılmasıdır.
+Kaynak: İlgili maddi ve usul mevzuatı.
+Kaynak Türü: Mevzuat — Genel Hukuk
+İptal davası
+İdari işlemin yetki, şekil, sebep, konu veya maksat yönlerinden hukuka aykırılığı nedeniyle iptalinin istendiği idari dava türüdür.
+Kaynak: 2577 sayılı İYUK, m.2.
+Kaynak Türü: Mevzuat — İdare Hukuku
+İradi
+Kişinin serbest iradesine dayanan veya irade açıklamasıyla meydana gelen anlamında kullanılan terimdir.
+Kaynak: TDK sözlükleri; özel hukuk terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+İrtifak hakkı
+Bir taşınmaz lehine veya belirli kişi yararına başka taşınmaz ya da eşya üzerinde sınırlı yararlanma yetkisi sağlayan ayni haktır.
+Kaynak: 4721 sayılı TMK, m.779 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+İsnat
+Bir fiil, olgu veya suçu belirli bir kişiye yükleme anlamında kullanılan hukuk terimidir.
+Kaynak: TDK; 5271 sayılı CMK ve ceza hukuku terminolojisi.
+Kaynak Türü: TDK + Mevzuat
+İsticvap
+Mahkemenin taraflardan birini davanın temelini oluşturan vakıalar hakkında bizzat dinlemesidir.
+Kaynak: 6100 sayılı HMK m.169 ve devamı
+Kaynak Türü: Mevzuat — Usul
+İstihkak
+Bir mal veya hak üzerinde mülkiyet ya da başka bir hak sahibi olunduğu iddiasını ifade eder; icra hukukunda haczedilen mala üçüncü kişinin hak iddiası özel usule tabidir.
+Kaynak: 2004 sayılı İİK, m.96 ve devamı; TMK.
+Kaynak Türü: Mevzuat — İcra/Eşya Hukuku
+İstihkak davası
+Haczedilen mal üzerinde mülkiyet veya başka bir hak iddia eden kişinin hakkının belirlenmesine yönelik davadır.
+Kaynak: 2004 sayılı İİK m.96 ve devamı
+Kaynak Türü: Mevzuat — İcra
+İstinabe
+Bir yargı merciinin kendi yargı çevresi dışında yapılması gereken belirli yargılama işlemini başka yargı merciinden istemesidir.
+Kaynak: 6100 sayılı HMK ve 5271 sayılı CMK ilgili hükümleri.
+Kaynak Türü: Mevzuat — Usul Hukuku
+İstinaf
+İlk derece mahkemesi kararlarının kanuni şartlarla bölge adliye veya bölge idare mahkemesince incelenmesini sağlayan kanun yoludur.
+Kaynak: 6100 sayılı HMK m.341 ve devamı; 5271 sayılı CMK m.272 ve devamı; 2577 sayılı İYUK m.45.
+Kaynak Türü: Mevzuat — Kanun Yolları
+İstinkâf
+Bir görevi veya işlemi yapmaktan kaçınma anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; tarihî hukuk terminolojisi
+Kaynak Türü: TDK — Eski Hukuk Dili
+İstirdat davası
+Borçlu olmadığı parayı cebri icra tehdidi altında ödeyen kişinin kanuni şartlarla ödediği paranın geri verilmesini istediği davadır.
+Kaynak: 2004 sayılı İİK, m.72.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İştirak
+Katılma veya ortak olma anlamında; ceza hukukunda suça katılma biçimlerinin genel anlatımında da kullanılan terimdir.
+Kaynak: TDK; 5237 sayılı TCK m.37 ve devamı.
+Kaynak Türü: TDK + Mevzuat
+İtiraz
+Bir karar, işlem veya talebe karşı kanunun öngördüğü usulle karşı çıkılmasıdır.
+Kaynak: 2004 sayılı İİK; 5271 sayılı CMK; ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Genel Usul
+İtirazın iptali
+İlamsız takipte borçlunun itirazıyla duran takibin devamını sağlamak amacıyla alacaklının açtığı davadır.
+Kaynak: 2004 sayılı İİK m.67
+Kaynak Türü: Mevzuat — İcra
+İtirazın iptali davası
+İlamsız takipte borçlunun itirazı üzerine duran takibin devamını sağlamak amacıyla alacaklının kanuni sürede açabildiği davadır.
+Kaynak: 2004 sayılı İİK, m.67.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İtirazın kaldırılması
+Borçlunun itirazıyla duran ilamsız takibin, kanunda sayılan belgeler ve şartlarla icra mahkemesince devam ettirilmesini sağlayan yoldur.
+Kaynak: 2004 sayılı İİK, m.68 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+İvaz
+Bir hukuki işlemde karşılık veya bedel olarak verilen edimi ifade eder.
+Kaynak: TDK sözlükleri; 6098 sayılı TBK.
+Kaynak Türü: TDK + Mevzuat
+İvazsız tasarruf
+Karşılığında ekonomik bir edim alınmaksızın yapılan malvarlığı tasarrufudur.
+Kaynak: 6098 sayılı TBK; 2004 sayılı İİK m.278 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Borçlar/İcra Hukuku
+İzah
+Açıklama anlamında resmî ve hukukî metinlerde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+İzale-i şuyu
+Güncel terminolojide ortaklığın giderilmesi olarak adlandırılan, paylı veya elbirliği mülkiyetindeki ortaklığın sona erdirilmesini ifade eden eski terimdir.
+Kaynak: 4721 sayılı TMK, m.698 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+
+J
+Jandarma
+Emniyet ve asayiş ile kamu düzeninin korunmasına ilişkin kanunla verilen görevleri yerine getiren silahlı genel kolluk kuvvetidir.
+Kaynak: 2803 sayılı Jandarma Teşkilat, Görev ve Yetkileri Kanunu.
+Kaynak Türü: Mevzuat — Kolluk Hukuku
+Jandarma bölgesi
+Jandarmanın genel olarak görev ve sorumluluk alanını ifade eden idari ve kolluk terimidir.
+Kaynak: 2803 sayılı Kanun ve ilgili yönetmelik.
+Kaynak Türü: Mevzuat — Kolluk Hukuku
+Jandarma tutanağı
+Jandarma personelince görev sırasında tespit edilen olay veya işlemlerin yazılı kaydını ifade eden uygulama terimidir.
+Kaynak: 2803 sayılı Kanun; ilgili kolluk mevzuatı
+Kaynak Türü: Mevzuat + Kolluk Uygulaması
+Jestiyon
+Bir başkasının işini onun yetkisi olmaksızın görme kurumunu ifade etmek için öğretide kullanılan yabancı kökenli terimdir.
+Kaynak: 6098 sayılı TBK, m.526 ve devamı; hukuk öğretisi terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+
+K
+Kabili istinaf
+Bir kararın kanuni şartlar dâhilinde istinaf incelemesine konu edilebildiğini ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Kabili itiraz
+Bir karar veya işleme karşı kanunen itiraz yoluna başvurulabileceğini ifade eden eski hukukî kullanımdır.
+Kaynak: İlgili usul mevzuatı; TDK/resmî hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Kabili temyiz
+Bir kararın kanuni şartlar dâhilinde temyiz incelemesine konu edilebildiğini ifade eden geleneksel hukuk terimidir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Kabul
+Davalının davacının talep sonucuna kısmen veya tamamen muvafakat etmesidir.
+Kaynak: 6100 sayılı HMK, m.308 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Kadastro
+Taşınmazların sınırlarının, hukuki ve geometrik durumlarının belirlenerek tapu sicilinin oluşturulmasına yönelik işlemler bütünüdür.
+Kaynak: 3402 sayılı Kadastro Kanunu.
+Kaynak Türü: Mevzuat — Taşınmaz Hukuku
+Kadastro mahkemesi
+Kadastro Kanununun görev alanına verdiği uyuşmazlıkları inceleyen özel görevli mahkemedir.
+Kaynak: 3402 sayılı Kadastro Kanunu, m.24 ve devamı.
+Kaynak Türü: Mevzuat — Taşınmaz Hukuku
+Kambiyo senedi
+Poliçe, bono ve çek gibi kanunda özel şekil ve sonuçlara bağlanan kıymetli evrak türlerinin genel adıdır.
+Kaynak: 6102 sayılı Türk Ticaret Kanunu.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Kambiyo takibi
+Kambiyo senetlerine özgü haciz yoluyla yürütülen özel takip türüdür.
+Kaynak: 2004 sayılı İİK m.167 ve devamı
+Kaynak Türü: Mevzuat — İcra
+Kamu alacağı
+Devlet, il özel idaresi, belediye ve kanun kapsamındaki kamu tüzel kişilerinin kanunda belirtilen alacaklarını ifade eder.
+Kaynak: 6183 sayılı AATUHK, m.1.
+Kaynak Türü: Mevzuat — Kamu İcra Hukuku
+Kamu davası
+Bir suç işlendiğine ilişkin yeterli şüphe oluştuğunda Cumhuriyet savcısının iddianameyle açtığı ceza davasıdır.
+Kaynak: 5271 sayılı CMK, m.170 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Kamu düzeni
+Toplumun temel hukuki, sosyal ve ekonomik düzenini koruyan ve taraf iradesiyle bertaraf edilemeyen esaslarla bağlantılı hukuk kavramıdır.
+Kaynak: İlgili mevzuat; TDK ve yerleşik hukuk terminolojisi.
+Kaynak Türü: Genel Hukuk
+Kamu görevlisi
+TCK bakımından kamusal faaliyetin yürütülmesine atama, seçilme veya başka şekilde sürekli, süreli ya da geçici olarak katılan kişidir.
+Kaynak: 5237 sayılı TCK, m.6.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Kamu hizmeti
+Kamu yararını gerçekleştirmek üzere idare veya onun gözetim ve denetimi altında yürütülen sürekli ve düzenli faaliyetleri ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası; idare hukuku mevzuatı ve terminolojisi.
+Kaynak Türü: Anayasa + İdare Hukuku
+Kamu tüzel kişisi
+Anayasa veya kanunla kurulan ve kamu gücü ayrıcalıklarına sahip tüzel kişidir.
+Kaynak: Türkiye Cumhuriyeti Anayasası, özellikle m.123.
+Kaynak Türü: Mevzuat — İdare Hukuku
+Kamu yararı
+İdari faaliyet ve işlemlerin toplumun ortak menfaatini gerçekleştirmeye yönelmesini ifade eden temel idare hukuku ölçütüdür.
+Kaynak: Türkiye Cumhuriyeti Anayasası ve ilgili idare hukuku mevzuatı.
+Kaynak Türü: Anayasa + İdare Hukuku
+Kanun
+Anayasal usule göre Türkiye Büyük Millet Meclisi tarafından kabul edilen genel ve bağlayıcı hukuk normudur.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.87-89.
+Kaynak Türü: Mevzuat — Anayasa Hukuku
+Kanunilik ilkesi
+Suç ve cezanın kanunla belirlenmesini ve kanunda açıkça suç sayılmayan fiilden dolayı ceza verilememesini öngören ilkedir.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.38; TCK m.2
+Kaynak Türü: Anayasa + Ceza
+Kanuni faiz
+Sözleşmeyle oran belirlenmediği hâllerde kanun gereğince uygulanan faizdir.
+Kaynak: 3095 sayılı Kanuni Faiz ve Temerrüt Faizine İlişkin Kanun.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kanuni mirasçı
+Mirasbırakanın iradesinden bağımsız olarak doğrudan kanun gereğince mirasçılık sıfatını kazanan kişidir.
+Kaynak: 4721 sayılı TMK, m.495 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Kanuni temsilci
+Kanun gereğince başka bir kişinin hukuki işlemlerini veya haklarını onun adına yürütme yetkisine sahip kişidir.
+Kaynak: 4721 sayılı TMK; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Kanun yolu
+Mahkeme kararlarının kanunda gösterilen başka bir yargı mercii tarafından incelenmesini sağlayan başvuru yollarının genel adıdır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Karar
+Yargı veya idari makamın önündeki mesele hakkında oluşturduğu hukuki irade ve sonucu ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; idari mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Karar düzeltme
+Bazı yargı kolları veya özel düzenlemelerde yüksek mahkeme kararının kanunda sayılan nedenlerle yeniden incelenmesini sağlayan olağanüstü veya özel başvuru yoludur.
+Kaynak: İlgili özel usul mevzuatı; tarihî usul terminolojisi.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Karar harcı
+Mahkeme kararları nedeniyle 492 sayılı Kanuna göre alınan yargı harcıdır.
+Kaynak: 492 sayılı Harçlar Kanunu
+Kaynak Türü: Mevzuat — Mali/Usul
+Karar numarası
+Mahkeme veya yargı merciinin sonuçlandırdığı dosyaya ilgili yıl içindeki karar sırasına göre verilen numaradır.
+Kaynak: Yargı teşkilatı ve UYAP/kalem uygulaması.
+Kaynak Türü: Yargı/UYAP Uygulaması
+Karar tebliği
+Mahkeme kararının kanuni tebligat usulüne göre ilgili tarafa bildirilmesidir.
+Kaynak: 7201 sayılı Tebligat Kanunu; ilgili usul mevzuatı
+Kaynak Türü: Mevzuat — Tebligat
+Karar yeter sayısı
+Kurul hâlinde çalışan organın geçerli karar alabilmesi için gerekli oy sayısını ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası; TTK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Karine
+Bilinen bir olgudan bilinmeyen bir olgu hakkında sonuç çıkarılmasını sağlayan kanuni veya fiilî kabul ve değerlendirme aracıdır.
+Kaynak: 6100 sayılı HMK, m.190 ve ilgili maddi hukuk hükümleri.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Karşılıksız çek
+Kanuni ibraz süresinde karşılığı bulunmayan çekle bağlantılı hukuki ve cezai sonuçları ifade eden uygulama terimidir.
+Kaynak: 5941 sayılı Çek Kanunu
+Kaynak Türü: Mevzuat — Ticaret
+Karşı dava
+Davalının görülmekte olan davada davacıya karşı kanuni şartlarla açtığı davadır.
+Kaynak: 6100 sayılı HMK, m.132 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Karşı vekâlet ücreti
+Yargılama sonunda kanun ve tarifedeki şartlarla haksız çıkan tarafa yükletilen avukatlık ücretidir.
+Kaynak: 1136 sayılı Avukatlık Kanunu, m.164; Avukatlık Asgari Ücret Tarifesi; HMK.
+Kaynak Türü: Mevzuat — Avukatlık/Usul
+Katılan
+Ceza muhakemesinde suçtan zarar gören, mağdur veya malen sorumlu olup kanuni şartlarla kamu davasına katılan kişidir.
+Kaynak: 5271 sayılı CMK, m.237 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Katılma
+Ceza davasında mağdur veya suçtan zarar görenin kanuni şartlarla iddia makamının yanında davaya katılmasıdır.
+Kaynak: 5271 sayılı CMK, m.237 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Katılma alacağı
+Edinilmiş mallara katılma rejiminin tasfiyesinde eşlerden birinin diğer eşe karşı kanuni hesaplama sonucunda sahip olabileceği alacaktır.
+Kaynak: 4721 sayılı TMK, m.231-236.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Kat irtifakı
+Yapılmakta veya ileride yapılacak bir yapının bağımsız bölümleri üzerinde arsa payına bağlı olarak kurulan irtifak hakkıdır.
+Kaynak: 634 sayılı Kat Mülkiyeti Kanunu.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Kat malikleri kurulu
+Kat maliklerinin ana taşınmazın yönetimiyle ilgili kararları almak üzere oluşturduğu kuruldur.
+Kaynak: 634 sayılı Kat Mülkiyeti Kanunu, m.27 ve devamı.
+Kaynak Türü: Mevzuat — Kat Mülkiyeti Hukuku
+Kat mülkiyeti
+Tamamlanmış bir yapının bağımsız bölümleri üzerinde ayrı ayrı kurulabilen özel mülkiyet hakkıdır.
+Kaynak: 634 sayılı Kat Mülkiyeti Kanunu.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Kat'i
+Kesin anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Kayyım
+Kanunda belirtilen belirli işleri görmek veya malvarlığını yönetmek üzere atanan kişidir.
+Kaynak: 4721 sayılı TMK m.403, m.426 ve devamı
+Kaynak Türü: Mevzuat — Vesayet
+Kazai
+Yargısal veya yargıya ilişkin anlamında kullanılan eski hukuk terimidir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Kaziye
+Hüküm veya yargı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Kefalet
+Kefilin, borçlunun borcunu ifa etmemesinin sonuçlarından kişisel olarak sorumlu olmayı alacaklıya karşı üstlendiği sözleşmedir.
+Kaynak: 6098 sayılı TBK, m.581 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kefil
+Kefalet sözleşmesiyle asıl borçlunun borcunun ifa edilmemesinden kanuni sınırlar içinde sorumluluk üstlenen kişidir.
+Kaynak: 6098 sayılı TBK, m.581 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kesb
+Kazanma veya edinme anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Kesinleşme
+Bir kararın olağan kanun yollarıyla değiştirilemez hâle gelmesini ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Kesinleşme şerhi
+Kararın kesinleştiğini ve kesinleşme tarihini gösteren yargısal kayıt veya şerhtir.
+Kaynak: Yargı teşkilatı, kalem ve UYAP uygulaması; ilgili usul mevzuatı.
+Kaynak Türü: Yargı/UYAP Uygulaması
+Kesin delil
+Hâkimin kanuni şartlar gerçekleştiğinde bağlı olduğu ikrar, senet, kesin hüküm ve yemin gibi ispat araçları için öğretide kullanılan genel ifadedir.
+Kaynak: 6100 sayılı HMK, ispat ve delil hükümleri.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Kesin hüküm
+Aynı taraflar arasında aynı dava sebebi ve talep sonucuna ilişkin uyuşmazlığın yeniden görülmesini engelleyen kesinleşmiş hüküm etkisidir.
+Kaynak: 6100 sayılı HMK, m.303 ve m.114/1-i.
+Kaynak Türü: Mevzuat — Medeni Usul
+Kesin mehil
+Kanunun veya hâkimin, süresinde yapılmaması hâlinde hakkın kaybına yol açacağını açıkça belirttiği kesin süredir.
+Kaynak: 6100 sayılı HMK, m.94.
+Kaynak Türü: Mevzuat — Medeni Usul
+Kesin süre
+Belirli usul işleminin yapılması için öngörülen ve geçirilmesi hâlinde kanunun bağladığı usuli sonucu doğuran süredir.
+Kaynak: 6100 sayılı HMK, m.94.
+Kaynak Türü: Mevzuat — Medeni Usul
+Kesin yetki
+Kanunun belirli uyuşmazlık bakımından yalnızca gösterdiği mahkemenin yetkili olmasını öngördüğü yetki kuralıdır.
+Kaynak: 6100 sayılı HMK, ilgili yetki hükümleri
+Kaynak Türü: Mevzuat — Usul
+Kıdem tazminatı
+Kanunda öngörülen çalışma süresi ve sona erme nedenleri gerçekleştiğinde işçiye hizmet süresine bağlı olarak ödenen tazminattır.
+Kaynak: 1475 sayılı İş Kanunu, yürürlükteki m.14; ilgili iş mevzuatı.
+Kaynak Türü: Mevzuat — İş Hukuku
+Kısa karar
+Duruşma sonunda açıklanan hüküm sonucunu içeren, gerekçeli karardan önce oluşturulabilen karar metnidir.
+Kaynak: HMK; CMK; yargı uygulaması
+Kaynak Türü: Mevzuat + Uygulama
+Kısıtlama
+Kanunda sayılan sebeplerle ergin kişinin fiil ehliyetinin mahkeme kararıyla sınırlandırılmasıdır.
+Kaynak: 4721 sayılı TMK m.405 ve devamı
+Kaynak Türü: Mevzuat — Vesayet
+Kıymet takdiri
+Haczedilen veya hukuki işleme konu malın ekonomik değerinin bilirkişi ya da yetkili merci aracılığıyla belirlenmesidir.
+Kaynak: 2004 sayılı İİK, özellikle m.87, m.128 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Kiracı
+Kira sözleşmesi uyarınca kiralananı kullanma veya ondan yararlanma hakkı elde eden ve kira bedelini ödeme borcu bulunan taraftır.
+Kaynak: 6098 sayılı TBK, m.299 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kiraya veren
+Kira sözleşmesinde kiralananın kullanımını veya yararlanmasını kiracıya bırakmayı üstlenen taraftır.
+Kaynak: 6098 sayılı TBK, m.299 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kira sözleşmesi
+Kiraya verenin bir şeyin kullanılmasını veya kullanmayla birlikte yararlanılmasını kiracıya bırakmayı, kiracının da kararlaştırılan kira bedelini ödemeyi üstlendiği sözleşmedir.
+Kaynak: 6098 sayılı TBK, m.299 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Kişilik hakkı
+Kişinin yaşamı, beden bütünlüğü, şerefi, adı, özel hayatı ve diğer kişisel değerleri üzerindeki mutlak hakkıdır.
+Kaynak: 4721 sayılı TMK, m.23-25; 6098 sayılı TBK m.58.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Kişisel ilişki
+Velayeti kendisine bırakılmayan ebeveyn ile çocuk arasında mahkemece veya anlaşmayla düzenlenen görüşme ve iletişim ilişkisidir.
+Kaynak: 4721 sayılı TMK, m.182, m.323 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Kişisel mal
+Edinilmiş mallara katılma rejiminde kanunun eşin kişisel malı saydığı malvarlığı değeridir.
+Kaynak: 4721 sayılı TMK, m.220.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Kişisel veri
+Kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgidir.
+Kaynak: 6698 sayılı KVKK, m.3.
+Kaynak Türü: Mevzuat — Kişisel Verilerin Korunması
+Konkordato
+Borçlunun borçlarını belirli plan çerçevesinde ödemesine veya yeniden yapılandırmasına imkân sağlayan ve mahkeme denetiminde yürütülen cebri icra kurumudur.
+Kaynak: 2004 sayılı İİK, m.285 ve devamı.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Konkordato komiseri
+Konkordato sürecinde mahkemece görevlendirilen ve kanunda belirtilen gözetim, inceleme ve raporlama görevlerini yürüten kişidir.
+Kaynak: 2004 sayılı İİK, m.287 ve devamı.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Koruma tedbiri
+Ceza muhakemesinin sağlıklı yürütülmesi ve hükmün uygulanabilirliğinin korunması için kanuni şartlarla temel haklara geçici müdahale oluşturan tedbirlerin genel adıdır.
+Kaynak: 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Kovuşturma
+İddianamenin kabulüyle başlayıp hükmün kesinleşmesine kadar geçen ceza muhakemesi evresidir.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Kovuşturmaya yer olmadığı kararı
+Soruşturma sonunda kamu davası açılması için yeterli şüphe oluşturacak delil elde edilememesi veya kovuşturma olanağı bulunmaması hâlinde Cumhuriyet savcısınca verilen karardır.
+Kaynak: 5271 sayılı CMK, m.172.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Kovuşturma dosyası
+İddianamenin kabulünden sonra ceza mahkemesinde yürütülen yargılamaya ilişkin dosyadır.
+Kaynak: 5271 sayılı CMK; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Kötüniyet tazminatı
+İş güvencesi kapsamı dışında kalan işçinin iş sözleşmesinin kötü niyetle feshedilmesi hâlinde doğabilen tazminattır.
+Kaynak: 4857 sayılı İş Kanunu m.17
+Kaynak Türü: Mevzuat — İş
+Kötü niyet
+Kişinin hukuken korunmaması gereken biçimde bir durumu bilerek veya dürüstlük kuralına aykırı olarak hareket etmesini ifade eden kavramdır.
+Kaynak: 4721 sayılı TMK, m.2-3 ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Kullanma hakkı
+Hak sahibine bir malı belirli ölçüde kullanma yetkisi sağlayan hak veya yetkiyi ifade eder.
+Kaynak: 4721 sayılı TMK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Kusur
+Kişinin hukuka aykırı sonucu nedeniyle kınanabilirliğini ifade eden; kast ve ihmal gibi biçimlerle değerlendirilebilen sorumluluk unsurudur.
+Kaynak: 6098 sayılı TBK m.49; 5237 sayılı TCK genel hükümler.
+Kaynak Türü: Mevzuat — Borçlar/Ceza Hukuku
+Kusursuz sorumluluk
+Sorumluluğun doğması için kişinin kusurunun aranmadığı, kanunda düzenlenen sorumluluk hâllerinin genel adıdır.
+Kaynak: 6098 sayılı TBK m.65 ve devamı
+Kaynak Türü: Mevzuat — Borçlar
+Külli halefiyet
+Bir kişinin başka bir kişinin malvarlığına veya malvarlığının belirli bütününe hak ve borçlarıyla bir bütün olarak geçmesidir.
+Kaynak: 4721 sayılı TMK, özellikle miras hükümleri.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Külli icra
+Borçlunun haczi mümkün malvarlığının topluca tasfiyesini hedefleyen iflas gibi cebri icra yollarını ifade eder.
+Kaynak: 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+
+L
+Lahika
+Bir metne sonradan eklenen ek veya ilave anlamında eski hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Layiha
+Dilekçe, tasarı veya ayrıntılı yazılı açıklama anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; tarihî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Lehe
+Bir kişinin yararına veya onun hukuki menfaatini destekler biçimde anlamına gelir.
+Kaynak: TDK Güncel Türkçe Sözlük; hukuk terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Lehe kanun
+Ceza hukukunda suçun işlendiği zaman kanunu ile sonradan yürürlüğe giren kanun farklıysa fail lehine sonuç doğuran kanundur.
+Kaynak: 5237 sayılı TCK m.7
+Kaynak Türü: Mevzuat — Ceza
+Lehtar
+Bir senet, sigorta, vasiyet veya başka hukuki işlemden lehine hak doğan kişidir.
+Kaynak: 6102 sayılı TTK; 5684 sayılı Sigortacılık Kanunu; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Ticaret/Özel Hukuk
+Lex posterior
+Aynı düzeydeki çatışan hukuk kuralları bakımından sonraki tarihli düzenlemenin önceki düzenlemeye üstünlüğünü anlatan yorum ilkesidir.
+Kaynak: Hukuk öğretisi ve yerleşik yorum ilkeleri.
+Kaynak Türü: Hukuk Öğretisi
+Lex specialis
+Özel hükmün aynı konudaki genel hükme göre öncelikle uygulanmasını ifade eden hukuk ilkesini anlatan Latince terimdir.
+Kaynak: Hukuk öğretisi ve yerleşik yorum ilkeleri.
+Kaynak Türü: Hukuk Öğretisi
+Lüzum
+Gereklilik anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri
+Kaynak Türü: TDK — Eski Hukuk Dili
+Lüzum-u muhakeme
+Tarihî ceza/idare usulünde yargılama yapılmasının gerekli görülmesini ifade eden eski terimdir.
+Kaynak: TDK/tarihî hukuk terminolojisi
+Kaynak Türü: Eski Hukuk Dili
+
+M
+Maddi hata
+Yazım, hesaplama, isim veya benzeri hususlarda iradenin özünü değiştirmeyen açık yanlışlığı ifade eder.
+Kaynak: 6100 sayılı HMK, m.304; ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Maddi hukuk
+Kişilerin hak, borç ve hukuki statülerini doğrudan düzenleyen hukuk kurallarının genel adıdır.
+Kaynak: TMK, TBK, TTK, TCK ve diğer maddi hukuk mevzuatı; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Maddi tazminat
+Hukuka aykırı fiil veya sözleşmeye aykırılık nedeniyle malvarlığında meydana gelen eksilmenin giderilmesine yönelik tazminattır.
+Kaynak: 6098 sayılı TBK, özellikle m.49 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Mağdur
+Suç nedeniyle doğrudan zarar gören veya suçun hukuken korunan değerine yönelik ihlalin sahibi olan kişidir.
+Kaynak: 5271 sayılı CMK; 5237 sayılı TCK terminolojisi.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Mahcur
+Kısıtlı kişi anlamında eski medeni hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; TMK vesayet hükümleri
+Kaynak Türü: TDK + Mevzuat
+Mahcuz
+Haczedilmiş mal veya hak anlamında icra hukukunun geleneksel dilinde kullanılan terimdir.
+Kaynak: TDK/hukuk terminolojisi; 2004 sayılı İİK
+Kaynak Türü: Mevzuat + Eski Dil
+Mahfuz
+Korunmuş veya saklı tutulmuş anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mahfuz hisse
+Güncel miras hukuku terminolojisindeki 'saklı pay' kavramının eski adıdır.
+Kaynak: 4721 sayılı TMK, m.505 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Mahkeme
+Yargı yetkisini kullanarak uyuşmazlıkları ve kanunla verilen işleri karara bağlayan yargı merciidir.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.9, m.138 ve devamı; teşkilat kanunları.
+Kaynak Türü: Anayasa + Mevzuat
+Mahkeme kararı
+Mahkemenin yargılama sırasında veya sonunda bir usul ya da esas meselesi hakkında oluşturduğu yargısal karardır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Mahsup
+Bir alacak, ödeme veya sürenin başka bir borç, ceza veya hesaptan düşülerek hesaba katılmasıdır.
+Kaynak: 6098 sayılı TBK; 5237 sayılı TCK m.63 ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Mahzur
+Sakınca veya engel anlamında resmî ve hukukî metinlerde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Maktu harç
+İşlem veya davanın değerine bağlı olmaksızın kanunda sabit miktar esasına göre alınan harçtır.
+Kaynak: 492 sayılı Harçlar Kanunu
+Kaynak Türü: Mevzuat — Mali
+Makul süre
+Yargılama veya idari sürecin olayın özelliklerine göre gereksiz gecikme olmaksızın tamamlanması gereken süreyi ifade eden adil yargılanma ölçütüdür.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.36, m.141; AİHS m.6.
+Kaynak Türü: Anayasa + Uluslararası Sözleşme
+Malen sorumlu
+Ceza yargılamasının sonucuna göre maddi veya mali sorumluluk taşıyabilecek kişiyi ifade eden ceza muhakemesi süjesidir.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Maluliyet
+Kişinin çalışma veya meslekte kazanma gücünün mevzuatta belirlenen ölçüde kaybını ifade eden sosyal güvenlik kavramıdır.
+Kaynak: 5510 sayılı Kanun, malullük hükümleri.
+Kaynak Türü: Mevzuat — Sosyal Güvenlik
+Mal rejimi
+Eşlerin evlilik süresince ve rejimin sona ermesinde malvarlığı değerlerinin tabi olduğu hukuki düzeni ifade eder.
+Kaynak: 4721 sayılı TMK, m.202 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Mal rejiminin tasfiyesi
+Eşler arasındaki mal rejimi sona erdiğinde kişisel ve edinilmiş malların belirlenmesi ve kanuni alacakların hesaplanması sürecidir.
+Kaynak: 4721 sayılı TMK, m.218 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Manevi tazminat
+Kişilik değerlerinin ihlali veya kanunun öngördüğü hâllerde manevi zararın giderilmesine yönelik parasal veya diğer uygun giderimdir.
+Kaynak: 6098 sayılı TBK m.56, m.58
+Kaynak Türü: Mevzuat — Borçlar
+Marka
+Bir teşebbüsün mal veya hizmetlerini diğer teşebbüslerin mal veya hizmetlerinden ayırt etmeyi sağlayan işarettir.
+Kaynak: 6769 sayılı Sınai Mülkiyet Kanunu, m.4.
+Kaynak Türü: Mevzuat — Sınai Mülkiyet
+Masraf avansı
+Belirli yargısal veya icrai işlemlerin yapılması için önceden yatırılması istenen gider tutarını ifade eder.
+Kaynak: HMK; İİK ve ilgili tarifeler
+Kaynak Türü: Mevzuat — Usul/İcra
+Mazeret
+Bir kişinin kanuni veya usuli yükümlülüğü zamanında yerine getirememesini açıklayan kabul edilebilir engel veya sebebi ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; TDK.
+Kaynak Türü: Mevzuat + TDK
+Mazeret dilekçesi
+Taraf, vekil veya ilgilinin duruşmaya katılamama ya da bir işlemi zamanında yapamama nedenini mahkemeye bildirdiği dilekçedir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; yargı uygulaması.
+Kaynak Türü: Mevzuat + Yargı Uygulaması
+Mehaz
+Kaynak veya bir düzenlemenin örnek alındığı asıl metin anlamında hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK
+Mehil
+Bir işlem veya yükümlülüğün yerine getirilmesi için verilen süreyi ifade eder.
+Kaynak: TDK sözlükleri; ilgili usul ve icra mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Mehil vesikası
+İcranın geri bırakılması için başvuruda bulunan borçluya kanuni şartlarla tanınan süreyi gösteren icra belgesidir.
+Kaynak: 2004 sayılı İİK, m.36.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Men
+Yasaklama, önleme veya engelleme anlamında hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; ilgili mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Menfi tespit davası
+Borçlunun, icra takibinden önce veya takip sırasında borçlu olmadığının tespitini istemek üzere açtığı davadır.
+Kaynak: 2004 sayılı İİK, m.72.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Mercî
+Başvuru yapılacak veya bir işi karara bağlamaya yetkili makamı ifade eder.
+Kaynak: TDK Güncel Türkçe Sözlük; usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Mer'i
+Yürürlükte bulunan, hâlen geçerli olan anlamında hukuk ve resmî yazışma dilinde kullanılan geleneksel terimdir.
+Kaynak: Türk Dil Kurumu sözlükleri; mevzuat terminolojisi.
+Kaynak Türü: TDK + Hukuk Terminolojisi
+Meskeniyet şikâyeti
+Borçlunun hâline münasip evinin haczedilemeyeceğine ilişkin İİK hükmüne dayanarak hacze karşı yaptığı şikâyettir.
+Kaynak: 2004 sayılı İİK, m.82 ve m.16.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Mesnet
+Bir iddia, karar veya talebin dayanağı anlamında hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK
+Mesul
+Sorumlu anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mesuliyet
+Sorumluluk anlamında eski ve geleneksel hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Meşruhat
+Açıklamalar, notlar veya şerhler anlamında eski hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Meşruhatlı davetiye
+Tebligatta ilgilinin hak, yükümlülük veya gelmemenin sonuçları hakkında açıklama içeren davetiyedir.
+Kaynak: HMK; CMK; Tebligat mevzuatı
+Kaynak Türü: Mevzuat — Usul
+Meşru savunma
+Kişinin kendisine veya başkasına ait bir hakka yönelen haksız saldırıyı, saldırıyla orantılı biçimde o anda defetmesidir.
+Kaynak: 5237 sayılı TCK, m.25.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Mezkûr
+Adı geçen veya daha önce belirtilen anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Miras
+Mirasbırakanın ölümüyle mirasçılarına geçen, devredilebilir malvarlığı hak ve borçlarının bütününü ifade eder.
+Kaynak: 4721 sayılı TMK, m.495 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Mirasbırakan
+Ölümü üzerine terekesi mirasçılarına geçen kişidir.
+Kaynak: 4721 sayılı TMK, miras hükümleri.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Mirasçılık belgesi
+Mirasçıların kim olduğunu ve miras paylarını gösteren sulh hukuk mahkemesi veya kanuni şartlarla noter tarafından verilen belgedir.
+Kaynak: 4721 sayılı TMK, m.598; ilgili noterlik mevzuatı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Mirasın reddi
+Mirasçının kanuni süre ve usule uygun beyanla mirası kabul etmeyerek mirasçılık sonuçlarından kurtulmasıdır.
+Kaynak: 4721 sayılı TMK, m.605 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Mirasın resmi tasfiyesi
+Mirasçıların kanuni şartlarla talebi üzerine terekenin yetkili makam gözetiminde tasfiye edilmesidir.
+Kaynak: 4721 sayılı TMK, m.632 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Miras ortaklığı
+Mirasın geçmesiyle birden çok mirasçı arasında tereke üzerinde oluşan elbirliği ortaklığıdır.
+Kaynak: 4721 sayılı TMK m.640
+Kaynak Türü: Mevzuat — Miras
+Muaccel
+İfa zamanı gelmiş ve alacaklı tarafından talep edilebilir hâle gelmiş borç veya alacağı ifade eder.
+Kaynak: 6098 sayılı TBK, özellikle m.90 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Muacceliyet
+Borcun ifa zamanının gelerek talep edilebilir hâle gelmesini ifade eder.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Muayyen
+Belirli, tayin edilmiş anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mucir
+Kiraya veren anlamında eski hukuk terminolojisinde kullanılan terimdir.
+Kaynak: 6098 sayılı TBK kira hükümleri; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Muris
+Mirasbırakan anlamında geleneksel hukuk dilinde kullanılan terimdir.
+Kaynak: 4721 sayılı TMK; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Muvafakat
+Bir işlem veya davranışa rıza gösterme, uygun bulma anlamında kullanılan hukuk terimidir.
+Kaynak: TDK sözlükleri; ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Muvazaa
+Tarafların üçüncü kişileri aldatmak amacıyla gerçek iradelerine uymayan görünüşte bir işlem yapmaları durumudur.
+Kaynak: 6098 sayılı TBK, m.19.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Mübrez
+İbraz edilmiş veya dosyaya sunulmuş anlamında eski hukuk ve yargı dilinde kullanılan sözcüktür.
+Kaynak: TDK/resmî hukuk terminolojisi.
+Kaynak Türü: TDK + Eski Hukuk Dili
+Mücbir sebep
+Kişinin kontrolü dışında gerçekleşen, öngörülmesi ve karşı konulması olağan ölçüler içinde mümkün olmayan olağanüstü olayı ifade eder.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat; yerleşik hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Mücerret
+Soyut, başka bir sebep veya ilişkiden bağımsız değerlendirilme niteliğini anlatan hukuk terimidir.
+Kaynak: TDK sözlükleri; kıymetli evrak ve borçlar hukuku terminolojisi.
+Kaynak Türü: TDK + Hukuk Uygulaması
+Müdafi
+Ceza muhakemesinde şüpheli veya sanığın savunmasını yapan avukattır.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Müdahale
+Bir hukuki ilişkiye, hakka veya yargılamaya katılma ya da dışarıdan etki etme anlamında kullanılan genel hukuk terimidir.
+Kaynak: 6100 sayılı HMK, m.65 ve devamı; TDK.
+Kaynak Türü: Mevzuat + TDK
+Müddeaaleyh
+Davalı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; eski usul terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müddeabih
+Davada talep edilen şey veya dava konusu hak anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; eski usul terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müddei
+Davacı veya iddia eden anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; eski usul terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müddet
+Süre anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müeccel
+İfa zamanı henüz gelmemiş borç veya alacağı ifade eden geleneksel hukuk terimidir.
+Kaynak: 6098 sayılı TBK; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Terminolojisi
+Müeyyide
+Hukuk kuralına aykırılığa bağlanan yaptırım anlamında kullanılan geleneksel terimdir.
+Kaynak: TDK sözlükleri; genel hukuk terminolojisi.
+Kaynak Türü: TDK + Genel Hukuk
+Müflis
+Hakkında iflas kararı verilmiş borçludur.
+Kaynak: 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — İcra ve İflas Hukuku
+Müktesep hak
+Kazanılmış hak anlamında, hukuken elde edilmiş ve belirli şartlarda korunması gereken hukuki durumu ifade eden geleneksel terimdir.
+Kaynak: TDK/hukuk terminolojisi; ilgili mevzuat ve içtihat ilkeleri
+Kaynak Türü: Hukuk Terminolojisi
+Mülga
+Yürürlükten kaldırılmış kanun, madde veya hukuk kuralını ifade eder.
+Kaynak: TDK sözlükleri; mevzuat terminolojisi.
+Kaynak Türü: TDK + Mevzuat
+Mülkiyet
+Hak sahibine eşya üzerinde hukuk düzeninin sınırları içinde kullanma, yararlanma ve tasarruf yetkileri sağlayan ayni haktır.
+Kaynak: 4721 sayılı TMK, m.683 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Mümeyyiz
+Ayırt etme gücüne sahip kişi anlamında; eski usul dilinde temyiz eden taraf için de kullanılmış tarihî hukuk terimidir.
+Kaynak: TDK sözlükleri; tarihî hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mündemiç
+İçinde bulunan, kapsanan veya içkin anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mündericat
+Bir belge, dosya veya metnin içinde bulunan hususlar ve içerik anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Münferit
+Tek başına, ayrı veya bireysel nitelikte olan anlamında hukuk metinlerinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Münhasır
+Yalnız belirli kişi, konu veya duruma özgü olan anlamında kullanılan hukuk terimidir.
+Kaynak: TDK Güncel Türkçe Sözlük; hukuk terminolojisi.
+Kaynak Türü: TDK
+Müracaat
+Yetkili kişi veya makama başvurma anlamında kullanılan terimdir.
+Kaynak: TDK Güncel Türkçe Sözlük; ilgili usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Mürtehin
+Rehin hakkına sahip alacaklıyı ifade eden geleneksel hukuk terimidir.
+Kaynak: 4721 sayılı TMK rehin hükümleri; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Terminolojisi
+Müspet zarar
+Sözleşme gereği gibi ifa edilseydi alacaklının bulunacağı malvarlığı durumu ile ihlal sonrası mevcut durum arasındaki farktan doğan zarardır.
+Kaynak: 6098 sayılı TBK; borçlar hukuku terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Müstakil
+Bağımsız, ayrı başına var olan anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Müstenif
+İstinaf kanun yoluna başvuran taraf için kullanılan hukuk terimidir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; resmî hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Müteakip
+Ardından gelen veya sonraki anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Müteallik
+İlgili veya ilişkin anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müteferrik
+Çeşitli, ayrı ayrı veya tali nitelikteki işler için kullanılan geleneksel hukuk terimidir.
+Kaynak: TDK sözlükleri; yargı terminolojisi.
+Kaynak Türü: TDK + Yargı Uygulaması
+Müteselsil borçluluk
+Birden çok borçludan her birinin borcun tamamından alacaklıya karşı sorumlu olduğu borç ilişkisidir.
+Kaynak: 6098 sayılı TBK, m.162 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Müteselsil sorumluluk
+Birden fazla kişinin zararın veya borcun tamamından kanuni şartlarla birlikte sorumlu tutulabilmesidir.
+Kaynak: 6098 sayılı TBK, m.61-62, m.162 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Müteveffa
+Ölmüş kişi anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Mütevellit
+Bir sebepten doğan veya kaynaklanan anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Müvekkil
+Bir avukata veya vekile kendisini temsil etme yetkisi veren kişidir.
+Kaynak: 1136 sayılı Avukatlık Kanunu; 6098 sayılı TBK vekâlet hükümleri.
+Kaynak Türü: Mevzuat — Avukatlık/Borçlar Hukuku
+Müzekkere
+Mahkeme, savcılık veya yargı merciinin başka kurum ya da merciden bilgi, belge veya işlem istemek amacıyla gönderdiği resmî yazıdır.
+Kaynak: İlgili usul mevzuatı; resmî yargı ve UYAP terminolojisi.
+Kaynak Türü: Mevzuat + Yargı/UYAP Uygulaması
+Müzekkere cevabı
+Mahkeme veya savcılığın bilgi/belge talebine ilgili kurum tarafından verilen resmî cevaptır.
+Kaynak: Yargı/UYAP uygulaması
+Kaynak Türü: UYAP/Yargı Uygulaması
+Müzekkere tekidi
+Cevapsız kalan müzekkerenin yerine getirilmesini istemek üzere yeniden yazı gönderilmesi işlemidir.
+Kaynak: UYAP/yargı kalemi uygulaması
+Kaynak Türü: UYAP Uygulaması
+Müzekkere yazılması
+Mahkeme veya savcılığın başka kurum ya da merciden bilgi, belge veya işlem istemesi için resmî yazı oluşturmasıdır.
+Kaynak: HMK; CMK; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+
+N
+Nafaka
+Kanunda belirtilen aile veya hısımlık ilişkileri nedeniyle bir kişinin diğerinin geçimine katkı sağlamak üzere ödemekle yükümlü olduğu parasal edimdir.
+Kaynak: 4721 sayılı TMK, özellikle m.169, 175, 182, 364 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Nafakanın artırılması
+Değişen ekonomik ve sosyal koşullar nedeniyle hükmedilmiş nafaka miktarının mahkemece yükseltilmesidir.
+Kaynak: 4721 sayılı TMK, m.176 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Nafakanın kaldırılması
+Kanuni koşulların gerçekleşmesi üzerine devam eden nafaka yükümlülüğünün mahkeme kararıyla sona erdirilmesidir.
+Kaynak: 4721 sayılı TMK, m.176 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Nafaka alacaklısı
+Mahkeme kararı, anlaşma veya kanun gereğince nafaka isteme hakkına sahip kişidir.
+Kaynak: 4721 sayılı TMK.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Nafaka borçlusu
+Kanun veya mahkeme kararı gereğince nafaka ödeme yükümlülüğü bulunan kişidir.
+Kaynak: 4721 sayılı TMK.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Nafaka tedbiri
+Yargılama sırasında eş veya çocukların geçimini sağlamak amacıyla geçici olarak hükmedilen nafaka tedbirini ifade eder.
+Kaynak: 4721 sayılı TMK m.169 ve ilgili hükümler
+Kaynak Türü: Mevzuat — Aile
+Nafaka yükümlülüğü
+Kanunun öngördüğü aile veya hısımlık ilişkisi nedeniyle belirli kişinin geçimine katkı sağlama borcudur.
+Kaynak: 4721 sayılı TMK
+Kaynak Türü: Mevzuat — Aile
+Nakdi tazminat
+Zarar veya kanunda belirtilen olay karşılığında para olarak ödenen tazminattır.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Nakil
+Bir kişi, mal, hak, görev veya kaydın bir yerden ya da kişiden diğerine aktarılması anlamında kullanılan genel hukuk terimidir.
+Kaynak: TDK Güncel Türkçe Sözlük; ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Nakit
+Para veya doğrudan ödeme aracı olarak kullanılabilen parasal değeri ifade eder.
+Kaynak: TDK Güncel Türkçe Sözlük; ilgili mali mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Naklen atama
+Kamu görevlisinin mevzuattaki şartlarla başka bir kadro veya göreve atanmasını ifade eder.
+Kaynak: 657 sayılı Devlet Memurları Kanunu ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — İdare Hukuku
+Nakz
+Bozma anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; tarihî yargı terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Nema
+Bir para veya malvarlığı değerinin işletilmesi sonucu elde edilen getiri anlamında kullanılan terimdir.
+Kaynak: TDK; ilgili mali/özel hukuk mevzuatı
+Kaynak Türü: TDK + Mevzuat
+Nesep
+Soybağı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; 4721 sayılı TMK soybağı hükümleri.
+Kaynak Türü: TDK + Mevzuat
+Netice
+Sonuç anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük.
+Kaynak Türü: TDK
+Netice-i talep
+Talep sonucu anlamında eski hukuk dilinde kullanılan ifadedir.
+Kaynak: TDK/hukuk terminolojisi; 6100 sayılı HMK m.119.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Nisap
+Bir kurulun toplanması veya karar alması için gerekli asgari sayı ya da oranı ifade eder.
+Kaynak: TDK; 6102 sayılı TTK ve ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Nispî butlan
+Hukuki işlemin korunmaya değer belirli kişinin iradesine bağlı olarak geçersiz kılınabildiği durumları ifade eden öğretisel terimdir.
+Kaynak: 6098 sayılı TBK; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Nispî harç
+Değeri para ile ölçülebilen dava veya işlemlerde belirli oran üzerinden hesaplanan harç türüdür.
+Kaynak: 492 sayılı Harçlar Kanunu.
+Kaynak Türü: Mevzuat — Mali/Usul Hukuku
+Niza
+Uyuşmazlık veya çekişme anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Nizalı
+Hakkında uyuşmazlık veya çekişme bulunan anlamına gelir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK
+Nizam
+Düzen veya kurallar bütünü anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Nizamname
+Günümüzde büyük ölçüde 'tüzük' veya düzenleyici işlem karşılığı tarihî metinlerde görülen eski hukuk terimidir.
+Kaynak: TDK sözlükleri; tarihî mevzuat terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Noksan
+Eksik anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük
+Kaynak Türü: TDK
+Noter
+Kanunla verilen belgelendirme, onaylama, düzenleme ve diğer noterlik işlemlerini yapan hukuk mesleği mensubudur.
+Kaynak: 1512 sayılı Noterlik Kanunu.
+Kaynak Türü: Mevzuat — Noterlik Hukuku
+Noterlik
+Hukuki güvenliği sağlamak ve anlaşmazlıkları önlemek amacıyla işlemleri belgelendiren ve kanunla verilen diğer görevleri yerine getiren kamu hizmetidir.
+Kaynak: 1512 sayılı Noterlik Kanunu, m.1.
+Kaynak Türü: Mevzuat — Noterlik Hukuku
+Noter ihtarnamesi
+Bir talep, bildirim, temerrüt veya hukuki iradenin noter aracılığıyla muhataba iletilmesini sağlayan ihtar belgesidir.
+Kaynak: 1512 sayılı Noterlik Kanunu; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Noterlik/Borçlar Hukuku
+Noter onayı
+Belge, imza veya işlemin kanunun öngördüğü kapsamda noter tarafından onaylanmasıdır.
+Kaynak: 1512 sayılı Noterlik Kanunu.
+Kaynak Türü: Mevzuat — Noterlik Hukuku
+Noter senedi
+Noter tarafından kanuni usule göre düzenlenen veya onaylanan belgeyi ifade eden genel terimdir.
+Kaynak: 1512 sayılı Noterlik Kanunu; 6100 sayılı HMK.
+Kaynak Türü: Mevzuat — Noterlik/İspat Hukuku
+
+O
+Olağanüstü kanun yolu
+Kesinleşmiş kararların ancak kanunda sınırlı olarak öngörülen sebeplerle yeniden incelenmesine imkân veren başvuru yollarının genel adıdır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Olağan kanun yolu
+Henüz kesinleşmemiş mahkeme kararlarının kanunda öngörülen biçimde incelenmesini sağlayan kanun yollarını ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Olay yeri inceleme
+Suçla bağlantılı yer, iz ve delillerin yetkili kolluk birimlerince usulüne uygun incelenmesi ve kayıt altına alınması faaliyetidir.
+Kaynak: 5271 sayılı CMK; ilgili kolluk mevzuatı
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Olumlu görev uyuşmazlığı
+Birden fazla yargı merciinin aynı uyuşmazlıkta kendisini görevli görmesiyle ortaya çıkan görev uyuşmazlığıdır.
+Kaynak: 2247 sayılı Uyuşmazlık Mahkemesinin Kuruluş ve İşleyişi Hakkında Kanun.
+Kaynak Türü: Mevzuat — Yargı Hukuku
+Olumsuz görev uyuşmazlığı
+Farklı yargı mercilerinin aynı uyuşmazlıkta karşılıklı olarak görevsizlik kararı vermesi sonucu oluşan görev uyuşmazlığıdır.
+Kaynak: 2247 sayılı Kanun.
+Kaynak Türü: Mevzuat — Yargı Hukuku
+Onama
+Kanun yolu incelemesinde incelenen kararın hukuka uygun bulunarak geçerli bırakılmasıdır.
+Kaynak: İlgili usul mevzuatı; 5271 sayılı CMK ve 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Onama ilamı
+Kanun yolu merciinin incelediği hükmü hukuka uygun bularak onadığını gösteren karar metnidir.
+Kaynak: İlgili usul mevzuatı; yargı uygulaması
+Kaynak Türü: Mevzuat + Uygulama
+Onay
+Bir işlem, karar veya belgenin yetkili kişi ya da makamca uygun bulunarak hukuki sonuç doğurmasına ilişkin işlemdir.
+Kaynak: TDK Güncel Türkçe Sözlük; ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Ortaklığın giderilmesi
+Paylı veya elbirliği mülkiyetindeki ortaklığın aynen taksim veya satış yoluyla sona erdirilmesini amaçlayan hukuki yoldur.
+Kaynak: 4721 sayılı TMK, m.698 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Ortaklığın giderilmesi davası
+Paydaş veya ortakların ortak mülkiyet ilişkisini sona erdirmek amacıyla açtıkları davadır.
+Kaynak: 4721 sayılı TMK, m.698 ve devamı; 6100 sayılı HMK.
+Kaynak Türü: Mevzuat — Eşya/Usul Hukuku
+Ortaklığın satış yoluyla giderilmesi
+Ortak malın aynen bölünmesi mümkün veya uygun olmadığında satış bedelinin paylaştırılması yoluyla ortaklığın sona erdirilmesidir.
+Kaynak: 4721 sayılı TMK m.699
+Kaynak Türü: Mevzuat — Eşya
+Ortaklık
+İki veya daha fazla kişinin mal, emek veya haklarını ortak bir amaç için birleştirdiği hukuki ilişkiyi ifade eder.
+Kaynak: 6098 sayılı TBK; 6102 sayılı TTK.
+Kaynak Türü: Mevzuat — Borçlar/Ticaret Hukuku
+Ortak gider
+Kat mülkiyetinde ana taşınmazın ortak yerleri, hizmetleri ve yönetimi için yapılan giderleri ifade eder.
+Kaynak: 634 sayılı Kat Mülkiyeti Kanunu m.20
+Kaynak Türü: Mevzuat — Kat Mülkiyeti
+
+Ö
+Ödeme
+Bir para borcunun veya parasal edimin alacaklıya ifa edilmesidir.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Ödeme emri
+İcra veya kamu alacağı takibinde borçluya borcu ödemesi ya da kanuni sürede itiraz veya diğer haklarını kullanması gerektiğini bildiren resmî belgedir.
+Kaynak: 2004 sayılı İİK; 6183 sayılı Kanun.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Ödeme emrine itiraz
+Borçlunun ilamsız takipte ödeme emrine karşı borca, imzaya veya yetkiye ilişkin kanuni sürede itiraz etmesidir.
+Kaynak: 2004 sayılı İİK m.62 ve devamı
+Kaynak Türü: Mevzuat — İcra
+Ödeme taahhüdü
+Borçlunun icra dosyası borcunu belirlenen koşul ve tarihlerde ödemeyi üstlendiği beyanı ifade eder.
+Kaynak: 2004 sayılı İİK, özellikle m.111, m.340
+Kaynak Türü: Mevzuat — İcra
+Ödeme yasağı
+Kanuni veya yargısal karar nedeniyle belirli bir ödemenin yapılmasının yasaklanmasını ifade eder.
+Kaynak: 2004 sayılı İİK; 6102 sayılı TTK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — İcra/Ticaret Hukuku
+Ödünç sözleşmesi
+Bir şeyin kullanılması veya para ya da misli eşyanın mülkiyetinin geri verme yükümlülüğüyle devrine ilişkin sözleşme türlerinin genel anlatımıdır.
+Kaynak: 6098 sayılı TBK, kullanım ve tüketim ödüncü hükümleri.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Ölüme bağlı tasarruf
+Mirasbırakanın ölümünden sonra hüküm doğurmak üzere vasiyetname veya miras sözleşmesi biçiminde yaptığı tasarruftur.
+Kaynak: 4721 sayılı TMK, m.502 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Ölüm karinesi
+Ölümüne kesin gözle bakılmayı gerektiren durumlar içinde kaybolan ve cesedi bulunamayan kişinin gerçekten ölmüş sayılmasına ilişkin kanuni karinedir.
+Kaynak: 4721 sayılı TMK, m.31.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Önalım hakkı
+Paylı mülkiyette payın üçüncü kişiye satılması hâlinde diğer paydaşlara kanuni şartlarla öncelikle satın alma imkânı veren haktır.
+Kaynak: 4721 sayılı TMK, m.732 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Önleyici tedbir
+Özellikle şiddetin önlenmesi alanında gelecekteki ihlal veya tehlikeyi engellemeye yönelik mahkeme ya da makam tedbiridir.
+Kaynak: 6284 sayılı Kanun
+Kaynak Türü: Mevzuat — Koruma
+Ön inceleme
+Dilekçeler aşamasından sonra uyuşmazlık konularının ve usuli meselelerin belirlendiği medeni yargılama aşamasıdır.
+Kaynak: 6100 sayılı HMK, m.137 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Ön ödeme
+Bazı suçlarda kanuni şartlarla belirlenen miktarın ödenmesi hâlinde kamu davasının açılmaması veya düşmesi sonucunu doğurabilen kurumdur.
+Kaynak: 5237 sayılı TCK m.75
+Kaynak Türü: Mevzuat — Ceza
+Ön sorun
+Bir davada hüküm kurulabilmesi için öncelikle çözülmesi gereken hukuki veya maddi meseledir.
+Kaynak: 6100 sayılı HMK, m.163 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Özel hayat
+Kişinin başkalarının müdahalesinden korunmuş kişisel yaşam alanını ifade eden temel haktır.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.20; AİHS m.8.
+Kaynak Türü: Anayasa + Uluslararası Sözleşme
+Özel hukuk
+Kural olarak eşit hukuki konumdaki kişiler arasındaki ilişkileri düzenleyen hukuk alanlarının genel adıdır.
+Kaynak: TMK, TBK, TTK ve ilgili özel hukuk mevzuatı; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Özel nitelikli kişisel veri
+Kanunda sınırlı olarak sayılan ve işlenmesi daha sıkı şartlara bağlanan hassas kişisel verilerdir.
+Kaynak: 6698 sayılı KVKK m.6
+Kaynak Türü: Mevzuat — KVKK
+Özel vekâletname
+Kanunun belirli işlemler için vekilin açıkça yetkilendirilmesini aradığı vekâlet belgesidir.
+Kaynak: 6100 sayılı HMK m.74; ilgili özel mevzuat
+Kaynak Türü: Mevzuat — Usul
+Özel yetki
+Belirli dava veya uyuşmazlıklar bakımından genel yetki kuralından ayrı olarak kanunla öngörülen yetki kuralıdır.
+Kaynak: 6100 sayılı HMK, yetki hükümleri.
+Kaynak Türü: Mevzuat — Medeni Usul
+Özgürlük
+Kişinin hukuk düzeninin sınırları içinde davranışlarını kendi iradesiyle belirleyebilmesini ifade eden temel hak kavramıdır.
+Kaynak: Türkiye Cumhuriyeti Anayasası; AİHS.
+Kaynak Türü: Anayasa + Uluslararası Sözleşme
+
+P
+Para cezası
+Hukuk düzeninin ihlali nedeniyle kişinin belirli miktar para ödemesini öngören yaptırımların genel ifadesidir; ceza hukukunda adli para cezası özel olarak düzenlenmiştir.
+Kaynak: 5237 sayılı TCK, m.52; ilgili idari yaptırım mevzuatı.
+Kaynak Türü: Mevzuat — Ceza/İdare Hukuku
+Parsel
+Kadastro veya imar mevzuatına göre sınırları belirlenmiş arazi parçasıdır.
+Kaynak: 3402 sayılı Kadastro Kanunu; 3194 sayılı İmar Kanunu.
+Kaynak Türü: Mevzuat — Taşınmaz Hukuku
+Parselasyon
+İmar planına uygun biçimde taşınmazların ayrılması, birleştirilmesi ve yeniden düzenlenmesine ilişkin işlemleri ifade eder.
+Kaynak: 3194 sayılı İmar Kanunu, m.18 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — İmar Hukuku
+Patent
+Teknolojinin bir alanındaki buluşa kanuni şartlarla belirli süreli tekel hakkı sağlayan sınai mülkiyet hakkıdır.
+Kaynak: 6769 sayılı Sınai Mülkiyet Kanunu.
+Kaynak Türü: Mevzuat — Sınai Mülkiyet
+Pay
+Bir ortaklık, tereke veya mülkiyet ilişkisi içinde kişiye ait oran veya hukuki kısmı ifade eder.
+Kaynak: 4721 sayılı TMK; 6102 sayılı TTK.
+Kaynak Türü: Mevzuat — Medeni/Ticaret Hukuku
+Paydaş
+Paylı mülkiyette belirli bir paya sahip olan kişidir.
+Kaynak: 4721 sayılı TMK, m.688 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Paylı mülkiyet
+Birden çok kişinin maddi olarak bölünmemiş bir şeyin tamamına belirli paylarla malik olduğu mülkiyet türüdür.
+Kaynak: 4721 sayılı TMK, m.688 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Pay senedi
+Sermaye şirketlerinde payı temsil etmek üzere kanuni şartlarla çıkarılabilen kıymetli evraktır.
+Kaynak: 6102 sayılı TTK
+Kaynak Türü: Mevzuat — Ticaret
+Pek kötü davranış
+Eşlerden birinin diğerine karşı TMK'da özel boşanma sebebi olarak düzenlenen ağır nitelikteki davranışıdır.
+Kaynak: 4721 sayılı TMK, m.162.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Peşin harç
+Yargısal veya diğer harca tabi işlem başlatılırken kanuna göre önceden tahsil edilen harçtır.
+Kaynak: 492 sayılı Harçlar Kanunu.
+Kaynak Türü: Mevzuat — Mali/Usul Hukuku
+Pişmanlık
+Bazı suç veya vergi ihlallerinde failin sonradan gösterdiği davranışa kanunun belirli sonuç bağladığı kurumların genel anlatımıdır.
+Kaynak: TCK özel hükümler; 213 sayılı VUK m.371
+Kaynak Türü: Mevzuat — Ceza/Vergi
+Poliçe
+Düzenleyenin muhataba belirli bir bedeli lehtara veya emrine ödeme talimatı verdiği kambiyo senedidir.
+Kaynak: 6102 sayılı TTK, m.671 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Poliçe protestosu
+Poliçenin kabul edilmediği veya ödenmediği hâllerde durumun kanuni usulle resmen tespitidir.
+Kaynak: 6102 sayılı TTK
+Kaynak Türü: Mevzuat — Ticaret
+Pozitif hukuk
+Belirli bir zamanda belirli bir ülkede yürürlükte bulunan hukuk kurallarının bütününü ifade eden öğretisel kavramdır.
+Kaynak: Hukuk öğretisi; yürürlükteki mevzuat terminolojisi.
+Kaynak Türü: Hukuk Öğretisi
+Prim
+Sigorta sözleşmesinde sigorta ettirenin sigortacıya ödemeyi üstlendiği bedeldir.
+Kaynak: 6102 sayılı TTK m.1401 ve devamı
+Kaynak Türü: Mevzuat — Sigorta
+Protesto
+Kambiyo senetlerinde kabul etmeme veya ödememe gibi durumların kanuni usulle resmen tespit edilmesini sağlayan işlemdir.
+Kaynak: 6102 sayılı TTK, kambiyo senetleri hükümleri.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Protokol
+Tarafların üzerinde anlaştıkları hususları yazılı biçimde belirleyen belge veya anlaşmadır.
+Kaynak: 6098 sayılı TBK; ilgili özel mevzuat; TDK.
+Kaynak Türü: Mevzuat + TDK
+
+R
+Rayiç bedel
+Bir mal veya hakkın belirli yer ve zamanda olağan piyasa koşullarındaki değerini ifade eder.
+Kaynak: 213 sayılı VUK ve ilgili özel mevzuat; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Uygulaması
+Reddi hâkim
+Hâkimin tarafsızlığından şüpheyi gerektiren kanuni sebeplerin varlığı hâlinde hâkimin davadan çekilmesinin istenmesidir.
+Kaynak: 6100 sayılı HMK m.36 ve devamı; CMK m.24 ve devamı
+Kaynak Türü: Mevzuat — Usul
+Rehin
+Bir alacağı güvence altına almak amacıyla mal veya hak üzerinde alacaklı lehine kurulan sınırlı ayni haktır.
+Kaynak: 4721 sayılı TMK, m.850 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Rehinli alacak
+Bir rehin hakkıyla güvence altına alınmış alacaktır.
+Kaynak: 4721 sayılı TMK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Eşya/İcra Hukuku
+Rehin açığı belgesi
+Rehnin paraya çevrilmesi sonunda alacağın karşılanmayan kısmı bakımından kanunda düzenlenen belgedir.
+Kaynak: 2004 sayılı İİK, ilgili hükümler
+Kaynak Türü: Mevzuat — İcra
+Rehin hakkı
+Alacak ödenmediğinde hak sahibine rehin konusu mal veya hakkın değerinden öncelikle yararlanma imkânı veren sınırlı ayni haktır.
+Kaynak: 4721 sayılı TMK, rehin hükümleri.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Rehnin paraya çevrilmesi
+Rehinle güvence altına alınmış alacağın tahsili amacıyla rehin konusu malın cebri icra yoluyla satılmasıdır.
+Kaynak: 2004 sayılı İİK, m.145 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Resen
+Yetkili makamın taraf veya ilgilinin talebine gerek olmaksızın kendiliğinden işlem yapmasını ifade eder.
+Kaynak: TDK sözlükleri; ilgili usul ve idare mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Resen araştırma ilkesi
+Mahkeme veya idari yargı merciinin kanunun öngördüğü alanlarda uyuşmazlığa ilişkin gerekli incelemeyi kendiliğinden yapabilmesini ifade eder.
+Kaynak: 2577 sayılı İYUK, m.20; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — İdari Yargı
+Resmi belge
+Kamu görevlisinin görevi gereği ve kanuni usule uygun olarak düzenlediği belgeyi ifade eder.
+Kaynak: 5237 sayılı TCK; 6100 sayılı HMK ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Resmi senet
+Yetkili makam veya memur tarafından kanuni şekle uygun düzenlenen ve özel ispat gücüne sahip belge türüdür.
+Kaynak: 6100 sayılı HMK; 4721 sayılı TMK; noterlik mevzuatı.
+Kaynak Türü: Mevzuat — İspat/Medeni Hukuk
+Resmi şekil
+Hukuki işlemin geçerli olabilmesi için yetkili makam önünde veya kanunun belirlediği resmî usulde yapılması zorunluluğudur.
+Kaynak: 6098 sayılı TBK; 4721 sayılı TMK.
+Kaynak Türü: Mevzuat — Borçlar/Medeni Hukuk
+Resmî vasiyetname
+Mirasbırakanın kanunda öngörülen resmî usule uygun olarak düzenlediği vasiyetnamedir.
+Kaynak: 4721 sayılı TMK m.532 ve devamı
+Kaynak Türü: Mevzuat — Miras
+Ret
+Bir talep, dava veya başvurunun yetkili makam tarafından kabul edilmemesidir.
+Kaynak: TDK; ilgili usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Ret kararı
+Mahkeme veya yetkili merciin talep ya da başvuruyu usulden veya esastan kabul etmediğini gösteren karardır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Ret ve iade
+Bir başvuru veya evrakın kabul edilmeyerek geri gönderilmesini ifade eden genel resmî işlem terimidir.
+Kaynak: İlgili usul mevzuatı; resmî yazışma uygulaması
+Kaynak Türü: Uygulama
+Rıza
+Kişinin bir hukuki işlem, müdahale veya davranışa özgür iradesiyle onay vermesidir.
+Kaynak: 4721 sayılı TMK; 6098 sayılı TBK; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Rızai sözleşme
+Kanunun ayrıca şekil şartı öngörmediği hâllerde tarafların karşılıklı ve uygun irade açıklamalarıyla kurulan sözleşmedir.
+Kaynak: 6098 sayılı TBK, sözleşmenin kurulmasına ilişkin hükümler.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Rızai taksim
+Ortakların ortak malı anlaşarak aralarında bölüşmelerini ifade eden geleneksel hukuk terimidir.
+Kaynak: 4721 sayılı TMK; hukuk terminolojisi
+Kaynak Türü: Mevzuat + Terminoloji
+Rücu
+Bir borcu veya zararı ödeyen kişinin kanuni ya da sözleşmesel şartlarla asıl sorumluya dönerek ödediği miktarı istemesidir.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Rücu hakkı
+Başkasına ait borç veya zararı karşılayan kişinin ödediği miktarı asıl sorumludan istemesine imkân veren haktır.
+Kaynak: 6098 sayılı TBK; 5510 sayılı Kanun ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar/Sosyal Güvenlik
+Rüçhan hakkı
+Belirli kişi veya alacağa diğerlerine göre öncelik tanıyan hakkı ifade eden genel hukuk terimidir.
+Kaynak: 6102 sayılı TTK; 2004 sayılı İİK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Ticaret/İcra Hukuku
+Rüşt
+Erginlik anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; 4721 sayılı TMK m.11-12.
+Kaynak Türü: TDK + Mevzuat
+
+S
+Sabit ücret
+İş veya hizmet karşılığında değişken unsurlardan bağımsız olarak belirlenen ücret bölümünü ifade eder.
+Kaynak: 4857 sayılı İş Kanunu; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — İş/Borçlar Hukuku
+Sağlık verisi
+Gerçek kişinin fiziksel veya ruhsal sağlığına ilişkin özel nitelikli kişisel veridir.
+Kaynak: 6698 sayılı KVKK, m.6.
+Kaynak Türü: Mevzuat — Kişisel Veriler
+Sağ kalan eş
+Evlilik birliği diğer eşin ölümüyle sona eren ve miras hukukunda kanuni mirasçılık hakkı bulunan eştir.
+Kaynak: 4721 sayılı TMK, m.499.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Sahtecilik
+Belge veya diğer hukuken korunan araçlar üzerinde gerçeğe aykırı oluşturma, değiştirme veya kullanma fiillerini ifade eden genel ceza hukuku terimidir.
+Kaynak: 5237 sayılı TCK, özellikle m.204 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Sair
+Diğer, başka veya geri kalan anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK
+Saklı pay
+Mirasbırakanın tasarruf özgürlüğü dışında kalan ve kanunda belirlenen mirasçılar lehine korunan miras payıdır.
+Kaynak: 4721 sayılı TMK, m.505 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Sanık
+Kovuşturmanın başlamasından hükmün kesinleşmesine kadar suç şüphesi altında bulunan kişidir.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Sarfınazar
+Bir hak, talep, işlem veya düşünceden vazgeçme anlamında eski hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Satış memurluğu
+Mahkeme veya ilgili merci kararıyla satış işlemlerini yürütmek üzere görev yapan yargı birimini ifade eden uygulama terimidir.
+Kaynak: HMK; İİK; yargı teşkilatı/UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Satış talebi
+Haczedilen veya ortaklığın giderilmesine konu malın satışının yapılması için yetkili merciden istenmesidir.
+Kaynak: 2004 sayılı İİK; ilgili usul mevzuatı
+Kaynak Türü: Mevzuat — İcra
+Savcı
+Ceza soruşturmasını yürüten ve kanuni şartlarda kamu davasını açıp takip eden Cumhuriyet savcısını ifade eder.
+Kaynak: 5271 sayılı CMK; 2802 sayılı Kanun.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Savunma
+Şüpheli veya sanığın isnada karşı kendisini hukuken ve fiilen korumaya yönelik açıklama, delil ve taleplerinin bütünüdür.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.36; 5271 sayılı CMK.
+Kaynak Türü: Anayasa + Mevzuat
+Sebepsiz zenginleşme
+Haklı bir sebep olmaksızın başkasının malvarlığından veya emeğinden zenginleşen kişinin bu zenginleşmeyi geri verme borcunu doğuran kurumdur.
+Kaynak: 6098 sayılı TBK, m.77 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Seçimlik borç
+Birden çok edimden yalnız birinin ifasının borcu sona erdirdiği borç ilişkisidir.
+Kaynak: 6098 sayılı TBK, m.87 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Seçimlik hak
+Hak sahibine birden fazla hukuki sonuçtan birini seçme yetkisi veren haktır.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Sehven
+Yanlışlıkla veya dalgınlık sonucu anlamında resmî ve hukukî yazışmalarda kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK
+Senet
+Bir hukuki işlem, borç veya vakıayı belgeleyen yazılı belgeyi ifade eder; ispat hukukunda özel sonuçları vardır.
+Kaynak: 6100 sayılı HMK, m.199 ve devamı.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Senetle ispat
+Kanunda belirlenen hukuki işlemlerin kural olarak senetle ispat edilmesine ilişkin ispat kuralıdır.
+Kaynak: 6100 sayılı HMK m.200 ve devamı
+Kaynak Türü: Mevzuat — İspat
+Serbest meslek
+Kişisel çalışma, mesleki bilgi veya uzmanlığa dayanan ve ticari nitelikte olmayan bağımsız faaliyeti ifade eden mali hukuk terimidir.
+Kaynak: 193 sayılı Gelir Vergisi Kanunu, m.65 ve devamı.
+Kaynak Türü: Mevzuat — Vergi Hukuku
+Sıfat
+Bir kişinin belirli maddi hukuk ilişkisinde hak sahibi veya borçlu taraf olmasını ifade eden usul hukuku kavramıdır.
+Kaynak: 6100 sayılı HMK ve hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Sınai mülkiyet
+Marka, patent, faydalı model, tasarım ve coğrafi işaret gibi kanunla korunan sınai hakların genel adıdır.
+Kaynak: 6769 sayılı Sınai Mülkiyet Kanunu.
+Kaynak Türü: Mevzuat — Sınai Mülkiyet
+Sınırlı ayni hak
+Mülkiyet hakkının sağladığı yetkilerin belirli bölümünü hak sahibine tanıyan irtifak, rehin ve taşınmaz yükü gibi ayni haklardır.
+Kaynak: 4721 sayılı TMK.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Sıra cetveli
+Birden çok alacaklının bulunduğu icra veya iflas sürecinde satış bedelinin hangi sıra ve miktarda paylaştırılacağını gösteren cetveldir.
+Kaynak: 2004 sayılı İİK
+Kaynak Türü: Mevzuat — İcra/İflas
+Sicil
+Kişi, mal, hak veya işlemlere ilişkin kayıtların kanun gereğince tutulduğu resmî kayıt düzenidir.
+Kaynak: TDK; TMK, TTK ve ilgili sicil mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Sigorta
+Belirli bir prim karşılığında rizikonun gerçekleşmesinden doğan ekonomik ihtiyacın sözleşme çerçevesinde karşılanmasını amaçlayan hukuki ilişkidir.
+Kaynak: 6102 sayılı TTK, m.1401 ve devamı; 5684 sayılı Sigortacılık Kanunu.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Sigortacı
+Prim karşılığında sözleşmede öngörülen rizikonun gerçekleşmesi hâlinde sigorta tazminatı veya bedelini ödeme yükümlülüğünü üstlenen taraftır.
+Kaynak: 6102 sayılı TTK, m.1401 ve devamı.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Sigortalı
+Menfaati sigorta sözleşmesiyle teminat altına alınan kişidir.
+Kaynak: 6102 sayılı TTK, sigorta hükümleri.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Sigorta bedeli
+Sigorta sözleşmesinde sigortacının sorumluluğunun belirlenmesinde esas alınan ve sözleşmede gösterilen parasal tutardır.
+Kaynak: 6102 sayılı TTK, sigorta hükümleri.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Sigorta ettiren
+Sigortacıyla sigorta sözleşmesini kuran ve kural olarak prim ödeme borcunu üstlenen kişidir.
+Kaynak: 6102 sayılı TTK, sigorta hükümleri.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Soruşturma
+Yetkili mercilerce suç şüphesinin öğrenilmesinden iddianamenin kabulüne kadar geçen ceza muhakemesi evresidir.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Soruşturma dosyası
+Cumhuriyet savcılığı tarafından yürütülen soruşturmaya ait evrak, delil ve kayıtların bulunduğu dosyadır.
+Kaynak: 5271 sayılı CMK; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Soruşturma izni
+Bazı kamu görevlileri hakkında görevleri sebebiyle işlendiği ileri sürülen suçlardan soruşturma yapılabilmesi için yetkili merci tarafından verilen izindir.
+Kaynak: 4483 sayılı Kanun.
+Kaynak Türü: Mevzuat — Ceza/İdare Hukuku
+Soybağı
+Çocuk ile ana ve baba arasındaki hukuki hısımlık bağını ifade eder.
+Kaynak: 4721 sayılı TMK, m.282 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Sözleşme
+Tarafların karşılıklı ve birbirine uygun irade açıklamalarıyla kurulan hukuki işlemdir.
+Kaynak: 6098 sayılı TBK, m.1 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Sözleşmenin devri
+Sözleşmedeki taraf sıfatının, diğer tarafın onayıyla üçüncü kişiye geçirilmesidir.
+Kaynak: 6098 sayılı TBK, m.205.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Sözleşmenin feshi
+Sürekli borç ilişkisini kural olarak ileriye etkili biçimde sona erdiren irade açıklamasıdır.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Sözleşmenin uyarlanması
+Olağanüstü değişen koşullar nedeniyle edimler arasındaki dengenin ağır biçimde bozulduğu hâllerde kanuni şartlarla sözleşmenin yeni koşullara uyarlanmasıdır.
+Kaynak: 6098 sayılı TBK, m.138.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Sözleşme özgürlüğü
+Kişilerin kanunun sınırları içinde sözleşme yapıp yapmama, tarafını ve içeriğini belirleme serbestisini ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.48; 6098 sayılı TBK m.26-27.
+Kaynak Türü: Anayasa + Mevzuat
+Suç
+Kanunda suç olarak tanımlanan ve karşılığında ceza veya güvenlik tedbiri öngörülen hukuka aykırı fiildir.
+Kaynak: 5237 sayılı TCK, m.2 ve özel hükümler.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Suçüstü
+İşlenmekte olan veya henüz işlenmiş suçla bağlantılı olarak CMK'da tanımlanan hâlleri ifade eder.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Suç duyurusu
+Bir suç işlendiği iddiasının yetkili makamlara bildirilmesini ifade eden genel uygulama terimidir.
+Kaynak: 5271 sayılı CMK m.158
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Suç eşyası
+Suçun işlenmesinde kullanılan, suçun işlenmesine tahsis edilen veya suçtan meydana gelen eşya bakımından kullanılan ceza hukuku kavramıdır.
+Kaynak: 5237 sayılı TCK, m.54.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Sulh
+Tarafların aralarındaki uyuşmazlığı karşılıklı anlaşma ve ödünlerle sona erdirmelerini ifade eder.
+Kaynak: 6100 sayılı HMK, m.313 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Sulh hukuk mahkemesi
+Kanunla kendisine verilen dava ve işleri gören ilk derece hukuk mahkemesidir.
+Kaynak: 5235 sayılı Kanun; 6100 sayılı HMK, m.4.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Sulh sözleşmesi
+Tarafların uyuşmazlığı karşılıklı ödünlerle sona erdirmesine yönelik sözleşmedir.
+Kaynak: 6100 sayılı HMK m.313 ve devamı; 6098 sayılı TBK
+Kaynak Türü: Mevzuat — Usul/Borçlar
+Süre
+Bir hukuki işlem veya hakkın kullanılmasının belirli zaman aralığına bağlanmasını ifade eder.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; ilgili mevzuat.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Süresinde itiraz
+Kanunda öngörülen itiraz süresi geçirilmeden yapılan başvuruyu ifade eder.
+Kaynak: İlgili usul ve icra mevzuatı
+Kaynak Türü: Mevzuat — Usul
+Süre tutum dilekçesi
+Uygulamada kanun yoluna başvurma iradesini süresi içinde bildirmek amacıyla verilen kısa dilekçe için kullanılan ifadedir; hukuki etkisi ve gerekliliği ilgili yargılama usulüne ve yürürlükteki kanun yolu hükümlerine göre değerlendirilir.
+Kaynak: İlgili usul mevzuatı ve yargı uygulaması.
+Kaynak Türü: Yargı Uygulaması
+
+Ş
+Şahadet
+Tanıklık veya tanık beyanı anlamında eski hukuk dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri; eski hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Şahıs
+Kişi anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK Güncel Türkçe Sözlük; medeni hukuk terminolojisi.
+Kaynak Türü: TDK + Hukuk Terminolojisi
+Şahsi cezasızlık sebebi
+Suçun unsurları gerçekleşmesine rağmen failin kişisel durumu nedeniyle cezalandırılmamasını sağlayan kanuni sebeptir.
+Kaynak: 5237 sayılı TCK ve özel hükümler.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Şahsi hak
+Belirli bir kişiye karşı ileri sürülebilen alacak veya nispi haklar için geleneksel olarak kullanılan terimdir.
+Kaynak: 6098 sayılı TBK; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Şamil
+Kapsayan veya içine alan anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Şarta bağlı borç
+Hüküm ve sonuçları gelecekte gerçekleşmesi belirsiz bir olaya bağlanmış borçtur.
+Kaynak: 6098 sayılı TBK, m.170 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Şarta bağlı işlem
+Hukuki sonuçlarının doğması veya sona ermesi gelecekte gerçekleşmesi belirsiz bir olaya bağlanan işlemdir.
+Kaynak: 6098 sayılı TBK, m.170 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Şekil şartı
+Hukuki işlemin geçerliliği veya ispatı için kanunun belirli bir biçimde yapılmasını aradığı şarttır.
+Kaynak: 6098 sayılı TBK, m.12 ve devamı; 6100 sayılı HMK.
+Kaynak Türü: Mevzuat — Borçlar/İspat Hukuku
+Şeref
+Kişinin toplumsal ve kişisel saygınlığıyla bağlantılı kişilik değeridir.
+Kaynak: 4721 sayılı TMK m.24-25; 5237 sayılı TCK m.125.
+Kaynak Türü: Mevzuat — Kişilik/Ceza Hukuku
+Şerh
+Bir hukuki durum veya hakkın sicil ya da belge üzerine açıklayıcı veya koruyucu kayıt olarak işlenmesidir.
+Kaynak: 4721 sayılı TMK, özellikle tapu sicili hükümleri.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Şerhli
+Üzerinde açıklayıcı, sınırlayıcı veya hukuki sonuç doğuran bir şerh bulunan anlamına gelir.
+Kaynak: TDK; 4721 sayılı TMK ve sicil mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Şerhli vekâletname
+Belirli yetki, açıklama veya kayıt içeren vekâletnameyi ifade eden uygulama terimidir.
+Kaynak: 1136 sayılı Avukatlık Kanunu; noterlik/usul mevzuatı
+Kaynak Türü: Mevzuat + Uygulama
+Şikâyet
+Ceza hukukunda bazı suçların soruşturulması ve kovuşturulması için yetkili kişinin irade açıklamasını; icra hukukunda ise icra dairesi işlemlerine karşı başvuru yolunu ifade edebilir.
+Kaynak: 5237 sayılı TCK m.73; 5271 sayılı CMK; 2004 sayılı İİK m.16.
+Kaynak Türü: Mevzuat — Ceza/İcra Hukuku
+Şikâyetçi
+Bir fiil veya işlem hakkında yetkili makama şikâyette bulunan kişidir.
+Kaynak: 5271 sayılı CMK; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Genel Usul
+Şikâyetten vazgeçme
+Şikâyete bağlı suçlarda şikâyet hakkı sahibinin şikâyetini geri almasıyla bağlantılı ceza hukuku kurumudur.
+Kaynak: 5237 sayılı TCK m.73
+Kaynak Türü: Mevzuat — Ceza
+Şirket
+İki veya daha fazla kişinin ortak bir amaca ulaşmak üzere emek veya mallarını birleştirmesine dayanan hukuki yapıların genel adıdır; tek kişilik sermaye şirketleri de kanunen mümkündür.
+Kaynak: 6098 sayılı TBK m.620; 6102 sayılı TTK.
+Kaynak Türü: Mevzuat — Ticaret/Borçlar Hukuku
+Şirket sözleşmesi
+Şirketin kuruluşunu, ortakların hak ve yükümlülüklerini ve kanunun öngördüğü diğer hususları düzenleyen kurucu sözleşmedir.
+Kaynak: 6102 sayılı TTK; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Şufa
+Önalım hakkının geleneksel hukuk dilindeki adıdır.
+Kaynak: 4721 sayılı TMK, m.732 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Eski Hukuk Dili
+Şufa davası
+Kanuni önalım hakkının kullanılmasına yönelik dava için geleneksel olarak kullanılan addır.
+Kaynak: 4721 sayılı TMK m.732 ve devamı
+Kaynak Türü: Mevzuat — Eşya
+Şüphe
+Ceza muhakemesinde bir suçun işlendiğine veya belirli kişinin suçu işlediğine ilişkin olasılık değerlendirmesini ifade eder.
+Kaynak: 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Şüpheden sanık yararlanır
+Ceza yargılamasında mahkûmiyet için gerekli kesinliğe ulaşılamayan şüphenin sanık lehine değerlendirilmesini ifade eden temel ilkedir.
+Kaynak: Anayasa m.38; CMK m.217, m.223; ceza muhakemesi ilkeleri
+Kaynak Türü: Anayasa + Mevzuat
+Şüpheli
+Soruşturma evresinde suç şüphesi altında bulunan kişidir.
+Kaynak: 5271 sayılı CMK, m.2.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+
+T
+Taahhüdü ihlal
+İcra hukukunda borçlunun kanuni şartlarla verdiği ödeme taahhüdüne aykırı davranmasıyla bağlantılı yaptırım kurumunu ifade eder.
+Kaynak: 2004 sayılı İİK, özellikle m.340.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Taahhüt
+Bir işi yapmayı, yapmamayı veya belirli edimi yerine getirmeyi üstlenme anlamında hukuk dilinde kullanılan terimdir.
+Kaynak: TDK; 6098 sayılı TBK ve ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Tahakkuk
+Bir alacak, vergi veya hukuki yükümlülüğün hesaplanıp ödenebilir aşamaya gelmesini ifade eder.
+Kaynak: 213 sayılı VUK ve ilgili mali mevzuat; TDK.
+Kaynak Türü: Mevzuat — Vergi/Mali Hukuk
+Tahdit
+Sınırlama anlamında eski hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Tahkik
+Araştırma, inceleme veya soruşturma anlamında eski hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Tahkikat
+Medeni yargılamada tarafların ileri sürdüğü çekişmeli vakıaların deliller aracılığıyla incelendiği aşamadır; sözcük genel olarak araştırma anlamında da kullanılır.
+Kaynak: 6100 sayılı HMK, m.143 ve devamı; TDK.
+Kaynak Türü: Mevzuat + TDK
+Tahliye
+Bir taşınmazın veya yerin kullanıcı tarafından boşaltılması ya da cebri icra yoluyla boşalttırılmasıdır.
+Kaynak: 6098 sayılı TBK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Kira/İcra Hukuku
+Tahliye emri
+Kanunda belirtilen takiplerde taşınmazın belirli süre içinde boşaltılmasını borçluya bildiren icra belgesidir.
+Kaynak: 2004 sayılı İİK, kira ve tahliye hükümleri.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Tahliye taahhüdü
+Kiracının kiralananı belirli tarihte boşaltmayı yazılı olarak üstlendiği ve kanuni şartlarda tahliyeye dayanak olabilen beyandır.
+Kaynak: 6098 sayılı TBK, m.352.
+Kaynak Türü: Mevzuat — Kira Hukuku
+Tahsil
+Bir alacağın borçludan alınması veya kamu gelirinin toplanmasıdır.
+Kaynak: TDK; 2004 sayılı İİK; 6183 sayılı Kanun.
+Kaynak Türü: TDK + Mevzuat
+Tahsil harcı
+İcra takibinde kanunun belirlediği hâllerde tahsil edilen nispi icra harcıdır.
+Kaynak: 492 sayılı Harçlar Kanunu.
+Kaynak Türü: Mevzuat — İcra/Mali Hukuk
+Tahsis
+Bir mal, hak, kaynak veya görevin belirli amaç veya kişiye ayrılmasıdır.
+Kaynak: TDK; ilgili idare, sosyal güvenlik ve taşınmaz mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Takas
+İki kişinin karşılıklı ve muaccel para veya özdeş edim borçlarının kanuni şartlarla birbirine mahsup edilerek sona erdirilmesidir.
+Kaynak: 6098 sayılı TBK, m.139 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Takdiri delil
+Hâkimin ispat gücünü serbestçe değerlendirdiği tanık, bilirkişi ve benzeri deliller için öğretide kullanılan genel ifadedir.
+Kaynak: 6100 sayılı HMK, delil hükümleri.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Takip
+Bir alacağın cebri icra yoluyla elde edilmesi için icra dairesi nezdinde yürütülen işlemler bütününü ifade eder.
+Kaynak: 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Takipsizlik
+Uygulamada Cumhuriyet savcısının kovuşturmaya yer olmadığı kararını ifade etmek için kullanılan geleneksel terimdir.
+Kaynak: 5271 sayılı CMK, m.172; yargı terminolojisi.
+Kaynak Türü: Mevzuat + Yargı Uygulaması
+Takip talebi
+Alacaklının icra takibinin başlatılması amacıyla icra dairesine sunduğu ve kanuni unsurları içeren taleptir.
+Kaynak: 2004 sayılı İİK, m.58.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Talep sonucu
+Davacının mahkemeden hangi hukuki korumaya karar verilmesini istediğini gösteren dava dilekçesi unsurudur.
+Kaynak: 6100 sayılı HMK m.119
+Kaynak Türü: Mevzuat — Usul
+Tam ehliyetli
+Ayırt etme gücüne sahip, ergin ve kısıtlı olmayan kişiyi ifade eden medeni hukuk terimidir.
+Kaynak: 4721 sayılı TMK, m.10.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Tanık
+Uyuşmazlık veya olayla ilgili görgü ve bilgisini yetkili merci önünde açıklayan üçüncü kişidir.
+Kaynak: 6100 sayılı HMK, m.240 ve devamı; 5271 sayılı CMK m.43 ve devamı.
+Kaynak Türü: Mevzuat — İspat/Ceza Muhakemesi
+Tanık beyanı
+Tanığın uyuşmazlık veya olay hakkındaki görgü ve bilgisini yargı merciine aktardığı delil niteliğindeki açıklamadır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Tanıma
+Yabancı mahkeme kararının kesin hüküm veya kesin delil etkisinin Türkiye'de kabul edilmesini sağlayan hukuki yoldur.
+Kaynak: 5718 sayılı MÖHUK m.58 ve devamı
+Kaynak Türü: Mevzuat — MÖHUK
+Tapu
+Taşınmaz üzerindeki ayni hakların sicildeki durumunu gösteren kayıt ve belgeyi ifade eden genel terimdir.
+Kaynak: 4721 sayılı TMK; Tapu Sicili Tüzüğü ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Tapu iptali ve tescil davası
+Yolsuz veya hukuka aykırı tapu kaydının iptali ile hak sahibinin adına tescil yapılmasının istendiği dava türüdür.
+Kaynak: 4721 sayılı TMK, özellikle m.1025; 6100 sayılı HMK.
+Kaynak Türü: Mevzuat — Eşya/Usul Hukuku
+Tapu sicili
+Taşınmazlar ile bunlar üzerindeki ayni hakların ve kanunun öngördüğü diğer kayıtların tutulduğu resmî sicildir.
+Kaynak: 4721 sayılı TMK, m.997 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Taraf
+Bir dava veya hukuki ilişkide hak veya yükümlülük iddiasıyla yer alan kişiyi ifade eder.
+Kaynak: 6100 sayılı HMK ve ilgili maddi hukuk mevzuatı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Taraf ehliyeti
+Davada taraf olabilme yeteneğidir ve medeni haklardan yararlanma ehliyetine göre belirlenir.
+Kaynak: 6100 sayılı HMK, m.50.
+Kaynak Türü: Mevzuat — Medeni Usul
+Taraf teşkili
+Davanın doğru ve gerekli tarafların katılımıyla yürütülmesini ifade eden yargılama kavramıdır.
+Kaynak: 6100 sayılı HMK; hukuk uygulaması.
+Kaynak Türü: Mevzuat + Yargı Uygulaması
+Tasarruf
+Bir hak veya malvarlığı değeri üzerinde hukuki sonuç doğuracak biçimde işlem yapmayı ifade eder.
+Kaynak: 4721 sayılı TMK; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Özel Hukuk
+Tasarrufun iptali davası
+Borçlunun alacaklıdan mal kaçırma sonucunu doğuran bazı tasarruflarının alacaklı bakımından etkisiz kılınmasını amaçlayan davadır.
+Kaynak: 2004 sayılı İİK, m.277 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Tasarruf ehliyeti
+Bir hak üzerinde doğrudan hukuki değişiklik yapabilme yetkisini ifade eden öğretisel kavramdır.
+Kaynak: 4721 sayılı TMK; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Tazminat
+Hukuka aykırı fiil, sözleşmeye aykırılık veya kanunun öngördüğü başka bir nedenle doğan zararın giderilmesine yönelik edimdir.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Tebellüğ
+Tebligatın muhatap veya kanunen yetkili kişi tarafından alınmasıdır.
+Kaynak: 7201 sayılı Tebligat Kanunu; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Terminolojisi
+Tebligat
+Hukuki işlemlerin kanunda belirlenen usul ve yöntemlerle muhatabına resmen bildirilmesi işlemidir.
+Kaynak: 7201 sayılı Tebligat Kanunu.
+Kaynak Türü: Mevzuat — Tebligat Hukuku
+Tebligat mazbatası
+Tebliğ işleminin kime, ne zaman ve nasıl yapıldığını gösteren resmî tebligat kaydıdır.
+Kaynak: 7201 sayılı Tebligat Kanunu; Tebligat Yönetmeliği
+Kaynak Türü: Mevzuat — Tebligat
+Tebligat parçası
+Yargı uygulamasında tebligat işleminin sonucunu göstererek dosyaya dönen belge için kullanılan ifadedir.
+Kaynak: 7201 sayılı Tebligat Kanunu; UYAP/kalem uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Tebliğ
+Bir hukuki işlem, karar veya belgenin kanunda öngörülen usulle ilgilisine bildirilmesidir.
+Kaynak: 7201 sayılı Tebligat Kanunu.
+Kaynak Türü: Mevzuat — Tebligat Hukuku
+Tefhim
+Mahkeme kararının veya hüküm sonucunun duruşmada hazır bulunan ilgililere sözlü olarak açıklanmasıdır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Tefrik
+Birlikte yürütülen dava veya dosyaların ayrılarak ayrı esaslarda görülmesi işlemidir.
+Kaynak: 6100 sayılı HMK m.167; yargı uygulaması
+Kaynak Türü: Mevzuat — Usul
+Tekemmül
+Tamamlanma veya gerekli aşamaların bitmesi anlamında eski hukuk ve resmî yazışma dilinde kullanılan terimdir.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Tekerrür
+Ceza hukukunda daha önceki mahkûmiyetin kanuni şartlarla sonraki suç bakımından özel sonuç doğurması kurumudur.
+Kaynak: 5237 sayılı TCK, m.58.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Tekit müzekkeresi
+Daha önce gönderilen müzekkereye cevap verilmemesi üzerine cevabın veya işlemin hızlandırılması amacıyla gönderilen hatırlatma yazısıdır.
+Kaynak: Yargı/UYAP uygulaması
+Kaynak Türü: UYAP/Yargı Uygulaması
+Tekzip
+Gerçeğe aykırı yayın veya açıklamaya karşı düzeltme ve cevap niteliğinde kullanılan geleneksel terimdir.
+Kaynak: 5187 sayılı Basın Kanunu; TDK.
+Kaynak Türü: Mevzuat + TDK
+Temerrüt
+Borçlunun veya alacaklının kanunda öngörülen şartlarla ifa sürecinde gecikme durumuna düşmesidir.
+Kaynak: 6098 sayılı TBK, özellikle m.117 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Teminat
+Bir borcun, zararın veya usuli yükümlülüğün yerine getirilmesini güvence altına alan para, mal veya haktır.
+Kaynak: 6098 sayılı TBK; 6100 sayılı HMK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Temlik
+Bir hakkın başka kişiye devredilmesini ifade eden geleneksel hukuk terimidir; alacağın devri TBK'da özel olarak düzenlenmiştir.
+Kaynak: 6098 sayılı TBK, m.183 ve devamı; TDK/hukuk terminolojisi.
+Kaynak Türü: Mevzuat + Hukuk Terminolojisi
+Temyiz
+Kanunda temyize açık kararların yüksek mahkeme tarafından hukuka uygunluk yönünden incelenmesini sağlayan kanun yoludur.
+Kaynak: 6100 sayılı HMK m.361 ve devamı; 5271 sayılı CMK m.286 ve devamı; 2577 sayılı İYUK m.46.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Tenfiz
+Yabancı mahkeme kararının Türkiye'de icra edilebilir hâle gelmesi için verilen mahkeme kararıdır.
+Kaynak: 5718 sayılı MÖHUK m.50 ve devamı
+Kaynak Türü: Mevzuat — MÖHUK
+Tenkis
+Mirasbırakanın saklı payları ihlal eden tasarruflarının kanuni sınırlar içinde azaltılmasını ifade eder.
+Kaynak: 4721 sayılı TMK, m.560 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Tensip tutanağı
+Dava veya işin başlangıcında mahkemece yapılacak ilk usul işlemleri ve ara kararların kaydedildiği tutanaktır.
+Kaynak: 6100 sayılı HMK; UYAP/yargı uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Tereke
+Mirasbırakanın ölümüyle mirasçılara geçen malvarlığı hak ve borçlarının bütünüdür.
+Kaynak: 4721 sayılı TMK, miras hükümleri.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Tereke tespiti
+Mirasbırakanın malvarlığı, hak ve borçlarının belirlenmesi amacıyla yapılan tespit işlemleridir.
+Kaynak: 4721 sayılı TMK; 6100 sayılı HMK
+Kaynak Türü: Mevzuat — Miras
+Tescil
+Bir hak veya hukuki durumun ilgili resmî sicile kaydedilmesidir.
+Kaynak: 4721 sayılı TMK; 6102 sayılı TTK ve ilgili sicil mevzuatı.
+Kaynak Türü: Mevzuat — Genel Sicil Hukuku
+Tescil talebi
+Bir hak veya hukuki durumun ilgili resmî sicile kaydedilmesi için yapılan başvurudur.
+Kaynak: 4721 sayılı TMK; ilgili sicil mevzuatı
+Kaynak Türü: Mevzuat — Sicil
+Teselsül
+Birden fazla borçlu veya alacaklı arasında borcun tamamına ilişkin müteselsil ilişkiyi ifade eden geleneksel hukuk terimidir.
+Kaynak: 6098 sayılı TBK, m.162 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Teslim
+Bir eşyanın fiilî hâkimiyetinin veya zilyetliğinin karşı tarafa geçirilmesidir.
+Kaynak: 4721 sayılı TMK; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Eşya/Borçlar Hukuku
+Tespit davası
+Bir hakkın veya hukuki ilişkinin varlığının ya da yokluğunun veya bir belgenin sahte olup olmadığının belirlenmesi için açılan davadır.
+Kaynak: 6100 sayılı HMK, m.106.
+Kaynak Türü: Mevzuat — Medeni Usul
+Teşebbüs
+Ceza hukukunda kişinin işlemeyi kastettiği suçu elverişli hareketlerle doğrudan doğruya icraya başlayıp elinde olmayan nedenlerle tamamlayamamasıdır.
+Kaynak: 5237 sayılı TCK, m.35.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Teşmil
+Bir hüküm, sonuç veya uygulamanın kapsamının başka kişi veya durumlara genişletilmesini ifade eder.
+Kaynak: TDK sözlükleri; ilgili özel mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Tevdi
+Bir şeyin korunmak, incelenmek veya işlem yapılmak üzere yetkili kişi ya da makama bırakılmasıdır.
+Kaynak: TDK; 6098 sayılı TBK ve ilgili usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Tevkil
+Vekilin, yetkisi kapsamında işi başka bir kişiye gördürmesi veya alt vekil tayin etmesiyle bağlantılı hukuk terimidir.
+Kaynak: 6098 sayılı TBK, vekâlet hükümleri; 1136 sayılı Avukatlık Kanunu.
+Kaynak Türü: Mevzuat — Vekâlet Hukuku
+Tevsii tahkikat
+Araştırma veya yargısal incelemenin genişletilmesi anlamında özellikle eski ceza ve usul dilinde kullanılan ifadedir.
+Kaynak: TDK/hukuk terminolojisi; yargı uygulaması.
+Kaynak Türü: Eski Hukuk Dili + Yargı Uygulaması
+Tevzi
+Dava, dosya veya işin görevli mahkeme, daire veya birime dağıtılması işlemidir.
+Kaynak: Yargı teşkilatı ve UYAP/kalem uygulaması.
+Kaynak Türü: Yargı/UYAP Uygulaması
+Tevzi bürosu
+Dava ve işlerin görevli mahkeme veya birimlere dağıtım işlemlerini yürüten yargı birimidir.
+Kaynak: Yargı teşkilatı ve UYAP uygulaması
+Kaynak Türü: UYAP/Yargı Uygulaması
+Tevzi formu
+Dava veya işin UYAP üzerinden ilgili mahkeme ya da birime dağıtımına ilişkin kayıt ve bilgileri gösteren belgedir.
+Kaynak: UYAP ve yargı kalemi uygulaması.
+Kaynak Türü: Yargı/UYAP Uygulaması
+Tevzi numarası
+Bir dava veya işin tevzi sistemindeki dağıtım kaydına verilen numaradır.
+Kaynak: UYAP/yargı kalemi uygulaması
+Kaynak Türü: UYAP/Yargı Uygulaması
+Ticaret sicili
+Tacirler ve ticaret şirketleri hakkında kanunen tescili gereken hususların kaydedildiği resmî sicildir.
+Kaynak: 6102 sayılı TTK, m.24 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Ticari dava
+TTK ve diğer kanunlar uyarınca ticari sayılan uyuşmazlıklara ilişkin dava türüdür.
+Kaynak: 6102 sayılı TTK, m.4 ve devamı.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Ticari faiz
+Ticari iş ve işlemlerde kanun veya sözleşme uyarınca uygulanabilen faiz türlerini ifade eden genel terimdir.
+Kaynak: 6102 sayılı TTK; 3095 sayılı Kanun
+Kaynak Türü: Mevzuat — Ticaret
+Ticari iş
+TTK'da düzenlenen hususlar ile kanunda öngörülen şartlarda ticari işletmeyle ilgili işlem ve fiilleri ifade eder.
+Kaynak: 6102 sayılı TTK, m.3 ve m.19.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Ticari işletme
+Esnaf işletmesi için öngörülen sınırı aşan düzeyde gelir sağlamayı hedefleyen faaliyetlerin devamlı ve bağımsız şekilde yürütüldüğü işletmedir.
+Kaynak: 6102 sayılı TTK, m.11.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Toplu iş sözleşmesi
+İşçi sendikası ile işveren sendikası veya sendika üyesi olmayan işveren arasında çalışma koşullarını düzenlemek üzere yapılan sözleşmedir.
+Kaynak: 6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu.
+Kaynak Türü: Mevzuat — İş Hukuku
+Tutanak
+Bir olay, işlem, beyan veya duruşmada gerçekleşen hususların yetkili kişilerce yazılı olarak kayda geçirildiği belgedir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Tutuklama
+Kuvvetli suç şüphesini gösteren somut deliller ile kanuni tutuklama nedenlerinin bulunması hâlinde hâkim kararıyla uygulanan koruma tedbiridir.
+Kaynak: 5271 sayılı CMK, m.100 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Tutuklu
+Hakkında kanuni usulle tutuklama kararı verilmiş kişidir.
+Kaynak: 5271 sayılı CMK.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Tutukluluğun incelenmesi
+Tutuklama tedbirinin devamının gerekli olup olmadığının kanunda öngörülen aralık veya başvurularla yargı merciince değerlendirilmesidir.
+Kaynak: 5271 sayılı CMK m.108
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Tüketici
+Ticari veya mesleki olmayan amaçlarla hareket eden gerçek veya tüzel kişidir.
+Kaynak: 6502 sayılı Tüketicinin Korunması Hakkında Kanun, m.3.
+Kaynak Türü: Mevzuat — Tüketici Hukuku
+Tüketici hakem heyeti
+Tüketici uyuşmazlıklarında kanunda belirlenen parasal sınırlar ve şartlar çerçevesinde karar veren heyettir.
+Kaynak: 6502 sayılı Kanun, m.66 ve devamı.
+Kaynak Türü: Mevzuat — Tüketici Hukuku
+Tüketici işlemi
+Ticari veya mesleki amaçlarla hareket eden kişiler ile tüketiciler arasında kurulan kanunda tanımlı hukuki işlemlerdir.
+Kaynak: 6502 sayılı Kanun, m.3.
+Kaynak Türü: Mevzuat — Tüketici Hukuku
+Tüzel kişi
+Hukuk düzenince bağımsız hak ve borç sahibi olma yeteneği tanınan kişi veya mal topluluğudur.
+Kaynak: 4721 sayılı TMK, m.47 ve devamı.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+
+U
+Ulaşım hakkı
+Kişilerin mevzuatın öngördüğü sınırlar içinde ulaşım hizmetlerinden yararlanmasıyla bağlantılı hak ve özgürlük alanını ifade eden genel terimdir.
+Kaynak: Türkiye Cumhuriyeti Anayasası; ilgili ulaştırma mevzuatı.
+Kaynak Türü: Anayasa + Mevzuat
+Uluslararası antlaşma
+Türkiye Cumhuriyeti ile yabancı devletler veya uluslararası kuruluşlar arasında yapılan ve anayasal usule göre yürürlüğe konulan anlaşmadır.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.90.
+Kaynak Türü: Anayasa — Uluslararası Hukuk
+Uluslararası koruma
+Mülteci, şartlı mülteci veya ikincil koruma statülerini kapsayan yabancılar hukuku koruma sistemidir.
+Kaynak: 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu.
+Kaynak Türü: Mevzuat — Yabancılar Hukuku
+Uluslararası özel hukuk
+Yabancılık unsuru taşıyan özel hukuk ilişkilerinde uygulanacak hukuk, milletlerarası yetki ve yabancı kararların tanınması-tenfizi gibi konuları düzenleyen hukuk alanıdır.
+Kaynak: 5718 sayılı MÖHUK.
+Kaynak Türü: Mevzuat — Milletlerarası Özel Hukuk
+Usul
+Bir hukuki işlemin veya yargılamanın hangi yöntem ve sırayla yürütüleceğini belirleyen kurallar bütününü ifade eder.
+Kaynak: TDK; HMK, CMK, İYUK ve ilgili mevzuat.
+Kaynak Türü: TDK + Mevzuat
+Usulden ret
+Davanın esası incelenmeden usule ilişkin bir eksiklik veya engel nedeniyle talebin reddedilmesidir.
+Kaynak: 6100 sayılı HMK ve ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Usuli kazanılmış hak
+Bir yargılama işlem veya kararının taraf lehine oluşturduğu ve belirli koşullarda sonraki yargılama aşamalarında korunması gereken usuli durumu ifade eden içtihadi ilkedir.
+Kaynak: Usul hukuku öğretisi ve yerleşik yargı içtihatları
+Kaynak Türü: Hukuk Öğretisi/İçtihat
+Usul ekonomisi
+Yargılamanın makul sürede, düzenli biçimde ve gereksiz gider yapılmadan yürütülmesini öngören ilkedir.
+Kaynak: 6100 sayılı HMK, m.30; Türkiye Cumhuriyeti Anayasası m.141.
+Kaynak Türü: Mevzuat — Medeni Usul
+Usul işlemi
+Yargılamanın başlaması, ilerlemesi veya sona ermesine yönelik taraf ya da mahkeme işlemlerini ifade eden usul hukuku kavramıdır.
+Kaynak: 6100 sayılı HMK; hukuk öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+UYAP
+Ulusal Yargı Ağı Bilişim Sistemi; yargı birimleri ile ilgili kurumların elektronik ortamda işlem ve bilgi paylaşımını sağlayan bilişim sistemidir.
+Kaynak: Adalet Bakanlığı UYAP mevzuatı ve resmî UYAP uygulaması.
+Kaynak Türü: Resmî Yargı/UYAP Terminolojisi
+UYAP avukat portalı
+Avukatların yetkileri kapsamında dosya inceleme, evrak gönderme ve diğer yargısal işlemleri elektronik ortamda yapabildiği UYAP hizmetidir.
+Kaynak: Adalet Bakanlığı UYAP uygulaması
+Kaynak Türü: UYAP Uygulaması
+UYAP doküman editörü
+Yargısal evrakın UYAP ile uyumlu biçimde hazırlanması ve elektronik ortamda işlenmesi için kullanılan resmî yazılım aracını ifade eder.
+Kaynak: Adalet Bakanlığı UYAP uygulaması
+Kaynak Türü: UYAP Uygulaması
+UYAP evrakı
+UYAP üzerinden oluşturulan, gönderilen veya dosyaya kaydedilen elektronik yargı evrakını ifade eden uygulama terimidir.
+Kaynak: 5070 sayılı Elektronik İmza Kanunu; UYAP mevzuatı ve uygulaması.
+Kaynak Türü: Mevzuat + UYAP Uygulaması
+UYAP evrak gönderme
+Yargı mercilerine elektronik ortamda dilekçe veya belge sunulmasını ifade eden UYAP işlemidir.
+Kaynak: 5070 sayılı Kanun; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+UYAP safahatı
+Bir yargı veya icra dosyasında UYAP sistemine işlenen işlem ve gelişmelerin kronolojik görünümünü ifade eden uygulama terimidir.
+Kaynak: Adalet Bakanlığı UYAP uygulaması.
+Kaynak Türü: UYAP Uygulaması
+UYAP vatandaş portalı
+Vatandaşların yetkileri dâhilinde yargı dosyalarına ve hizmetlerine elektronik ortamda erişmesini sağlayan UYAP hizmetidir.
+Kaynak: Adalet Bakanlığı UYAP uygulaması
+Kaynak Türü: UYAP Uygulaması
+Uyuşmazlık
+Tarafların bir hak, borç, hukuki durum veya işlem konusunda farklı iddia ve taleplere sahip olmasıdır.
+Kaynak: TDK; ilgili usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Uyuşmazlık Mahkemesi
+Adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmekle görevli yüksek mahkemedir.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.158; 2247 sayılı Kanun.
+Kaynak Türü: Anayasa + Mevzuat
+Uzaklaştırma kararı
+Şiddet uygulayan veya uygulama tehlikesi bulunan kişi hakkında kanuni şartlarla mağduru korumak amacıyla verilen önleyici tedbirlerden birini ifade eden uygulama terimidir.
+Kaynak: 6284 sayılı Kanun.
+Kaynak Türü: Mevzuat — Ailenin Korunması
+
+Ü
+Ücret
+Bir kimseye yaptığı iş veya hizmet karşılığında ödenen para veya parasal değeri ifade eder.
+Kaynak: 4857 sayılı İş Kanunu m.32; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — İş Hukuku
+Ücretin haczi
+Borçlunun ücretinin kanunda belirlenen sınırlar ve oranlar içinde haczedilmesidir.
+Kaynak: 2004 sayılı İİK, m.83 ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Ücret alacağı
+İşçinin yaptığı iş karşılığında işverenden istemeye hak kazandığı ücret ve kanuni unsurlarına ilişkin alacaktır.
+Kaynak: 4857 sayılı İş Kanunu; 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — İş Hukuku
+Ücret bordrosu
+İşçiye ödenen ücret, kesintiler ve ilgili parasal unsurları gösteren işyeri belgesidir.
+Kaynak: 4857 sayılı İş Kanunu; vergi ve sosyal güvenlik mevzuatı.
+Kaynak Türü: Mevzuat — İş Hukuku
+Ücret kesme cezası
+İş veya kamu personeli disiplin hukukunda ancak ilgili kanuni düzenlemeler çerçevesinde uygulanabilen ücret/aylıktan kesme yaptırımıdır.
+Kaynak: 657 sayılı DMK; ilgili iş/disiplin mevzuatı
+Kaynak Türü: Mevzuat — Disiplin
+Üçüncü haciz ihbarnamesi
+İİK m.89 kapsamında üçüncü kişiye gönderilen ihbarnameler zincirindeki kanuni bildirimlerden biridir.
+Kaynak: 2004 sayılı İİK m.89
+Kaynak Türü: Mevzuat — İcra
+Üçüncü kişi
+Bir hukuki ilişkinin veya davanın asıl tarafları dışında kalan kişiyi ifade eder.
+Kaynak: 6100 sayılı HMK; 6098 sayılı TBK ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Üçüncü kişinin istihkak iddiası
+Haczedilen mal üzerinde borçlu dışında bir kişinin mülkiyet veya başka bir hak ileri sürmesidir.
+Kaynak: 2004 sayılı İİK, m.96 ve devamı.
+Kaynak Türü: Mevzuat — İcra Hukuku
+Üst derece mahkemesi
+Alt derece mahkemesi kararını kanun yolu kapsamında incelemeye yetkili yargı merciidir.
+Kaynak: 5235 sayılı Kanun; HMK; CMK; İYUK
+Kaynak Türü: Mevzuat — Yargı
+Üst hakkı
+Bir taşınmazın altında veya üstünde yapı yapmak veya mevcut yapıyı muhafaza etmek yetkisi veren irtifak hakkıdır.
+Kaynak: 4721 sayılı TMK, m.826 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Üst mahkeme
+Bir mahkemenin kararlarını kanun yolu kapsamında incelemeye yetkili daha üst dereceli yargı merciini ifade eden genel terimdir.
+Kaynak: 5235 sayılı Kanun; HMK, CMK ve İYUK.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Üst sınır ipoteği
+Güvence altına alınan alacağın miktarı belirli değilse taşınmazın sorumluluğunun tapuda gösterilen üst sınırla belirlendiği ipotek türüdür.
+Kaynak: 4721 sayılı TMK, m.851 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+
+V
+Vade
+Bir borcun ifa edilmesi veya kıymetli evrakta ödemenin yapılması gereken zamanı ifade eder.
+Kaynak: 6098 sayılı TBK; 6102 sayılı TTK.
+Kaynak Türü: Mevzuat — Borçlar/Ticaret Hukuku
+Vadesi geçmiş borç
+İfa zamanı geldiği hâlde ödenmemiş veya yerine getirilmemiş borçtur.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Vakıa
+Bir hukuki sonucun bağlandığı veya davada ileri sürülen olay ve olguyu ifade eder.
+Kaynak: 6100 sayılı HMK, özellikle m.119, m.187; TDK.
+Kaynak Türü: Mevzuat + TDK
+Vakıf
+Gerçek veya tüzel kişilerin yeterli mal ve hakları belirli ve sürekli bir amaca özgülemeleriyle oluşan tüzel kişiliğe sahip mal topluluğudur.
+Kaynak: 4721 sayılı TMK, m.101 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Vakıf senedi
+Vakfın amacı, malvarlığı, örgütlenmesi ve kanunda aranan diğer unsurları gösteren kurucu belgedir.
+Kaynak: 4721 sayılı TMK; Vakıflar mevzuatı.
+Kaynak Türü: Mevzuat — Vakıflar Hukuku
+Vaki
+Meydana gelen, gerçekleşen veya mevcut olan anlamında hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK
+Varaka
+Belge veya kâğıt anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Varis
+Mirasçı anlamında geleneksel hukuk dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri; 4721 sayılı TMK miras hükümleri.
+Kaynak Türü: TDK + Mevzuat
+Varit
+Ulaşmış, gelmiş veya yerinde görülmüş anlamlarında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri; hukuk terminolojisi.
+Kaynak Türü: TDK — Eski Hukuk Dili
+Vasi
+Vesayet altındaki kişinin kişiliği ve malvarlığıyla ilgili menfaatlerini korumak ve hukuki işlemlerde onu temsil etmek üzere atanan kişidir.
+Kaynak: 4721 sayılı TMK, m.403 ve devamı.
+Kaynak Türü: Mevzuat — Vesayet Hukuku
+Vasiyet
+Mirasbırakanın ölümünden sonra hüküm doğurmak üzere yaptığı tek taraflı ölüme bağlı tasarrufun genel adıdır.
+Kaynak: 4721 sayılı TMK, m.502 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Vasiyetname
+Mirasbırakanın son arzularını kanunda öngörülen şekillerden biriyle açıkladığı tek taraflı ölüme bağlı tasarruftur.
+Kaynak: 4721 sayılı TMK, m.531 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Vasiyet alacaklısı
+Mirasbırakanın ölüme bağlı tasarrufuyla kendisine belirli mal veya hakkın bırakıldığı kişidir.
+Kaynak: 4721 sayılı TMK, m.517 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Vazgeçme
+Bir hak, talep veya hukuki imkânın kullanılmasından iradi olarak geri durmayı ifade eden genel terimdir.
+Kaynak: TDK; ilgili maddi ve usul mevzuatı.
+Kaynak Türü: TDK + Mevzuat
+Vekâlet
+Vekilin, vekâlet verenin bir işini görmeyi veya işlemini yapmayı üstlendiği sözleşmesel ilişkidir.
+Kaynak: 6098 sayılı TBK, m.502 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Vekâletname
+Bir kişinin başka bir kişiyi belirli hukuki işlemlerde temsil etmeye yetkilendirdiğini gösteren belgedir.
+Kaynak: 6098 sayılı TBK; 6100 sayılı HMK; Noterlik mevzuatı
+Kaynak Türü: Mevzuat — Vekâlet
+Vekâletname sureti
+Vekâletnamenin yetkili şekilde çıkarılmış veya onaylanmış örneğidir.
+Kaynak: 1136 sayılı Avukatlık Kanunu; noterlik mevzuatı
+Kaynak Türü: Mevzuat — Avukatlık
+Vekâlet sözleşmesi
+Vekilin vekâlet verenin bir işini görmeyi veya işlemini yapmayı üstlendiği sözleşmedir.
+Kaynak: 6098 sayılı TBK, m.502 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Vekâlet ücreti
+Avukatın hukuki yardımının karşılığı olan ücret ile yargılama sonunda tarifeye göre karşı tarafa yükletilebilen avukatlık ücretini ifade edebilir.
+Kaynak: 1136 sayılı Avukatlık Kanunu m.164; Avukatlık Asgari Ücret Tarifesi.
+Kaynak Türü: Mevzuat — Avukatlık Hukuku
+Vekil
+Bir kişiyi hukuki işlem veya yargılama bakımından temsil etmeye yetkili kişidir.
+Kaynak: 6098 sayılı TBK; 6100 sayılı HMK; 1136 sayılı Avukatlık Kanunu.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Vekillikten azil
+Müvekkilin vekilin temsil yetkisini sona erdirmesidir.
+Kaynak: 6098 sayılı TBK; 1136 sayılı Avukatlık Kanunu
+Kaynak Türü: Mevzuat — Vekâlet
+Vekillikten çekilme
+Vekilin temsil görevini sona erdirmeye yönelik irade açıklamasıdır; yargılamadaki sonuçları usul kanununda düzenlenir.
+Kaynak: 6100 sayılı HMK m.82; 1136 sayılı Avukatlık Kanunu
+Kaynak Türü: Mevzuat — Usul
+Velayet
+Ergin olmayan çocuğun bakım, eğitim, korunma ve temsilini kapsayan ana ve babaya ait hak ve yükümlülükler bütünüdür.
+Kaynak: 4721 sayılı TMK, m.335 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Velayetin değiştirilmesi
+Çocuğun üstün yararı ve kanuni koşullar gerektirdiğinde mevcut velayet düzeninin mahkemece değiştirilmesidir.
+Kaynak: 4721 sayılı TMK, özellikle m.183, m.348 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Velayetin kaldırılması
+Kanunda belirtilen ağır sebeplerin bulunması hâlinde ana veya babanın velayet hakkının mahkeme kararıyla kaldırılmasıdır.
+Kaynak: 4721 sayılı TMK, m.348 ve devamı.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Veraset ilamı
+Mirasçılık belgesinin uygulamadaki geleneksel adıdır.
+Kaynak: 4721 sayılı TMK m.598
+Kaynak Türü: Mevzuat — Miras
+Vergi
+Devletin ve yetkili kamu idarelerinin kamu giderlerini karşılamak amacıyla kanuna dayanarak kişilerden aldığı mali yükümlülüktür.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.73; vergi kanunları.
+Kaynak Türü: Anayasa + Vergi Mevzuatı
+Vergi borcu
+Vergiyi doğuran olayın gerçekleşmesi ve ilgili mevzuat uyarınca mükellef üzerinde doğan kamu borcudur.
+Kaynak: 213 sayılı VUK; ilgili vergi kanunları.
+Kaynak Türü: Mevzuat — Vergi Hukuku
+Vergi cezası
+Vergi kanunlarına aykırı fiiller nedeniyle kanunda öngörülen mali yaptırımdır.
+Kaynak: 213 sayılı Vergi Usul Kanunu.
+Kaynak Türü: Mevzuat — Vergi Hukuku
+Vergi mahkemesi
+Vergi, resim, harç ve benzeri mali yükümlülüklerden doğan kanunla belirlenmiş uyuşmazlıkları gören idari yargı merciidir.
+Kaynak: 2576 sayılı Kanun; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — İdari Yargı
+Vesayet
+Kanunda belirtilen kişilerin kişisel ve malvarlığı menfaatlerini korumaya yönelik yasal koruma kurumudur.
+Kaynak: 4721 sayılı TMK, m.396 ve devamı.
+Kaynak Türü: Mevzuat — Vesayet Hukuku
+Vesayet dosyası
+Vesayet makamınca kısıtlama, vasi atanması ve vesayet denetimine ilişkin işlemlerin yürütüldüğü yargı dosyasıdır.
+Kaynak: 4721 sayılı TMK; UYAP uygulaması
+Kaynak Türü: Mevzuat + UYAP
+Vesayet makamı
+Vesayet işlerinde kanunun görev verdiği sulh hukuk mahkemesidir.
+Kaynak: 4721 sayılı TMK, m.397.
+Kaynak Türü: Mevzuat — Vesayet Hukuku
+Vicdani kanaat
+Hâkimin delilleri hukuk kuralları çerçevesinde değerlendirerek ulaştığı içsel yargısal kanaati ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.138; 5271 sayılı CMK m.217.
+Kaynak Türü: Anayasa + Mevzuat
+
+Y
+Yabancı
+Türkiye Cumhuriyeti Devleti ile vatandaşlık bağı bulunmayan kişidir.
+Kaynak: 6458 sayılı YUKK, m.3.
+Kaynak Türü: Mevzuat — Yabancılar Hukuku
+Yabancı mahkeme kararı
+Başka bir devletin yargı mercii tarafından verilen ve Türkiye'de tanıma veya tenfiz konusu olabilen karardır.
+Kaynak: 5718 sayılı MÖHUK, m.50 ve devamı.
+Kaynak Türü: Mevzuat — Milletlerarası Özel Hukuk
+Yakalama
+Kanunda öngörülen hâllerde kişinin geçici olarak özgürlüğünün kısıtlanması şeklindeki ceza muhakemesi tedbiridir.
+Kaynak: 5271 sayılı CMK, m.90 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Yakalama emri
+Kanuni şartların gerçekleşmesi hâlinde şüpheli, sanık veya hükümlünün yakalanmasını sağlamak amacıyla yetkili merci tarafından çıkarılan emirdir.
+Kaynak: 5271 sayılı CMK, m.98 ve ilgili hükümler.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Yakın hısımlık
+Kan veya kayın hısımlığı bakımından kişilerin birbirine yakın derecede bağlılığını ifade eden genel hukuk terimidir.
+Kaynak: 4721 sayılı TMK, m.17-18; ilgili mevzuat.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Yan edim
+Asıl edime bağlı veya onu tamamlayan ikincil sözleşmesel yükümlülüğü ifade eder.
+Kaynak: 6098 sayılı TBK; borçlar hukuku öğretisi.
+Kaynak Türü: Mevzuat + Hukuk Öğretisi
+Yargı
+Hukuki uyuşmazlıkların bağımsız mahkemelerce çözülmesi ve yargısal yetkinin kullanılmasını ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.9 ve m.138 ve devamı.
+Kaynak Türü: Anayasa — Yargı Hukuku
+Yargılama
+Bir uyuşmazlığın veya suç isnadının yargı merciince usul kurallarına göre incelenip karara bağlanması sürecidir.
+Kaynak: HMK, CMK, İYUK ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Yargılamanın iadesi
+Kesinleşmiş kararın kanunda sınırlı sayılan sebeplerle yeniden incelenmesini sağlayan olağanüstü kanun yoludur.
+Kaynak: 6100 sayılı HMK m.374 ve devamı; ilgili usul mevzuatı
+Kaynak Türü: Mevzuat — Kanun Yolları
+Yargılamanın yenilenmesi
+Kesinleşmiş hükümlere karşı kanunda sınırlı olarak sayılan nedenlerle başvurulabilen olağanüstü kanun yoludur.
+Kaynak: 6100 sayılı HMK m.374 ve devamı; 5271 sayılı CMK m.311 ve devamı; 2577 sayılı İYUK m.53.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Yargılama giderleri
+Davanın görülmesi için yapılan harç, tebligat, bilirkişi, tanık ve benzeri kanunda sayılan giderlerdir.
+Kaynak: 6100 sayılı HMK, m.323 ve devamı.
+Kaynak Türü: Mevzuat — Medeni Usul
+Yargıtay
+Adli yargı mercilerince verilen ve kanunun başka bir adli yargı merciine bırakmadığı karar ve hükümlerin son inceleme merciidir.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.154; 2797 sayılı Yargıtay Kanunu.
+Kaynak Türü: Anayasa + Mevzuat
+Yargıtay bozma kararı
+Yargıtayın kanun yolu incelemesinde alt derece mahkemesi kararını hukuka aykırı bularak kaldırıp dosyanın yeniden incelenmesini sağlayan karardır.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2797 sayılı Kanun.
+Kaynak Türü: Mevzuat — Kanun Yolları
+Yargıtay ilamı
+Yargıtay dairesi veya kurulunun inceleme sonucunda verdiği kararın resmî metnini ifade eder.
+Kaynak: 2797 sayılı Yargıtay Kanunu; ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Yargı çevresi
+Bir mahkeme veya yargı biriminin coğrafi görev alanını ifade eder.
+Kaynak: 5235 sayılı Kanun ve ilgili teşkilat mevzuatı.
+Kaynak Türü: Mevzuat — Yargı Teşkilatı
+Yargı harcı
+Yargı mercilerinde yapılan dava ve işlemler nedeniyle kanun uyarınca alınan harçtır.
+Kaynak: 492 sayılı Harçlar Kanunu
+Kaynak Türü: Mevzuat — Mali/Usul
+Yasal danışman
+Kısıtlanması için yeterli sebep bulunmamakla birlikte korunması bakımından fiil ehliyetinin belirli işlemlerde sınırlandırılması gereken ergin kişiye atanan danışmandır.
+Kaynak: 4721 sayılı TMK, m.429.
+Kaynak Türü: Mevzuat — Vesayet Hukuku
+Yasal mirasçı
+Kanun gereği mirasçılık sıfatı kazanan kişidir.
+Kaynak: 4721 sayılı TMK, m.495 ve devamı.
+Kaynak Türü: Mevzuat — Miras Hukuku
+Yasal temsilci
+Kanun gereğince başkasını temsil yetkisine sahip veli, vasi veya diğer temsilcidir.
+Kaynak: 4721 sayılı TMK ve ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Medeni Hukuk
+Yazılı delil
+Bir vakıa veya hukuki işlemin ispatında kullanılan yazılı belge ve kayıtları ifade eden genel terimdir.
+Kaynak: 6100 sayılı HMK, m.199 ve devamı.
+Kaynak Türü: Mevzuat — İspat Hukuku
+Yazılı şekil
+Hukuki işlemin kanunun aradığı şekilde yazılı olarak yapılmasını ifade eden şekil şartıdır.
+Kaynak: 6098 sayılı TBK, m.12-16.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Yediemin
+Haczedilen veya muhafaza altına alınan malın kendisine güvenilerek teslim edildiği ve onu korumakla yükümlü kişidir.
+Kaynak: 2004 sayılı İİK; 5237 sayılı TCK m.289 ve ilgili mevzuat.
+Kaynak Türü: Mevzuat — İcra/Ceza Hukuku
+Yemin delili
+Taraflardan birinin çekişmeli vakıa hakkında kanunda belirtilen usulle yemin etmesine dayanan kesin delildir.
+Kaynak: 6100 sayılı HMK m.225 ve devamı
+Kaynak Türü: Mevzuat — İspat
+Yeniden yargılama
+Kesinleşmiş kararın kanunda öngörülen olağanüstü sebeplerle yeniden ele alınmasını ifade eden genel terimdir.
+Kaynak: 6100 sayılı HMK; 5271 sayılı CMK; 2577 sayılı İYUK.
+Kaynak Türü: Mevzuat — Usul Hukuku
+Yerleşim yeri
+Bir kimsenin sürekli kalma niyetiyle oturduğu yerdir.
+Kaynak: 4721 sayılı TMK, m.19.
+Kaynak Türü: Mevzuat — Kişiler Hukuku
+Yetki
+Bir mahkemenin coğrafi bakımdan hangi yerdeki uyuşmazlığa bakacağını veya bir makamın hukuken işlem yapabilme gücünü ifade eder.
+Kaynak: 6100 sayılı HMK, m.5 ve devamı; idare hukuku mevzuatı.
+Kaynak Türü: Mevzuat — Usul/İdare Hukuku
+Yetkisizlik kararı
+Mahkemenin uyuşmazlık bakımından coğrafi olarak yetkili olmadığı gerekçesiyle verdiği usul kararıdır.
+Kaynak: 6100 sayılı HMK m.19-20
+Kaynak Türü: Mevzuat — Usul
+Yetki belgesi
+Bir kişinin veya avukatın belirli işi yapmaya yetkili olduğunu gösteren belgeyi ifade eden genel uygulama terimidir.
+Kaynak: 1136 sayılı Avukatlık Kanunu; ilgili usul mevzuatı.
+Kaynak Türü: Mevzuat — Avukatlık/Usul
+Yetki itirazı
+Davanın yetkisiz mahkemede açıldığı veya takibin yetkisiz icra dairesinde başlatıldığı iddiasıyla yapılan usuli itirazdır.
+Kaynak: 6100 sayılı HMK; 2004 sayılı İİK.
+Kaynak Türü: Mevzuat — Usul/İcra Hukuku
+Yetki sözleşmesi
+Kanunun izin verdiği kişiler ve uyuşmazlıklar bakımından tarafların belirli mahkeme veya mahkemeleri yetkili kılmak üzere yaptıkları sözleşmedir.
+Kaynak: 6100 sayılı HMK, m.17-18.
+Kaynak Türü: Mevzuat — Medeni Usul
+Yokluk
+Bir hukuki işlem veya idari işlemin kurucu unsurlarındaki çok ağır eksiklik nedeniyle hukuk dünyasında doğmamış sayılmasını ifade eden öğretisel kavramdır.
+Kaynak: İdare/özel hukuk öğretisi; ilgili mevzuat ilkeleri
+Kaynak Türü: Hukuk Öğretisi
+Yoksulluk nafakası
+Boşanma yüzünden yoksulluğa düşecek kusuru daha ağır olmayan tarafın diğer taraftan mali gücü oranında isteyebileceği nafakadır.
+Kaynak: 4721 sayılı TMK, m.175.
+Kaynak Türü: Mevzuat — Aile Hukuku
+Yoksunluk
+Belirli bir hak veya yetkiden kanuni sonuç olarak mahrum kalmayı ifade eden genel hukuk terimidir.
+Kaynak: TDK; ilgili mevzuat
+Kaynak Türü: TDK + Mevzuat
+Yol tazminatı
+Belirli görev veya çalışma ilişkilerinde yol gideri karşılığı ödenen tutarı ifade eden genel terimdir.
+Kaynak: İlgili iş/personel mevzuatı
+Kaynak Türü: Mevzuat — İş/Personel
+Yükümlülük
+Bir kişinin hukuk düzeni gereğince yapmak, vermek veya kaçınmak zorunda olduğu davranışı ifade eder.
+Kaynak: TDK; ilgili mevzuat.
+Kaynak Türü: TDK + Genel Hukuk
+Yürürlük
+Bir hukuk kuralının uygulanabilir ve bağlayıcı hâlde bulunmasını ifade eder.
+Kaynak: TDK; mevzuat terminolojisi.
+Kaynak Türü: TDK + Mevzuat
+Yürütme
+Devletin kanunları uygulayan ve idari faaliyetleri yürüten anayasal fonksiyonunu ifade eder.
+Kaynak: Türkiye Cumhuriyeti Anayasası, m.8.
+Kaynak Türü: Anayasa Hukuku
+Yürütmenin durdurulması
+İdari işlemin uygulanması hâlinde telafisi güç veya imkânsız zarar doğması ve işlemin açıkça hukuka aykırı olması şartlarının birlikte gerçekleşmesi durumunda işlemin yürütülmesinin geçici olarak durdurulmasıdır.
+Kaynak: Türkiye Cumhuriyeti Anayasası m.125; 2577 sayılı İYUK m.27.
+Kaynak Türü: Anayasa + İdari Yargı
+
+Z
+Zamanaşımı
+Kanunda öngörülen sürenin geçmesiyle bir hakkın dava veya takip yoluyla ileri sürülmesini etkileyen hukuk kurumudur; sonuçları hukuk alanına göre değişir.
+Kaynak: 6098 sayılı TBK m.146 ve devamı; 5237 sayılı TCK m.66 ve devamı.
+Kaynak Türü: Mevzuat — Genel Hukuk
+Zamanaşımının durması
+Kanunda belirtilen sebepler devam ettiği sürece zamanaşımı süresinin işlememesi veya işlemeye başlamamasıdır.
+Kaynak: 6098 sayılı TBK, m.153.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zamanaşımının kesilmesi
+Kanunda belirtilen olayların gerçekleşmesiyle işlemekte olan zamanaşımı süresinin sıfırlanarak yeniden başlamasıdır.
+Kaynak: 6098 sayılı TBK, m.154 ve devamı; ilgili özel mevzuat.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zamanaşımı def'i
+Borçlunun zamanaşımına uğramış alacağın kendisinden dava yoluyla istenmesine karşı ileri sürdüğü savunmadır.
+Kaynak: 6098 sayılı TBK m.161 ve ilgili hükümler
+Kaynak Türü: Mevzuat — Borçlar
+Zapt
+Bir malın yetkili makamca fiilen kontrol altına alınması veya tutanakla tespit edilmesi anlamlarında kullanılan hukuk terimidir.
+Kaynak: TDK; CMK/İİK ve ilgili mevzuat
+Kaynak Türü: TDK + Mevzuat
+Zapta karşı tekeffül
+Satıcının, üçüncü kişinin üstün hakkı nedeniyle satılanın alıcının elinden alınmasının sonuçlarından sorumluluğunu ifade eden geleneksel terimdir.
+Kaynak: 6098 sayılı TBK, m.214 ve devamı; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zarar
+Kişinin malvarlığında veya kişilik değerlerinde hukuken dikkate alınan eksilme ya da kaybı ifade eder.
+Kaynak: 6098 sayılı TBK, m.49 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zararın giderilmesi
+Doğan maddi veya manevi zararın tazminat, aynen giderim veya kanunun öngördüğü başka yollarla karşılanmasıdır.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zararın tazmini
+Hukuken sorumlu kişinin meydana gelen zararı kanuni ölçüler içinde karşılamasıdır.
+Kaynak: 6098 sayılı TBK, m.49 ve devamı.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zarar gören
+Hukuka aykırı fiil veya başka sorumluluk sebebi nedeniyle maddi ya da manevi zarara uğrayan kişidir.
+Kaynak: 6098 sayılı TBK.
+Kaynak Türü: Mevzuat — Borçlar Hukuku
+Zarar gören üçüncü kişi
+Hukuki ilişki veya fiilden taraf olmadığı hâlde doğrudan zarar gören üçüncü kişiyi ifade eder.
+Kaynak: 6098 sayılı TBK ve ilgili özel mevzuat
+Kaynak Türü: Mevzuat — Borçlar
+Zaruret hali
+Bir tehlikeden korunmak amacıyla başkasının malına zarar verilmesi gibi zorunluluk durumlarını ifade eden geleneksel hukuk terimidir.
+Kaynak: 6098 sayılı TBK m.64; 5237 sayılı TCK m.25/2; hukuk terminolojisi.
+Kaynak Türü: Mevzuat — Borçlar/Ceza Hukuku
+Zayi
+Kaybolmuş, yok olmuş veya kullanılamaz hâle gelmiş anlamında hukuk ve ticaret dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri; 6102 sayılı TTK.
+Kaynak Türü: TDK + Mevzuat
+Zayi belgesi
+Tacirin saklamakla yükümlü olduğu defter ve belgelerin kanunda belirtilen nedenlerle kaybolması hâlinde mahkemeden istenebilen tespit belgesidir.
+Kaynak: 6102 sayılı TTK, m.82.
+Kaynak Türü: Mevzuat — Ticaret Hukuku
+Zilyet
+Bir şey üzerinde fiilî hâkimiyeti bulunan kişidir.
+Kaynak: 4721 sayılı TMK, m.973 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Zilyetliğin devri
+Bir eşya üzerindeki fiilî hâkimiyetin hukuken başka kişiye geçirilmesidir.
+Kaynak: 4721 sayılı TMK, m.977 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Zilyetliğin korunması
+Zilyedin gasp veya saldırıya karşı kanunda öngörülen savunma ve dava imkânlarından yararlanmasıdır.
+Kaynak: 4721 sayılı TMK, m.981 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Zilyetlik
+Bir şey üzerinde fiilî hâkimiyet kurulmasıyla oluşan ve hukuk düzenince korunan durumdur.
+Kaynak: 4721 sayılı TMK, m.973 ve devamı.
+Kaynak Türü: Mevzuat — Eşya Hukuku
+Zimmet
+Kamu görevlisinin görevi nedeniyle zilyetliği kendisine devredilmiş veya koruma ve gözetimiyle yükümlü olduğu malı kendisinin veya başkasının zimmetine geçirmesi suçudur.
+Kaynak: 5237 sayılı TCK, m.247 ve devamı.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Zincirleme suç
+Bir suç işleme kararının icrası kapsamında aynı suçun bir kişiye karşı değişik zamanlarda birden fazla işlenmesi veya kanundaki diğer şartların gerçekleşmesi hâlinde uygulanan ceza hukuku kurumudur.
+Kaynak: 5237 sayılı TCK, m.43.
+Kaynak Türü: Mevzuat — Ceza Hukuku
+Zorla getirme
+Kanuni çağrıya uymayan veya kanunda belirtilen şartları taşıyan kişinin yetkili makam önüne kolluk aracılığıyla getirilmesini sağlayan tedbirdir.
+Kaynak: 5271 sayılı CMK m.146; ilgili usul mevzuatı
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Zorunlu arabuluculuk
+Kanunun belirli uyuşmazlıklarda dava açılmadan önce arabulucuya başvurulmasını dava şartı olarak öngörmesidir.
+Kaynak: 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu; ilgili özel kanunlar.
+Kaynak Türü: Mevzuat — Alternatif Uyuşmazlık Çözümü
+Zorunlu dava arkadaşlığı
+Maddi hukuk veya kanun gereği birden fazla kişinin davada birlikte hareket etmesinin zorunlu olduğu dava arkadaşlığı türüdür.
+Kaynak: 6100 sayılı HMK, m.59-60.
+Kaynak Türü: Mevzuat — Medeni Usul
+Zorunlu müdafi
+Kanunda belirtilen hâllerde şüpheli veya sanığa talebi aranmaksızın görevlendirilen müdafidir.
+Kaynak: 5271 sayılı CMK m.150
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Zorunlu müdafilik
+Kanunda belirtilen hâllerde şüpheli veya sanığın talebi aranmaksızın kendisine müdafi görevlendirilmesidir.
+Kaynak: 5271 sayılı CMK, m.150.
+Kaynak Türü: Mevzuat — Ceza Muhakemesi
+Zorunlu sigorta
+Kanunun belirli risk veya faaliyetler için yapılmasını zorunlu tuttuğu sigorta türüdür.
+Kaynak: 6102 sayılı TTK; 5684 sayılı Sigortacılık Kanunu ve özel mevzuat.
+Kaynak Türü: Mevzuat — Sigorta Hukuku
+Zor kullanma
+Yetkili kamu görevlilerinin kanunun verdiği yetki çerçevesinde ve ölçülülük şartıyla fiziksel güç veya araç kullanmasını ifade eder.
+Kaynak: 2559 sayılı Polis Vazife ve Salahiyet Kanunu; ilgili kolluk mevzuatı.
+Kaynak Türü: Mevzuat — Kolluk Hukuku
+Zühul
+Yanılma veya dalgınlık anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.
+Kaynak: TDK sözlükleri
+Kaynak Türü: TDK — Eski Hukuk Dili

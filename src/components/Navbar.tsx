@@ -108,22 +108,22 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 sm:px-6 md:px-8 ${
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-3 sm:px-4 md:px-6 ${
       scrolled 
-        ? 'bg-bg-primary/95 backdrop-blur-md py-3 border-b border-navy-primary/10 shadow-sm' 
-        : 'bg-transparent py-5'
+        ? 'bg-bg-primary/95 backdrop-blur-md py-2.5 sm:py-3 border-b border-navy-primary/10 shadow-sm' 
+        : 'bg-transparent py-3 sm:py-4 md:py-5'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-12 flex justify-between items-center">
         {/* Custom Symmetrical Circular Crest Logo */}
         <Link 
           href="/" 
           onClick={(e) => handleLinkClick(e, 'home')}
-          className="flex items-center gap-3 group"
+          className="flex items-center gap-2 sm:gap-3 group min-w-0"
         >
-          <AslanLogo size={44} className="text-navy-primary transition-transform duration-300 group-hover:scale-105" />
-          <div className="flex flex-col items-start">
-            <span className="text-base md:text-lg font-serif font-extrabold tracking-widest text-text-primary leading-none mb-1">ASLAN</span>
-            <span className="text-[0.5rem] md:text-[0.55rem] font-sans font-bold tracking-[0.25em] text-navy-primary uppercase leading-none">
+          <AslanLogo className="w-9 h-9 sm:w-11 sm:h-11 text-navy-primary transition-transform duration-300 group-hover:scale-105 shrink-0" />
+          <div className="flex flex-col items-start min-w-0">
+            <span className="text-sm sm:text-base md:text-lg font-serif font-extrabold tracking-widest text-text-primary leading-none mb-0.5 sm:mb-1">ASLAN</span>
+            <span className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] text-navy-primary uppercase leading-none truncate max-w-[120px] sm:max-w-none">
               {t('nav.lawFirm')}
             </span>
           </div>
@@ -257,7 +257,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger Button & Theme Toggle & Language */}
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center gap-2 sm:gap-4 lg:hidden shrink-0">
           {/* Language Selector for mobile (rotates between tr/en) */}
           <button 
             onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
@@ -286,7 +286,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className={`fixed top-0 right-0 w-full sm:w-80 md:w-96 h-screen bg-bg-primary border-l border-navy-primary/10 shadow-lg p-8 z-40 transform transition-transform duration-300 lg:hidden ${
+      <div className={`fixed top-0 right-0 w-[min(100vw,20rem)] sm:w-80 md:w-96 h-[100dvh] bg-bg-primary border-l border-navy-primary/10 shadow-lg p-6 sm:p-8 z-[60] transform transition-transform duration-300 lg:hidden ${
         mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex justify-end mb-8">

@@ -69,20 +69,20 @@ export default function HomeClient({ articles }: HomeClientProps) {
       <NavyThreadLine />
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center pt-20 bg-bg-primary overflow-hidden transition-colors duration-300">
+      <section id="home" className="relative min-h-[100dvh] flex items-center pt-20 sm:pt-24 bg-bg-primary overflow-hidden transition-colors duration-300">
         <div className="absolute top-0 right-[10%] w-[1px] h-full bg-navy-primary/5 hidden lg:block"></div>
-        <div className="absolute top-1/3 left-0 w-32 h-[1px] bg-navy-primary/10"></div>
+        <div className="absolute top-1/3 left-0 w-16 sm:w-32 h-[1px] bg-navy-primary/10"></div>
         
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-16 relative z-10">
-          <div className="lg:col-span-7 flex flex-col items-start text-center sm:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-navy-primary/10 bg-softWhite rounded-full mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center py-10 sm:py-12 md:py-16 relative z-10">
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-navy-primary/10 bg-softWhite rounded-full mb-4 sm:mb-6">
               <span className="w-1.5 h-1.5 bg-navy-primary rounded-full animate-pulse shadow-sm"></span>
-              <span className="text-[0.6rem] font-sans font-semibold tracking-wider text-navy-primary uppercase">
+              <span className="text-[0.55rem] sm:text-[0.6rem] font-sans font-semibold tracking-wider text-navy-primary uppercase">
                 {t('hero.badge')}
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-text-primary leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-text-primary leading-tight mb-4 sm:mb-6">
               {t('hero.titleFirst')} <br />
               <span className="text-navy-primary relative">
                 {t('hero.titleHighlight')}
@@ -90,28 +90,28 @@ export default function HomeClient({ articles }: HomeClientProps) {
               </span> {t('hero.titleLast')}
             </h1>
 
-            <p className="text-sm md:text-base text-text-secondary font-light leading-relaxed max-w-xl mb-8">
+            <p className="text-sm sm:text-base text-text-secondary font-light leading-relaxed max-w-xl mb-6 sm:mb-8 px-1 sm:px-0">
               {t('hero.subtitle')}
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 w-full sm:w-auto">
               <Link 
                 href="/iletisim"
-                className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-sm shadow-sm"
+                className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-sm shadow-sm text-center"
               >
                 {t('hero.ctaContact')}
               </Link>
               <Link 
                 href="/faaliyet-alanlari"
-                className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary/30 text-text-primary hover:border-navy-primary hover:bg-navy-primary/5 transition-all duration-300 rounded-lg"
+                className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary/30 text-text-primary hover:border-navy-primary hover:bg-navy-primary/5 transition-all duration-300 rounded-lg text-center"
               >
                 {t('hero.ctaPractice')}
               </Link>
             </div>
           </div>
 
-          <div className="lg:col-span-5 flex justify-center relative">
-            <div className="relative w-80 h-96 md:w-96 md:h-[450px] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
+          <div className="lg:col-span-5 flex justify-center relative w-full">
+            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] aspect-[4/5] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
               <div className="relative w-full h-full">
                 <Image 
                   src="/hero-scales.png" 
@@ -131,11 +131,11 @@ export default function HomeClient({ articles }: HomeClientProps) {
       </section>
 
       {/* Profile Overview (Hakkımızda Özet) */}
-      <section className="py-24 bg-bg-primary relative border-t border-navy-primary/10 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-72 h-96 md:w-80 md:h-[400px] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10 transition-colors duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            <div className="lg:col-span-5 flex justify-center order-1 lg:order-none">
+              <div className="relative w-full max-w-[240px] sm:max-w-[288px] md:max-w-[320px] aspect-[3/4] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl">
                 <div className="relative w-full h-full">
                   <Image 
                     src="/nedim-aslan-2.jpg" 
@@ -150,19 +150,19 @@ export default function HomeClient({ articles }: HomeClientProps) {
               </div>
             </div>
             
-            <div className="lg:col-span-7 flex flex-col items-start">
+            <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-none">
               <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
                 {t('about.badge')}
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 sm:mb-6">
                 Av. Nedim Aslan
               </h2>
-              <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify">
+              <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify max-w-2xl">
                 {t('about.bio1')}
               </p>
               <Link 
                 href="/hakkimizda"
-                className="text-xs font-sans font-semibold tracking-widest uppercase px-5 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg"
+                className="text-xs font-sans font-semibold tracking-widest uppercase px-5 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg w-full sm:w-auto text-center"
               >
                 Daha Fazla Bilgi
               </Link>
@@ -172,25 +172,25 @@ export default function HomeClient({ articles }: HomeClientProps) {
       </section>
 
       {/* Practice Overview (Faaliyet Alanları Özet) */}
-      <section className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <div className="text-center mb-16">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('practice.badge')}
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
               Öne Çıkan Çalışma Alanları
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
             {keyPractices.map((practice) => {
               const Icon = practice.icon;
               return (
                 <Link 
                   href="/faaliyet-alanlari"
                   key={practice.id} 
-                  className="p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group flex flex-col items-start relative rounded-xl"
+                  className="p-6 sm:p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group flex flex-col items-start relative rounded-xl"
                 >
                   <div className="absolute top-0 left-0 w-[2px] h-0 bg-navy-primary group-hover:h-full transition-all duration-300"></div>
                   <div className="w-12 h-12 bg-navy-primary/5 text-navy-primary flex items-center justify-center rounded-lg mb-6 group-hover:bg-navy-primary group-hover:text-white transition-all duration-300">
@@ -222,18 +222,18 @@ export default function HomeClient({ articles }: HomeClientProps) {
       </section>
 
       {/* Publications Overview (Makaleler Özet) */}
-      <section className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <div className="text-center mb-16">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('articles.badge')}
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
               Son Yayınlar
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
             {recentArticles.map((article) => (
               <div 
                 key={article.slug} 
@@ -285,17 +285,17 @@ export default function HomeClient({ articles }: HomeClientProps) {
       </section>
 
       {/* Info Overview (İletişim Bilgileri Özet) */}
-      <section className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex flex-col gap-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
+            <div className="flex flex-col gap-4 sm:gap-6">
               <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block">
                 {t('contact.badge')}
               </span>
-              <h2 className="text-3xl font-serif font-bold text-text-primary">
+              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-text-primary">
                 Hukuki Danışmanlık ve Temsil
               </h2>
-              <p className="text-sm text-text-secondary font-light leading-relaxed mb-4">
+              <p className="text-sm text-text-secondary font-light leading-relaxed mb-2 sm:mb-4">
                 Sorularınız, dosyalarınız veya dava süreçleriniz için bizimle irtibata geçebilir, ofisimizden randevu alarak hukuki yardım talep edebilirsiniz.
               </p>
 
@@ -335,8 +335,8 @@ export default function HomeClient({ articles }: HomeClientProps) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 w-full">
-              <div className="h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
+            <div className="flex flex-col gap-4 sm:gap-5 w-full">
+              <div className="h-52 sm:h-60 md:h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.689626359556!2d28.824578115439408!3d41.04278997929729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa35d8869c9b5%3A0xcdcd56b0c20a9a14!2zR8O2enRlcGUsIEJvc25hIENkLiBObzoyNDIsIDM0MjE4IEJhxJ9jModeslarL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" 
                   width="100%" 
@@ -386,7 +386,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
               <div className="flex justify-start lg:justify-end">
                 <Link 
                   href="/iletisim"
-                  className="text-[0.65rem] font-sans font-semibold tracking-widest uppercase px-6 py-3.5 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-xl shadow-md cursor-pointer"
+                  className="text-[0.65rem] font-sans font-semibold tracking-widest uppercase px-5 sm:px-6 py-3 sm:py-3.5 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-xl shadow-md cursor-pointer w-full sm:w-auto text-center"
                 >
                   Detaylı İletişim Formu ve Harita
                 </Link>

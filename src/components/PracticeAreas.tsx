@@ -42,30 +42,30 @@ export default function PracticeAreas() {
   };
 
   return (
-    <section id="practice" className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
+    <section id="practice" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
       {/* Decorative Red Thread line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
             {t('practice.badge')}
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
             {t('practice.title')}
           </h2>
-          <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed">
+          <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed px-2 sm:px-0">
             {t('practice.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {practices.map((practice) => {
             const Icon = iconMap[practice.id] || Gavel;
             return (
               <div 
                 key={practice.id} 
-                className="p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col items-start relative rounded-xl"
+                className="p-6 sm:p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col items-start relative rounded-xl"
                 onClick={() => openModal(practice)}
               >
                 {/* Thin vertical indicator represent red thread on hover */}
@@ -90,8 +90,8 @@ export default function PracticeAreas() {
       </div>
 
       {activeModal && (
-        <div className="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={closeModal}>
-          <div className="bg-bg-primary border border-navy-primary/20 w-full max-w-lg p-8 relative rounded-xl shadow-xl animate-scale-up" onClick={(e) => e.stopPropagation()}>
+        <div className="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 animate-fade-in" onClick={closeModal}>
+          <div className="bg-bg-primary border border-navy-primary/20 w-full sm:max-w-lg max-h-[90dvh] overflow-y-auto p-6 sm:p-8 relative rounded-t-2xl sm:rounded-xl shadow-xl animate-scale-up" onClick={(e) => e.stopPropagation()}>
             <button className="absolute top-4 right-4 text-text-secondary hover:text-navy-primary transition-colors" onClick={closeModal} aria-label="Kapat">
               <X size={20} />
             </button>

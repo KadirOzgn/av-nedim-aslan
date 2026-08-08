@@ -27,27 +27,27 @@ export default function ArticlesClient({ articles }: ArticlesClientProps) {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-bg-primary pt-32 pb-24 relative transition-colors duration-300">
+      <main className="min-h-screen bg-bg-primary pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 relative transition-colors duration-300">
         {/* Red Thread vertical detail */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
           {/* Header */}
-          <div className="mb-16 text-center">
+          <div className="mb-10 sm:mb-12 md:mb-16 text-center">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('articles.badge')}
             </span>
-            <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
               {t('articles.title')}
             </h1>
-            <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed">
+            <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed px-2 sm:px-0">
               {t('articles.subtitle')}
             </p>
           </div>
 
           {/* Grid Layout */}
           {filteredArticles.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
               {filteredArticles.map((article) => (
                 <div 
                   key={article.slug} 

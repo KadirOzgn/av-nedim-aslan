@@ -14,26 +14,26 @@ export default function AboutPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-bg-primary pt-32 pb-24 relative transition-colors duration-300">
+      <main className="min-h-screen bg-bg-primary pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 relative transition-colors duration-300">
         {/* Red Thread vertical detail */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
           {/* Header */}
-          <div className="mb-16 text-center">
+          <div className="mb-10 sm:mb-12 md:mb-16 text-center">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('about.badge')}
             </span>
-            <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
               {t('nav.about')}
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center mb-16 sm:mb-20 md:mb-24">
             
             {/* Left Image Column */}
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-72 h-96 md:w-80 md:h-[400px] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300">
+              <div className="relative w-full max-w-[240px] sm:max-w-[288px] md:max-w-[320px] aspect-[3/4] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300">
                 <div className="relative w-full h-full">
                   <Image 
                     src="/nedim-aslan-2.jpg" 
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </div>
 
             {/* Right Biography Column */}
-            <div className="lg:col-span-7 flex flex-col items-start">
+            <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
               <h2 className="text-2xl font-serif font-bold text-text-primary mb-6">
                 Av. Nedim Aslan
               </h2>

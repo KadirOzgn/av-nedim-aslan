@@ -72,24 +72,24 @@ export default function ContactForm() {
     }
   };
   return (
-    <section id="contact" className="py-24 bg-bg-primary relative border-t border-navy-primary/10">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
       {/* Red Thread vertical detail */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
             {t('contact.badge')}
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
             {t('contact.title')}
           </h2>
-          <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed">
+          <p className="text-sm text-text-secondary max-w-xl mx-auto mt-4 font-light leading-relaxed px-2 sm:px-0">
             {t('contact.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-stretch">
           {/* Contact Details Column */}
           <div className="flex flex-col gap-6 justify-between h-full">
             <div className="flex flex-col gap-4">
@@ -217,7 +217,7 @@ export default function ContactForm() {
           </div>
 
           {/* Form Column */}
-          <div className="p-8 md:p-10 border border-stone-200/60 dark:border-white/10 bg-white/[0.01] dark:bg-white/[0.02] backdrop-blur-sm shadow-sm relative rounded-2xl flex flex-col justify-between h-full">
+          <div className="p-5 sm:p-6 md:p-8 lg:p-10 border border-stone-200/60 dark:border-white/10 bg-white/[0.01] dark:bg-white/[0.02] backdrop-blur-sm shadow-sm relative rounded-2xl flex flex-col justify-between h-full">
             <div className="absolute top-0 right-0 w-8 h-[1px] bg-navy-primary/30 dark:bg-navy-primary/50"></div>
             <div className="absolute top-0 right-0 w-[1px] h-8 bg-navy-primary/30 dark:bg-navy-primary/50"></div>
 

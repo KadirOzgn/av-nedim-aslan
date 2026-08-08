@@ -13,25 +13,22 @@ interface LanguageContextProps {
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
+function readStoredLanguage(): Language {
+  if (typeof window === 'undefined') return 'tr';
+  const savedLang = localStorage.getItem('language');
+  return savedLang === 'en' ? 'en' : 'tr';
+}
+
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('tr');
+  const [language, setLanguageState] = useState<Language>(readStoredLanguage);
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('language') as Language;
-    if (savedLang === 'tr' || savedLang === 'en') {
-      setLanguageState(savedLang);
-    } else {
-      const browserLang = navigator.language.split('-')[0];
-      if (browserLang === 'tr') {
-        setLanguageState('tr');
-      } else {
-        setLanguageState('en');
-      }
-    }
-  }, []);
+    document.documentElement.lang = language;
+  }, [language]);
 
   const setLanguage = (lang: Language) => {
     localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
     setLanguageState(lang);
   };
 

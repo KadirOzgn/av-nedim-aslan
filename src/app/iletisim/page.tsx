@@ -12,7 +12,7 @@ export default function ContactPage() {
     <>
       <Navbar />
 
-      <main className="min-h-screen bg-bg-primary pt-12 transition-colors duration-300">
+      <main className="min-h-screen bg-bg-primary pt-20 sm:pt-24 md:pt-28 transition-colors duration-300">
         <ContactForm />
       </main>
 

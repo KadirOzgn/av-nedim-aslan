@@ -45,6 +45,8 @@ export default function RootLayout({
               } else {
                 document.documentElement.classList.remove('dark');
               }
+              var lang = localStorage.getItem('language');
+              document.documentElement.lang = lang === 'en' ? 'en' : 'tr';
             } catch (e) {}
           })();
         `}} />

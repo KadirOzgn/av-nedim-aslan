@@ -1,50 +1,83 @@
 "use client";
 
-import { Sparkles } from 'lucide-react';
+import { useState } from 'react';
+import { Sparkles, MessageSquareCode } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
-export default function AISummaryButton() {
-  const { language } = useLanguage();
+interface AISummaryButtonProps {
+  content: string;
+  title: string;
+}
 
-  const getGeminiUrl = () => {
-    const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+export default function AISummaryButton({ content, title }: AISummaryButtonProps) {
+  const { language } = useLanguage();
+  const [copiedPlatform, setCopiedPlatform] = useState<'gemini' | 'chatgpt' | null>(null);
+
+  const handleSummary = async (platform: 'gemini' | 'chatgpt') => {
     const basePrompt = language === 'en'
-      ? `Please summarize this legal text in general terms and extract the key points: ${currentUrl}`
-      : `Lütfen şu hukuki metni genel hatlarıyla özetle ve önemli noktalarını çıkar: ${currentUrl}`;
-    return `https://gemini.google.com/app?prompt=${encodeURIComponent(basePrompt)}`;
+      ? `Please summarize this legal article in general terms and extract the key points:\n\nTitle: ${title}\n\nContent:\n${content}`
+      : `Lütfen şu hukuki makaleyi genel hatlarıyla özetle ve önemli noktalarını çıkar:\n\nBaşlık: ${title}\n\nİçerik:\n${content}`;
+
+    try {
+      await navigator.clipboard.writeText(basePrompt);
+      setCopiedPlatform(platform);
+      setTimeout(() => setCopiedPlatform(null), 3000);
+    } catch (err) {
+      console.error("Clipboard copy failed:", err);
+    }
+
+    const url = platform === 'gemini'
+      ? 'https://gemini.google.com/app'
+      : 'https://chatgpt.com';
+
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const labels = {
     title: language === 'en' ? "Summarize with AI" : "Yapay Zekâ ile Özetle",
     desc: language === 'en' 
-      ? "Extract the outline and legal summary of the article in seconds using Gemini AI."
-      : "Gemini AI kullanarak makalenin ana hatlarını ve hukuki özetini saniyeler içinde çıkarın.",
-    btn: language === 'en' ? "Summarize with Gemini" : "Gemini ile Özetle",
+      ? "Select an AI service to summarize the article. The text and prompt will be copied to your clipboard automatically."
+      : "Makaleyi özetlemek için bir yapay zekâ servisi seçin. Metin ve talimat otomatik olarak panonuza kopyalanacaktır.",
+    geminiBtn: language === 'en' 
+      ? (copiedPlatform === 'gemini' ? "Copied! Opening Gemini..." : "Summarize with Gemini")
+      : (copiedPlatform === 'gemini' ? "Kopyalandı! Gemini Açılıyor..." : "Gemini ile Özetle"),
+    chatgptBtn: language === 'en'
+      ? (copiedPlatform === 'chatgpt' ? "Copied! Opening ChatGPT..." : "Summarize with ChatGPT")
+      : (copiedPlatform === 'chatgpt' ? "Kopyalandı! ChatGPT Açılıyor..." : "ChatGPT ile Özetle"),
     note: language === 'en'
-      ? "* Note: This is an external Google Gemini service. Clicking the link will generate the summary on the external platform."
-      : "* Not: Bu harici bir Google Gemini hizmetidir. Bağlantıya tıkladığınızda metnin özeti harici platformda oluşturulacaktır."
+      ? "* Note: Clicking a button copies the text and instructions to your clipboard. Paste (Cmd+V / Ctrl+V) the text into the chat window of the selected platform."
+      : "* Not: Butona tıkladığınızda metin ve özetleme talimatı panonuza kopyalanır. Açılan yapay zekâ penceresinde yapıştır (Cmd+V / Ctrl+V) yaparak özeti saniyeler içinde alabilirsiniz."
   };
 
   return (
     <div className="p-5 border border-navy-primary/10 bg-navy-bg/40 rounded-sm">
-      <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-2">
+      <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-2 flex items-center gap-1.5">
+        <Sparkles size={13} className="text-navy-primary animate-pulse" />
         {labels.title}
       </h4>
       <p className="text-[0.65rem] text-text-secondary leading-normal mb-4 font-light">
         {labels.desc}
       </p>
       
-      <a 
-        href={getGeminiUrl()}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-full py-2.5 px-4 bg-navy-primary text-white hover:bg-navy-secondary font-sans font-semibold tracking-widest text-[0.65rem] uppercase transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer text-center"
-      >
-        <Sparkles size={12} />
-        {labels.btn}
-      </a>
+      <div className="flex flex-col gap-2">
+        <button 
+          onClick={() => handleSummary('gemini')}
+          className="w-full py-2.5 px-4 bg-navy-primary hover:bg-navy-secondary text-white font-sans font-semibold tracking-widest text-[0.65rem] uppercase transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer text-center border-none"
+        >
+          <Sparkles size={12} />
+          {labels.geminiBtn}
+        </button>
+
+        <button 
+          onClick={() => handleSummary('chatgpt')}
+          className="w-full py-2.5 px-4 border border-navy-primary/20 hover:border-navy-primary bg-transparent text-text-primary hover:bg-navy-primary/5 font-sans font-semibold tracking-widest text-[0.65rem] uppercase transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer text-center"
+        >
+          <MessageSquareCode size={12} className="text-navy-primary" />
+          {labels.chatgptBtn}
+        </button>
+      </div>
       
-      <span className="text-[0.55rem] text-text-muted mt-2 block font-light leading-normal text-justify">
+      <span className="text-[0.55rem] text-text-muted mt-3 block font-light leading-normal text-justify">
         {labels.note}
       </span>
     </div>

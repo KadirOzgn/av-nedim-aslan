@@ -152,7 +152,7 @@ export default async function ArticlePage({ params }: Props) {
               )}
 
               {/* AI Summarizer Button */}
-              <AISummaryButton />
+              <AISummaryButton content={article.content} title={metadata.title} />
 
               {/* Legal Disclaimer Info Card */}
               <div className="p-5 border border-navy-primary/10 bg-stone-100/50 dark:bg-stone-900/10 rounded-sm flex gap-3 items-start">

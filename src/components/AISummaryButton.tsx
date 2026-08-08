@@ -62,10 +62,19 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
     // Run copy block
     performCopy();
 
+    // For the URL query string, we pass the URL of the article.
+    // ChatGPT/Gemini can visit the URL, and if they can't, the user already has the full text on their clipboard!
+    const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
+    const urlPrompt = language === 'en'
+      ? `Please summarize this legal article: ${currentUrl}\n\n(Note: The full text of the article is already copied to my clipboard. If you cannot access this link, let me know so I can paste it for you.)`
+      : `Lütfen şu hukuki makaleyi genel hatlarıyla özetle: ${currentUrl}\n\n(Not: Makalenin tam metni panoma kopyalandı. Eğer bu bağlantıya erişemezsen belirt, metni doğrudan yapıştırayım.)`;
+
+    const queryParam = encodeURIComponent(urlPrompt);
+
     // Synchronous redirect to bypass browser popup blockers (especially Safari/iOS)
     const url = platform === 'gemini'
-      ? 'https://gemini.google.com/app'
-      : 'https://chatgpt.com';
+      ? `https://gemini.google.com/app?prompt=${queryParam}`
+      : `https://chatgpt.com/?q=${queryParam}`;
 
     window.open(url, '_blank', 'noopener,noreferrer');
   };

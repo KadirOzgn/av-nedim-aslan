@@ -167,8 +167,8 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/makaleler"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/makaleler' || pathname.startsWith('/makaleler/')
+                href="/hukuk-notlari"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hukuk-notlari' || pathname.startsWith('/hukuk-notlari/')
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -319,9 +319,9 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/makaleler"
+              href="/hukuk-notlari"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/makaleler' || pathname.startsWith('/makaleler/') ? 'text-navy-primary' : 'text-text-secondary'
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/hukuk-notlari' || pathname.startsWith('/hukuk-notlari/') ? 'text-navy-primary' : 'text-text-secondary'
                 }`}
             >
               {t('nav.articles')}

@@ -353,20 +353,20 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 {/* Custom Pin Overlay with Lion Logo */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-20 mt-[-20px]">
                   {/* Glowing pulse ring */}
-                  <div className="absolute w-12 h-12 rounded-full bg-navy-primary/25 animate-ping"></div>
+                  <div className="absolute w-16 h-16 rounded-full bg-navy-primary/25 animate-ping"></div>
 
                   {/* Pin Container */}
-                  <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-navy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
-                    <AslanLogo size={24} className="text-white" />
+                  <div className="relative flex items-center justify-center w-14 h-14 rounded-full bg-navy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
+                    <AslanLogo size={32} className="text-white" />
 
                     {/* Pin point tail */}
-                    <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-navy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
+                    <div className="absolute bottom-[-7px] left-1/2 -translate-x-1/2 w-4 h-4 rotate-45 bg-navy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
                   </div>
                 </div>
 
                 {/* Floating Logo Badge on Map */}
                 <div className="absolute top-4 left-4 bg-bg-primary/95 dark:bg-stone-950/95 backdrop-blur-md border border-stone-200/60 dark:border-white/10 px-3 py-2 rounded-xl shadow-lg flex items-center gap-2 pointer-events-none z-30 transition-all duration-300 group-hover:-translate-y-0.5">
-                  <AslanLogo size={18} className="text-navy-primary" />
+                  <AslanLogo size={24} className="text-navy-primary" />
                   <span className="text-[0.6rem] font-sans font-bold text-text-primary tracking-widest uppercase">Konumumuz</span>
                 </div>
 

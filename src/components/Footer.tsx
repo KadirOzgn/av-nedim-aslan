@@ -18,10 +18,10 @@ export default function Footer() {
         {/* Column 1: Logo & Disclaimer */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <AslanLogo size={40} className="text-navy-light" />
+            <AslanLogo size={68} className="text-navy-light" />
             <div className="flex flex-col items-start">
-              <span className="text-base font-serif font-extrabold tracking-widest text-stone-100 leading-none mb-1">ASLAN</span>
-              <span className="text-[0.5rem] font-sans font-bold tracking-[0.25em] text-navy-light uppercase leading-none">
+              <span className="text-xl font-serif font-extrabold tracking-widest text-stone-100 leading-none mb-1.5">ASLAN</span>
+              <span className="text-[0.62rem] font-sans font-bold tracking-[0.25em] text-navy-light uppercase leading-none">
                 {t('nav.lawFirm')}
               </span>
             </div>

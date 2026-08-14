@@ -117,12 +117,12 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={(e) => handleLinkClick(e, 'home')}
-          className="flex items-center gap-2 sm:gap-3 group min-w-0"
+          className="flex items-center gap-3 sm:gap-4 group min-w-0"
         >
-          <AslanLogo className="w-9 h-9 sm:w-11 sm:h-11 text-navy-primary transition-transform duration-300 group-hover:scale-105 shrink-0" />
+          <AslanLogo className="w-14 h-14 sm:w-18 sm:h-18 text-navy-primary transition-transform duration-300 group-hover:scale-105 shrink-0" />
           <div className="flex flex-col items-start min-w-0">
-            <span className="text-sm sm:text-base md:text-lg font-serif font-extrabold tracking-widest text-text-primary leading-none mb-0.5 sm:mb-1">ASLAN</span>
-            <span className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] text-navy-primary uppercase leading-none truncate max-w-[120px] sm:max-w-none">
+            <span className="text-lg sm:text-xl md:text-2xl font-serif font-extrabold tracking-widest text-text-primary leading-none mb-1 sm:mb-1.5">ASLAN</span>
+            <span className="text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] text-navy-primary uppercase leading-none truncate max-w-[120px] sm:max-w-none">
               {t('nav.lawFirm')}
             </span>
           </div>

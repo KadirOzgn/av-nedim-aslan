@@ -46,11 +46,11 @@ export default function Dictionary() {
   const filteredData = useMemo(() => {
     return (sozlukData as SozlukTerm[]).filter((item) => {
       const lowercaseSearchTerm = searchTerm.toLocaleLowerCase('tr-TR');
-      const matchesSearch = 
-        item.kavram.toLocaleLowerCase('tr-TR').includes(lowercaseSearchTerm) || 
+      const matchesSearch =
+        item.kavram.toLocaleLowerCase('tr-TR').includes(lowercaseSearchTerm) ||
         item.tanim.toLocaleLowerCase('tr-TR').includes(lowercaseSearchTerm) ||
         item.kategori.toLocaleLowerCase('tr-TR').includes(lowercaseSearchTerm);
-      
+
       let matchesLetter = true;
       if (selectedLetter !== 'TÜMÜ' && selectedLetter !== 'ALL') {
         matchesLetter = item.harf.toUpperCase() === selectedLetter.toUpperCase();
@@ -75,7 +75,7 @@ export default function Dictionary() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
           {/* Header */}
           <div className="mb-8 sm:mb-10 md:mb-12">
-            <Link 
+            <Link
               href="/"
               className="inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-wider text-navy-primary uppercase hover:translate-x-[-4px] transition-transform duration-200 mb-4 sm:mb-6"
             >
@@ -100,8 +100,8 @@ export default function Dictionary() {
               <span className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-muted">
                 <Search size={18} />
               </span>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 placeholder={t('dictionary.searchPlaceholder') || "Terim, tanım veya kategori ara..."}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -135,11 +135,10 @@ export default function Dictionary() {
                     <button
                       key={letter}
                       onClick={() => setSelectedLetter(isAll ? 'TÜMÜ' : letter)}
-                      className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer shrink-0 ${
-                        isSelected 
-                          ? 'bg-navy-primary text-white shadow-sm' 
+                      className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer shrink-0 ${isSelected
+                          ? 'bg-navy-primary text-white shadow-sm'
                           : 'text-text-secondary hover:text-navy-primary hover:bg-navy-primary/5 border border-stone-200/40 dark:border-white/5'
-                      }`}
+                        }`}
                     >
                       {letter}
                     </button>
@@ -155,8 +154,8 @@ export default function Dictionary() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
                 {paginatedData.map((item) => {
                   return (
-                    <div 
-                      key={item.slug} 
+                    <div
+                      key={item.slug}
                       className="p-6 border border-stone-200/60 dark:border-white/10 bg-white/[0.02] dark:bg-white/[0.03] rounded-2xl hover:border-navy-primary/40 dark:hover:border-navy-primary/50 transition-all duration-300 shadow-sm flex flex-col justify-between group relative"
                     >
                       {/* Small navy thread accent in the corner */}
@@ -217,7 +216,7 @@ export default function Dictionary() {
               <p className="text-sm text-text-secondary font-light">
                 {t('dictionary.noResults') || "Aradığınız kriterlere uygun sonuç bulunamadı."}
               </p>
-              <button 
+              <button
                 onClick={() => { setSearchTerm(''); setSelectedLetter('TÜMÜ'); }}
                 className="text-xs text-navy-primary font-sans font-semibold tracking-wider uppercase mt-4 hover:underline cursor-pointer"
               >

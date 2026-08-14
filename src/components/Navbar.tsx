@@ -57,7 +57,7 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll);
     document.addEventListener('mousedown', handleClickOutside);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       document.removeEventListener('mousedown', handleClickOutside);
@@ -83,7 +83,7 @@ export default function Navbar() {
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     setMobileMenuOpen(false);
-    
+
     if (pathname === '/') {
       e.preventDefault();
       const element = document.getElementById(id);
@@ -108,15 +108,14 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-3 sm:px-4 md:px-6 ${
-      scrolled 
-        ? 'bg-bg-primary/95 backdrop-blur-md py-2.5 sm:py-3 border-b border-navy-primary/10 shadow-sm' 
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-3 sm:px-4 md:px-6 ${scrolled
+        ? 'bg-bg-primary/95 backdrop-blur-md py-2.5 sm:py-3 border-b border-navy-primary/10 shadow-sm'
         : 'bg-transparent py-3 sm:py-4 md:py-5'
-    }`}>
+      }`}>
       <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-12 flex justify-between items-center">
         {/* Custom Symmetrical Circular Crest Logo */}
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           onClick={(e) => handleLinkClick(e, 'home')}
           className="flex items-center gap-2 sm:gap-3 group min-w-0"
         >
@@ -133,74 +132,68 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-8">
           <ul className="flex items-center gap-8 list-none m-0 p-0">
             <li>
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 onClick={(e) => handleLinkClick(e, 'home')}
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                  pathname === '/' && activeSection === 'home'
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/' && activeSection === 'home'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
-                }`}
+                  }`}
               >
                 {t('nav.home')}
               </Link>
             </li>
             <li>
-              <Link 
-                href="/hakkimizda" 
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                  pathname === '/hakkimizda'
+              <Link
+                href="/hakkimizda"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hakkimizda'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
-                }`}
+                  }`}
               >
                 {t('nav.about')}
               </Link>
             </li>
             <li>
-                <Link 
-                  href="/faaliyet-alanlari" 
-                  className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                    pathname === '/faaliyet-alanlari'
-                      ? 'text-navy-primary border-navy-primary'
-                      : 'text-text-secondary border-transparent hover:text-navy-primary'
-                  }`}
-                >
-                  {t('nav.practice')}
-                </Link>
-            </li>
-            <li>
-              <Link 
-                href="/makaleler" 
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                  pathname === '/makaleler' || pathname.startsWith('/makaleler/')
+              <Link
+                href="/faaliyet-alanlari"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/faaliyet-alanlari'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
-                }`}
+                  }`}
+              >
+                {t('nav.practice')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/makaleler"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/makaleler' || pathname.startsWith('/makaleler/')
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
+                  }`}
               >
                 {t('nav.articles')}
               </Link>
             </li>
             <li>
-              <Link 
-                href="/sozluk" 
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                  pathname === '/sozluk'
+              <Link
+                href="/sozluk"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/sozluk'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
-                }`}
+                  }`}
               >
                 {t('nav.sozluk')}
               </Link>
             </li>
             <li>
-              <Link 
-                href="/iletisim" 
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${
-                  pathname === '/iletisim'
+              <Link
+                href="/iletisim"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/iletisim'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
-                }`}
+                  }`}
               >
                 {t('nav.contact')}
               </Link>
@@ -209,7 +202,7 @@ export default function Navbar() {
 
           {/* Premium Language Dropdown Menu */}
           <div className="relative border-l border-navy-primary/20 pl-4" ref={dropdownRef}>
-            <button 
+            <button
               onClick={() => setLangDropdownOpen(!langDropdownOpen)}
               className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors focus:outline-none cursor-pointer"
               aria-label="Dil Değiştir"
@@ -217,16 +210,16 @@ export default function Navbar() {
               <span>{language === 'tr' ? '🇹🇷 TR' : '🇬🇧 EN'}</span>
               <ChevronDown size={12} className={`transition-transform duration-200 ${langDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
-            
+
             {langDropdownOpen && (
               <div className="absolute right-0 mt-2.5 w-28 bg-bg-primary border border-navy-primary/10 rounded-sm shadow-md py-1 animate-fade-in">
-                <button 
+                <button
                   onClick={() => handleLangSelect('tr')}
                   className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-navy-primary/5 transition-colors flex items-center gap-2 ${language === 'tr' ? 'text-navy-primary font-bold bg-navy-primary/5' : 'text-text-secondary'}`}
                 >
                   <span>🇹🇷</span> Türkçe
                 </button>
-                <button 
+                <button
                   onClick={() => handleLangSelect('en')}
                   className={`w-full text-left px-4 py-2 text-xs font-sans font-medium tracking-wider hover:bg-navy-primary/5 transition-colors flex items-center gap-2 ${language === 'en' ? 'text-navy-primary font-bold bg-navy-primary/5' : 'text-text-secondary'}`}
                 >
@@ -237,7 +230,7 @@ export default function Navbar() {
           </div>
 
           {/* Theme Toggle - Okuma Modu */}
-          <button 
+          <button
             onClick={toggleTheme}
             className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors focus:outline-none cursor-pointer"
             aria-label="Okuma Modu Değiştir"
@@ -259,7 +252,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Button & Theme Toggle & Language */}
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden shrink-0">
           {/* Language Selector for mobile (rotates between tr/en) */}
-          <button 
+          <button
             onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
             className="text-xs font-sans font-semibold tracking-wider text-text-secondary focus:outline-none"
             aria-label="Dili değiştir"
@@ -267,16 +260,16 @@ export default function Navbar() {
             {language === 'tr' ? '🇬🇧 EN' : '🇹🇷 TR'}
           </button>
 
-          <button 
+          <button
             onClick={toggleTheme}
             className="text-text-secondary focus:outline-none"
             aria-label="Okuma Modu Değiştir"
           >
             {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
-          
-          <button 
-            onClick={toggleMobileMenu} 
+
+          <button
+            onClick={toggleMobileMenu}
             className="text-text-primary focus:outline-none"
             aria-label="Menüyü Aç/Kapat"
           >
@@ -286,9 +279,8 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className={`fixed top-0 right-0 w-[min(100vw,20rem)] sm:w-80 md:w-96 h-[100dvh] bg-bg-primary border-l border-navy-primary/10 shadow-lg p-6 sm:p-8 z-[60] transform transition-transform duration-300 lg:hidden ${
-        mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-      }`}>
+      <div className={`fixed top-0 right-0 w-[min(100vw,20rem)] sm:w-80 md:w-96 h-[100dvh] bg-bg-primary border-l border-navy-primary/10 shadow-lg p-6 sm:p-8 z-[60] transform transition-transform duration-300 lg:hidden ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}>
         <div className="flex justify-end mb-8">
           <button onClick={toggleMobileMenu} className="text-text-primary">
             <X size={24} />
@@ -297,66 +289,60 @@ export default function Navbar() {
 
         <ul className="flex flex-col gap-6 list-none pl-0">
           <li>
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               onClick={(e) => handleLinkClick(e, 'home')}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/' && activeSection === 'home' ? 'text-navy-primary' : 'text-text-secondary'
-              }`}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/' && activeSection === 'home' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.home')}
             </Link>
           </li>
           <li>
-            <Link 
-              href="/hakkimizda" 
+            <Link
+              href="/hakkimizda"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/hakkimizda' ? 'text-navy-primary' : 'text-text-secondary'
-              }`}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/hakkimizda' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.about')}
             </Link>
           </li>
           <li>
-            <Link 
-              href="/faaliyet-alanlari" 
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${ 
-                pathname === '/faaliyet-alanlari' ? 'text-navy-primary' : 'text-text-secondary' 
-              }`}
+            <Link
+              href="/faaliyet-alanlari"
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/faaliyet-alanlari' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.practice')}
             </Link>
           </li>
           <li>
-            <Link 
-              href="/makaleler" 
+            <Link
+              href="/makaleler"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/makaleler' || pathname.startsWith('/makaleler/') ? 'text-navy-primary' : 'text-text-secondary'
-              }`}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/makaleler' || pathname.startsWith('/makaleler/') ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.articles')}
             </Link>
           </li>
           <li>
-            <Link 
-              href="/sozluk" 
+            <Link
+              href="/sozluk"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/sozluk' ? 'text-navy-primary' : 'text-text-secondary'
-              }`}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/sozluk' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.sozluk')}
             </Link>
           </li>
           <li>
-            <Link 
-              href="/iletisim" 
+            <Link
+              href="/iletisim"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${
-                pathname === '/iletisim' ? 'text-navy-primary' : 'text-text-secondary'
-              }`}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/iletisim' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
             >
               {t('nav.contact')}
             </Link>

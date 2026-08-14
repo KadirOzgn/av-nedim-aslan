@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-stone-900 dark:bg-stone-950 text-stone-400 border-t border-navy-primary/20 pt-12 sm:pt-14 md:pt-16 pb-6 sm:pb-8 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
-        
+
         {/* Column 1: Logo & Disclaimer */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
@@ -29,30 +29,30 @@ export default function Footer() {
           <p className="text-xs text-stone-500 leading-relaxed text-justify mt-4">
             {t('footer.disclaimer')}
           </p>
-          
+
           {/* Social Links */}
           <div className="flex gap-3 mt-4">
-            <a 
-              href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-stone-850 hover:bg-navy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
               aria-label="LinkedIn"
             >
               <LinkedInIcon size={15} />
             </a>
-            <a 
-              href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/av.nedimaslan?utm_source=qr"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-stone-850 hover:bg-navy-light hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
               aria-label="Instagram"
             >
               <InstagramIcon size={15} />
             </a>
-            <a 
-              href="https://wa.me/qr/NIZTP7IGZ24SP1" 
-              target="_blank" 
+            <a
+              href="https://wa.me/qr/NIZTP7IGZ24SP1"
+              target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-stone-850 hover:bg-emerald-500 hover:text-stone-900 transition-all duration-300 flex items-center justify-center text-stone-400"
               aria-label="WhatsApp"

@@ -49,14 +49,14 @@ export default function ArticlesClient({ articles }: ArticlesClientProps) {
           {filteredArticles.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
               {filteredArticles.map((article) => (
-                <div 
-                  key={article.slug} 
+                <div
+                  key={article.slug}
                   className="border border-navy-primary/10 bg-bg-primary rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 hover:shadow-md hover:border-navy-primary/30 transition-all duration-300 flex flex-col group overflow-hidden"
                 >
                   <div className="relative h-48 w-full overflow-hidden border-b border-navy-primary/10">
-                    <Image 
-                      src={article.image} 
-                      alt={article.title} 
+                    <Image
+                      src={article.image}
+                      alt={article.title}
                       fill
                       sizes="(max-w-768px) 100vw, 384px"
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -76,8 +76,8 @@ export default function ArticlesClient({ articles }: ArticlesClientProps) {
                     <p className="text-[0.75rem] text-text-secondary font-light leading-relaxed mb-6 flex-grow">
                       {article.excerpt}
                     </p>
-                    <Link 
-                      href={`/makaleler/${article.slug}`} 
+                    <Link
+                      href={`/makaleler/${article.slug}`}
                       className="text-[0.7rem] font-sans font-semibold tracking-wider text-navy-primary uppercase flex items-center gap-1 mt-auto"
                     >
                       {t('articles.detailBtn')} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />

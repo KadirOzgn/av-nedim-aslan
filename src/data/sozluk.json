@@ -1104,7 +1104,7 @@
     "kategori": "TDK"
   },
   {
-    "slug": "defi",
+    "slug": "def-i",
     "kavram": "Def'i",
     "harf": "D",
     "tanim": "Borcu veya hakkı ortadan kaldırmadan, karşı tarafın talebinin yerine getirilmesine engel olan savunma imkânıdır.",
@@ -3072,7 +3072,7 @@
     "kategori": "Mevzuat — Eşya Hukuku"
   },
   {
-    "slug": "kati",
+    "slug": "kat-i",
     "kavram": "Kat'i",
     "harf": "K",
     "tanim": "Kesin anlamında eski hukuk ve resmî yazışma dilinde kullanılan sözcüktür.",
@@ -3680,7 +3680,7 @@
     "kategori": "TDK + Mevzuat"
   },
   {
-    "slug": "meri",
+    "slug": "mer-i",
     "kavram": "Mer'i",
     "harf": "M",
     "tanim": "Yürürlükte bulunan, hâlen geçerli olan anlamında hukuk ve resmî yazışma dilinde kullanılan geleneksel terimdir.",
@@ -7008,7 +7008,7 @@
     "kategori": "Mevzuat — Borçlar Hukuku"
   },
   {
-    "slug": "zamanasimi-defi",
+    "slug": "zamanasimi-def-i",
     "kavram": "Zamanaşımı def'i",
     "harf": "Z",
     "tanim": "Borçlunun zamanaşımına uğramış alacağın kendisinden dava yoluyla istenmesine karşı ileri sürdüğü savunmadır.",

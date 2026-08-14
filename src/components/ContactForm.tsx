@@ -23,14 +23,14 @@ export default function ContactForm() {
     const tempErrors: Record<string, string> = {};
     if (!formData.name.trim()) tempErrors.name = t('contact.formName').replace(' *', '') + ' zorunludur.';
     if (!formData.phone.trim()) tempErrors.phone = t('contact.formPhone').replace(' *', '') + ' zorunludur.';
-    
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email.trim()) {
       tempErrors.email = t('contact.formEmail').replace(' *', '') + ' zorunludur.';
     } else if (!emailRegex.test(formData.email)) {
       tempErrors.email = 'Geçersiz e-posta adresi.';
     }
-    
+
     if (!formData.message.trim()) tempErrors.message = t('contact.formMessage').replace(' *', '') + ' zorunludur.';
 
     setErrors(tempErrors);
@@ -142,27 +142,27 @@ export default function ContactForm() {
                 <div>
                   <h4 className="font-sans font-bold text-xs tracking-widest text-text-primary dark:text-stone-300 uppercase mb-1.5">{t('contact.social')}</h4>
                   <div className="flex gap-3 mt-2">
-                    <a 
-                      href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
-                      target="_blank" 
+                    <a
+                      href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-navy-primary hover:text-white dark:hover:bg-navy-primary dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
                       aria-label="LinkedIn"
                     >
                       <LinkedInIcon size={16} />
                     </a>
-                    <a 
-                      href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
-                      target="_blank" 
+                    <a
+                      href="https://www.instagram.com/av.nedimaslan?utm_source=qr"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-navy-primary hover:text-white dark:hover:bg-navy-primary dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
                       aria-label="Instagram"
                     >
                       <InstagramIcon size={16} />
                     </a>
-                    <a 
-                      href="https://wa.me/qr/NIZTP7IGZ24SP1" 
-                      target="_blank" 
+                    <a
+                      href="https://wa.me/qr/NIZTP7IGZ24SP1"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-navy-primary/5 dark:bg-white/5 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-600 dark:hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary dark:text-navy-light"
                       aria-label="WhatsApp"
@@ -175,36 +175,36 @@ export default function ContactForm() {
             </div>
 
             <div className="h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm flex-grow min-h-[250px] mt-4 relative group">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Google Maps Location"
                 className="pointer-events-none"
               ></iframe>
-              
+
               {/* Custom Pin Overlay with Lion Logo */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-20 mt-[-20px]">
                 {/* Glowing pulse ring */}
                 <div className="absolute w-12 h-12 rounded-full bg-navy-primary/25 animate-ping"></div>
-                
+
                 {/* Pin Container */}
                 <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-navy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
                   <AslanLogo size={24} className="text-white" />
-                  
+
                   {/* Pin point tail */}
                   <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-navy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
                 </div>
               </div>
 
               {/* Clickable Overlay Link to Google Maps */}
-              <a 
+              <a
                 href="https://www.google.com/maps/search/?api=1&query=G%C3%B6ztepe+Mahallesi%2C+Bosna+Caddesi+No%3A+24%2F2%2C+Kemero%C4%9Fullar%C4%B1+%C4%B0%C5%9F+Merkezi%2C+Ba%C4%9Fc%C4%B1lar+%2F+%C4%B0stanbul"
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="absolute inset-0 bg-transparent z-10 cursor-pointer"
                 aria-label="Google Haritalarda Aç"
@@ -230,27 +230,27 @@ export default function ContactForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="name" className="block text-[0.65rem] font-sans font-bold tracking-widest text-text-primary dark:text-stone-300 uppercase mb-2">{t('contact.formName')}</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      name="name" 
-                      value={formData.name} 
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
+                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
                     />
                     {errors.name && <span className="text-[0.65rem] text-red-600 dark:text-red-400 mt-1 block">{errors.name}</span>}
                   </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-[0.65rem] font-sans font-bold tracking-widest text-text-primary dark:text-stone-300 uppercase mb-2">{t('contact.formPhone')}</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      name="phone" 
-                      value={formData.phone} 
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
                       onChange={handleChange}
                       placeholder="0 (555) 000 00 00"
-                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
+                      className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
                     />
                     {errors.phone && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.phone}</span>}
                   </div>
@@ -258,44 +258,44 @@ export default function ContactForm() {
 
                 <div>
                   <label htmlFor="email" className="block text-[0.65rem] font-sans font-bold tracking-widest text-text-primary dark:text-stone-300 uppercase mb-2">{t('contact.formEmail')}</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    value={formData.email} 
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
                   />
                   {errors.email && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.email}</span>}
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-[0.65rem] font-sans font-bold tracking-widest text-text-primary dark:text-stone-300 uppercase mb-2">{t('contact.formSubject')}</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
-                    name="subject" 
-                    value={formData.subject} 
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-[0.65rem] font-sans font-bold tracking-widest text-text-primary dark:text-stone-300 uppercase mb-2">{t('contact.formMessage')}</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    value={formData.message} 
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200 resize-y" 
+                    className="w-full px-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary dark:focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200 resize-y"
                   ></textarea>
                   {errors.message && <span className="text-[0.65rem] text-red-700 mt-1 block">{errors.message}</span>}
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={status === 'loading'}
                   className="w-full py-3.5 bg-navy-primary text-white hover:bg-navy-secondary font-sans font-semibold tracking-widest text-xs uppercase transition-all duration-300 rounded-xl cursor-pointer disabled:opacity-50 mt-2 shadow-sm hover:shadow-md"
                 >

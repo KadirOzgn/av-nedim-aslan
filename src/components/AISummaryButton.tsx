@@ -81,10 +81,10 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
 
   const labels = {
     title: language === 'en' ? "Summarize with AI" : "Yapay Zekâ ile Özetle",
-    desc: language === 'en' 
+    desc: language === 'en'
       ? "Select an AI service to summarize the article. The text and prompt will be copied to your clipboard automatically."
       : "Makaleyi özetlemek için bir yapay zekâ servisi seçin. Metin ve talimat otomatik olarak panonuza kopyalanacaktır.",
-    geminiBtn: language === 'en' 
+    geminiBtn: language === 'en'
       ? (copiedPlatform === 'gemini' ? "Copied! Opening Gemini..." : "Summarize with Gemini")
       : (copiedPlatform === 'gemini' ? "Kopyalandı! Gemini Açılıyor..." : "Gemini ile Özetle"),
     chatgptBtn: language === 'en'
@@ -104,9 +104,9 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
       <p className="text-[0.65rem] text-text-secondary leading-normal mb-4 font-light">
         {labels.desc}
       </p>
-      
+
       <div className="flex flex-col gap-2">
-        <button 
+        <button
           onClick={() => handleSummary('gemini')}
           className="w-full py-2.5 px-4 bg-navy-primary hover:bg-navy-secondary text-white font-sans font-semibold tracking-widest text-[0.65rem] uppercase transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer text-center border-none"
         >
@@ -114,7 +114,7 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
           {labels.geminiBtn}
         </button>
 
-        <button 
+        <button
           onClick={() => handleSummary('chatgpt')}
           className="w-full py-2.5 px-4 border border-navy-primary/20 hover:border-navy-primary bg-transparent text-text-primary hover:bg-navy-primary/5 font-sans font-semibold tracking-widest text-[0.65rem] uppercase transition-all duration-300 rounded-sm flex items-center justify-center gap-2 cursor-pointer text-center"
         >
@@ -122,7 +122,7 @@ export default function AISummaryButton({ content, title }: AISummaryButtonProps
           {labels.chatgptBtn}
         </button>
       </div>
-      
+
       <span className="text-[0.55rem] text-text-muted mt-3 block font-light leading-normal text-justify">
         {labels.note}
       </span>

@@ -39,11 +39,11 @@ const keyPractices = [
 
 export default function HomeClient({ articles }: HomeClientProps) {
   const { language, t } = useLanguage();
-  
 
 
 
-  
+
+
   const recentArticles = useMemo(() => {
     return articles
       .filter(article => {
@@ -56,7 +56,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
   return (
     <div className="relative min-h-screen">
       <Navbar />
-      
+
       {/* Dynamic Navy Thread Progress Line */}
       <NavyThreadLine />
 
@@ -64,7 +64,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
       <section id="home" className="relative min-h-[100dvh] flex items-center pt-20 sm:pt-24 bg-bg-primary overflow-hidden transition-colors duration-300">
         <div className="absolute top-0 right-[10%] w-[1px] h-full bg-navy-primary/5 hidden lg:block"></div>
         <div className="absolute top-1/3 left-0 w-16 sm:w-32 h-[1px] bg-navy-primary/10"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center py-10 sm:py-12 md:py-16 relative z-10">
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-navy-primary/10 bg-softWhite rounded-full mb-4 sm:mb-6">
@@ -73,7 +73,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 {t('hero.badge')}
               </span>
             </div>
-            
+
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-text-primary leading-tight mb-4 sm:mb-6">
               {t('hero.titleFirst')} <br />
               <span className="text-navy-primary relative">
@@ -87,13 +87,13 @@ export default function HomeClient({ articles }: HomeClientProps) {
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 w-full sm:w-auto">
-              <Link 
+              <Link
                 href="/iletisim"
                 className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-sm shadow-sm text-center"
               >
                 {t('hero.ctaContact')}
               </Link>
-              <Link 
+              <Link
                 href="/faaliyet-alanlari"
                 className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary/30 text-text-primary hover:border-navy-primary hover:bg-navy-primary/5 transition-all duration-300 rounded-lg text-center"
               >
@@ -105,9 +105,9 @@ export default function HomeClient({ articles }: HomeClientProps) {
           <div className="lg:col-span-5 flex justify-center relative w-full">
             <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] aspect-[4/5] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
               <div className="relative w-full h-full">
-                <Image 
-                  src="/hero-scales.png" 
-                  alt="Adalet Terazisi - Aslan Hukuk" 
+                <Image
+                  src="/hero-scales.png"
+                  alt="Adalet Terazisi - Aslan Hukuk"
                   fill
                   sizes="(max-w-768px) 320px, 384px"
                   priority
@@ -129,9 +129,9 @@ export default function HomeClient({ articles }: HomeClientProps) {
             <div className="lg:col-span-5 flex justify-center order-1 lg:order-none">
               <div className="relative w-full max-w-[240px] sm:max-w-[288px] md:max-w-[320px] aspect-[3/4] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl">
                 <div className="relative w-full h-full">
-                  <Image 
-                    src="/nedim-aslan-2.jpg" 
-                    alt="Av. Nedim Aslan" 
+                  <Image
+                    src="/nedim-aslan-2.jpg"
+                    alt="Av. Nedim Aslan"
                     fill
                     sizes="(max-w-768px) 288px, 320px"
                     className="object-cover rounded-lg"
@@ -141,7 +141,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 border-navy-primary"></div>
               </div>
             </div>
-            
+
             <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-none">
               <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
                 {t('about.badge')}
@@ -152,7 +152,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
               <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify max-w-2xl">
                 {t('about.bio1')}
               </p>
-              <Link 
+              <Link
                 href="/hakkimizda"
                 className="text-xs font-sans font-semibold tracking-widest uppercase px-5 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg w-full sm:w-auto text-center"
               >
@@ -179,9 +179,9 @@ export default function HomeClient({ articles }: HomeClientProps) {
             {keyPractices.map((practice) => {
               const Icon = practice.icon;
               return (
-                <Link 
+                <Link
                   href="/faaliyet-alanlari"
-                  key={practice.id} 
+                  key={practice.id}
                   className="p-6 sm:p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group flex flex-col items-start relative rounded-xl"
                 >
                   <div className="absolute top-0 left-0 w-[2px] h-0 bg-navy-primary group-hover:h-full transition-all duration-300"></div>
@@ -203,7 +203,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
           </div>
 
           <div className="text-center">
-            <Link 
+            <Link
               href="/faaliyet-alanlari"
               className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg inline-block"
             >
@@ -227,14 +227,14 @@ export default function HomeClient({ articles }: HomeClientProps) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
             {recentArticles.map((article) => (
-              <div 
-                key={article.slug} 
+              <div
+                key={article.slug}
                 className="border border-navy-primary/10 bg-bg-primary rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] dark:shadow-stone-950/20 hover:shadow-md hover:border-navy-primary/30 transition-all duration-300 flex flex-col group overflow-hidden"
               >
                 <div className="relative h-48 w-full overflow-hidden border-b border-navy-primary/10">
-                  <Image 
-                    src={article.image} 
-                    alt={article.title} 
+                  <Image
+                    src={article.image}
+                    alt={article.title}
                     fill
                     sizes="(max-w-768px) 100vw, 384px"
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -254,8 +254,8 @@ export default function HomeClient({ articles }: HomeClientProps) {
                   <p className="text-[0.75rem] text-text-secondary font-light leading-relaxed mb-6 flex-grow">
                     {article.excerpt}
                   </p>
-                  <Link 
-                    href={`/makaleler/${article.slug}`} 
+                  <Link
+                    href={`/makaleler/${article.slug}`}
                     className="text-[0.7rem] font-sans font-semibold tracking-wider text-navy-primary uppercase flex items-center gap-1 mt-auto"
                   >
                     {t('articles.detailBtn')} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -266,7 +266,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
           </div>
 
           <div className="text-center">
-            <Link 
+            <Link
               href="/makaleler"
               className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-sm inline-block"
             >
@@ -305,27 +305,27 @@ export default function HomeClient({ articles }: HomeClientProps) {
                   <span>Göztepe Mahallesi, Bosna Caddesi No: 24/2, Kemeroğulları İş Merkezi, Bağcılar / İstanbul</span>
                 </div>
                 <div className="flex gap-3 items-center mt-2">
-                  <a 
-                    href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/av-nedim-aslan-a5bb49200/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full bg-navy-primary/10 hover:bg-navy-primary hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary"
                     aria-label="LinkedIn"
                   >
                     <LinkedInIcon size={16} />
                   </a>
-                  <a 
-                    href="https://www.instagram.com/av.nedimaslan?utm_source=qr" 
-                    target="_blank" 
+                  <a
+                    href="https://www.instagram.com/av.nedimaslan?utm_source=qr"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full bg-navy-primary/10 hover:bg-navy-primary hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary"
                     aria-label="Instagram"
                   >
                     <InstagramIcon size={16} />
                   </a>
-                  <a 
-                    href="https://wa.me/qr/NIZTP7IGZ24SP1" 
-                    target="_blank" 
+                  <a
+                    href="https://wa.me/qr/NIZTP7IGZ24SP1"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-9 h-9 rounded-full bg-navy-primary/10 hover:bg-emerald-500 hover:text-white transition-all duration-300 flex items-center justify-center text-navy-primary hover:border-emerald-500"
                     aria-label="WhatsApp"
@@ -338,27 +338,27 @@ export default function HomeClient({ articles }: HomeClientProps) {
 
             <div className="flex flex-col gap-4 sm:gap-5 w-full">
               <div className="h-52 sm:h-60 md:h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={true} 
-                  loading="lazy" 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Google Maps Location Summary"
                   className="pointer-events-none"
                 ></iframe>
-                
+
                 {/* Custom Pin Overlay with Lion Logo */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-20 mt-[-20px]">
                   {/* Glowing pulse ring */}
                   <div className="absolute w-12 h-12 rounded-full bg-navy-primary/25 animate-ping"></div>
-                  
+
                   {/* Pin Container */}
                   <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-navy-primary border-2 border-white dark:border-stone-900 shadow-[0_4px_15px_rgba(0,0,0,0.35)]">
                     <AslanLogo size={24} className="text-white" />
-                    
+
                     {/* Pin point tail */}
                     <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3.5 h-3.5 rotate-45 bg-navy-primary border-r-2 border-b-2 border-white dark:border-stone-900"></div>
                   </div>
@@ -371,9 +371,9 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 </div>
 
                 {/* Clickable Overlay Link to Google Maps */}
-                <a 
+                <a
                   href="https://www.google.com/maps/search/?api=1&query=G%C3%B6ztepe+Mahallesi%2C+Bosna+Caddesi+No%3A+24%2F2%2C+Kemero%C4%9Fullar%C4%B1+%C4%B0%C5%9F+Merkezi%2C+Ba%C4%9Fc%C4%B1lar+%2F+%C4%B0stanbul"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="absolute inset-0 bg-transparent z-10 cursor-pointer"
                   aria-label="Google Haritalarda Aç"
@@ -385,7 +385,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                 </a>
               </div>
               <div className="flex justify-start lg:justify-end">
-                <Link 
+                <Link
                   href="/iletisim"
                   className="text-[0.65rem] font-sans font-semibold tracking-widest uppercase px-5 sm:px-6 py-3 sm:py-3.5 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-xl shadow-md cursor-pointer w-full sm:w-auto text-center"
                 >

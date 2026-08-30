@@ -129,8 +129,8 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center gap-8">
-          <ul className="flex items-center gap-8 list-none m-0 p-0">
+        <div className="hidden xl:flex items-center gap-6 2xl:gap-8">
+          <ul className="flex items-center gap-4 2xl:gap-6 list-none m-0 p-0">
             <li>
               <Link
                 href="/"
@@ -185,6 +185,17 @@ export default function Navbar() {
                   }`}
               >
                 {t('nav.sozluk')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/araclar/infaz-hesaplama"
+                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/araclar/infaz-hesaplama'
+                    ? 'text-navy-primary border-navy-primary'
+                    : 'text-text-secondary border-transparent hover:text-navy-primary'
+                  }`}
+              >
+                HESAPLAMA
               </Link>
             </li>
             <li>
@@ -250,7 +261,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger Button & Theme Toggle & Language */}
-        <div className="flex items-center gap-2 sm:gap-4 lg:hidden shrink-0">
+        <div className="flex items-center gap-2 sm:gap-4 xl:hidden shrink-0">
           {/* Language Selector for mobile (rotates between tr/en) */}
           <button
             onClick={() => setLanguage(language === 'tr' ? 'en' : 'tr')}
@@ -279,7 +290,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className={`fixed top-0 right-0 w-[min(100vw,20rem)] sm:w-80 md:w-96 h-[100dvh] bg-bg-primary border-l border-navy-primary/10 shadow-lg p-6 sm:p-8 z-[60] transform transition-transform duration-300 lg:hidden ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      <div className={`fixed top-0 right-0 w-[min(100vw,20rem)] sm:w-80 md:w-96 h-[100dvh] bg-bg-primary border-l border-navy-primary/10 shadow-lg p-6 sm:p-8 z-[60] transform transition-transform duration-300 xl:hidden ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="flex justify-end mb-8">
           <button onClick={toggleMobileMenu} className="text-text-primary">
@@ -335,6 +346,16 @@ export default function Navbar() {
                 }`}
             >
               {t('nav.sozluk')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/araclar/infaz-hesaplama"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/araclar/infaz-hesaplama' ? 'text-navy-primary' : 'text-text-secondary'
+                }`}
+            >
+              HESAPLAMA
             </Link>
           </li>
           <li>

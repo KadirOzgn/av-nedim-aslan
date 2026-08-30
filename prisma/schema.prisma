@@ -12,6 +12,10 @@ model Article {
   title     String
   content   String
   slug      String   @unique
+  category  String   @default("Hukuk Notu")
+  excerpt   String?
+  image     String?  @default("/article-gavel.png")
+  sources   String?  // Stored as JSON string or plain text
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

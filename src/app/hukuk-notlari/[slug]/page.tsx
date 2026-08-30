@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AISummaryButton from '@/components/AISummaryButton';
-import { getArticleBySlug, getArticles } from '@/lib/mdx';
+import prisma from '@/lib/prisma';
 
 interface Props {
   params: Promise<{
@@ -15,7 +15,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const articles = getArticles();
+  const articles = await prisma.article.findMany({ select: { slug: true } });
   return articles.map((article) => ({
     slug: article.slug,
   }));
@@ -23,14 +23,28 @@ export async function generateStaticParams() {
 
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const dbArticle = await prisma.article.findUnique({ where: { slug } });
 
-  if (!article) {
+  if (!dbArticle) {
     notFound();
   }
 
-  const { metadata } = article;
+  let parsedSources = [];
+  if (dbArticle.sources) {
+    try { parsedSources = JSON.parse(dbArticle.sources); } catch(e) {}
+  }
+
+  const metadata = {
+    title: dbArticle.title,
+    category: dbArticle.category,
+    date: dbArticle.createdAt.toISOString(),
+    updateDate: dbArticle.updatedAt.toISOString(),
+    image: dbArticle.image || '/article-gavel.png',
+    sources: Array.isArray(parsedSources) ? parsedSources : [],
+  };
   
+  const article = { content: dbArticle.content };
+
   const isEn = slug.endsWith('-en');
   const locale = isEn ? 'en-US' : 'tr-TR';
   const labels = {

@@ -20,6 +20,28 @@ export const metadata: Metadata = {
   title: "Av. Nedim Aslan | Aslan Hukuk Bürosu",
   description: "Avukat Nedim Aslan - Aslan Hukuk ve Danışmanlık Bürosu. Ceza Hukuku, Aile Hukuku, Ticaret Hukuku ve İş Hukuku alanlarında uzman hukuki danışmanlık ve savunma hizmetleri.",
   keywords: ["Avukat Nedim Aslan", "Nedim Aslan", "Aslan Hukuk Bürosu", "Hukuk", "Danışmanlık", "Avukatlık Bürosu", "Ceza Avukatı", "Boşanma Avukatı", "İnfaz Hesaplama"],
+  openGraph: {
+    title: "Av. Nedim Aslan | Aslan Hukuk Bürosu",
+    description: "Avukat Nedim Aslan - Ceza Hukuku, Aile Hukuku ve Ticaret Hukuku uzmanı.",
+    url: "https://www.avnedimaslan.com",
+    siteName: "Aslan Hukuk Bürosu",
+    images: [
+      {
+        url: "https://www.avnedimaslan.com/icon.png",
+        width: 800,
+        height: 800,
+        alt: "Aslan Hukuk Bürosu Logosu",
+      }
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Av. Nedim Aslan | Aslan Hukuk Bürosu",
+    description: "Avukat Nedim Aslan - Ceza Hukuku, Aile Hukuku ve Ticaret Hukuku uzmanı.",
+    images: ["https://www.avnedimaslan.com/icon.png"],
+  },
 };
 
 export default function RootLayout({

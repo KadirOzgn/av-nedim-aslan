@@ -19,9 +19,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Aslan Hukuk Bürosu | Hukuk & Danışmanlık",
   description: "Aslan Hukuk ve Danışmanlık Bürosu. Ceza Hukuku, Aile Hukuku, Ticaret Hukuku ve İş Hukuku alanlarında uzman hukuki danışmanlık ve savunma hizmetleri.",
-  icons: {
-    icon: "/favicon.ico",
-  }
 };
 
 export default function RootLayout({

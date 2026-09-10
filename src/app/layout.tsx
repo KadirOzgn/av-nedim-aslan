@@ -17,8 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Aslan Hukuk Bürosu | Hukuk & Danışmanlık",
-  description: "Aslan Hukuk ve Danışmanlık Bürosu. Ceza Hukuku, Aile Hukuku, Ticaret Hukuku ve İş Hukuku alanlarında uzman hukuki danışmanlık ve savunma hizmetleri.",
+  title: "Av. Nedim Aslan | Aslan Hukuk Bürosu",
+  description: "Avukat Nedim Aslan - Aslan Hukuk ve Danışmanlık Bürosu. Ceza Hukuku, Aile Hukuku, Ticaret Hukuku ve İş Hukuku alanlarında uzman hukuki danışmanlık ve savunma hizmetleri.",
+  keywords: ["Avukat Nedim Aslan", "Nedim Aslan", "Aslan Hukuk Bürosu", "Hukuk", "Danışmanlık", "Avukatlık Bürosu", "Ceza Avukatı", "Boşanma Avukatı", "İnfaz Hesaplama"],
 };
 
 export default function RootLayout({

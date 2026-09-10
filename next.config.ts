@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // @ts-ignore - Ignore type error for eslint config
   eslint: {
     ignoreDuringBuilds: true,
   },

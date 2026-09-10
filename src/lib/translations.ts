@@ -11,6 +11,7 @@ export const translations = {
       nightMode: "Gece Modu",
       dayMode: "Gündüz Modu",
       lawFirm: "Hukuk Bürosu",
+      calculator: "Hesaplama",
     },
     hero: {
       badge: "Aslan Hukuk Bürosu",
@@ -183,6 +184,7 @@ export const translations = {
       nightMode: "Night Mode",
       dayMode: "Day Mode",
       lawFirm: "Law Firm",
+      calculator: "Calculator",
     },
     hero: {
       badge: "Aslan Law Firm",

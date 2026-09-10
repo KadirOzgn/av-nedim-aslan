@@ -200,7 +200,7 @@ export default function Navbar() {
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
               >
-                HESAPLAMA
+                {t('nav.calculator')}
               </Link>
             </li>
             <li>
@@ -359,9 +359,9 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className={`block text-xs font-sans font-semibold tracking-widest uppercase transition-colors ${pathname === '/araclar/infaz-hesaplama' ? 'text-navy-primary' : 'text-text-secondary'
                 }`}
-            >
-              HESAPLAMA
-            </Link>
+              >
+                {t('nav.calculator')}
+              </Link>
           </li>
           <li>
             <Link

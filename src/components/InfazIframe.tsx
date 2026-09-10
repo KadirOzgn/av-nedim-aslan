@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState, useRef } from 'react';
+import { useLanguage } from '@/context/LanguageContext';
 
-export default function InfazIframe({ versionInfo, lang = 'tr' }: { versionInfo?: string | null, lang?: 'tr' | 'en' }) {
+export default function InfazIframe({ versionInfo }: { versionInfo?: string | null }) {
   const [iframeHeight, setIframeHeight] = useState('1000px'); // Fallback height
   const iframeRef = useRef<HTMLIFrameElement>(null);
+  const { language } = useLanguage();
 
   useEffect(() => {
     // Check initial theme
@@ -54,10 +56,10 @@ export default function InfazIframe({ versionInfo, lang = 'tr' }: { versionInfo?
     <div className="w-full flex-grow bg-bg-primary">
       <iframe
         ref={iframeRef}
-        src={lang === 'en' ? "/araclar/infaz-hesaplama-en.html" : "/araclar/infaz-hesaplama.html"}
+        src={language === 'en' ? "/araclar/infaz-hesaplama-en.html" : "/araclar/infaz-hesaplama.html"}
         className="w-full border-0 transition-all duration-300 ease-in-out bg-transparent"
         style={{ height: iframeHeight }}
-        title={lang === 'en' ? "Execution Calculator" : "İnfaz Hesaplama Aracı"}
+        title={language === 'en' ? "Execution Calculator" : "İnfaz Hesaplama Aracı"}
       />
     </div>
   );

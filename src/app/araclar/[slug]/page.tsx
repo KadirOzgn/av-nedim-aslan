@@ -50,7 +50,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
           )}
         </div>
         <main className="min-h-screen bg-bg-primary pb-0 flex flex-col">
-          <InfazIframe versionInfo={tool.versionInfo} lang={resolvedParams.slug === 'infaz-hesaplama-en' ? 'en' : 'tr'} />
+          <InfazIframe versionInfo={tool.versionInfo} />
         </main>
         <Footer />
       </>

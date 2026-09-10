@@ -10,8 +10,15 @@
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
+    "@tiptap/extension-image": "^3.31.3",
+    "@tiptap/extension-link": "^3.31.3",
+    "@tiptap/extension-text-align": "^3.31.3",
+    "@tiptap/extension-underline": "^3.31.3",
+    "@tiptap/react": "^3.31.3",
+    "@tiptap/starter-kit": "^3.31.3",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.30.0",
+    "marked": "^18.0.12",
     "next": "16.3.0",
     "prisma": "^5.22.0",
     "react": "19.2.8",
@@ -26,6 +33,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }

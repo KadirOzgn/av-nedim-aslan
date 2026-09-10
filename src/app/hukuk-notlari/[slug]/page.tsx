@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, Calendar, FileText, History, Info } from 'lucide-react';
-import ReactMarkdown from 'react-markdown';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AISummaryButton from '@/components/AISummaryButton';
@@ -108,22 +107,22 @@ export default async function ArticlePage({ params }: Props) {
             
             {/* 70% Article Content Column */}
             <div className="article-body">
-              <ReactMarkdown
-                components={{
-                  h1: (props) => <h1 className="text-2xl font-serif font-bold text-text-primary mt-8 mb-4 border-b border-navy-primary/5 pb-2" {...props} />,
-                  h2: (props) => <h2 className="text-xl font-serif font-bold text-text-primary mt-8 mb-4 border-b border-navy-primary/5 pb-2" {...props} />,
-                  h3: (props) => <h3 className="text-lg font-serif font-semibold text-text-primary mt-6 mb-2" {...props} />,
-                  h4: (props) => <h4 className="text-base font-serif font-semibold text-text-primary mt-4 mb-2" {...props} />,
-                  p: (props) => <p className="text-sm text-text-secondary font-light leading-relaxed mb-5 text-justify" {...props} />,
-                  ul: (props) => <ul className="list-disc pl-5 mb-5 text-xs text-text-secondary flex flex-col gap-2 font-light" {...props} />,
-                  ol: (props) => <ol className="list-decimal pl-5 mb-5 text-xs text-text-secondary flex flex-col gap-2 font-light" {...props} />,
-                  li: (props) => <li className="pl-1" {...props} />,
-                  strong: (props) => <strong className="font-semibold text-text-primary" {...props} />,
-                  em: (props) => <em className="italic text-text-secondary" {...props} />,
-                }}
-              >
-                {article.content}
-              </ReactMarkdown>
+              <div 
+                className="tiptap-content"
+                dangerouslySetInnerHTML={{ __html: article.content }} 
+              />
+              <style>{`
+                .tiptap-content h1 { font-family: serif; font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+                .tiptap-content h2 { font-family: serif; font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+                .tiptap-content h3 { font-family: serif; font-size: 1.125rem; font-weight: 600; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.5rem; }
+                .tiptap-content p { font-size: 0.875rem; color: var(--text-secondary); font-weight: 300; line-height: 1.625; margin-bottom: 1.25rem; text-align: justify; }
+                .tiptap-content ul { list-style-type: disc; padding-left: 1.25rem; margin-bottom: 1.25rem; font-size: 0.75rem; color: var(--text-secondary); font-weight: 300; display: flex; flex-direction: column; gap: 0.5rem; }
+                .tiptap-content ol { list-style-type: decimal; padding-left: 1.25rem; margin-bottom: 1.25rem; font-size: 0.75rem; color: var(--text-secondary); font-weight: 300; display: flex; flex-direction: column; gap: 0.5rem; }
+                .tiptap-content strong { font-weight: 600; color: var(--text-primary); }
+                .tiptap-content em { font-style: italic; color: var(--text-secondary); }
+                .tiptap-content a { color: var(--navy-primary); text-decoration: underline; }
+                .tiptap-content blockquote { border-left: 3px solid rgba(0, 0, 0, 0.1); margin-left: 0; padding-left: 1rem; font-style: italic; color: var(--text-secondary); }
+              `}</style>
             </div>
 
             {/* 30% Sticky Edge-note Sidebar Column */}

@@ -4,17 +4,17 @@ import prisma from '@/lib/prisma';
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const params = await context.params; const id = parseInt(params.id);
-    const article = await prisma.article.findUnique({
+    const area = await prisma.practiceArea.findUnique({
       where: { id },
     });
 
-    if (!article) {
-      return NextResponse.json({ error: 'Article not found' }, { status: 404 });
+    if (!area) {
+      return NextResponse.json({ error: 'Area not found' }, { status: 404 });
     }
 
-    return NextResponse.json(article);
+    return NextResponse.json(area);
   } catch (error) {
-    console.error('Error fetching article:', error);
+    console.error('Error fetching practice area:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
@@ -23,21 +23,21 @@ export async function PUT(request: Request, context: { params: Promise<{ id: str
   try {
     const params = await context.params; const id = parseInt(params.id);
     const body = await request.json();
-    const { title, content, slug, category, excerpt, image, sources } = body;
+    const { iconId, titleTr, titleEn, briefTr, briefEn, descriptionTr, descriptionEn, itemsTr, itemsEn } = body;
 
-    const article = await prisma.article.update({
+    const area = await prisma.practiceArea.update({
       where: { id },
-      data: { title, content, slug, category, excerpt, image, sources },
+      data: { 
+        iconId: parseInt(iconId), 
+        titleTr, titleEn, briefTr, briefEn, descriptionTr, descriptionEn, itemsTr, itemsEn 
+      },
     });
 
-    return NextResponse.json(article);
+    return NextResponse.json(area);
   } catch (error: any) {
-    console.error('Error updating article:', error);
+    console.error('Error updating practice area:', error);
     if (error.code === 'P2025') {
-      return NextResponse.json({ error: 'Article not found' }, { status: 404 });
-    }
-    if (error.code === 'P2002') {
-      return NextResponse.json({ error: 'Bu URL uzantısı (slug) zaten kullanımda.' }, { status: 409 });
+      return NextResponse.json({ error: 'Area not found' }, { status: 404 });
     }
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
@@ -46,15 +46,15 @@ export async function PUT(request: Request, context: { params: Promise<{ id: str
 export async function DELETE(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
     const params = await context.params; const id = parseInt(params.id);
-    await prisma.article.delete({
+    await prisma.practiceArea.delete({
       where: { id },
     });
 
     return NextResponse.json({ success: true });
   } catch (error: any) {
-    console.error('Error deleting article:', error);
+    console.error('Error deleting practice area:', error);
     if (error.code === 'P2025') {
-      return NextResponse.json({ error: 'Article not found' }, { status: 404 });
+      return NextResponse.json({ error: 'Area not found' }, { status: 404 });
     }
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }

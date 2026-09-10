@@ -3,7 +3,7 @@
 import { useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, ArrowRight, Gavel, Heart, Briefcase, Phone, Mail, MapPin } from 'lucide-react';
+import { Calendar, ArrowRight, Gavel, Heart, Briefcase, Phone, Mail, MapPin, FileText, Home, FileCheck } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import NavyThreadLine from '@/components/NavyThreadLine';
@@ -12,33 +12,34 @@ import { useLanguage } from '@/context/LanguageContext';
 import { LinkedInIcon, InstagramIcon, WhatsAppIcon } from '@/components/Icons';
 import { ArticleMetadata } from '@/lib/mdx';
 
-interface HomeClientProps {
-  articles: ArticleMetadata[];
+interface PracticeAreaModel {
+  id: number;
+  iconId: number;
+  titleTr: string;
+  titleEn: string;
+  briefTr: string;
+  briefEn: string;
 }
 
-const keyPractices = [
-  {
-    id: 1,
-    titleKey: "practice.list.0.title",
-    briefKey: "practice.list.0.brief",
-    icon: Gavel
-  },
-  {
-    id: 2,
-    titleKey: "practice.list.1.title",
-    briefKey: "practice.list.1.brief",
-    icon: Heart
-  },
-  {
-    id: 3,
-    titleKey: "practice.list.2.title",
-    briefKey: "practice.list.2.brief",
-    icon: Briefcase
-  }
-];
+interface HomeClientProps {
+  articles: any[];
+  practiceAreas: PracticeAreaModel[];
+}
 
-export default function HomeClient({ articles }: HomeClientProps) {
+const iconMap: Record<number, any> = {
+  1: Gavel,
+  2: Heart,
+  3: Briefcase,
+  4: FileText,
+  5: Home,
+  6: FileCheck
+};
+
+export default function HomeClient({ articles, practiceAreas }: HomeClientProps) {
   const { language, t } = useLanguage();
+
+  const topAreas = practiceAreas.slice(0, 3);
+
 
 
 
@@ -176,12 +177,15 @@ export default function HomeClient({ articles }: HomeClientProps) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
-            {keyPractices.map((practice) => {
-              const Icon = practice.icon;
+            {topAreas.map((area) => {
+              const Icon = iconMap[area.iconId] || Gavel;
+              const title = language === 'tr' ? area.titleTr : area.titleEn;
+              const brief = language === 'tr' ? area.briefTr : area.briefEn;
+              
               return (
                 <Link
                   href="/faaliyet-alanlari"
-                  key={practice.id}
+                  key={area.id}
                   className="p-6 sm:p-8 border border-navy-primary/10 bg-bg-primary hover:border-navy-primary/30 hover:shadow-md transition-all duration-300 group flex flex-col items-start relative rounded-xl"
                 >
                   <div className="absolute top-0 left-0 w-[2px] h-0 bg-navy-primary group-hover:h-full transition-all duration-300"></div>
@@ -189,10 +193,10 @@ export default function HomeClient({ articles }: HomeClientProps) {
                     <Icon size={22} />
                   </div>
                   <h3 className="text-lg font-serif font-semibold text-text-primary mb-3">
-                    {t(practice.titleKey)}
+                    {title}
                   </h3>
                   <p className="text-xs text-text-secondary font-light leading-relaxed mb-6">
-                    {t(practice.briefKey)}
+                    {brief}
                   </p>
                   <span className="text-[0.7rem] font-sans font-semibold tracking-wider text-navy-primary uppercase flex items-center gap-1 mt-auto">
                     {t('practice.detailBtn')} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -245,7 +249,7 @@ export default function HomeClient({ articles }: HomeClientProps) {
                     <span className="text-navy-primary">{article.category}</span>
                     <span className="flex items-center gap-1">
                       <Calendar size={10} />
-                      {new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                      {new Date(article.createdAt).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
                     </span>
                   </div>
                   <h3 className="text-base font-serif font-semibold text-text-primary mb-3 leading-snug group-hover:text-navy-primary transition-colors">

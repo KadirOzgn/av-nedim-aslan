@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
-import { FileText, Wrench, LogOut, LayoutDashboard } from 'lucide-react';
+import { FileText, Wrench, LogOut, LayoutDashboard, Calculator, BookOpen } from 'lucide-react';
 
 export default function AdminLayout({
   children,
@@ -20,6 +20,8 @@ export default function AdminLayout({
 
   const navItems = [
     { name: 'Panel', href: '/admin', icon: LayoutDashboard },
+    { name: 'Sözlük', href: '/admin/sozluk', icon: BookOpen },
+    { name: 'İnfaz Hesaplama', href: '/admin/hesaplama', icon: Calculator },
     { name: 'Makaleler', href: '/admin/makaleler', icon: FileText },
     { name: 'Araçlar', href: '/admin/araclar', icon: Wrench },
   ];

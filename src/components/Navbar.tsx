@@ -11,12 +11,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    if (typeof document !== 'undefined') {
-      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    }
-    return 'light';
-  });
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [mounted, setMounted] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const pathname = usePathname();
@@ -47,6 +43,11 @@ export default function Navbar() {
         }
       }
     };
+
+    if (typeof document !== 'undefined') {
+      setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    }
+    setMounted(true);
 
     // Close language dropdown on outside click
     const handleClickOutside = (event: MouseEvent) => {
@@ -246,7 +247,7 @@ export default function Navbar() {
             className="flex items-center gap-1.5 text-xs font-sans font-semibold tracking-wider text-text-secondary hover:text-navy-primary transition-colors focus:outline-none cursor-pointer"
             aria-label="Okuma Modu Değiştir"
           >
-            {theme === 'light' ? (
+            {!mounted || theme === 'light' ? (
               <>
                 <Moon size={14} />
                 <span>{t('nav.nightMode')}</span>
@@ -276,7 +277,7 @@ export default function Navbar() {
             className="text-text-secondary focus:outline-none"
             aria-label="Okuma Modu Değiştir"
           >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+            {!mounted || theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
           </button>
 
           <button

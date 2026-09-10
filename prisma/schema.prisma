@@ -24,8 +24,42 @@ model Tool {
   id          Int      @id @default(autoincrement())
   title       String
   description String?
+  content     String?
   slug        String   @unique
+  versionInfo String?
   isActive    Boolean  @default(true)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+}
+
+model GlossaryTerm {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  kavramTr    String
+  kavramEn    String
+  harfTr      String
+  harfEn      String
+  tanimTr     String
+  tanimEn     String
+  dayanakTr   String?
+  dayanakEn   String?
+  kategoriTr  String?
+  kategoriEn  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model PracticeArea {
+  id            Int      @id @default(autoincrement())
+  iconId        Int      @default(1)
+  titleTr       String
+  titleEn       String
+  briefTr       String
+  briefEn       String
+  descriptionTr String
+  descriptionEn String
+  itemsTr       String?  // Stored as JSON string
+  itemsEn       String?  // Stored as JSON string
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }

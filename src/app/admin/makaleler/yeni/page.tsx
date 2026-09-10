@@ -1,13 +1,18 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const RichTextEditor = dynamic(() => import('@/components/RichTextEditor'), { ssr: false });
 
 export default function YeniMakalePage() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [uploadingImage, setUploadingImage] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   
   const [formData, setFormData] = useState({
     title: '',
@@ -21,6 +26,37 @@ export default function YeniMakalePage() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleImageUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    setUploadingImage(true);
+    try {
+      const uploadData = new FormData();
+      uploadData.append('file', file);
+
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        body: uploadData,
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setFormData(prev => ({ ...prev, image: data.url }));
+      } else {
+        alert('Görsel yüklenirken bir hata oluştu.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Görsel yüklenemedi.');
+    } finally {
+      setUploadingImage(false);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -118,15 +154,37 @@ export default function YeniMakalePage() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-text-primary mb-2">Görsel Yolu (URL)</label>
-            <input
-              type="text"
-              name="image"
-              value={formData.image}
-              onChange={handleChange}
-              className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
-              placeholder="/article-gavel.png"
-            />
+            <label className="block text-sm font-semibold text-text-primary mb-2">Görsel (Öne Çıkan)</label>
+            <div className="flex gap-2">
+              <input
+                type="text"
+                name="image"
+                value={formData.image}
+                onChange={handleChange}
+                className="flex-grow p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
+                placeholder="/article-gavel.png"
+              />
+              <button
+                type="button"
+                onClick={() => fileInputRef.current?.click()}
+                disabled={uploadingImage}
+                className="bg-navy-primary/10 text-navy-primary hover:bg-navy-primary/20 px-4 py-2 rounded-lg font-semibold transition-colors whitespace-nowrap"
+              >
+                {uploadingImage ? 'Yükleniyor...' : 'Görsel Yükle'}
+              </button>
+              <input 
+                type="file" 
+                ref={fileInputRef} 
+                onChange={handleImageUpload} 
+                accept="image/*" 
+                style={{ display: 'none' }} 
+              />
+            </div>
+            {formData.image && formData.image !== '/article-gavel.png' && (
+              <div className="mt-2 h-20 w-32 relative rounded overflow-hidden border border-border-primary">
+                <img src={formData.image} alt="Önizleme" className="object-cover w-full h-full" />
+              </div>
+            )}
           </div>
         </div>
 
@@ -143,16 +201,14 @@ export default function YeniMakalePage() {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-text-primary mb-2">İçerik (HTML veya Düz Metin)</label>
-          <textarea
-            name="content"
-            required
-            rows={15}
-            value={formData.content}
-            onChange={handleChange}
-            className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all font-mono text-sm"
-            placeholder="Makale içeriği..."
-          ></textarea>
+          <label className="block text-sm font-semibold text-text-primary mb-2">İçerik (Zengin Metin)</label>
+          <div className="border border-border-primary rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-navy-light focus-within:border-navy-light transition-all">
+            <RichTextEditor 
+              content={formData.content} 
+              onChange={(html) => setFormData({ ...formData, content: html })} 
+              placeholder="Makale içeriği..."
+            />
+          </div>
         </div>
 
         <div>

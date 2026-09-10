@@ -6,10 +6,15 @@ import { useLanguage } from '@/context/LanguageContext';
 
 interface PracticeItem {
   id: number;
-  title: string;
-  brief: string;
-  description: string;
-  items: string[];
+  iconId: number;
+  titleTr: string;
+  titleEn: string;
+  briefTr: string;
+  briefEn: string;
+  descriptionTr: string;
+  descriptionEn: string;
+  itemsTr: string | null; // JSON string
+  itemsEn: string | null; // JSON string
 }
 
 const iconMap: Record<number, any> = {
@@ -21,11 +26,10 @@ const iconMap: Record<number, any> = {
   6: FileCheck
 };
 
-export default function PracticeAreas() {
-  const { t } = useLanguage();
+export default function PracticeAreas({ areas }: { areas: PracticeItem[] }) {
+  const { language, t } = useLanguage();
   const [activeModal, setActiveModal] = useState<PracticeItem | null>(null);
 
-  const practices = (t('practice.list') || []) as PracticeItem[];
 
   const openModal = (practice: PracticeItem) => {
     setActiveModal(practice);
@@ -60,8 +64,11 @@ export default function PracticeAreas() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
-          {practices.map((practice) => {
-            const Icon = iconMap[practice.id] || Gavel;
+          {areas.map((practice) => {
+            const Icon = iconMap[practice.iconId] || Gavel;
+            const title = language === 'tr' ? practice.titleTr : practice.titleEn;
+            const brief = language === 'tr' ? practice.briefTr : practice.briefEn;
+
             return (
               <div 
                 key={practice.id} 
@@ -75,10 +82,10 @@ export default function PracticeAreas() {
                   <Icon size={22} />
                 </div>
                 <h3 className="text-lg font-serif font-semibold text-text-primary mb-3">
-                  {practice.title}
+                  {title}
                 </h3>
                 <p className="text-xs text-text-secondary font-light leading-relaxed mb-6">
-                  {practice.brief}
+                  {brief}
                 </p>
                 <div className="text-[0.7rem] font-sans font-semibold tracking-wider text-navy-primary uppercase flex items-center gap-1 mt-auto">
                   {t('practice.detailBtn')} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -98,26 +105,33 @@ export default function PracticeAreas() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-navy-primary/5 text-navy-primary flex items-center justify-center rounded-lg">
                 {(() => {
-                  const Icon = iconMap[activeModal.id] || Gavel;
+                  const Icon = iconMap[activeModal.iconId] || Gavel;
                   return <Icon size={20} />;
                 })()}
               </div>
               <h3 className="text-2xl font-serif font-bold text-text-primary">
-                {activeModal.title}
+                {language === 'tr' ? activeModal.titleTr : activeModal.titleEn}
               </h3>
             </div>
             <div className="text-sm text-text-secondary font-light leading-relaxed mb-6">
-              <p className="mb-4">{activeModal.description}</p>
+              <p className="mb-4">{language === 'tr' ? activeModal.descriptionTr : activeModal.descriptionEn}</p>
               <h4 className="font-sans font-semibold text-xs tracking-wider text-text-primary uppercase mb-3">
                 {t('practice.modalTitle')}
               </h4>
               <ul className="list-none pl-0 flex flex-col gap-2">
-                {activeModal.items.map((item, idx) => (
-                  <li key={idx} className="flex gap-2 items-start text-xs text-text-secondary">
-                    <span className="text-navy-primary font-bold">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
+                {(() => {
+                  let itemsList: string[] = [];
+                  try {
+                    itemsList = JSON.parse((language === 'tr' ? activeModal.itemsTr : activeModal.itemsEn) || '[]');
+                  } catch (e) {}
+                  
+                  return itemsList.map((item, idx) => (
+                    <li key={idx} className="flex gap-2 items-start text-xs text-text-secondary">
+                      <span className="text-navy-primary font-bold">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ));
+                })()}
               </ul>
             </div>
           </div>

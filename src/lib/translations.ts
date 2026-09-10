@@ -25,8 +25,8 @@ export const translations = {
     about: {
       badge: "AVUKAT",
       title: "Av. Nedim Aslan",
-      bio1: "İzmir Bakırçay Üniversitesi Hukuk Fakültesi'nden mezun olan Nedim Aslan, uyuşmazlıkların çözümünde teorik altyapı ve güncel içtihatları merkeze alan butik bir yaklaşımla bireysel ve kurumsal müvekkillerine hukuki danışmanlık hizmeti sunmaktadır.",
-      bio2: "Mesleki tecrübesi doğrultusunda ceza hukuku ağırlıklı olmak üzere çeşitli hukuki alanlarda dava takip süreçlerini yürütmektedir. Çalışmalarında; güncel mevzuata hakimiyet, şeffaflık ve profesyonel gizlilik ilkelerini esas almaktadır.",
+      bio1: "İzmir Bakırçay Üniversitesi Hukuk Fakültesi'nden mezun olan Av. Nedim Aslan, uyuşmazlıkların çözümünde teorik altyapı ve güncel içtihatları merkeze alan butik bir yaklaşımla bireysel ve kurumsal müvekkillerine hukuki danışmanlık hizmeti sunmaktadır.",
+      bio2: "Ceza hukuku ağırlıklı olmak üzere dava ve soruşturma takip süreçlerini aktif olarak yürütmektedir. Çalışmalarında; güncel mevzuata ve yargı kararlarına hakimiyet, şeffaflık ve profesyonel gizlilik ilkelerini esas almaktadır.",
       cta: "İLETİŞİM",
       value1Title: "Dürüstlük & Etik",
       value1Desc: "Tüm süreçlerde şeffaf, dürüst ve etik değerlere bağlı kalarak müvekkillerimizi bilgilendiririz.",

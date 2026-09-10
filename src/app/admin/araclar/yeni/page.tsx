@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const RichTextEditor = dynamic(() => import('@/components/RichTextEditor'), { ssr: false });
 
 export default function YeniAracPage() {
   const router = useRouter();
@@ -13,6 +16,8 @@ export default function YeniAracPage() {
     title: '',
     slug: '',
     description: '',
+    content: '',
+    versionInfo: '',
     isActive: true
   });
 
@@ -90,7 +95,7 @@ export default function YeniAracPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-text-primary mb-2">Açıklama (Opsiyonel)</label>
+          <label className="block text-sm font-semibold text-text-primary mb-2">Açıklama (Opsiyonel - Kısa Özet)</label>
           <textarea
             name="description"
             rows={3}
@@ -99,6 +104,30 @@ export default function YeniAracPage() {
             className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
             placeholder="Bu araç ne işe yarar? Kısa bir açıklama..."
           ></textarea>
+        </div>
+
+        <div>
+          <label className="block text-sm font-semibold text-text-primary mb-2">Versiyon / Güncelleme Notu (Opsiyonel)</label>
+          <input
+            type="text"
+            name="versionInfo"
+            value={formData.versionInfo}
+            onChange={handleChange}
+            className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
+            placeholder="Örn: 18 Ağustos 2026 Mevzuatı"
+          />
+          <p className="text-xs text-text-secondary mt-1">Eğer araç içinde bir sürüm veya tarih gösteriliyorsa bunu değiştirmek için kullanabilirsiniz.</p>
+        </div>
+
+        <div>
+          <label className="block text-sm font-semibold text-text-primary mb-2">İçerik / Kullanım Rehberi (Opsiyonel)</label>
+          <div className="border border-border-primary rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-navy-light focus-within:border-navy-light transition-all">
+            <RichTextEditor 
+              content={formData.content} 
+              onChange={(html) => setFormData({ ...formData, content: html })} 
+              placeholder="Araç hakkında detaylı rehber veya içerik..."
+            />
+          </div>
         </div>
 
         <div className="flex items-center gap-3 py-2">

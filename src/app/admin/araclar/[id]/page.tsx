@@ -1,10 +1,14 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 
-export default function EditAracPage({ params }: { params: { id: string } }) {
+const RichTextEditor = dynamic(() => import('@/components/RichTextEditor'), { ssr: false });
+
+export default function EditAracPage({ params }: { params: Promise<{ id: string }> }) {
+  const unwrappedParams = use(params);
   const router = useRouter();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -14,6 +18,8 @@ export default function EditAracPage({ params }: { params: { id: string } }) {
     title: '',
     slug: '',
     description: '',
+    content: '',
+    versionInfo: '',
     isActive: true
   });
 
@@ -23,13 +29,15 @@ export default function EditAracPage({ params }: { params: { id: string } }) {
 
   const fetchTool = async () => {
     try {
-      const res = await fetch(`/api/tools/${params.id}`);
+      const res = await fetch(`/api/tools/${unwrappedParams.id}`);
       if (res.ok) {
         const data = await res.json();
         setFormData({
-          title: data.title,
-          slug: data.slug,
+          title: data.title || '',
+          slug: data.slug || '',
           description: data.description || '',
+          content: data.content || '',
+          versionInfo: data.versionInfo || '',
           isActive: data.isActive
         });
       } else {
@@ -53,7 +61,7 @@ export default function EditAracPage({ params }: { params: { id: string } }) {
     setError('');
 
     try {
-      const res = await fetch(`/api/tools/${params.id}`, {
+      const res = await fetch(`/api/tools/${unwrappedParams.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -117,7 +125,7 @@ export default function EditAracPage({ params }: { params: { id: string } }) {
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-text-primary mb-2">Açıklama (Opsiyonel)</label>
+          <label className="block text-sm font-semibold text-text-primary mb-2">Açıklama (Opsiyonel - Kısa Özet)</label>
           <textarea
             name="description"
             rows={3}
@@ -125,6 +133,29 @@ export default function EditAracPage({ params }: { params: { id: string } }) {
             onChange={handleChange}
             className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
           ></textarea>
+        </div>
+
+        <div>
+          <label className="block text-sm font-semibold text-text-primary mb-2">Versiyon / Güncelleme Notu (Opsiyonel)</label>
+          <input
+            type="text"
+            name="versionInfo"
+            value={formData.versionInfo}
+            onChange={handleChange}
+            className="w-full p-3 border border-border-primary rounded-lg bg-bg-primary text-text-primary focus:outline-none focus:border-navy-light focus:ring-1 focus:ring-navy-light transition-all"
+            placeholder="Örn: 18 Ağustos 2026 Mevzuatı"
+          />
+          <p className="text-xs text-text-secondary mt-1">Eğer araç içinde bir sürüm veya tarih gösteriliyorsa bunu değiştirmek için kullanabilirsiniz.</p>
+        </div>
+
+        <div>
+          <label className="block text-sm font-semibold text-text-primary mb-2">İçerik / Kullanım Rehberi (Opsiyonel)</label>
+          <div className="border border-border-primary rounded-lg overflow-hidden focus-within:ring-1 focus-within:ring-navy-light focus-within:border-navy-light transition-all">
+            <RichTextEditor 
+              content={formData.content} 
+              onChange={(html) => setFormData({ ...formData, content: html })} 
+            />
+          </div>
         </div>
 
         <div className="flex items-center gap-3 py-2">

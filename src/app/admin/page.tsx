@@ -25,6 +25,26 @@ export default function AdminPage() {
             Araçları Yönet &rarr;
           </a>
         </div>
+
+        <div className="bg-bg-secondary p-6 rounded-xl border border-border-primary shadow-sm hover:shadow-md transition-shadow">
+          <h2 className="text-xl font-serif font-bold text-text-primary mb-2">Sözlük Yönetimi</h2>
+          <p className="text-text-secondary text-sm mb-4">
+            Hukuk sözlüğünde yer alan terimleri ve kavramları buradan yönetebilirsiniz.
+          </p>
+          <a href="/admin/sozluk" className="text-accent-blue font-medium hover:underline">
+            Sözlüğü Yönet &rarr;
+          </a>
+        </div>
+
+        <div className="bg-bg-secondary p-6 rounded-xl border border-border-primary shadow-sm hover:shadow-md transition-shadow">
+          <h2 className="text-xl font-serif font-bold text-text-primary mb-2">Faaliyet Alanları</h2>
+          <p className="text-text-secondary text-sm mb-4">
+            Anasayfada sergilenen hukuki faaliyet alanlarını buradan güncelleyebilirsiniz.
+          </p>
+          <a href="/admin/faaliyet-alanlari" className="text-accent-blue font-medium hover:underline">
+            Faaliyet Alanlarını Yönet &rarr;
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { title, description, slug, isActive } = body;
+    const { title, description, content, slug, isActive, versionInfo } = body;
 
     if (!title || !slug) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -26,8 +26,10 @@ export async function POST(request: Request) {
       data: {
         title,
         description,
+        content,
         slug,
         isActive: isActive !== undefined ? isActive : true,
+        versionInfo,
       },
     });
 

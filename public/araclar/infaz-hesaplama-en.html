@@ -1,4 +1,6 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Aslan Hukuk Execution Calculator — 2026</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f4f4f5;color:#171717;font-family:Arial,Helvetica,sans-serif}body[data-mode="citizen"] .lawyerOnly{display:none!important}main{max-width:1120px;margin:auto;padding:28px 16px 70px}header{margin-bottom:14px}.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:800;color:#666}.headrow{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}h1{font-size:40px;margin:7px 0 5px}h2{margin:4px 0 12px}h3{margin:22px 0 10px}h4{margin:12px 0 8px}.modeSwitch{display:flex;border:1px solid #d8d8d8;border-radius:10px;overflow:hidden;background:#fff}.modeSwitch button{width:auto;border-radius:0;padding:10px 14px;background:#fff;color:#222}.modeSwitch button.active{background:#171717;color:#fff}.finalScope,.pendingLaw{margin:10px 0;padding:12px 14px;border-radius:10px;line-height:1.5;font-size:12.5px}.finalScope{border:1px solid #d7d7d7;background:#f8f8f8}.pendingLaw{border:1px solid #ddc98a;background:#fff9e9}.tabs{display:flex;gap:7px;overflow:auto;margin:15px 0}.tabs button{width:auto;white-space:nowrap;padding:11px 15px;border:1px solid #ddd;background:#fff;color:#222}.tabs button.active{background:#171717;color:#fff;border-color:#171717}.tabPanel{display:none}.tabPanel.active{display:block}section{background:#fff;border:1px solid #e1e1e1;border-radius:16px;padding:22px;margin-bottom:16px}.sectionTitle{display:flex;align-items:center;justify-content:space-between;gap:15px}.badge,.calcCode{display:inline-block;border:1px solid #ddd;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:700;background:#fafafa}.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}.three{grid-template-columns:repeat(3,1fr)}label{font-size:13px;font-weight:700}input,select{display:block;width:100%;padding:11px;margin-top:6px;border:1px solid #d4d4d4;border-radius:9px;background:#fff;color:#111}input:focus,select:focus{outline:2px solid #aaa;outline-offset:1px}.searchBox{margin:10px 0}.searchBox input{font-size:15px}details{padding:12px 0;border-top:1px solid #eee}summary{cursor:pointer;font-weight:800}.check{display:block;margin:10px 0;font-weight:600}.check input{display:inline;width:auto;margin-right:8px}.subpanel,.offenseHelp,.whyBox,.shareBox{margin:12px 0;padding:14px;border:1px solid #d8d8d8;border-radius:12px;background:#fafafa}.offenseHelp p,.note{font-size:12px;color:#626262;line-height:1.5}.miniWarn{font-size:11.5px;color:#555}button{width:100%;padding:13px;border:0;border-radius:10px;background:#171717;color:#fff;font-weight:800;font-size:14px;cursor:pointer}button.secondary{background:#fff;color:#171717;border:1px solid #cfcfcf}button.ghost{background:transparent;color:#555;border:1px dashed #ccc}button.miniBtn{width:auto;padding:9px 11px;background:#fff;color:#222;border:1px solid #ccc}.actionRow{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:8px;margin-top:18px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metrics>div{padding:13px;border:1px solid #e8e8e8;border-radius:11px;background:#fff}.metrics small,.metrics b{display:block}.metrics b{font-size:18px;margin-top:5px}.warning,.success,.noteBox{margin:12px 0;padding:12px;border-radius:10px;line-height:1.5;font-size:12.5px}.warning{background:#fff5d7;border:1px solid #e2cc80}.success{background:#edf8ef;border:1px solid #b6d9bd}.noteBox{background:#f6f6f6;border:1px solid #ddd}.confidence{display:flex;justify-content:space-between;gap:20px;padding:12px 14px;border-radius:10px;margin:12px 0}.confidence small,.confidence b{display:block}.confidence ul{margin:0;padding-left:18px;font-size:12px}.confidenceHigh{background:#eef8ef;border:1px solid #bdd8c0}.confidenceMid{background:#fff7e2;border:1px solid #dec987}.confidenceLow{background:#fff0ee;border:1px solid #dfb7b0}.resultHead{display:flex;align-items:flex-start;justify-content:space-between}.whyContent{margin-top:8px;font-size:12.5px}.revocationPanel{margin:12px 0;padding:14px;border:1px solid #d7d7d7;border-radius:12px;background:#fafafa}.revocationPanel small{display:block;color:#777;margin-top:4px}.revocationRow,.creditRow{display:grid;grid-template-columns:1.3fr .8fr .7fr .7fr auto;gap:8px;align-items:end;margin:8px 0}.creditRow{grid-template-columns:1fr 1fr 1fr 1fr auto}.judgmentCard{padding:13px;border:1px solid #ddd;border-radius:12px;margin:10px 0;background:#fff}.cardHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.revTable{width:100%;border-collapse:collapse;font-size:12px}.revTable th,.revTable td{padding:8px;border-bottom:1px solid #ddd;text-align:left}.tableWrap{overflow:auto}.timeline{display:flex;gap:0;margin:16px 0;overflow:auto}.timeNode{min-width:160px;position:relative;padding-top:22px;padding-right:10px}.timeNode:before{content:"";position:absolute;top:7px;left:8px;right:-8px;height:2px;background:#ccc}.timeNode:last-child:before{right:90%}.timeNode i{position:absolute;top:2px;left:3px;width:12px;height:12px;border-radius:50%;background:#222}.timeNode b,.timeNode span{display:block;font-size:11.5px}.timeNode span{color:#666;margin-top:4px}.compareGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.compareGrid>div{padding:12px;border:1px solid #ddd;border-radius:10px}.compareGrid small,.compareGrid b,.compareGrid span{display:block}.compareGrid b{margin:5px 0}.miniMetric{font-size:12px;margin:8px 0}.shareBox input{font-size:11px}.wizardProgress{margin:5px 0 20px}.wizardProgress>div{height:6px;background:#eee;border-radius:99px;overflow:hidden;margin-top:7px}.wizardProgress i{display:block;height:100%;background:#222}.wizardActions{display:grid;grid-template-columns:1fr 2fr;gap:8px;margin-top:16px}.choiceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.choice{background:#fff;color:#222;border:1px solid #ccc}.choice.selected{background:#171717;color:#fff}.lawTimeline{display:grid;gap:9px}.lawEvent{display:grid;grid-template-columns:150px 1fr 2fr;gap:12px;align-items:start;padding:12px;border:1px solid #ddd;border-radius:10px}.lawEvent span{font-size:11px;color:#666}.lawEvent p{margin:0;font-size:12px;color:#555}.lawEvent em{font-size:11px;color:#8b5c00}.orgTerrorInfo{display:none}footer{font-size:11.5px;color:#666;line-height:1.55;margin-top:16px}@media(max-width:760px){main{padding:16px 10px 50px}.headrow{display:block}.modeSwitch{margin-top:12px;width:max-content}h1{font-size:31px}.grid,.three,.metrics,.actionRow,.compareGrid,.choiceGrid{grid-template-columns:1fr}.revocationRow,.creditRow{grid-template-columns:1fr 1fr}.revocationRow button,.creditRow button{grid-column:1/-1}.lawEvent{grid-template-columns:1fr}.sectionTitle{align-items:flex-start}.resultHead{gap:10px}.confidence{display:block}.confidence ul{margin-top:8px}}
 
@@ -291,10 +293,10 @@ if (window !== window.top) {
 <main>
 <header>
 <div class="eyebrow">ASLAN HUKUK BÜROSU</div>
-<div class="headrow"><div><h1>Execution Calculator</h1><div class="headerMeta" aria-label="Calculatema aracı bilgileri"><span class="lawyerOnly"><small>Version</small><b id="ruleVersion">13.7</b></span></div></div>
-<div class="modeArea"><div class="modeSwitch" role="group" aria-label="Görünüm seçimi"><button id="citizenModeButton" type="button" data-mode="citizen" class="active" aria-pressed="true">Vatandaş</button><button id="lawyerModeButton" type="button" data-mode="lawyer" aria-pressed="false">Avukat</button></div></div></div>
-<div class="finalScope"><b>Bu hesap neyi gösterir?</b><span>Kesinleşmiş hapis cezasına göre koşullu salıverme, denetimli serbestlik ve bihakkın tahliye tarihlerini gösterir. HAGB, ertelenmiş ceza, seçenek yaptırım, tazyik ve disiplin hapsi bu hesabın dışındadır.</span></div>
-<div class="citizenOnly citizenIntro"><b>Nasıl kullanılır?</b>Karardaki tarih ve ceza bilgilerini sırayla girin. Bilgi dosyada yoksa “Kontrol edilmedi” seçeneğini kullanın.</div>
+<div class="headrow"><div><h1>Execution Calculator</h1><div aria-label="Calculatema aracı bilgileri" class="headerMeta"><span class="lawyerOnly"><small>Version</small><b id="ruleVersion">13.7</b></span></div></div>
+<div class="modeArea"><div aria-label="Görünüm seçimi" class="modeSwitch" role="group"><button aria-pressed="true" class="active" data-mode="citizen" id="citizenModeButton" type="button">Citizen</button><button aria-pressed="false" data-mode="lawyer" id="lawyerModeButton" type="button">Lawyer</button></div></div></div>
+<div class="finalScope"><b>What does this calculator show?</b><span>Shows conditional release, supervised release, and final discharge dates for finalized prison sentences. HAGB, suspended sentences, alternative sanctions, and disciplinary confinement are excluded.</span></div>
+<div class="citizenOnly citizenIntro"><b>How to use?</b>Enter the date and sentence information in the judgment sequentially. If not available, use 'Not Checked'.</div>
 </header>
 <script>
 (function(){
@@ -316,43 +318,38 @@ if (window !== window.top) {
  window.__setInfazViewMode=applyMode;
 })();
 </script>
-
 <nav class="tabs">
-<button type="button" class="tab active" data-tab="fixedTab">Süreli hapis</button>
-<button type="button" class="tab" data-tab="wizardTab">Akıllı rehber</button>
-<button type="button" class="tab" data-tab="lifeTab">Müebbet</button>
-<button type="button" class="tab lawyerOnly" data-tab="lawTab">Kontrol</button>
+<button class="tab active" data-tab="fixedTab" type="button">Fixed-Term Prison</button>
+<button class="tab" data-tab="wizardTab" type="button">Smart Guide</button>
+<button class="tab" data-tab="lifeTab" type="button">Life Sentence</button>
+<button class="tab lawyerOnly" data-tab="lawTab" type="button">Check</button>
 </nav>
-
-<section id="fixedTab" class="tabPanel active">
+<section class="tabPanel active" id="fixedTab">
 <form id="form">
-<div class="sectionTitle"><h2>Süreli hapis</h2></div>
+<div class="sectionTitle"><h2>Fixed-Term Prison</h2></div>
 <div class="grid">
-<label>Offense Date<input id="offenseDate" type="date" required></label>
-<label>İnfaza başlangıç<input id="executionStart" type="date" required></label>
-<label>Doğum tarihi<input id="birthDate" type="date" required></label>
+<label>Offense Date<input id="offenseDate" required="" type="date"/></label>
+<label>İnfaza başlangıç<input id="executionStart" required="" type="date"/></label>
+<label>Doğum tarihi<input id="birthDate" required="" type="date"/></label>
 <label>Cinsiyet<select id="personSex"><option value="unknown">Seçilmedi</option><option value="male">Erkek</option><option value="female">Kadın</option></select><small class="note">Koşullu salıverme oranını değiştirmez. Kadın hükümlülere ilişkin özel alanları açar.</small></label>
 </div>
-
-<div class="searchBox"><label>Search Offense<input id="offenseSearch" placeholder="E.g. drugs, assault or terror"></label></div>
+<div class="searchBox"><label>Search Offense<input id="offenseSearch" placeholder="E.g. drugs, assault or terror"/></label></div>
 <label>Offense<select id="offenseCode"></select></label>
-<div id="offenseHelp" class="offenseHelp" hidden></div>
+<div class="offenseHelp" hidden="" id="offenseHelp"></div>
 <div class="subpanel legalGate"><b><span class="citizenOnly">Karar bilgileri</span><span class="lawyerOnly">Hüküm ve infaz bilgileri</span></b>
 <div class="grid">
 <label>Hükmün durumu<select id="judgmentFinality"><option value="unknown">Kontrol edilmedi</option><option value="final">Kesinleşti</option><option value="not_final">Kesinleşmedi</option></select></label>
-<label>Yaptırım<select id="sentenceNature"><option value="unknown">Kontrol edilmedi</option><option value="fixed_prison">Süreli hapis</option><option value="fine_converted">Adlî para cezasından çevrilen hapis</option><option value="suspended">Ertelenmiş hapis, TCK m.51</option><option value="alternative">Seçenek yaptırım, TCK m.50</option><option value="hagb">Hükmün açıklanmasının geri bırakılması</option><option value="tazyik">Tazyik veya zorlama hapsi</option><option value="disciplinary">Disiplin hapsi</option></select></label>
+<label>Yaptırım<select id="sentenceNature"><option value="unknown">Kontrol edilmedi</option><option value="fixed_prison">Fixed-Term Prison</option><option value="fine_converted">Adlî para cezasından çevrilen hapis</option><option value="suspended">Ertelenmiş hapis, TCK m.51</option><option value="alternative">Seçenek yaptırım, TCK m.50</option><option value="hagb">Hükmün açıklanmasının geri bırakılması</option><option value="tazyik">Tazyik veya zorlama hapsi</option><option value="disciplinary">Disiplin hapsi</option></select></label>
 <label>Örgüt veya terör bağlantısı<select id="legalContext"><option value="unknown">Kontrol edilmedi</option><option value="none">Yok</option><option value="organized">Örgüt faaliyeti kapsamında</option><option value="terror">Terör suçu</option></select></label>
 <label class="lawyerOnly">Yaralama suçunda mağdur niteliği<select id="injuryVictimStatus"><option value="not_applicable">Uygulanmaz</option><option value="ordinary">Özel mağdur niteliği yok</option><option value="protected">Üstsoy, altsoy, eş, kardeş veya kendini savunamayacak kişi</option><option value="unknown">Kontrol edilmedi</option></select></label>
 <label class="lawyerOnly">Conditional Release yasağı<select id="noParoleReason"><option value="unknown">Kontrol edilmedi</option><option value="none">Yasak yok</option><option value="tck107_16">5275 m.107/16</option><option value="tmk17_escape_discipline">TMK m.17 firar, ayaklanma veya üç hücre cezası</option><option value="tmk17_new_offense">Kesinleşmeden sonra yeniden TMK suçu</option><option value="temporary2">5275 Geçici m.2</option><option value="revoked_same_judgment">Geri alma sonrası aynı ilam aynen infaz ediliyor</option><option value="other">Başka kanuni yasak</option></select></label>
 </div>
-<label id="generalConfirmationBox" class="check"><input id="generalClassificationConfirmed" type="checkbox"> Kararda farklı bir infaz oranı veya istisna bulunmuyor</label>
+<label class="check" id="generalConfirmationBox"><input id="generalClassificationConfirmed" type="checkbox"/> Kararda farklı bir infaz oranı veya istisna bulunmuyor</label>
 <p class="note">Önce temel suçu, sonra varsa örgüt veya terör bağlantısını seçin. Örneğin TCK 188 hükmünde her iki bilgi ayrı ayrı girilmelidir.</p></div>
-<div id="lifeSentenceAckBox" class="warning" hidden><b>Dikkat:</b> Bu suç müebbet veya ağırlaştırılmış müebbet gerektirebilir. Year, ay ve gün alanlarını yalnız hükümde süreli hapis cezası yazıyorsa doldurun.
-<label class="check"><input id="lifeSentenceAck" type="checkbox"> Hükümde süreli hapis cezası var.</label></div>
-
-<div class="grid three"><label>Year<input id="years" type="number" min="0" value="0"></label><label>Month<input id="months" type="number" min="0" value="0"></label><label>Day<input id="days" type="number" min="0" value="0"></label></div>
+<div class="warning" hidden="" id="lifeSentenceAckBox"><b>Dikkat:</b> Bu suç müebbet veya ağırlaştırılmış müebbet gerektirebilir. Year, ay ve gün alanlarını yalnız hükümde süreli hapis cezası yazıyorsa doldurun.
+<label class="check"><input id="lifeSentenceAck" type="checkbox"/> Hükümde süreli hapis cezası var.</label></div>
+<div class="grid three"><label>Year<input id="years" min="0" type="number" value="0"/></label><label>Month<input id="months" min="0" type="number" value="0"/></label><label>Day<input id="days" min="0" type="number" value="0"/></label></div>
 <details class="lawyerOnly legalNoteDetails"><summary>Süre hesabı</summary><p class="note">Kesinleşmiş ilamdaki sonuç cezayı aynen girin. Birden fazla ilamı tek satırda toplamayın. Monthlar 30 gün üzerinden hesaplanır; 12 ay, 360 gün olarak kalır. Tam günler infaza giriş günü ilk gün kabul edilerek takvim üzerinde sayılır; gün kesri infaz edilmez.</p></details>
-
 <div class="grid"><label>Tekerrür<select id="recidivism"><option value="unknown">Kontrol edilmedi</option><option value="none">Yok</option><option value="first">Birinci defa</option><option value="second">İkinci defa</option></select></label>
 <label>İyi hâl<select id="goodConduct"><option value="unknown">Kontrol edilmedi</option><option value="yes">Olumlu</option><option value="no">Olumsuz veya henüz değerlendirilmedi</option></select></label></div>
 <div class="citizenOnly citizenQuick"><h3>Salıverilme bilgileri</h3><div class="grid">
@@ -366,93 +363,84 @@ if (window !== window.top) {
 <label>Disiplin cezası durumu<select id="disciplineStatus"><option value="unknown">Kontrol edilmedi</option><option value="clear">Conditional Releaseye engel disiplin cezası yok</option><option value="blocking">Engel disiplin cezası var</option></select></label>
 </div><p class="note">m.105/A için açık kurum, çocuk eğitimevi veya hükümlünün iradesi dışında açığa ayrılamaması şartlarından biri aranır. Geçici m.6 kapsamındaki istisna ayrıca incelenir.</p></div>
 <div class="subpanel lawyerOnly"><b>Yaş veya sağlık nedeniyle özel denetimli serbestlik</b>
-<label class="check"><input id="probationHealthAssessment" type="checkbox"> m.105/A/3-b ve Geçici m.6 kapsamını kontrol et</label>
-<div class="grid"><label class="check"><input id="probationCannotLiveAlone" type="checkbox"> Ağır hastalık, engellilik veya kocama nedeniyle hayatını yalnız sürdüremiyor</label><label class="check"><input id="probationHealthReport" type="checkbox"> Usulüne uygun sağlık kurulu veya Adlî Tıp raporu var</label><label>Şartların ve geçerli raporun birlikte oluştuğu tarih<input id="probationHealthEligibilityDate" type="date"></label></div>
+<label class="check"><input id="probationHealthAssessment" type="checkbox"/> m.105/A/3-b ve Geçici m.6 kapsamını kontrol et</label>
+<div class="grid"><label class="check"><input id="probationCannotLiveAlone" type="checkbox"/> Ağır hastalık, engellilik veya kocama nedeniyle hayatını yalnız sürdüremiyor</label><label class="check"><input id="probationHealthReport" type="checkbox"/> Usulüne uygun sağlık kurulu veya Adlî Tıp raporu var</label><label>Şartların ve geçerli raporun birlikte oluştuğu tarih<input id="probationHealthEligibilityDate" type="date"/></label></div>
 <p class="note">Özel uygulama, şartların ve geçerli raporun birlikte oluştuğu tarihten önce başlayamaz. Tarih bilinmiyorsa ana sonuca eklenmez.</p>
 <p class="note">30.03.2020 ve öncesi istisna dışı suçlarda 70 yaşını bitirenler için dört yıllık süre; 65 yaşını bitirmiş ve hayatını yalnız idame ettiremeyenler için azami süre sınırı aranmayan yol ayrıca kontrol edilir.</p></div>
-<div id="priorRecidBox" class="subpanel" hidden><b>Birinci tekerrür — 108. maddenin ikinci fıkrası üst sınırı</b><p class="note">Tekerrür nedeniyle eklenecek süre, tekerrüre esas en ağır önceki cezayı geçemez.</p>
-<div class="grid three"><label>Önceki ceza yıl<input id="priorRecidYears" type="number" min="0" value="0"></label><label>Month<input id="priorRecidMonths" type="number" min="0" value="0"></label><label>Day<input id="priorRecidDays" type="number" min="0" value="0"></label></div></div>
-
+<div class="subpanel" hidden="" id="priorRecidBox"><b>Birinci tekerrür — 108. maddenin ikinci fıkrası üst sınırı</b><p class="note">Tekerrür nedeniyle eklenecek süre, tekerrüre esas en ağır önceki cezayı geçemez.</p>
+<div class="grid three"><label>Önceki ceza yıl<input id="priorRecidYears" min="0" type="number" value="0"/></label><label>Month<input id="priorRecidMonths" min="0" type="number" value="0"/></label><label>Day<input id="priorRecidDays" min="0" type="number" value="0"/></label></div></div>
 <details><summary>Varsa mahsup süresini ekle</summary>
-<div class="grid three"><label>Basit mahsup yıl<input id="creditYears" type="number" min="0" value="0"></label><label>Month<input id="creditMonths" type="number" min="0" value="0"></label><label>Day<input id="creditDays" type="number" min="0" value="0"></label></div>
+<div class="grid three"><label>Basit mahsup yıl<input id="creditYears" min="0" type="number" value="0"/></label><label>Month<input id="creditMonths" min="0" type="number" value="0"/></label><label>Day<input id="creditDays" min="0" type="number" value="0"/></label></div>
 <div class="lawyerOnly">
 <h4>Tarihli mahsup</h4><p class="note">Tutukluluk ve gözaltı dönemlerini ayrı girin. Tarihlerden gün sayısı hesaplanır; tarih yoksa gün sayısını elle yazabilirsiniz. Dönem eklendiğinde yukarıdaki basit mahsup yerine dönem toplamı kullanılır.</p>
-<div id="creditPeriods"></div><button type="button" class="secondary" id="addCreditPeriod">+ Mahsup dönemi ekle</button><div class="miniMetric">Dönem mahsup toplamı: <b id="creditPeriodTotal">0 gün</b><span id="creditOverlapNote"></span></div>
+<div id="creditPeriods"></div><button class="secondary" id="addCreditPeriod" type="button">+ Mahsup dönemi ekle</button><div class="miniMetric">Dönem mahsup toplamı: <b id="creditPeriodTotal">0 gün</b><span id="creditOverlapNote"></span></div>
 </div>
-<label class="check lawyerOnly"><input id="creditCountsForOneTenth" type="checkbox"> Mahsup süresinin onda bir kurum şartına sayıldığı ihtimali ana sonuçta göster</label>
+<label class="check lawyerOnly"><input id="creditCountsForOneTenth" type="checkbox"/> Mahsup süresinin onda bir kurum şartına sayıldığı ihtimali ana sonuçta göster</label>
 <p class="note">m.105/A’daki onda bir kurum şartı için mahsup süresinin sayıldığı ve sayılmadığı iki ihtimal birlikte gösterilir.</p>
 </details>
-
 <div class="citizenOnly citizenNotice"><b>Monthrıntılı dosya mı?</b> Birden fazla ilam, geri alma, sağlık, açık kurum veya lehe kanun incelemesi varsa Avukat görünümüne geçin.</div>
-
 <details class="citizenOnly citizenExplanationGuide"><summary>Bu hesabın sınırları</summary>
 <ul>
- <li>Birden fazla ilam varsa toplama kararını infaz hâkimi verir.</li>
- <li>Mahsup, geri alma ve açık kurum hesabında karar ve kurum kayıtları esas alınır.</li>
- <li>İyi hâl veya gerekli bir belge bilinmiyorsa kesin tarih gösterilmez.</li>
- <li>7595 sayılı Kanunun 6. maddesi, ilgili MGK kararı yayımlanana kadar hesaba katılmaz.</li>
+<li>Birden fazla ilam varsa toplama kararını infaz hâkimi verir.</li>
+<li>Mahsup, geri alma ve açık kurum hesabında karar ve kurum kayıtları esas alınır.</li>
+<li>İyi hâl veya gerekli bir belge bilinmiyorsa kesin tarih gösterilmez.</li>
+<li>7595 sayılı Kanunun 6. maddesi, ilgili MGK kararı yayımlanana kadar hesaba katılmaz.</li>
 </ul>
 </details>
-
 <details class="lawyerOnly"><summary>Birden fazla ilam — 5275 m.99</summary>
-<label class="check"><input id="multipleJudgments" type="checkbox"> Birden fazla kesinleşmiş ilam var</label>
-<div id="aggregatePanel" class="subpanel" hidden><p class="note">İlk ceza ana ilamdır. Diğer ilamları ayrı ayrı ekleyin. Sonuç, 5275 m.107 yönünden birlikte gösterilir.</p><div id="judgments"></div><button type="button" class="secondary" id="addJudgment">+ Ek ilam ekle</button></div>
+<label class="check"><input id="multipleJudgments" type="checkbox"/> Birden fazla kesinleşmiş ilam var</label>
+<div class="subpanel" hidden="" id="aggregatePanel"><p class="note">İlk ceza ana ilamdır. Diğer ilamları ayrı ayrı ekleyin. Sonuç, 5275 m.107 yönünden birlikte gösterilir.</p><div id="judgments"></div><button class="secondary" id="addJudgment" type="button">+ Ek ilam ekle</button></div>
 </details>
-
 <details class="lawyerOnly"><summary>Koşullu salıvermenin geri alınması</summary>
-<label class="check"><input id="revokedCR" type="checkbox"> Geri alma hesabı yap</label>
-<div id="revocationPanel" class="revocationPanel" hidden>
-<div class="grid"><label>Karardaki gerçek koşullu salıverme tarihi<input id="revocationConditionalDate" type="date"><small>Geri alma hesabında zorunludur; hesabın ürettiği tarih kullanılamaz.</small></label><label>Müddetnamedeki gerçek bihakkın tahliye<input id="revocationFullDate" type="date"><small>Geri alma hesabında zorunludur.</small></label>
+<label class="check"><input id="revokedCR" type="checkbox"/> Geri alma hesabı yap</label>
+<div class="revocationPanel" hidden="" id="revocationPanel">
+<div class="grid"><label>Karardaki gerçek koşullu salıverme tarihi<input id="revocationConditionalDate" type="date"/><small>Geri alma hesabında zorunludur; hesabın ürettiği tarih kullanılamaz.</small></label><label>Müddetnamedeki gerçek bihakkın tahliye<input id="revocationFullDate" type="date"/><small>Geri alma hesabında zorunludur.</small></label>
 <label>Geri alma nedeni<select id="revocationReason"><option value="new_offense">Denetimde hapis cezasını gerektiren kasıtlı suç</option><option value="breach">Yükümlülüğe uymamakta ısrar</option></select></label></div>
-<div id="revocationOffenseBox"><p class="note"><b>İki kat:</b> Her yeni suç için verilen hapis cezasının 2 katı; fakat o suç tarihinden bihakkın tahliyeye kalan süre üst sınırdır. Yeni suç cezası ayrıca infaz edilir.</p><div id="revocationOffenses"></div><button type="button" class="secondary" id="addRevocationOffense">+ Yeni suç ekle</button></div>
-<div id="revocationBreachBox" hidden><div class="grid"><label>İhlal tarihi<input id="breachDate" type="date"></label><label>İnfaz hâkiminin belirlediği aynen infaz (gün)<input id="breachJudgeDays" type="number" min="0" value="0"></label></div></div>
+<div id="revocationOffenseBox"><p class="note"><b>İki kat:</b> Her yeni suç için verilen hapis cezasının 2 katı; fakat o suç tarihinden bihakkın tahliyeye kalan süre üst sınırdır. Yeni suç cezası ayrıca infaz edilir.</p><div id="revocationOffenses"></div><button class="secondary" id="addRevocationOffense" type="button">+ Yeni suç ekle</button></div>
+<div hidden="" id="revocationBreachBox"><div class="grid"><label>İhlal tarihi<input id="breachDate" type="date"/></label><label>İnfaz hâkiminin belirlediği aynen infaz (gün)<input id="breachJudgeDays" min="0" type="number" value="0"/></label></div></div>
 </div></details>
-
 <details class="lawyerOnly"><summary>Özel infaz usulleri — 5275 m.110</summary>
-<label class="check"><input id="specialExecution" type="checkbox"> Özel infazı değerlendir</label>
-<div id="specialExecutionPanel" class="subpanel" hidden>
-<div class="grid"><label>Değerlendirme tarihi<input id="specialAssessmentDate" type="date"><small>Bu tarihte yürürlükte olan m.110 hükümleri esas alınır.</small></label><label>Talep tarihi<input id="specialRequestDate" type="date"><small>Doğum sonrası başvuru süresinin checknde kullanılır.</small></label><label>İnfaz hâkimi kararı<select id="specialDecisionStatus"><option value="pending">Karar bekleniyor</option><option value="granted">Özel infaz kararı verildi</option><option value="denied">Talep reddedildi</option><option value="ended_request">m.110/7 uyarınca talep üzerine sona erdi</option><option value="ended_noncompliance">m.110/7 uyarınca kurala aykırılık nedeniyle sona erdi</option></select></label><label>Karar veya sona erme tarihi<input id="specialDecisionDate" type="date"><small>Karar verilmiş veya özel usul sona ermişse girin.</small></label><label>Fiil türü<select id="intentType"><option value="intentional">Kasten</option><option value="negligent">Taksirli (taksirle öldürme hariç)</option><option value="negligent_homicide">Taksirle öldürme</option></select></label></div>
+<label class="check"><input id="specialExecution" type="checkbox"/> Özel infazı değerlendir</label>
+<div class="subpanel" hidden="" id="specialExecutionPanel">
+<div class="grid"><label>Değerlendirme tarihi<input id="specialAssessmentDate" type="date"/><small>Bu tarihte yürürlükte olan m.110 hükümleri esas alınır.</small></label><label>Talep tarihi<input id="specialRequestDate" type="date"/><small>Doğum sonrası başvuru süresinin checknde kullanılır.</small></label><label>İnfaz hâkimi kararı<select id="specialDecisionStatus"><option value="pending">Karar bekleniyor</option><option value="granted">Özel infaz kararı verildi</option><option value="denied">Talep reddedildi</option><option value="ended_request">m.110/7 uyarınca talep üzerine sona erdi</option><option value="ended_noncompliance">m.110/7 uyarınca kurala aykırılık nedeniyle sona erdi</option></select></label><label>Karar veya sona erme tarihi<input id="specialDecisionDate" type="date"/><small>Karar verilmiş veya özel usul sona ermişse girin.</small></label><label>Fiil türü<select id="intentType"><option value="intentional">Kasten</option><option value="negligent">Taksirli (taksirle öldürme hariç)</option><option value="negligent_homicide">Taksirle öldürme</option></select></label></div>
 <label>Özel infaz türü<select id="specialExecutionType"><option value="weekend">Hafta sonu veya hafta içi belirli günlerde</option><option value="night">Geceleri</option><option value="home_age">Kadın, çocuk veya yaş nedeniyle konutta</option><option value="home_postpartum">Doğum sonrası konutta</option><option value="home_medical">Ağır hastalık veya engellilik nedeniyle konutta</option></select></label>
-<div id="postpartumBox" class="noteBox" hidden>Doğum tarihi, aşağıdaki “Kadın hükümlülere özgü özel durumlar” bölümünden alınır.</div>
-<div id="medicalBox" hidden><label class="check"><input id="medicalCannotLiveAlone" type="checkbox"> Ağır hastalık veya engellilik nedeniyle kurum koşullarında hayatını yalnız idame ettiremiyor</label><label class="check"><input id="medicalReport" type="checkbox"> 16. maddenin üçüncü fıkrası usulüne uygun rapor mevcut</label><label class="check"><input id="noSeriousDanger" type="checkbox"> Ağır ve somut toplum güvenliği tehlikesi olmadığı değerlendirilmiş (04.06.2025 ve sonrası)</label></div>
-<label class="check"><input id="fineConverted" type="checkbox" disabled> Adlî para cezasından çevirme bilgisi yaptırım alanından alınır</label><label class="check"><input id="returnedFromDS" type="checkbox"> m.105/A kapsamında açık kuruma gönderildi</label>
+<div class="noteBox" hidden="" id="postpartumBox">Doğum tarihi, aşağıdaki “Kadın hükümlülere özgü özel durumlar” bölümünden alınır.</div>
+<div hidden="" id="medicalBox"><label class="check"><input id="medicalCannotLiveAlone" type="checkbox"/> Ağır hastalık veya engellilik nedeniyle kurum koşullarında hayatını yalnız idame ettiremiyor</label><label class="check"><input id="medicalReport" type="checkbox"/> 16. maddenin üçüncü fıkrası usulüne uygun rapor mevcut</label><label class="check"><input id="noSeriousDanger" type="checkbox"/> Ağır ve somut toplum güvenliği tehlikesi olmadığı değerlendirilmiş (04.06.2025 ve sonrası)</label></div>
+<label class="check"><input disabled="" id="fineConverted" type="checkbox"/> Adlî para cezasından çevirme bilgisi yaptırım alanından alınır</label><label class="check"><input id="returnedFromDS" type="checkbox"/> m.105/A kapsamında açık kuruma gönderildi</label>
 </div></details>
-
-<details id="femaleSpecialDetails" hidden><summary>Kadın hükümlülere özgü özel durumlar — 5275 m.16, m.16/A, m.105/A ve m.110</summary>
+<details hidden="" id="femaleSpecialDetails"><summary>Kadın hükümlülere özgü özel durumlar — 5275 m.16, m.16/A, m.105/A ve m.110</summary>
 <div class="subpanel">
 <p class="note">Bu bilgiler koşullu salıverme oranını değiştirmez. Gebelik, doğum, hasta çocuk ve konutta infaz hükümleri ayrı ayrı incelenir.</p>
-<div class="grid"><label>Özel durum değerlendirme tarihi<input id="femaleAssessmentDate" type="date"></label>
+<div class="grid"><label>Özel durum değerlendirme tarihi<input id="femaleAssessmentDate" type="date"/></label>
 <label>Gebelik durumu<select id="femalePregnancyStatus"><option value="none">Gebe değil</option><option value="before_or_outside_closed">Gebelik kapalı kuruma girişten önce başladı</option><option value="after_closed">Gebelik kapalı kuruma girişten sonra başladı</option><option value="unknown">Kontrol edilmedi</option></select></label></div>
-<div id="femalePregnancyAfterClosedBox" class="subpanel" hidden>
+<div class="subpanel" hidden="" id="femalePregnancyAfterClosedBox">
 <div class="grid"><label>Conditional Releaseye altı yıldan fazla süre var mı?<select id="femaleCrOverSixYears"><option value="unknown">Kontrol edilmedi</option><option value="yes">Evet</option><option value="no">Hayır</option></select></label>
 <label>Tehlikeli hükümlü kararı var mı?<select id="femaleDangerousStatus"><option value="unknown">Kontrol edilmedi</option><option value="yes">Evet</option><option value="no">Hayır</option></select></label></div>
 </div>
-<div class="grid"><label>Son doğum tarihi<input id="femaleChildBirthDate" type="date"></label>
+<div class="grid"><label>Son doğum tarihi<input id="femaleChildBirthDate" type="date"/></label>
 <label>Çocuğun durumu<select id="femaleChildStatus"><option value="with_mother">Hayatta ve annesinin yanında</option><option value="alive_other">Hayatta; annesinden başka birine verilmiş</option><option value="deceased">Vefat etmiş</option><option value="unknown">Kontrol edilmedi</option></select></label></div>
-<label class="check"><input id="femaleFineConverted" type="checkbox" disabled> Adlî para cezasından çevirme bilgisi ana yaptırım türünden alınır</label>
-<label class="check"><input id="femaleSickChildAssessment" type="checkbox"> Engelliliği nedeniyle bakıma muhtaç veya ağır hasta çocuk nedeniyle m.16/A ertelemesini değerlendir</label>
-<div id="femaleSickChildBox" class="subpanel" hidden>
-<div class="grid"><label>Hasta veya bakıma muhtaç çocuğun doğum tarihi<input id="femaleSickChildBirthDate" type="date"></label>
+<label class="check"><input disabled="" id="femaleFineConverted" type="checkbox"/> Adlî para cezasından çevirme bilgisi ana yaptırım türünden alınır</label>
+<label class="check"><input id="femaleSickChildAssessment" type="checkbox"/> Engelliliği nedeniyle bakıma muhtaç veya ağır hasta çocuk nedeniyle m.16/A ertelemesini değerlendir</label>
+<div class="subpanel" hidden="" id="femaleSickChildBox">
+<div class="grid"><label>Hasta veya bakıma muhtaç çocuğun doğum tarihi<input id="femaleSickChildBirthDate" type="date"/></label>
 <label>Toplum güvenliği değerlendirmesi<select id="femaleSickChildDanger"><option value="unknown">Kontrol edilmedi</option><option value="no">Ağır ve somut tehlike oluşturmadığı değerlendirildi</option><option value="yes">Ağır ve somut tehlike oluşturduğu değerlendirildi</option></select></label></div>
-<label class="check"><input id="femaleSickChildCondition" type="checkbox"> Çocuk engelliliği nedeniyle bakıma muhtaç veya ağır hastadır</label>
-<label class="check"><input id="femaleSickChildReport" type="checkbox"> Durum m.16/3 usulündeki sağlık raporuyla belgelendirilmiştir</label>
+<label class="check"><input id="femaleSickChildCondition" type="checkbox"/> Çocuk engelliliği nedeniyle bakıma muhtaç veya ağır hastadır</label>
+<label class="check"><input id="femaleSickChildReport" type="checkbox"/> Durum m.16/3 usulündeki sağlık raporuyla belgelendirilmiştir</label>
 </div>
 <div class="noteBox"><b>Karar mercii:</b> m.16/A için Cumhuriyet başsavcılığı; m.105/A ve m.110 için infaz hâkimi ile ilgili kurumlar yetkilidir. Hesap sonucu başvuru veya karar yerine geçmez.</div>
 </div></details>
-
 <details><summary>31.07.2023 ve önceki suçlar için ek imkân</summary>
-<label class="check"><input id="g10Assessment" type="checkbox" checked> Geçici m.10/6 şartlarını hesapta değerlendir</label>
-<div id="g10AssessmentPanel" class="subpanel">
-<div class="grid"><label>Açık ceza infaz kurumuna ayrılma tarihi<input id="g10OpenEntryDate" type="date"></label>
+<label class="check"><input checked="" id="g10Assessment" type="checkbox"/> Geçici m.10/6 şartlarını hesapta değerlendir</label>
+<div class="subpanel" id="g10AssessmentPanel">
+<div class="grid"><label>Açık ceza infaz kurumuna ayrılma tarihi<input id="g10OpenEntryDate" type="date"/></label>
 <label>Talep durumu<select id="g10Request"><option value="yes">Talep var</option><option value="unknown">Kontrol edilmedi</option><option value="no">Talep yok</option></select></label></div>
 <div class="noteBox">Geçici m.10/6 için açık kuruma ayrılma tarihi, talep ve olumlu iyi hâl gerekir. Üç aylık süre takvim ayına göre hesaplanır. Tarih girilmezse normal infaz rejimi gösterilir.</div>
 </div>
 </details>
-
 <details class="lawyerOnly"><summary>Açık ceza infaz kurumuna ayrılma</summary>
-<label class="check"><input id="openAssessment" type="checkbox"> Açık kuruma ayrılma şartlarını kontrol et</label>
-<div id="openAssessmentPanel" class="subpanel" hidden>
-<div class="grid"><label>Değerlendirme tarihi<input id="openAssessmentDate" type="date"></label><label>Kapalı ceza infaz kurumuna giriş tarihi<input id="openClosedEntryDate" type="date"></label>
+<label class="check"><input id="openAssessment" type="checkbox"/> Açık kuruma ayrılma şartlarını kontrol et</label>
+<div class="subpanel" hidden="" id="openAssessmentPanel">
+<div class="grid"><label>Değerlendirme tarihi<input id="openAssessmentDate" type="date"/></label><label>Kapalı ceza infaz kurumuna giriş tarihi<input id="openClosedEntryDate" type="date"/></label>
 <label>Fiil türü<select id="openIntentType"><option value="intentional">Kasten</option><option value="negligent">Taksirli</option><option value="negligent_homicide">Taksirle öldürme</option></select></label>
 <label>Özel engel<select id="openBarrier"><option value="unknown">Kontrol edilmedi</option><option value="no">Yok</option><option value="yes">Var</option></select></label>
 <label>İdari koşullar<select id="openAdministrativeStatus"><option value="unknown">Kontrol edilmedi</option><option value="clear">Engel yok; kurul değerlendirmesi olumlu</option><option value="barrier">Firar, tutuklama, disiplin veya kurul engeli var</option></select></label>
@@ -462,79 +450,73 @@ if (window !== window.top) {
 <label>Örgüt veya terör hükmünde ayrılma durumu<select id="organizationExitStatus"><option value="not_applicable">Uygulanmaz</option><option value="effective_repentance">Etkin pişmanlıktan yararlandı</option><option value="separated">Örgütten ayrıldığı kurulca tespit edildi</option><option value="unknown">Kontrol edilmedi</option><option value="not_met">Koşul sağlanmadı</option></select></label></div>
 <p class="note">Geçici m.10/6 uygulanıyorsa kapalı kurumda kalma süresi, toplam ceza 10 yıldan az olduğunda bir ay; 10 yıl veya daha fazla olduğunda üç aydır. Açığa ayrılma için suç, statü, iyi hâl, disiplin ve kurul kararı ayrıca kontrol edilmelidir.</p></div>
 </details>
-
 <details class="lawyerOnly"><summary>Lehe kanun karşılaştırması</summary>
-<label class="check"><input id="historicalCompare" type="checkbox" checked> Eski ve yeni infaz rejimini karşılaştır</label>
+<label class="check"><input checked="" id="historicalCompare" type="checkbox"/> Eski ve yeni infaz rejimini karşılaştır</label>
 <p class="note">TCK m.7/3 uyarınca eski ve yeni infaz rejimi karşılaştırılır. Kesin lehe kanun değerlendirmesi dosya üzerinden yapılmalıdır.</p>
 </details>
-
-<details class="lawyerOnly"><summary>Çocuk eğitimevi — 7593 sayılı Kanun</summary><label class="check"><input id="childEducationAssessment" type="checkbox"> Çocuk eğitimevi hükümlerini uygula</label><div id="childEducationPanel" class="subpanel" hidden><label>Fiil türü<select id="childIntentType"><option value="intentional">Kasıtlı suç</option><option value="negligent">Taksirli suç</option></select></label><p class="note">Kasıtlı suçta toplam üç yıl veya daha az, taksirli suçta toplam beş yıl veya daha az hapis doğrudan çocuk eğitimevinde yerine getirilir.</p></div></details>
-<details class="lawyerOnly"><summary>Özel infaz ertelemesi — 7595 sayılı Kanun</summary><label class="check"><input id="frameworkAssessment" type="checkbox"> 7595 sayılı Kanun kapsamını kontrol et</label><div id="frameworkPanel" class="subpanel" hidden><p class="note">Bu bölüm yalnız kesinleşmiş hükmün kanuni kapsama girip girmediğini inceler. 6. madde, ilgili MGK kararı Resmî Gazete’de yayımlanana kadar uygulanmaz.</p><label class="check"><input id="frameworkPkkScope" type="checkbox"> Kesinleşmiş hüküm, 7595 sayılı Kanunun 1. maddesindeki kanuni kapsamda</label><label class="check"><input id="frameworkOrgMurder" type="checkbox"> Kesinleşmiş hükümde, Kanunun 6. maddesindeki kapsam dışı kasten öldürme hâli mevcut</label><label class="check"><input id="frameworkPre2005Life" type="checkbox"> 01.06.2005 öncesi suç nedeniyle müebbet veya ağırlaştırılmış müebbet hükmü mevcut</label><div class="grid"><label>Yazılı bildirim tarihi<input id="frameworkApplicationDate" type="date"></label><label>İnfaz hâkimi erteleme karar tarihi<input id="frameworkDecisionDate" type="date"></label></div><label class="check"><input id="frameworkNewTerrorOffense" type="checkbox"> Erteleme süresinde Kanunun 6. maddesinin dördüncü fıkrasındaki yeni suç işlendi</label></div></details>
-<div class="actionRow"><button type="submit">Calculate</button><button type="button" class="secondary lawyerOnly" id="shareCalc">Paylaş</button><button type="button" class="secondary" id="printCalc">Yazdır veya PDF</button><button type="button" class="ghost" id="resetCalc">Temizle</button></div>
-<div class="citizenOnly citizenSupport"><b>Dosya incelemesi gereken hâller</b>Birden fazla ilam, tekerrür, mahsup, geri alma veya özel infaz varsa yalnız hesap sonucuyla hareket etmeyin. Karar ve infaz evrakı birlikte incelenmelidir.<br><a href="https://av-nedim-aslan.vercel.app/iletisim" target="_blank" rel="noopener">Bize ulaşın</a></div>
+<details class="lawyerOnly"><summary>Çocuk eğitimevi — 7593 sayılı Kanun</summary><label class="check"><input id="childEducationAssessment" type="checkbox"/> Çocuk eğitimevi hükümlerini uygula</label><div class="subpanel" hidden="" id="childEducationPanel"><label>Fiil türü<select id="childIntentType"><option value="intentional">Kasıtlı suç</option><option value="negligent">Taksirli suç</option></select></label><p class="note">Kasıtlı suçta toplam üç yıl veya daha az, taksirli suçta toplam beş yıl veya daha az hapis doğrudan çocuk eğitimevinde yerine getirilir.</p></div></details>
+<details class="lawyerOnly"><summary>Özel infaz ertelemesi — 7595 sayılı Kanun</summary><label class="check"><input id="frameworkAssessment" type="checkbox"/> 7595 sayılı Kanun kapsamını kontrol et</label><div class="subpanel" hidden="" id="frameworkPanel"><p class="note">Bu bölüm yalnız kesinleşmiş hükmün kanuni kapsama girip girmediğini inceler. 6. madde, ilgili MGK kararı Resmî Gazete’de yayımlanana kadar uygulanmaz.</p><label class="check"><input id="frameworkPkkScope" type="checkbox"/> Kesinleşmiş hüküm, 7595 sayılı Kanunun 1. maddesindeki kanuni kapsamda</label><label class="check"><input id="frameworkOrgMurder" type="checkbox"/> Kesinleşmiş hükümde, Kanunun 6. maddesindeki kapsam dışı kasten öldürme hâli mevcut</label><label class="check"><input id="frameworkPre2005Life" type="checkbox"/> 01.06.2005 öncesi suç nedeniyle müebbet veya ağırlaştırılmış müebbet hükmü mevcut</label><div class="grid"><label>Yazılı bildirim tarihi<input id="frameworkApplicationDate" type="date"/></label><label>İnfaz hâkimi erteleme karar tarihi<input id="frameworkDecisionDate" type="date"/></label></div><label class="check"><input id="frameworkNewTerrorOffense" type="checkbox"/> Erteleme süresinde Kanunun 6. maddesinin dördüncü fıkrasındaki yeni suç işlendi</label></div></details>
+<div class="actionRow"><button type="submit">Calculate</button><button class="secondary lawyerOnly" id="shareCalc" type="button">Paylaş</button><button class="secondary" id="printCalc" type="button">Yazdır veya PDF</button><button class="ghost" id="resetCalc" type="button">Temizle</button></div>
+<div class="citizenOnly citizenSupport"><b>Dosya incelemesi gereken hâller</b>Birden fazla ilam, tekerrür, mahsup, geri alma veya özel infaz varsa yalnız hesap sonucuyla hareket etmeyin. Karar ve infaz evrakı birlikte incelenmelidir.<br/><a href="https://av-nedim-aslan.vercel.app/iletisim" rel="noopener" target="_blank">Bize ulaşın</a></div>
 </form>
-<div id="shareBox" class="shareBox" hidden></div>
-<div id="result" hidden></div>
+<div class="shareBox" hidden="" id="shareBox"></div>
+<div hidden="" id="result"></div>
 </section>
-
-<section id="wizardTab" class="tabPanel">
+<section class="tabPanel" id="wizardTab">
 <div class="sectionTitle"><h2>Akıllı Rehber</h2></div>
 <div id="wizard">
 <div class="wizardProgress"><span id="wizardStepLabel">1. adım, toplam 7</span><div><i id="wizardBar"></i></div></div>
 <div id="wizardBody"></div>
-<div class="wizardActions"><button type="button" class="secondary" id="wizardBack">Geri</button><button type="button" id="wizardNext">Devam</button></div>
+<div class="wizardActions"><button class="secondary" id="wizardBack" type="button">Geri</button><button id="wizardNext" type="button">Devam</button></div>
 </div></section>
-
-<section id="lifeTab" class="tabPanel">
+<section class="tabPanel" id="lifeTab">
 <div class="sectionTitle"><h2>Müebbet cezalar</h2></div>
 <div class="warning"><b>Müebbet cezayı yıla çevirmeyin.</b> Ceza türünü ve kaç adet olduğunu girin.</div>
 <div class="noteBox"><b>Kadın hükümlüler:</b> Cinsiyet koşullu salıverme süresini tek başına değiştirmez. Gebelik ve doğuma ilişkin erteleme hükümleri ayrıca incelenir.</div>
 <form id="lifeForm">
-<div class="grid"><label>Offense Date<input id="lifeOffenseDate" type="date" required></label><label>İnfaza başlangıç<input id="lifeExecutionStart" type="date" required></label>
+<div class="grid"><label>Offense Date<input id="lifeOffenseDate" required="" type="date"/></label><label>İnfaza başlangıç<input id="lifeExecutionStart" required="" type="date"/></label>
 <label>Hükmün durumu<select id="lifeJudgmentFinality"><option value="unknown">Kontrol edilmedi</option><option value="final">Kesinleşti</option><option value="not_final">Kesinleşmedi</option></select></label><label>İnfaz rejimi<select id="lifeRegime"><option value="unknown">Kontrol edilmedi</option><option value="general">Genel rejim</option><option value="organized">Örgüt faaliyeti kapsamında</option><option value="terror">Terör suçu</option></select></label>
 <label>Tekerrür<select id="lifeRecidivism"><option value="unknown">Kontrol edilmedi</option><option value="none">Yok</option><option value="first">Birinci defa tekerrür</option><option value="second">İkinci defa tekerrür</option></select></label><label>İyi hâl<select id="lifeGoodConduct"><option value="unknown">Kontrol edilmedi</option><option value="yes">Olumlu</option><option value="no">Olumsuz veya henüz değerlendirilmedi</option></select></label>
 <label class="lawyerOnly">Disiplin engeli<select id="lifeDisciplineStatus"><option value="unknown">Kontrol edilmedi</option><option value="clear">Engel disiplin cezası yok</option><option value="blocking">Engel disiplin cezası var</option></select></label>
-<label>Ağırlaştırılmış müebbet adedi<input id="aggravatedCount" type="number" min="0" value="0"></label><label>Müebbet adedi<input id="lifeCount" type="number" min="0" value="1"></label></div>
+<label>Ağırlaştırılmış müebbet adedi<input id="aggravatedCount" min="0" type="number" value="0"/></label><label>Müebbet adedi<input id="lifeCount" min="0" type="number" value="1"/></label></div>
 <div class="citizenOnly citizenQuick"><h3>Koşullu salıverme engeli</h3><label>Dosyadaki durum<select id="citizenLifeReleaseBarrier"><option value="unknown">Kontrol edilmedi</option><option value="clear">Engel yok</option><option value="discipline">Disiplin engeli var</option><option value="legal">Kanuni yasak var</option></select></label><p class="note">Ağırlaştırılmış müebbette kanundan doğan yasaklar ayrıca hesaba alınır.</p></div>
-<h4 class="lawyerOnly">Varsa ayrıca süreli hapis</h4><div class="grid three lawyerOnly"><label>Year<input id="lifeFixedYears" type="number" min="0" value="0"></label><label>Month<input id="lifeFixedMonths" type="number" min="0" value="0"></label><label>Day<input id="lifeFixedDays" type="number" min="0" value="0"></label></div>
+<h4 class="lawyerOnly">Varsa ayrıca süreli hapis</h4><div class="grid three lawyerOnly"><label>Year<input id="lifeFixedYears" min="0" type="number" value="0"/></label><label>Month<input id="lifeFixedMonths" min="0" type="number" value="0"/></label><label>Day<input id="lifeFixedDays" min="0" type="number" value="0"/></label></div>
 <label class="lawyerOnly">Ek süreli hapsin koşullu salıverme oranı<select id="lifeFixedRatioClass"><option value="unknown">Kontrol edilmedi</option><option value="half">1/2</option><option value="two_thirds">2/3</option><option value="three_quarters">3/4</option></select><small class="note">Ek süreli ceza varsa oranı seçin. Müebbet rejimindeki daha uzun asgarî süre korunur.</small></label>
-<label class="lawyerOnly">Birinci tekerrüre esas en ağır önceki ceza (gün; bilinmiyorsa 0)<input id="lifePriorRecidDays" type="number" min="0" value="0"></label>
-<label>Mahsup (gün)<input id="lifeCreditDays" type="number" min="0" value="0"></label>
+<label class="lawyerOnly">Birinci tekerrüre esas en ağır önceki ceza (gün; bilinmiyorsa 0)<input id="lifePriorRecidDays" min="0" type="number" value="0"/></label>
+<label>Mahsup (gün)<input id="lifeCreditDays" min="0" type="number" value="0"/></label>
 <div class="subpanel lawyerOnly"><b>Conditional Release yasağı check</b><div class="grid">
 <label>Temel suç grubu<select id="lifeOffenseGroup"><option value="unknown">Kontrol edilmedi</option><option value="other">Diğer</option><option value="state_302_325">TCK 302-325 devlet güvenliği, anayasal düzen ve millî savunma</option><option value="state_326_339">TCK 326-339 devlet sırları ve casusluk</option></select></label>
 <label>Özel yasak nedeni<select id="lifeNoParoleReason"><option value="unknown">Kontrol edilmedi</option><option value="none">Yok</option><option value="tck107_16">5275 m.107/16</option><option value="tmk17_escape_discipline">TMK m.17; firar, ayaklanma veya üç hücre cezası</option><option value="tmk17_new_offense">Kesinleşmeden sonra yeniden TMK suçu</option><option value="temporary2">5275 Geçici m.2</option><option value="other">Başka kanuni yasak</option></select></label></div>
-<label class="check"><input id="lifeNoParole" type="checkbox"> Dosyada ayrıca koşullu salıverilme yasağı bulunduğu doğrulandı</label>
+<label class="check"><input id="lifeNoParole" type="checkbox"/> Dosyada ayrıca koşullu salıverilme yasağı bulunduğu doğrulandı</label>
 <p class="note">Terör rejimindeki ağırlaştırılmış müebbet ile m.107/16 koşulları, girilen bilgiler elverdiği ölçüde kontrol edilir. Bilgi bilinmiyorsa tarih kesinleştirilmez.</p></div>
-<div class="citizenOnly citizenNotice">Ek süreli hapis, birinci tekerrüre esas önceki ceza, sağlık nedeniyle konutta infaz veya açık kurum değerlendirmesi varsa <b>Avukat</b> görünümüne geçin.</div>
+<div class="citizenOnly citizenNotice">Ek süreli hapis, birinci tekerrüre esas önceki ceza, sağlık nedeniyle konutta infaz veya açık kurum değerlendirmesi varsa <b>Lawyer</b> görünümüne geçin.</div>
 <details class="lawyerOnly"><summary>Ağır hastalık veya engellilik nedeniyle konutta infaz</summary>
-<label class="check"><input id="lifeMedicalAssessment" type="checkbox"> 5275 m.110/3 kapsamında konutta infaz şartlarını kontrol et</label>
-<div id="lifeMedicalPanel" class="subpanel" hidden><div class="grid">
-<label>Talep veya değerlendirme tarihi<input id="lifeMedicalAssessmentDate" type="date"></label>
+<label class="check"><input id="lifeMedicalAssessment" type="checkbox"/> 5275 m.110/3 kapsamında konutta infaz şartlarını kontrol et</label>
+<div class="subpanel" hidden="" id="lifeMedicalPanel"><div class="grid">
+<label>Talep veya değerlendirme tarihi<input id="lifeMedicalAssessmentDate" type="date"/></label>
 <label>Toplum güvenliği değerlendirmesi<select id="lifeMedicalDangerStatus"><option value="unknown">Kontrol edilmedi</option><option value="no">Ağır ve somut tehlike oluşturmayacağı değerlendirildi</option><option value="yes">Ağır ve somut tehlike oluşturacağı değerlendirildi</option></select></label>
 </div>
-<label class="check"><input id="lifeMedicalCannotLiveAlone" type="checkbox"> Ağır hastalık veya engellilik nedeniyle kurum koşullarında hayatını yalnız idame ettiremeyeceği tespit edildi</label>
-<label class="check"><input id="lifeMedicalReport" type="checkbox"> 5275 m.16/3 usulüne uygun sağlık raporu mevcut</label>
+<label class="check"><input id="lifeMedicalCannotLiveAlone" type="checkbox"/> Ağır hastalık veya engellilik nedeniyle kurum koşullarında hayatını yalnız idame ettiremeyeceği tespit edildi</label>
+<label class="check"><input id="lifeMedicalReport" type="checkbox"/> 5275 m.16/3 usulüne uygun sağlık raporu mevcut</label>
 <p class="note">04.06.2025 sonrası m.110/3 olağan müebbeti süre sınırı nedeniyle dışlamaz; ağırlaştırılmış müebbet açıkça kapsam dışıdır. Karar infaz hâkimine aittir. Olağan müebbette elektronik izleme zorunludur; durum birer yıllık dönemlerle yeniden incelenir.</p></div>
 </details>
 <details class="lawyerOnly"><summary>Müebbet cezada açık kuruma ayrılma</summary>
-<label class="check"><input id="lifeOpenAssessment" type="checkbox"> Yönetmelik m.6/1-b ve m.8 şartlarını kontrol et</label>
-<div id="lifeOpenPanel" class="subpanel" hidden><div class="grid">
-<label>Değerlendirme tarihi<input id="lifeOpenAssessmentDate" type="date"></label><label>Kapalı kuruma giriş<input id="lifeOpenClosedEntryDate" type="date"></label>
+<label class="check"><input id="lifeOpenAssessment" type="checkbox"/> Yönetmelik m.6/1-b ve m.8 şartlarını kontrol et</label>
+<div class="subpanel" hidden="" id="lifeOpenPanel"><div class="grid">
+<label>Değerlendirme tarihi<input id="lifeOpenAssessmentDate" type="date"/></label><label>Kapalı kuruma giriş<input id="lifeOpenClosedEntryDate" type="date"/></label>
 <label>İdari koşullar<select id="lifeOpenAdministrativeStatus"><option value="unknown">Kontrol edilmedi</option><option value="clear">Engel yok; kurul değerlendirmesi olumlu</option><option value="barrier">Firar, tutuklama, disiplin veya kurul engeli var</option></select></label>
 <label>Başka özel engel<select id="lifeOpenBarrier"><option value="unknown">Kontrol edilmedi</option><option value="no">Yok</option><option value="yes">Var</option></select></label>
 <label>Örgüt veya terör hükmünde ayrılma durumu<select id="lifeOrganizationExitStatus"><option value="not_applicable">Uygulanmaz</option><option value="effective_repentance">Etkin pişmanlıktan yararlandı</option><option value="separated">Örgütten ayrıldığı kurulca tespit edildi</option><option value="unknown">Kontrol edilmedi</option><option value="not_met">Koşul sağlanmadı</option></select></label>
 <label>Yabancı uyruklu<select id="lifeForeignNational"><option value="no">Hayır</option><option value="yes">Evet</option><option value="unknown">Kontrol edilmedi</option></select></label>
 </div><p class="note">Ağırlaştırılmış müebbet hükümlüsü Yönetmelik m.8/1-a gereği açılamaz. Olağan müebbette temel kalan süre penceresi koşullu salıverilmeye beş yıl veya daha azdır; örgüt/terör ve m.8 statü koşulları ayrıca uygulanır.</p></div>
 </details>
-<div class="actionRow"><button type="submit">Calculate</button><button type="button" class="secondary" id="printLife">Yazdır veya PDF</button></div>
-</form><div id="lifeResult" hidden></div></section>
-
-<section id="lawTab" class="tabPanel lawyerOnly">
+<div class="actionRow"><button type="submit">Calculate</button><button class="secondary" id="printLife" type="button">Yazdır veya PDF</button></div>
+</form><div hidden="" id="lifeResult"></div></section>
+<section class="tabPanel lawyerOnly" id="lawTab">
 <div class="sectionTitle"><h2>Mevzuat bilgileri</h2></div>
-<div class="subpanel pendingSettings"><h3>Yürürlük durumu</h3><p class="note">7593 ve 7595 sayılı kanunlar 18.08.2026 tarihinde yayımlandı. 7595 sayılı Kanunun 6. maddesi için aranan MGK kararı henüz yayımlanmadı.</p><div id="pendingStatus" class="noteBox" aria-live="polite">Mevzuat bilgisi yükleniyor…</div></div><div id="lawTimeline"></div>
-<div class="subpanel"><h3>Hesap denetimi</h3><p class="note">Temel hesap örneklerini yeniden çalıştırır.</p><button type="button" id="runSelfTest">Testleri çalıştır</button><div id="selfTestResult"></div></div>
+<div class="subpanel pendingSettings"><h3>Yürürlük durumu</h3><p class="note">7593 ve 7595 sayılı kanunlar 18.08.2026 tarihinde yayımlandı. 7595 sayılı Kanunun 6. maddesi için aranan MGK kararı henüz yayımlanmadı.</p><div aria-live="polite" class="noteBox" id="pendingStatus">Mevzuat bilgisi yükleniyor…</div></div><div id="lawTimeline"></div>
+<div class="subpanel"><h3>Hesap denetimi</h3><p class="note">Temel hesap örneklerini yeniden çalıştırır.</p><button id="runSelfTest" type="button">Testleri çalıştır</button><div id="selfTestResult"></div></div>
 </section>
-
 <footer><b>Yasal uyarı:</b> Hesap sonucu resmî müddetname değildir. Kesin tarih için hüküm ve infaz evrakı birlikte incelenmelidir.</footer>
 </main>
 <script>

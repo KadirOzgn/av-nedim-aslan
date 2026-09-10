@@ -16,11 +16,6 @@ export default function GlossaryClient({ sozlukData }: { sozlukData: any[] }) {
     ? ["TÜMÜ", "A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S", "Ş", "T", "U", "Ü", "V", "Y", "Z"]
     : ["ALL", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-  // Reset pagination when filter changes
-  useEffect(() => {
-    setVisibleCount(30);
-  }, [searchTerm, selectedLetter]);
-
   // Extract set of uppercase letters that actually contain terms
   const activeLetters = useMemo(() => {
     const set = new Set<string>();
@@ -91,7 +86,7 @@ export default function GlossaryClient({ sozlukData }: { sozlukData: any[] }) {
             type="text"
             placeholder={t('dictionary.searchPlaceholder') || "Terim, tanım veya kategori ara..."}
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={(e) => { setSearchTerm(e.target.value); setVisibleCount(30); }}
             className="w-full pl-10 pr-4 py-3 text-xs border border-stone-200 dark:border-white/10 bg-white/50 dark:bg-white/[0.02] text-text-primary rounded-xl focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary transition-all duration-200"
           />
         </div>
@@ -120,7 +115,7 @@ export default function GlossaryClient({ sozlukData }: { sozlukData: any[] }) {
               return (
                 <button
                   key={letter}
-                  onClick={() => setSelectedLetter(letter)}
+                  onClick={() => { setSelectedLetter(letter); setVisibleCount(30); }}
                   className={`px-2 py-1 text-xs font-sans font-semibold tracking-wider rounded-lg transition-all duration-200 cursor-pointer shrink-0 ${isSelected
                       ? 'bg-navy-primary text-white shadow-sm'
                       : 'text-text-secondary hover:text-navy-primary hover:bg-navy-primary/5 border border-stone-200/40 dark:border-white/5'

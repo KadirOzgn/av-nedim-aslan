@@ -45,9 +45,13 @@ export default function Navbar() {
     };
 
     if (typeof document !== 'undefined') {
-      setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      setTimeout(() => {
+        setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        setMounted(true);
+      }, 0);
+    } else {
+      setMounted(true);
     }
-    setMounted(true);
 
     // Close language dropdown on outside click
     const handleClickOutside = (event: MouseEvent) => {

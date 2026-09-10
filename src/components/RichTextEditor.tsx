@@ -35,11 +35,10 @@ interface RichTextEditorProps {
 }
 
 const MenuBar = ({ editor }: { editor: any }) => {
-  if (!editor) {
-    return null;
-  }
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const setLink = useCallback(() => {
+    if (!editor) return;
     const previousUrl = editor.getAttributes('link').href;
     const url = window.prompt('URL Girin:', previousUrl);
 
@@ -58,13 +57,15 @@ const MenuBar = ({ editor }: { editor: any }) => {
     editor.chain().focus().extendMarkRange('link').setLink({ href: url }).run();
   }, [editor]);
 
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
   const addImage = useCallback(() => {
     if (fileInputRef.current) {
       fileInputRef.current.click();
     }
   }, []);
+
+  if (!editor) {
+    return null;
+  }
 
   const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];

@@ -2441,7 +2441,7 @@ $("shareCalc").onclick=async()=>{
  try{await navigator.clipboard.writeText(url)}catch(e){}
  $("shareBox").hidden=false;$("shareBox").innerHTML=`<b>${code}</b> • Bağlantı hazır.<br><input value="${esc(url)}" readonly><p class="note"><b>Bağlantı şifreli değildir.</b> Hesap bilgileri adresin içinde yer alır; yalnız yetkili kişiyle paylaşın.</p>`;
 };
-$("printCalc").onclick=()=>window.print();$("printLife").onclick=()=>window.print();
+$("printCalc").onclick=()=>{if(window.parent&&window.parent!==window){window.parent.postMessage({type:"print"},"*")}else{window.print()}};$("printLife").onclick=()=>{if(window.parent&&window.parent!==window){window.parent.postMessage({type:"print"},"*")}else{window.print()}};
 $("resetCalc").onclick=()=>{if(confirm("Form temizlensin mi?"))location.href=location.href.split("#")[0]};
 
 function applyState(s){

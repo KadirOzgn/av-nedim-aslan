@@ -46,6 +46,9 @@ export default function InfazIframe({ versionInfo }: { versionInfo?: string | nu
       if (e.data && e.data.type === 'resize' && e.data.height) {
         setIframeHeight(`${e.data.height}px`);
       }
+      if (e.data && e.data.type === 'print') {
+        window.print();
+      }
     };
 
     window.addEventListener('message', handleMessage);

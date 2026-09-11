@@ -111,3 +111,13 @@ h1, h2, h3, h4, h5, h6 {
 .animate-color-breathe {
   animation: colorBreathe 8s ease-in-out infinite;
 }
+
+@media print {
+  nav, footer, .hide-on-print {
+    display: none !important;
+  }
+  body, main {
+    background-color: white !important;
+    color: black !important;
+  }
+}

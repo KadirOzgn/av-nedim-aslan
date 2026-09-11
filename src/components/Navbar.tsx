@@ -117,25 +117,25 @@ export default function Navbar() {
         ? 'bg-bg-primary/95 backdrop-blur-md py-2.5 sm:py-3 border-b border-navy-primary/10 shadow-sm'
         : 'bg-transparent py-3 sm:py-4 md:py-5'
       }`}>
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 flex justify-between items-center">
         {/* Custom Symmetrical Circular Crest Logo */}
         <Link
           href="/"
           onClick={(e) => handleLinkClick(e, 'home')}
           className="flex items-center gap-3 sm:gap-4 group min-w-0"
         >
-          <AslanLogo className="w-14 h-14 sm:w-18 sm:h-18 text-navy-primary transition-transform duration-300 group-hover:scale-105 shrink-0" />
+          <AslanLogo className="w-14 h-14 sm:w-18 sm:h-18 2xl:w-20 2xl:h-20 text-navy-primary transition-transform duration-300 group-hover:scale-105 shrink-0" />
           <div className="flex flex-col items-start min-w-0">
-            <span className="text-lg sm:text-xl md:text-2xl font-serif font-extrabold tracking-widest text-text-primary leading-none mb-1 sm:mb-1.5">ASLAN</span>
-            <span className="text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] text-navy-primary uppercase leading-none truncate max-w-[120px] sm:max-w-none">
+            <span className="text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-serif font-extrabold tracking-widest text-text-primary leading-none mb-1 sm:mb-1.5">ASLAN</span>
+            <span className="text-[0.55rem] sm:text-[0.65rem] md:text-[0.7rem] 2xl:text-[0.8rem] font-sans font-bold tracking-[0.2em] sm:tracking-[0.25em] text-navy-primary uppercase leading-none truncate max-w-[120px] sm:max-w-none">
               {t('nav.lawFirm')}
             </span>
           </div>
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden xl:flex items-center gap-6 2xl:gap-8">
-          <ul className="flex items-center gap-4 2xl:gap-6 list-none m-0 p-0">
+        <div className="hidden xl:flex items-center gap-6 xl:gap-8 2xl:gap-10">
+          <ul className="flex items-center gap-4 xl:gap-6 2xl:gap-8 list-none m-0 p-0">
             <li>
               <Link
                 href="/"

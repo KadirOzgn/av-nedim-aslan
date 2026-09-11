@@ -66,7 +66,7 @@ export default async function ArticlePage({ params }: Props) {
         {/* Navy Thread vertical detail */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 2xl:px-16 relative z-10">
           {/* Breadcrumb */}
           <div className="mb-12">
             <Link 

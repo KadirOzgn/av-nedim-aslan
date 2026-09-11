@@ -50,7 +50,7 @@ export default function PracticeAreas({ areas }: { areas: PracticeItem[] }) {
       {/* Decorative Red Thread line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
             {t('practice.badge')}

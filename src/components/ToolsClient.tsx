@@ -27,7 +27,7 @@ export default function ToolsClient({ tools }: { tools: Tool[] }) {
     <>
       <Navbar />
       <main className="min-h-screen bg-bg-primary pt-24 sm:pt-28 md:pt-32 pb-16 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 relative z-10">
           <div className="mb-10 text-center">
             <h1 className="text-3xl md:text-5xl font-serif font-bold text-text-primary mb-4">
               {t('nav.tools')}

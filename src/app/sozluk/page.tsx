@@ -22,7 +22,7 @@ export default async function DictionaryPage() {
 
       <main className="min-h-screen bg-bg-primary pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 relative transition-colors duration-300">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-navy-primary/20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 relative z-10">
           <GlossaryClient sozlukData={terms} />
         </div>
       </main>

@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-stone-900 dark:bg-stone-950 text-stone-400 border-t border-navy-primary/20 pt-12 sm:pt-14 md:pt-16 pb-6 sm:pb-8 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-10 md:mb-12">
 
         {/* Column 1: Logo & Disclaimer */}
         <div className="flex flex-col gap-4">
@@ -119,9 +119,9 @@ export default function Footer() {
 
       </div>
 
-      <hr className="border-stone-850 dark:border-stone-900 my-8 max-w-7xl mx-auto px-6" />
+      <hr className="border-stone-850 dark:border-stone-900 my-8 max-w-screen-2xl mx-auto px-6 2xl:px-16" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-xs text-stone-600 gap-4 text-center md:text-left">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 flex flex-col md:flex-row justify-between items-center text-xs text-stone-600 gap-4 text-center md:text-left">
         <div>
           © {currentYear} {t('footer.copyright')}
         </div>

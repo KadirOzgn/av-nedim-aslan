@@ -20,11 +20,18 @@ function readStoredLanguage(): Language {
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(readStoredLanguage);
+  // Always initialize with the server's default to avoid Hydration Mismatch
+  const [language, setLanguageState] = useState<Language>('tr');
 
   useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+    const savedLang = localStorage.getItem('language') as Language;
+    if (savedLang === 'en') {
+      setLanguageState('en');
+      document.documentElement.lang = 'en';
+    } else {
+      document.documentElement.lang = 'tr';
+    }
+  }, []);
 
   const setLanguage = (lang: Language) => {
     localStorage.setItem('language', lang);

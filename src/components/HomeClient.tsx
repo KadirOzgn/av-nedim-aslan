@@ -66,7 +66,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
         <div className="absolute top-0 right-[10%] w-[1px] h-full bg-navy-primary/5 hidden lg:block"></div>
         <div className="absolute top-1/3 left-0 w-16 sm:w-32 h-[1px] bg-navy-primary/10"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center py-10 sm:py-12 md:py-16 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center py-10 sm:py-12 md:py-16 relative z-10">
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-navy-primary/10 bg-softWhite rounded-full mb-4 sm:mb-6">
               <span className="w-1.5 h-1.5 bg-navy-primary rounded-full animate-pulse shadow-sm"></span>
@@ -75,7 +75,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-text-primary leading-tight mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-serif font-bold text-text-primary leading-tight mb-4 sm:mb-6">
               {t('hero.titleFirst')} <br />
               <span className="text-navy-primary relative">
                 {t('hero.titleHighlight')}
@@ -83,7 +83,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               </span> {t('hero.titleLast')}
             </h1>
 
-            <p className="text-sm sm:text-base text-text-secondary font-light leading-relaxed max-w-xl mb-6 sm:mb-8 px-1 sm:px-0">
+            <p className="text-sm sm:text-base 2xl:text-lg text-text-secondary font-light leading-relaxed max-w-xl 2xl:max-w-2xl mb-6 sm:mb-8 px-1 sm:px-0">
               {t('hero.subtitle')}
             </p>
 
@@ -104,13 +104,13 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
           </div>
 
           <div className="lg:col-span-5 flex justify-center relative w-full">
-            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] aspect-[4/5] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
+            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] 2xl:max-w-[480px] aspect-[4/5] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
               <div className="relative w-full h-full">
                 <Image
                   src="/hero-scales.png"
                   alt="Adalet Terazisi - Aslan Hukuk"
                   fill
-                  sizes="(max-w-768px) 320px, 384px"
+                  sizes="(max-w-768px) 320px, (max-w-1536px) 384px, 480px"
                   priority
                   className="object-cover animate-color-breathe rounded-lg"
                 />
@@ -125,16 +125,16 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
 
       {/* Profile Overview (Hakkımızda Özet) */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-5 flex justify-center order-1 lg:order-none">
-              <div className="relative w-full max-w-[240px] sm:max-w-[288px] md:max-w-[320px] aspect-[3/4] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl">
+              <div className="relative w-full max-w-[240px] sm:max-w-[288px] md:max-w-[320px] 2xl:max-w-[400px] aspect-[3/4] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl">
                 <div className="relative w-full h-full">
                   <Image
                     src="/nedim-aslan-2.jpg"
                     alt="Av. Nedim Aslan"
                     fill
-                    sizes="(max-w-768px) 288px, 320px"
+                    sizes="(max-w-768px) 288px, (max-w-1536px) 320px, 400px"
                     className="object-cover rounded-lg"
                   />
                 </div>
@@ -147,7 +147,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
                 {t('about.badge')}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 sm:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-serif font-bold text-text-primary mb-4 sm:mb-6">
                 Av. Nedim Aslan
               </h2>
               <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify max-w-2xl">
@@ -166,7 +166,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
 
       {/* Practice Overview (Faaliyet Alanları Özet) */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 relative z-10">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('practice.badge')}
@@ -176,7 +176,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 2xl:gap-12 mb-8 sm:mb-12">
             {topAreas.map((area) => {
               const Icon = iconMap[area.iconId] || Gavel;
               const title = language === 'tr' ? area.titleTr : area.titleEn;
@@ -219,7 +219,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
 
       {/* Publications Overview (Makaleler Özet) */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 relative z-10">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block mb-3">
               {t('articles.badge')}
@@ -229,7 +229,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 2xl:gap-12 mb-8 sm:mb-12">
             {recentArticles.map((article) => (
               <div
                 key={article.slug}
@@ -282,8 +282,8 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
 
       {/* Info Overview (İletişim Bilgileri Özet) */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-bg-primary relative border-t border-navy-primary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 2xl:px-16 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 2xl:gap-16 items-start">
             <div className="flex flex-col gap-4 sm:gap-6">
               <span className="text-[0.65rem] font-sans font-semibold tracking-[0.25em] text-navy-primary uppercase block">
                 {t('contact.badge')}
@@ -341,7 +341,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
             </div>
 
             <div className="flex flex-col gap-4 sm:gap-5 w-full">
-              <div className="h-52 sm:h-60 md:h-64 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
+              <div className="h-52 sm:h-60 md:h-64 2xl:h-80 border border-stone-200/60 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm w-full relative group">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5452800688086!2d28.828558276139923!3d41.057072071343754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52865179fd9%3A0x9bc77299faf6b7b6!2zS2VtZXJvxJ91bGxhcsSxIMSwxZ8gTWVya2V6aQ!5e0!3m2!1str!2str!4v1786206157978!5m2!1str!2str"
                   width="100%"

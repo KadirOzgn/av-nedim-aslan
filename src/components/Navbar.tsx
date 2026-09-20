@@ -140,7 +140,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 onClick={(e) => handleLinkClick(e, 'home')}
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/' && activeSection === 'home'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/' && activeSection === 'home'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -151,7 +151,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/hakkimizda"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hakkimizda'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hakkimizda'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -162,7 +162,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/faaliyet-alanlari"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/faaliyet-alanlari'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/faaliyet-alanlari'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -173,7 +173,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/hukuk-notlari"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hukuk-notlari' || pathname.startsWith('/hukuk-notlari/')
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/hukuk-notlari' || pathname.startsWith('/hukuk-notlari/')
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -184,7 +184,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/sozluk"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/sozluk'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/sozluk'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -195,7 +195,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/araclar/infaz-hesaplama"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/araclar/infaz-hesaplama'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/araclar/infaz-hesaplama'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}
@@ -206,7 +206,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="/iletisim"
-                className={`text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/iletisim'
+                className={`whitespace-nowrap text-xs font-sans font-semibold tracking-widest uppercase py-1 border-b transition-all duration-200 ${pathname === '/iletisim'
                     ? 'text-navy-primary border-navy-primary'
                     : 'text-text-secondary border-transparent hover:text-navy-primary'
                   }`}

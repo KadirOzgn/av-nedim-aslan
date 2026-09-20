@@ -104,7 +104,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
           </div>
 
           <div className="lg:col-span-5 flex justify-center relative w-full">
-            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] 2xl:max-w-[480px] aspect-[4/5] border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
+            <div className="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[384px] 2xl:max-w-[480px] aspect-square border border-navy-primary/20 p-2 bg-bg-primary shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl dark:shadow-stone-950/50">
               <div className="relative w-full h-full">
                 <Image
                   src="/hero-scales.png"

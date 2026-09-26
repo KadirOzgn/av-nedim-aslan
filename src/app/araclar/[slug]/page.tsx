@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import prisma from '@/lib/prisma';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import InfazIframe from '@/components/InfazIframe';
+import ToolIframe from '@/components/ToolIframe';
 import Link from 'next/link';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -50,7 +50,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
           )}
         </div>
         <main className="min-h-screen bg-bg-primary pb-0 flex flex-col">
-          <InfazIframe versionInfo={tool.versionInfo} />
+          <ToolIframe toolSlug={tool.slug} />
         </main>
         <Footer />
       </>

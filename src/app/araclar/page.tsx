@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import prisma from '@/lib/prisma';
 import ToolsClient from '@/components/ToolsClient';
 
@@ -13,5 +13,9 @@ export default async function ToolsPage() {
     orderBy: { createdAt: 'desc' }
   });
 
-  return <ToolsClient tools={tools} />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-bg-primary pt-24 pb-16 flex items-center justify-center">Yükleniyor...</div>}>
+      <ToolsClient tools={tools} />
+    </Suspense>
+  );
 }

@@ -1,4 +1,4 @@
-import InfazIframe from '@/components/InfazIframe';
+import ToolIframe from '@/components/ToolIframe';
 import prisma from '@/lib/prisma';
 
 export default async function AdminHesaplamaPage() {
@@ -17,8 +17,8 @@ export default async function AdminHesaplamaPage() {
         </div>
       </div>
       
-      <div className="bg-bg-primary rounded-xl border border-border-primary overflow-hidden shadow-sm">
-        <InfazIframe versionInfo={tool?.versionInfo} />
+      <div className="bg-bg-primary rounded-xl border border-border-primary overflow-hidden shadow-sm h-[800px]">
+        <ToolIframe toolSlug="infaz-hesaplama" />
       </div>
     </div>
   );

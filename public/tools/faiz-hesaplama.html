@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<script>
+  (function(){
+    try {
+      if (window.location.search.includes('embed=1') || window.location.hash.includes('embed=1')) {
+        document.documentElement.classList.add('embed');
+        
+        function enforceTheme() {
+          try {
+            var isDark = window.parent.document.documentElement.classList.contains('dark');
+            var targetTheme = isDark ? 'dark' : 'light';
+            if (document.documentElement.dataset.theme !== targetTheme) {
+              document.documentElement.dataset.theme = targetTheme;
+            }
+            if (isDark) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } catch(e) {}
+        }
+        
+        enforceTheme();
+        
+        // Prevent React from overriding the theme
+        var selfObserver = new MutationObserver(enforceTheme);
+        selfObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+        
+        // Listen to parent theme changes
+        try {
+          var parentObserver = new MutationObserver(enforceTheme);
+          parentObserver.observe(window.parent.document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        } catch(e) {}
+      }
+    } catch(e) {}
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Faiz Hesaplama | Aslan Hukuk</title>
+<meta content="Kanuni faiz, ticari temerrüt, kamu borcu, SGK, kredi kartı, işçilik ve yabancı para faizleri için güncel oranlarla faiz hesaplama." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="#102a43" name="theme-color"/>
+<meta content="light dark" name="color-scheme"/>
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--text:#172536;--muted:#647487;--line:#e2e7ed;--navy:#102a43;--navy2:#173f67;--soft:#eef4fa;--ok:#eff8f2;--okline:#b7d7c1;--warn:#fff8e6;--warnline:#e5cf87;--bad:#fff0f0;--badline:#e2b2b2;--accent:#275d8c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}main{max-width:1080px;margin:auto;padding:26px 16px 64px}.topline{font-size:10px;letter-spacing:.14em;font-weight:800;color:#718096}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}.top h1{font-size:34px;line-height:1.05;margin:7px 0 8px;color:var(--navy)}.lead{font-size:14px;color:var(--muted);line-height:1.6;max-width:830px;margin:0}.version{flex:0 0 auto;border:1px solid var(--line);border-radius:11px;background:var(--card);padding:10px 12px;font-size:10.5px;line-height:1.45;color:var(--muted)}.version b{display:block;color:var(--navy);font-size:11px}.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:19px;margin:14px 0;box-shadow:0 5px 18px rgba(16,42,67,.035)}.statusbar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:14px 0}.statusbar>div{background:var(--card);padding:11px 13px}.statusbar b,.statusbar span{display:block}.statusbar b{font-size:11px;color:var(--navy);margin-bottom:4px}.statusbar span{font-size:11px;color:var(--muted);line-height:1.4}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.three{grid-template-columns:repeat(3,1fr)}label{display:block;font-size:12px;font-weight:700;margin-bottom:11px;color:#2c3f53}input,select,textarea{width:100% !important;padding:10px 11px !important;border:1px solid #ccd6e0 !important;border-radius:8px !important;background:#fff !important;color:#182536 !important;margin-top:5px !important;font:inherit !important;height:auto !important;min-height:41px !important;box-sizing:border-box !important;}input:focus,select:focus,textarea:focus{outline:2px solid #d8e7f6;border-color:#7ea2c8}input[type=checkbox]{width:auto;margin:0 6px 0 0;vertical-align:middle}textarea{min-height:112px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px}button{padding:11px 16px;border:0;border-radius:8px;background:var(--navy);color:#fff;font-weight:800;cursor:pointer}button:hover{background:var(--navy2)}button.secondary,.small{padding:8px 10px;background:#fff;color:var(--navy);border:1px solid #cfd8e3}.actions{display:flex;gap:9px;align-items:center;margin-top:7px}.muted{font-size:11.5px;color:var(--muted);line-height:1.55}.note{margin:4px 0 0}.good,.warn,.bad{padding:10px 11px;border-radius:8px;margin-top:10px;font-size:12px;line-height:1.5}.good{border:1px solid var(--okline);background:var(--ok)}.warn{border:1px solid var(--warnline);background:var(--warn)}.bad{border:1px solid var(--badline);background:var(--bad)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.metric{border:1px solid var(--line);background:#fbfcfe;border-radius:10px;padding:12px}.metric small,.metric strong{display:block}.metric small{color:var(--muted);font-size:11px}.metric strong{font-size:18px;margin-top:5px;color:var(--navy)}.result-title{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:12px}.result-title h2{font-size:20px;margin:0;color:var(--navy)}.badge{display:inline-block;font-size:10px;font-weight:800;border:1px solid #bfd2e6;background:#eef5fb;border-radius:999px;padding:4px 8px;color:#214e75}.badgeb{border-color:#e2c77a;background:#fff8e5;color:#70570f}.sourcechips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.sourcechips a{font-size:10.5px;text-decoration:none;color:#184d78;border:1px solid #cdddeb;background:#f5f9fc;border-radius:999px;padding:5px 8px}.sourcechips a:hover{text-decoration:underline}details{border-top:1px solid var(--line);margin-top:12px;padding-top:12px}summary{cursor:pointer;color:var(--navy);font-size:12px;font-weight:700;margin-bottom:10px}table{width:100%;border-collapse:collapse;font-size:11px;margin-top:12px}th,td{text-align:left;padding:8px 7px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:#44566c;background:#f8fafc}.payrow{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin:8px 0}.inlinechecks{display:flex;gap:18px;flex-wrap:wrap;margin:4px 0 8px}.inlinechecks label{font-weight:600;margin:0}.subhead{font-size:13px;color:var(--navy);font-weight:800;margin:4px 0 10px}.modehelp{border:1px solid #cdddeb;background:#f7fbff;border-radius:11px;padding:12px 13px;margin:4px 0 14px}.modehelp .mh-title{font-size:14px;font-weight:800;color:var(--navy);margin-bottom:5px}.modehelp .mh-law{font-size:11px;font-weight:700;color:#315b7d;margin-bottom:6px}.modehelp .mh-plain{font-size:12px;line-height:1.55;color:var(--text)}.modehelp .mh-example{font-size:11px;line-height:1.5;color:var(--muted);margin-top:6px}.choiceguide{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:11px 12px;margin:0 0 14px}.choiceguide summary{border:0;margin:0;padding:0}.choiceguide ul{margin:9px 0 0 18px;padding:0}.choiceguide li{font-size:11.5px;line-height:1.5;margin:5px 0}.lawtag{font-weight:700;color:var(--navy)}.testline{display:flex;gap:7px;align-items:center;font-size:11px;margin-top:8px}.dot{width:9px;height:9px;border-radius:50%;background:#aaa}.dot.ok{background:#3b8c5a}.dot.fail{background:#b84c4c}[hidden]{display:none!important}
+.rate-row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;margin:8px 0}.rate-row label{margin:0}.rate-row button{height:39px}.result-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.privacy{display:flex;gap:8px;align-items:flex-start}.privacy b{color:var(--navy)}.metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:9px}.integration-note{border-left:3px solid var(--accent);padding-left:10px}.currency-note{font-size:11px;color:var(--muted);margin-top:-4px}.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+@media(max-width:760px){.rate-row{grid-template-columns:1fr}.rate-row button{width:100%}main{padding:20px 11px 48px}.top{display:block}.version{margin-top:12px;display:inline-block}.grid,.three,.metrics,.payrow,.statusbar{grid-template-columns:1fr}.top h1{font-size:29px}.panel{padding:15px}.statusbar{gap:0}.statusbar>div{border-bottom:1px solid var(--line)}table{display:block;overflow-x:auto}.actions{align-items:stretch;flex-direction:column}.actions button{width:100%}}
+@media print{body *{visibility:hidden!important}#result,#result *{visibility:visible!important}#result{position:absolute;left:0;top:0;width:100%;border:0;box-shadow:none}.result-actions{display:none!important}}
+@media(prefers-color-scheme:dark){:root{--bg:#081727;--card:#0e2237;--text:#edf4fb;--muted:#a9bbcd;--line:#243b53;--navy:#dcecff;--navy2:#1e4f7c;--soft:#102a43;--ok:#102e25;--okline:#2f6650;--warn:#342c16;--warnline:#786629;--bad:#351d22;--badline:#74404b}input,select,textarea{background:#0b1d30;color:#edf4fb;border-color:#35506b}.metric{background:#0a1c2e}.secondary,.small{background:#0b1d30!important;color:#e7f1fb!important;border-color:#35506b!important}th{background:#0a1c2e;color:#c4d5e6}.statusbar b{color:#e8f2fc}.sourcechips a{color:#c8e3fb;background:#102a43;border-color:#315573}.modehelp{background:#0b1f33;border-color:#315573}.modehelp .mh-law{color:#a8cae8}.choiceguide{background:#0b1f33}}
+html.dark{--bg:#081727;--card:#0e2237;--text:#edf4fb;--muted:#a9bbcd;--line:#243b53;--navy:#dcecff;--navy2:#1e4f7c;--soft:#102a43;--ok:#102e25;--okline:#2f6650;--warn:#342c16;--warnline:#786629;--bad:#351d22;--badline:#74404b;--accent:#5ba3d9;color-scheme:dark}
+html.dark body{background:var(--bg)!important;color:var(--text)!important}
+html.dark input,html.dark select,html.dark textarea{background:#0b1d30!important;color:#edf4fb!important;border-color:#35506b!important}
+html.dark input:focus,html.dark select:focus,html.dark textarea:focus{outline-color:#35506b!important;border-color:#5ba3d9!important}
+html.dark label{color:#a9bbcd!important}
+html.dark .panel{background:var(--card)!important;border-color:var(--line)!important;box-shadow:0 5px 18px rgba(0,0,0,.2)!important}
+html.dark .metric{background:#0a1c2e!important;border-color:var(--line)!important}
+html.dark .metric strong{color:var(--navy)!important}
+html.dark .secondary,html.dark .small{background:#0b1d30!important;color:#e7f1fb!important;border-color:#35506b!important}
+html.dark button.secondary:hover,html.dark .small:hover{background:#132d45!important}
+html.dark th{background:#0a1c2e!important;color:#c4d5e6!important}
+html.dark td{border-bottom-color:var(--line)!important}
+html.dark .statusbar{background:var(--line)!important;border-color:var(--line)!important}
+html.dark .statusbar>div{background:var(--card)!important}
+html.dark .statusbar b{color:#e8f2fc!important}
+html.dark .sourcechips a{color:#c8e3fb!important;background:#102a43!important;border-color:#315573!important}
+html.dark .modehelp{background:#0b1f33!important;border-color:#315573!important}
+html.dark .modehelp .mh-title{color:var(--navy)!important}
+html.dark .modehelp .mh-law{color:#a8cae8!important}
+html.dark .modehelp .mh-plain{color:var(--text)!important}
+html.dark .choiceguide{background:#0b1f33!important;border-color:#315573!important}
+html.dark .badge{background:#102a43!important;border-color:#315573!important;color:#a9c8e8!important}
+html.dark .badgeb{background:#342c16!important;border-color:#786629!important;color:#e5cf87!important}
+html.dark .version{background:var(--card)!important;border-color:var(--line)!important}
+html.dark .version b{color:var(--navy)!important}
+html.dark .top h1{color:var(--navy)!important}
+html.dark .topline{color:#a9bbcd!important}
+html.dark .subhead{color:var(--navy)!important}
+html.dark .lawtag{color:var(--navy)!important}
+html.dark details{border-top-color:var(--line)!important}
+html.dark summary{color:var(--navy)!important}
+html.dark button{background:var(--navy2)!important;color:#fff!important}
+html.dark button:hover{background:#275d8c!important}
+
+/* Yayın görünümü */
+.sources-panel>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px}.sources-panel>summary::-webkit-details-marker{display:none}.sources-panel>summary::after{content:"+";font-size:18px;font-weight:500;color:var(--muted)}.sources-panel[open]>summary::after{content:"–"}.sources-panel[open]>summary{margin-bottom:10px}
+
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45}
+.top{display:block}.top h1{font-size:36px;letter-spacing:-.02em;margin-top:0}.lead{font-size:15px;max-width:760px;margin-bottom:5px}.updated-line{margin:0 0 18px;color:var(--muted);font-size:12px}
+.statusbar{margin-top:14px}.statusbar>div{padding:13px 14px}.statusbar b{font-size:12.5px}.statusbar span{font-size:11.5px;line-height:1.45}
+.panel{box-shadow:0 8px 28px rgba(16,42,67,.055)}
+.modehelp{border-left:3px solid var(--accent);background:var(--soft);border-radius:10px;padding:13px 14px;margin:14px 0}.mh-title{font-size:14px;font-weight:750}.mh-law{font-size:11.5px;margin-top:3px;color:var(--muted)}
+.notice{padding:12px 14px;border:1px solid var(--line);background:var(--soft);border-radius:10px;margin:12px 0;font-size:12px;line-height:1.55}
+.actions{margin-top:18px}.actions #calc{min-width:160px}.actions .secondary{font-weight:650}
+.result-title h2{letter-spacing:-.01em}.badge{font-weight:700;letter-spacing:0}.sourcechips a{font-size:11.5px;text-decoration:none}.sourcechips a:hover{text-decoration:underline}
+.privacy{padding:16px 18px}.legal-note{font-size:11.5px;color:var(--muted);line-height:1.55;margin:14px 2px 0}
+@media(max-width:760px){.top h1{font-size:30px}.lead{font-size:14px}.statusbar{grid-template-columns:1fr 1fr}.statusbar>div{border-bottom:1px solid var(--line)}.updated-line{margin-bottom:14px}}
+</style>
+<style>
+/* Embed mode overrides to match infaz-hesaplama theme structure */
+html.embed, html.embed body { background: transparent !important; }
+html.embed body main { padding-top: 0; max-width: 100%; overflow: hidden; }
+html.embed body .top, html.embed body .lawUpdateNote, html.embed body footer { display: none !important; }
+html.embed body .panel { padding: 0; border: none; background: transparent !important; box-shadow: none !important; }
+</style>
+<style>.brand-block .brand-mark, .brand-block .eyebrow { display: none !important; }</style>
+</head>
+<body >
+<main>
+
+<div class="lawUpdateNote">
+<div><b>Kanuni faiz</b><span>3095 sayılı Kanun m.1<br/>2026: %24 → %31</span></div>
+<div><b>Ticari temerrüt faizi</b><span>3095 sayılı Kanun m.2/2<br/>2026: %39,75</span></div>
+<div><b>Mal ve hizmetlerde geç ödeme</b><span>6102 sayılı TTK m.1530<br/>2026: %43 + 2.020 TL</span></div>
+<div><b>Gün hesabı</b><span>Genel hesaplarda 365 gün esas alınır<br/>Gerekirse 360 gün seçilebilir</span></div>
+</div>
+<div class="warn" hidden="" id="dataStatus"></div>
+<section id="selection"><div class="sectionTitle"><h2>Hesaplama Kriterleri</h2></div><form class="" id="calculatorForm" novalidate="">
+<div class="grid">
+<label id="principalLabel"><span id="principalText">Anapara / alacak tutarı</span>
+<input autocomplete="off" id="principal" inputmode="decimal" min="0" placeholder="Örn. 350000" step="0.01" type="number"/>
+</label>
+<label>Hesap türü
+      <select id="mode">
+<optgroup label="En sık kullanılan faizler">
+<option value="legal">Kanuni (Yasal) Faiz — 3095 sayılı Kanun m.1</option>
+<option value="commercial">Ticari Temerrüt Faizi — 3095 sayılı Kanun m.2/2</option>
+<option value="ttk">Mal/Hizmet Tedarikinde Geç Ödeme — 6102 sayılı TTK m.1530</option>
+</optgroup>
+<optgroup label="Kamu, SGK ve banka borçları">
+<option value="late6183">Kamu Borcunda Gecikme Zammı — 6183 sayılı Kanun m.51</option>
+<option value="tecil">Kamu Borcunda Tecil Faizi — 6183 sayılı Kanun m.48</option>
+<option value="special29">2026 Özel %29 Tecil — Tahsilat Genel Tebliği Seri B No:20</option>
+<option value="sgk">SGK Prim Borcu Gecikmesi — 5510 sayılı Kanun m.89</option>
+<option value="card">Kredi Kartı / KMH Azami Faizi — TCMB</option>
+</optgroup>
+<optgroup label="Diğer faiz türleri">
+<option value="reeskont">TCMB Reeskont Oranına Göre Faiz</option>
+<option value="advance">TCMB Avans Oranına Göre Faiz</option>
+<option value="labor">İşçilik Alacağı Faizi — alacak türüne göre</option>
+<option value="foreign">Yabancı Para Alacağı Faizi — 3095 sayılı Kanun m.4/A</option>
+<option value="custom">Sözleşmede Yazılı Özel Faiz — 6098 sayılı TBK m.88 / m.120</option>
+<option value="tbk55">Çalışma Gücü Kaybı / Destekten Yoksun Kalma Faizi — 6098 sayılı TBK m.55</option>
+</optgroup>
+</select>
+</label>
+</div>
+<details class="choiceguide">
+<summary>Hangi faiz türü uygulanır?</summary>
+<ul>
+<li><span class="lawtag">Genel borç veya mahkeme alacağı:</span> Özel bir faiz türü yoksa <b>Kanuni Faiz</b> seçilir.</li>
+<li><span class="lawtag">Ticari borç:</span> Ticari temerrüt şartları varsa <b>Ticari Temerrüt Faizi</b> seçilir.</li>
+<li><span class="lawtag">Mal veya hizmet bedeli:</span> TTK m.1530 kapsamındaki geç ödemelerde <b>Mal/Hizmet Tedarikinde Geç Ödeme</b> seçilir.</li>
+<li><span class="lawtag">Vergi ve diğer kamu borçları:</span> Vadesi geçen borçta <b>Gecikme Zammı</b>; tecil veya taksitlendirmede <b>Tecil Faizi</b> uygulanır.</li>
+<li><span class="lawtag">SGK primi:</span> <b>SGK Prim Borcu Gecikmesi</b>.</li>
+<li><span class="lawtag">İşçi alacağı:</span> <b>İşçilik Alacağı Faizi</b> seçilip kıdem, ücret, izin vb. alacak türü ayrıca seçilir.</li>
+<li><span class="lawtag">Döviz alacağı:</span> <b>Yabancı Para Alacağı Faizi</b>.</li>
+<li><span class="lawtag">Sözleşmede özel faiz oranı varsa:</span> <b>Sözleşmede Yazılı Özel Faiz</b> seçilir. Oranın geçerliliği sözleşmenin niteliğine göre ayrıca değerlendirilir.</li>
+</ul>
+</details>
+<div aria-live="polite" class="modehelp" id="modeHelp"></div>
+<div id="annualBox">
+<div class="grid">
+<label>Faiz başlangıç tarihi<input id="start" type="date"/></label>
+<label>Hesap bitiş tarihi<input id="end" type="date"/></label>
+</div>
+<details>
+<summary>Gün hesabı seçenekleri</summary>
+<div class="grid">
+<label>Gün kapsamı
+          <select id="dayMode">
+<option value="start_out_end_in">Başlangıç günü sayılmaz, bitiş günü sayılır (varsayılan)</option>
+<option value="start_in_end_out">Başlangıç günü sayılır, bitiş günü sayılmaz</option>
+</select>
+</label>
+<label>Yıl esası
+          <select id="yearBasis">
+<option value="365">365 gün (genel kullanım)</option>
+<option value="360">360 gün (özel durumlar için)</option>
+</select>
+</label>
+</div>
+<p class="muted note">Genel hesaplarda varsayılan seçim kullanılabilir. Mahkeme kararı, sözleşme veya özel mevzuat farklı bir yöntem gerektiriyorsa bu alanı değiştirebilirsiniz. 6183 ve SGK hesaplarında kendi özel hesaplama yöntemi uygulanır.</p>
+</details>
+<p class="muted note"><b>Tarih aralığı:</b> Kanuni faiz hesabı 1 Ocak 2006 ve sonrası için kullanılabilir. Önceki dönemler bu hesaplamanın kapsamı dışındadır.</p>
+</div>
+<div hidden="" id="ttkBox">
+<label><input id="addTtkCost" type="checkbox"/>TTK m.1530 kapsamındaki asgari tahsil giderini de hesaba ekle</label>
+</div>
+<div hidden="" id="lateBox">
+<div class="grid"><label>Vade tarihi<input id="due6183" type="date"/></label><label>Ödeme tarihi<input id="pay6183" type="date"/></label></div>
+<div class="notice">Gecikme zammında vade günü hesaba katılmaz, ödeme günü hesaba katılır. Tam aylar aylık, ay kesirleri günlük hesaplanır. 21 Eylül 2026 sonrasına ait oran yayımlanmadığı için bu tarihten sonraki ödemeler hesaplanmaz.</div>
+</div>
+<div hidden="" id="tecilBox">
+<div class="grid">
+<label>Tecil müracaat tarihi<input id="tecilApp" type="date"/></label>
+<label>Asıl borcun vade tarihi<input id="tecilDue" type="date"/></label>
+<label>Bu taksidin ödeme tarihi<input id="tecilPay" type="date"/></label>
+<label>Yıllık tecil oranı<input disabled="" value="%39"/></label>
+</div>
+<div class="notice">13 Kasım 2025 ve sonrasında yapılan genel tecil başvurularında bir taksite düşen faizi hesaplar. 21 Eylül 2026 sonrasındaki ödeme tarihleri için sonuç mevcut %39 oran üzerinden hesaplanır; resmî ödeme planındaki tutar esas alınmalıdır.</div>
+</div>
+<div hidden="" id="specialBox">
+<div class="grid">
+<label>Başvurunun durumu
+        <select id="specialStatus">
+<option value="new">16.06–31.08.2026 arasında yeni başvuru</option>
+<option value="existing">16.06.2026 tarihinde yürürlükte olan düzenli tecil</option>
+<option value="pending">16.06.2026 tarihinde henüz sonuçlanmamış başvuru</option>
+</select>
+</label>
+<label>Başvuru tarihi<input id="specialApp" max="2026-08-31" min="2026-06-16" type="date"/></label>
+<label>Hesaplanan taksidin ödeme tarihi<input id="specialPay" type="date"/></label>
+<label>Borçlu / borç grubu
+        <select id="specialCat">
+<option value="active">Faal bilanço / işletme hesabı mükellefi</option>
+<option value="other">Diğer borçlu</option>
+<option value="public">Belediye / il özel idaresi / YİKOB ve kapsamdaki bağlı şirket</option>
+<option value="kdv">KDV / BSMV için ayrı plan</option>
+</select>
+</label>
+<label id="liqLabel">Likidite oranı<input id="liquidity" min="0" placeholder="Örn. 0,28" step="0.01" type="number"/></label>
+</div>
+<div class="inlinechecks">
+<label><input id="debt0506" type="checkbox"/>Vadesi 05.06.2026 veya öncesi</label>
+<label><input id="unpaid1606" type="checkbox"/>16.06.2026'ya kadar ödenmemiş</label>
+<label><input id="excludedDebt" type="checkbox"/>Kapsam dışı borç türü</label>
+</div>
+<div class="good" id="specialMax"></div>
+<p class="muted"><b>31 Ağustos 2026 son başvuru tarihi sona ermiştir.</b> Bu bölüm, süresinde yapılmış başvuruların veya 16.06.2026 tarihinde yürürlükte bulunan tecillerin hesap kontrolü içindir. 16.06.2026 tarihinde tecil edilmiş ve düzenli ödenen borçlarda, bu tarihten sonraki taksitlere %29 oranı <b>başvuru şartı aranmaksızın</b> uygulanır; ancak 16.06.2026 öncesi dönem eski oranlarla hesaplanır. Tebliğdeki daha uzun taksit sürelerinden yararlanmak için 31.08.2026’ya kadar yeniden başvuru gerekiyordu. Tebliğ kapsamındaki borçlar bakımından başvuru vergi dairesindeki tüm kapsamdaki borçları içermelidir.</p>
+</div>
+<div hidden="" id="cardBox">
+<div class="grid">
+<label>Oran dönemi<input id="cardMonth" max="2026-09" min="2026-01" type="month" value="2026-09"/></label>
+<label>Kategori<select id="cardCat"><option value="tl_under30">TL dönem borcu 30.000 TL altı</option><option value="tl_30_180">TL dönem borcu 30.000–180.000 TL</option><option value="tl_over180">TL 180.000 TL üzeri / kurumsal</option><option value="cash">Nakit çekim / kullanım / KMH</option><option value="fx">Yabancı para kredi kartı</option><option value="restructured">BDDK kararı kapsamındaki yapılandırılmış kart borcu</option></select></label>
+<label>Faiz tipi<select id="cardType"><option value="contract">Azami akdi faiz</option><option value="late">Azami gecikme faizi</option></select></label>
+<label hidden="" id="cardCurrencyWrap">Para birimi<select id="cardCurrency"><option value="USD">USD — ABD Doları</option><option value="EUR">EUR — Euro</option><option value="GBP">GBP — İngiliz Sterlini</option><option value="CHF">CHF — İsviçre Frangı</option><option value="JPY">JPY — Japon Yeni</option></select></label>
+</div>
+<p class="muted">TCMB tarafından ilan edilen <b>bir aylık azami faiz oranı</b> esas alınır. Bankanız daha düşük bir oran uygulayabilir. BSMV, diğer vergiler, asgari ödeme tutarı, ekstre tarihi ve bankanın kendi hesap yöntemi bu sonuca dahil değildir.</p>
+</div>
+<div hidden="" id="sgkBox">
+<div class="grid"><label>Prim borcu vade tarihi<input id="sgkDue" min="2024-04-01" type="date"/></label><label>Ödeme tarihi<input id="sgkPay" type="date"/></label></div>
+<div class="notice">SGK prim borcu hesabı 1 Nisan 2024 ve sonrasındaki vadeler için kullanılabilir. Mevcut DİBS verileriyle ödeme tarihi en geç 30 Eylül 2026 olabilir. İlgili ayın oranı yayımlanmamışsa hesaplama yapılmaz.</div>
+</div>
+<div hidden="" id="laborBox">
+<label>İşçilik alacağı<select id="laborClaim"></select></label>
+<div class="good" id="laborInfo"></div>
+</div>
+<div hidden="" id="customBox">
+<div class="grid">
+<label>Yıllık özel oran (%)<input id="customRate" inputmode="decimal" min="0" step="0.0001" type="number"/></label>
+<label>Oranın niteliği<select id="customKind"><option value="contract">Akdi faiz — TBK m.88</option><option value="default">Temerrüt faizi — TBK m.120</option><option value="math">Yalnız matematiksel hesap</option></select></label>
+</div>
+<div class="notice">Girilen oran üzerinden hesap yapılır. Adi işlerde TBK m.88 ve m.120 sınırları ayrıca gösterilir. Ticari işler, tüketici işlemleri ve özel kanunlara tabi durumlarda farklı kurallar uygulanabilir.</div>
+</div>
+<div hidden="" id="tbk55Box">
+<div class="grid">
+<label>Bilinen kazançlar üzerinden zarar<input id="knownAmount" min="0" step="0.01" type="number"/></label>
+<label>Haksız fiil / zarar tarihi<input id="knownStart" type="date"/></label>
+<label>Bilinmeyen kazançlar üzerinden zarar<input id="unknownAmount" min="0" step="0.01" type="number"/></label>
+<label>Hüküm tarihi<input id="judgmentDate" type="date"/></label>
+<label>Hesap bitiş tarihi<input id="tbkEnd" type="date"/></label>
+</div>
+<div class="notice">Bu bölüm, yalnız <b>çalışma gücü kaybı</b> ve <b>destekten yoksun kalma</b> zararlarında TBK m.55’e eklenen faiz başlangıcı kuralı için kullanılır. Diğer zarar kalemleri kapsam dışındadır. Olay tarihi 31 Temmuz 2026’dan önceyse bu bölüm kullanılmaz.</div>
+</div>
+<div hidden="" id="externalBox">
+<div class="grid">
+<label id="currencyWrap">Para birimi<select id="currency"><option value="USD">USD — ABD Doları</option><option value="EUR">EUR — Euro</option><option value="GBP">GBP — İngiliz Sterlini</option><option value="CHF">CHF — İsviçre Frangı</option><option value="JPY">JPY — Japon Yeni</option></select></label>
+<div>
+<div class="subhead" id="rateTitle">Dönemsel yıllık faiz oranları</div>
+<p class="muted note" id="rateHelp">Her oran değişikliğini ayrı satır olarak girin.</p>
+</div>
+</div>
+<div id="rateRows"></div>
+<button class="small" id="addRate" type="button">+ Oran dönemi ekle</button>
+<p class="muted">İlk satırdaki tarih faiz başlangıcından sonra olamaz. İlgili dönem için bankaların ilan ettiği yıllık faiz oranlarını girin.</p>
+</div>
+<details id="paymentsBox">
+<summary>Kısmi ödemeler — 6098 sayılı Türk Borçlar Kanunu m.100</summary>
+<div class="grid">
+<label><span id="expensesText">Başlangıç gider / masraf</span><input id="expenses" inputmode="decimal" min="0" step="0.01" type="number" value="0"/></label>
+<label>Mahsup durumu<select id="allocation"><option value="overdue">Faiz/gider ödemesinde gecikme var → gider → faiz → anapara</option><option value="principal">Faiz/gider ödemesinde gecikme yok → anaparadan düş</option></select></label>
+</div>
+<div id="payments"></div>
+<button class="small" id="addPayment" type="button">+ Kısmi ödeme ekle</button>
+<p class="muted">Birden fazla borcun bulunması, ödemenin hangi borca yapıldığının belirtilmesi veya teminatlı borç gibi durumlarda TBK m.101–102 hükümleri ayrıca değerlendirilmelidir.</p>
+</details>
+<div class="actionRow"><button id="calc" type="submit">Hesapla</button><button class="secondary" id="reset" type="button">Temizle</button></div>
+</form></section>
+<section aria-live="polite" class="resultPanel" hidden="" id="result" role="status" tabindex="-1"></section>
+<details class="panel sources-panel">
+<summary class="subhead">Dayanak ve kaynaklar</summary>
+<p class="muted">Hesaplamada esas alınan mevzuat ve oran kaynaklarına aşağıdan ulaşabilirsiniz. Yayımlanmamış gelecek dönem oranları kullanılmaz.</p>
+<div class="sourcechips" id="allSources"></div>
+<div hidden="" id="testStatus"></div>
+</details>
+<div class="panel privacy"><div><b>Gizlilik</b><div class="muted">Girdiğiniz tutar, tarih ve ödeme bilgileri bu sayfadaki hesaplama için tarayıcınızda işlenir; hesaplama verileri bu dosya tarafından başka bir sunucuya gönderilmez.</div></div></div>
+<p class="legal-note">Hesaplama bilgilendirme amaçlıdır. Resmî kurum veya banka hesabının yerine geçmez. Uygulanacak faiz türü ve başlangıç tarihi somut olaya göre değişebilir.</p>
+<script>
+"use strict";
+const DATA={
+ version:"2026-09-21", verifiedAt:"2026-09-21", reviewDue:"2026-10-01", marketDataThrough:"2026-09-21", late6183Through:"2026-09-21", sgkPaymentThrough:"2026-09-30", cardThrough:"2026-09",
+ sources:{
+  law7589:{label:"TBMM • 7589 sayılı Kanun",url:"https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/KanunMetni/b074aa2a-c1eb-4bd5-b5d9-4b61a9ac3924.htm"},
+  law3095:{label:"Adalet • 3095 sayılı Kanuni Faiz ve Temerrüt Faizi Kanunu",url:"https://mevzuat.adalet.gov.tr/mevzuat/104794"},
+  cb8485:{label:"Mevzuat • 8485 sayılı Karar (%24)",url:"https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8485.pdf"},
+  tcmbRates:{label:"TCMB • Reeskont / Avans",url:"https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB%2BTR/Main%2BMenu/Temel%2BFaaliyetler/Para%2BPolitikasi/Reeskont%2Bve%2BAvans%2BFaiz%2BOranlari"},
+  tcmbTtk:{label:"TCMB • TTK m.1530",url:"https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB%2BTR/Main%2BMenu/Istatistikler/Piyasa%2BVerileri/TTK%2BMd.%2B1530"},
+  tcmbCard:{label:"TCMB • Kredi kartı azami faiz",url:"https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB%2BTR/Main%2BMenu/Istatistikler/Bankacilik%2BVerileri/Kredi_Karti_Islemlerinde_Uygulanacak_Azami_Faiz_Oranlari"},
+  gib6183:{label:"GİB • 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun",url:"https://www.gib.gov.tr/mevzuat/kanun/442"},
+  gibTecil39:{label:"GİB • Tahsilat Genel Tebliği Seri C Sıra No:9 — tecil faizi %39",url:"https://gib.gov.tr/mevzuat/kanun/442/teblig/11832"},
+  gibTahsilatA1:{label:"GİB • Tahsilat Genel Tebliği Seri A/1",url:"https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fmevzuatek%2Feski%2FTahsilat_Genel_Tebligi_A1_01102024_1.pdf"},
+  gibSpecial:{label:"GİB • Seri B Sıra No:20",url:"https://gib.gov.tr/mevzuat/kanun/442/teblig/11872"},
+  gibSpecialGuide:{label:"GİB • 2026 düşük oranlı tecil rehberi",url:"https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Ffileadmin%2Fbeyannamerehberi%2F2026%2FDUYURU_UNIVERSAL_2026_2026_Tecil_Faizi_ile_Taksitlendirilmesi_Rehberi.pdf"},
+  gib7582:{label:"GİB • 7582 / tecil 72 ay",url:"https://gib.gov.tr/duyuru-arsivi/guncel/18102_7582_bazi_kanunlarda_degisiklik_yapilmasina_dair_kanun_resmi_gazetede_yayimlandi"},
+  sgkPrim:{label:"SGK • 5510 sayılı Kanun m.89 prim gecikmesi",url:"https://www.sgk.gov.tr/Content/Post/1f3a8bec-bca6-4e83-8e5c-f957a7d28af4/Isverenlerin-Prim-Odeme-Islemleri-2025-02-06-03-29-17"},
+  sgkDibs:{label:"SGK • DİBS oranları",url:"https://www.sgk.gov.tr/Content/Post/448403ad-84da-423f-beec-67543e81f6a3/Yururluk-Tarihlerine-Gore-Gecikme-Zammi-Oranlari-2026-08-20-04-15-02"},
+  sgkFormula:{label:"SGK • m.89 hesap yöntemi / resmî Tebliğ",url:"https://kesenek.sgk.gov.tr/KesenekWeb/doc/Teblig.doc"},
+  tbk:{label:"TBMM • 6098 sayılı Türk Borçlar Kanunu",url:"https://cdn.tbmm.gov.tr/KKBSPublicFile/D23/Y2/T1/KanunMetni/a657b33d-109c-473d-9266-5aa48d603ab2.html"},
+  tbbCalc:{label:"TBB • Faiz hesaplama aracı",url:"https://www.barobirlik.org.tr/HesaplamaAraclari"},
+  tbbLegalHistory:{label:"TBB • Kanuni faiz %9 / 2005/9831 tarihçesi",url:"https://www.barobirlik.org.tr/Haberler/kanuni-faiz-oraninin-24-olarak-belirlenmesine-iliskin-karar-resmi-gazetede-yayimlanmistir-84793"},
+  law4857:{label:"TBMM • 4857 sayılı İş Kanunu m.34",url:"https://cdn.tbmm.gov.tr/KKBSPublicFile/D22/Y1/T1/KanunMetni/359dee72-3cd1-4131-8597-48c58658e326.html"},
+  law1475:{label:"Resmî Gazete • 1475 sayılı İş Kanunu m.14 — kıdem tazminatı",url:"https://resmigazete.gov.tr/eskiler/2008/11/20081126-8.htm"},
+  tcmbCardInfo:{label:"TCMB • Kredi kartı / KMH azami faiz",url:"https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB%2BTR/Main%2BMenu/Istatistikler/Bankacilik%2BVerileri/Kredi_Karti_Islemlerinde_Uygulanacak_Azami_Faiz_Oranlari"}
+ },
+ legal:[
+  {from:"2006-01-01",rate:9,basis:"3095 tarihsel oran"},
+  {from:"2024-06-01",rate:24,basis:"8485 sayılı Cumhurbaşkanı Kararı"},
+  {from:"2026-07-31",rate:31,basis:"7589 m.10; 38,75 × %80"}
+ ],
+ reeskont:[
+  {from:"2004-06-15",rate:38},{from:"2005-01-13",rate:32},{from:"2005-05-25",rate:28},{from:"2005-12-20",rate:23},{from:"2006-12-20",rate:27},{from:"2007-12-28",rate:25},{from:"2009-04-09",rate:19},{from:"2009-06-12",rate:18},{from:"2009-12-22",rate:15},{from:"2010-12-30",rate:14},{from:"2011-12-29",rate:17},{from:"2012-06-19",rate:16},{from:"2012-12-20",rate:13.5},{from:"2013-06-21",rate:9.5},{from:"2013-12-27",rate:10.25},{from:"2014-12-14",rate:9},{from:"2016-12-31",rate:8.75},{from:"2018-06-29",rate:18.5},{from:"2019-10-11",rate:17.25},{from:"2019-12-21",rate:12.75},{from:"2020-06-13",rate:9},{from:"2020-12-19",rate:15.75},{from:"2021-12-31",rate:14.75},{from:"2022-12-31",rate:9.75},{from:"2023-06-24",rate:15.75},{from:"2023-09-01",rate:25.75},{from:"2023-09-28",rate:30.75},{from:"2023-11-01",rate:35.75},{from:"2023-12-01",rate:40.75},{from:"2023-12-23",rate:43.25},{from:"2024-04-01",rate:50.75},{from:"2024-12-28",rate:48.25},{from:"2025-03-08",rate:43.25},{from:"2025-09-17",rate:41.25},{from:"2025-12-20",rate:38.75}
+ ],
+ advance:[
+  {from:"2004-06-15",rate:42},{from:"2005-01-13",rate:35},{from:"2005-05-25",rate:30},{from:"2005-12-20",rate:25},{from:"2006-12-20",rate:29},{from:"2007-12-28",rate:27},{from:"2009-04-09",rate:20},{from:"2009-06-12",rate:19},{from:"2009-12-22",rate:16},{from:"2010-12-30",rate:15},{from:"2011-12-29",rate:17.75},{from:"2012-06-19",rate:16.5},{from:"2012-12-20",rate:13.75},{from:"2013-06-21",rate:11},{from:"2013-12-27",rate:11.75},{from:"2014-12-14",rate:10.5},{from:"2016-12-31",rate:9.75},{from:"2018-06-29",rate:19.5},{from:"2019-10-11",rate:18.25},{from:"2019-12-21",rate:13.75},{from:"2020-06-13",rate:10},{from:"2020-12-19",rate:16.75},{from:"2021-12-31",rate:15.75},{from:"2022-12-31",rate:10.75},{from:"2023-06-24",rate:16.75},{from:"2023-09-01",rate:26.75},{from:"2023-09-28",rate:31.75},{from:"2023-11-01",rate:36.75},{from:"2023-12-01",rate:41.75},{from:"2023-12-23",rate:44.25},{from:"2024-04-01",rate:51.75},{from:"2024-12-28",rate:49.25},{from:"2025-03-08",rate:44.25},{from:"2025-09-17",rate:42.25},{from:"2025-12-20",rate:39.75}
+ ],
+ ttk1530:[
+  {from:"2013-01-01",rate:15,cost:95},{from:"2014-01-01",rate:12.75,cost:120},{from:"2015-01-01",rate:11.5,cost:120},{from:"2016-01-01",rate:11.5,cost:130},{from:"2017-01-01",rate:10.75,cost:150},{from:"2018-01-01",rate:10.75,cost:185},{from:"2019-01-01",rate:21.25,cost:245},{from:"2020-01-01",rate:15,cost:260},{from:"2021-01-01",rate:18.25,cost:385},{from:"2022-01-01",rate:17.25,cost:555},{from:"2023-01-01",rate:11.75,cost:800},{from:"2024-01-01",rate:48,cost:1310},{from:"2025-01-01",rate:53.25,cost:1475},{from:"2026-01-01",rate:43,cost:2020}
+ ],
+ late6183:[
+  {from:"2004-01-02",monthly:4},{from:"2005-03-02",monthly:3},{from:"2006-04-21",monthly:2.5},{from:"2009-11-19",monthly:1.95},{from:"2010-10-19",monthly:1.4},{from:"2018-09-05",monthly:2},{from:"2019-07-01",monthly:2.5},{from:"2019-10-02",monthly:2},{from:"2019-12-30",monthly:1.6},{from:"2022-07-21",monthly:2.5},{from:"2023-11-14",monthly:3.5},{from:"2024-05-21",monthly:4.5},{from:"2025-11-13",monthly:3.7}
+ ],
+ card2026:{
+  "2026-01":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-02":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-03":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-04":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-05":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-06":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-07":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-08":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]},
+  "2026-09":{ref:3.11,tl_under30:[3.25,3.55],tl_30_180:[3.75,4.05],tl_over180:[4.25,4.55],cash:[4.25,4.55],fx:[2.98,3.28],restructured:[3.11,4.55]}
+ },
+ sgkDibs:{
+  "2024-01":2.93,"2024-02":3.00,"2024-03":3.34,"2024-04":3.40,"2024-05":3.47,"2024-06":3.43,"2024-07":3.36,"2024-08":3.10,"2024-09":3.20,"2024-10":3.31,"2024-11":3.32,"2024-12":3.16,
+  "2025-01":3.08,"2025-02":3.04,"2025-03":null,"2025-04":3.42,"2025-05":3.42,"2025-06":3.25,"2025-07":3.09,"2025-08":2.87,"2025-09":2.87,"2025-10":2.86,"2025-11":2.91,"2025-12":2.83,
+  "2026-01":2.64,"2026-02":2.55,"2026-03":2.74,"2026-04":3.01,"2026-05":3.00,"2026-06":2.99,"2026-07":2.93,"2026-08":2.91
+ },
+ laborClaims:{
+  severance:{label:"Kıdem tazminatı",source:"external",basis:"1475 m.14 — mevduata uygulanan en yüksek faiz",hint:"Kural olarak iş sözleşmesinin sona erme tarihi; özel sona erme sebebi ayrıca kontrol edilir."},
+  wage:{label:"Ücret alacağı",source:"external",basis:"4857 m.34 — mevduata uygulanan en yüksek faiz",hint:"Her ücret kaleminin muacceliyet/temerrüt tarihi ayrıca belirlenir."},
+  overtime:{label:"Fazla çalışma ücreti",source:"external",basis:"Ücret alacağı — en yüksek mevduat faizi",hint:"Dava, ıslah ve temerrüt tarihi dosyadan kontrol edilir."},
+  weekly:{label:"Hafta tatili ücreti",source:"external",basis:"Ücret alacağı — en yüksek mevduat faizi",hint:"Dava, ıslah ve temerrüt tarihi dosyadan kontrol edilir."},
+  holiday:{label:"UBGT ücreti",source:"external",basis:"Ücret alacağı — en yüksek mevduat faizi",hint:"Dava, ıslah ve temerrüt tarihi dosyadan kontrol edilir."},
+  annual_leave:{label:"Yıllık izin ücreti",source:"legal",basis:"Kanuni (yasal) faiz",hint:"Sona erme ile parasal alacağa dönüşür; faiz başlangıcı somut temerrüt/talep durumuna göre belirlenir."},
+  notice:{label:"İhbar tazminatı",source:"legal",basis:"Kanuni (yasal) faiz",hint:"Faiz başlangıcı temerrüt/talep durumuna göre belirlenir."},
+  badfaith:{label:"Kötüniyet tazminatı",source:"legal",basis:"Kanuni (yasal) faiz",hint:"Faiz başlangıcı somut dosyadan kontrol edilir."},
+  reinstatement_idle:{label:"İşe iade — boşta geçen süre ücreti",source:"external",basis:"Ücret alacağı — en yüksek mevduat faizi",hint:"Muacceliyet ve işe başvuru/işveren davranışı ayrıca belirlenir."},
+  reinstatement_comp:{label:"İşe başlatmama tazminatı",source:"legal",basis:"Kanuni (yasal) faiz",hint:"Başlangıç tarihi işe başlatmama olgusuna göre belirlenir."}
+ }
+};
+
+const DAY=86400000;
+function D(s){if(!s)throw Error("Tarih girilmelidir.");if(s instanceof Date){if(Number.isNaN(s.getTime()))throw Error("Geçersiz tarih.");return new Date(s)}const v=String(s);const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v);if(!m)throw Error("Geçersiz tarih.");const y=Number(m[1]),mo=Number(m[2]),da=Number(m[3]);const d=new Date(y,mo-1,da,12,0,0,0);if(d.getFullYear()!==y||d.getMonth()!==mo-1||d.getDate()!==da)throw Error("Geçersiz tarih.");return d}
+function ISO(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}
+function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x}
+function daysBetween(a,b){return Math.round((D(b)-D(a))/DAY)}
+function M(x){return Math.round((Number(x)+Number.EPSILON)*100)/100}
+function isAfter(a,b){return D(a)>D(b)}
+function isBefore(a,b){return D(a)<D(b)}
+function assertDateNotAfter(date,limit,msg){if(D(date)>D(limit))throw Error(msg||`Bu hesaplama ${limit} sonrasındaki tarihler için yayımlanmış oran bulunmadığından yapılamaz.`)}
+const RATE_INDEX=new WeakMap();
+function rateRowAt(date,table,field="rate"){
+ const d=typeof date==="string"?D(date):D(date),t=d.getTime();let idx=RATE_INDEX.get(table);
+ if(!idx){idx=table.map((r,i)=>({t:D(r.from).getTime(),i}));RATE_INDEX.set(table,idx)}
+ let lo=0,hi=idx.length-1,found=-1;while(lo<=hi){const mid=(lo+hi)>>1;if(idx[mid].t<=t){found=idx[mid].i;lo=mid+1}else hi=mid-1}
+ if(found<0)throw Error("Bu tarih için geçerli faiz oranı bulunamadı.");
+ const row=table[found],v=Number(row[field]);if(!Number.isFinite(v))throw Error("Bu tarih için yayımlanmış oran bulunamadı.");
+ return {...row,[field]:v};
+}
+function rateAt(date,table,field="rate"){return rateRowAt(date,table,field)[field]}
+const LIMIT_LEGAL_MIN=D("2006-01-01"),LIMIT_2026_END=D("2026-12-31"),LIMIT_TBK55=D("2026-07-31");
+function legalRate(date){const d=typeof date==="string"?D(date):D(date);if(d<LIMIT_LEGAL_MIN)throw Error("01.01.2006 öncesindeki kanuni faiz oranları bu hesaplamaya dahil değildir.");if(d>LIMIT_2026_END)throw Error("2027 ve sonrası için kanuni faiz oranı henüz kesinleşmediğinden hesaplama yapılamaz.");return rateAt(d,DATA.legal)}
+function commercialRate(date){
+ const d=typeof date==="string"?D(date):D(date);if(d>LIMIT_2026_END)throw Error("2027 ve sonrası için ticari temerrüt oranı henüz kesinleşmediğinden hesaplama yapılamaz.");
+ const y=d.getFullYear(),dec31=new Date(y-1,11,31,12),jun30=new Date(y,5,30,12),jul1=new Date(y,6,1,12);
+ const base=rateAt(dec31,DATA.advance),mid=rateAt(jun30,DATA.advance);let avans=base;
+ if(d>=jul1 && Math.abs(mid-base)>=5)avans=mid;
+ return Math.max(legalRate(d),avans);
+}
+function ttkRate(date){const d=typeof date==="string"?D(date):D(date);if(d>LIMIT_2026_END)throw Error("2027 yılı TTK m.1530 faiz oranı henüz ilan edilmediğinden hesaplama yapılamaz.");return rateAt(d,DATA.ttk1530)}
+function resolverFromTable(table,{maxDate=null,field="rate",maxMessage=""}={}){return d=>{if(maxDate&&d>D(maxDate))throw Error(maxMessage||`Bu mod ${maxDate} sonrasına oran taşımaz.`);return rateAt(d,table,field)}}
+function annualByResolver(principal,start,end,resolver,{dayMode="start_out_end_in",basis=365}={}){
+ const p=Number(principal),den=Number(basis);if(!Number.isFinite(p)||p<0)throw Error("Anapara geçerli ve sıfırdan büyük/eşit bir sayı olmalıdır.");if(![360,365].includes(den))throw Error("Yıl esası 360 veya 365 olmalıdır.");
+ const s=D(start),e=D(end);if(e<s)throw Error("Bitiş tarihi başlangıçtan önce olamaz.");
+ let first,last;
+ if(dayMode==="start_out_end_in"){first=addDays(s,1);last=e}
+ else if(dayMode==="start_in_end_out"){first=s;last=addDays(e,-1)}
+ else throw Error("Gün kapsamı geçersiz.");
+ if(first>last)return{interest:0,total:M(p),rows:[],days:0};
+ let cur=new Date(first),segStart=new Date(first),segRate=Number(resolver(cur)),segDays=0,total=0,rows=[],totalDays=0;
+ function flush(lastDay){if(!segDays)return;const interest=M(p*(segRate/100)*segDays/den);total=M(total+interest);rows.push({from:ISO(segStart),to:ISO(lastDay),days:segDays,rate:segRate,interest});segDays=0}
+ while(cur<=last){
+   const r=Number(resolver(cur));if(!Number.isFinite(r)||r<0)throw Error(`Oran bulunamadı: ${ISO(cur)}`);
+   if(r!==segRate&&segDays){flush(addDays(cur,-1));segStart=new Date(cur);segRate=r}
+   segDays++;totalDays++;cur=addDays(cur,1)
+ }
+ flush(last);return{interest:M(total),total:M(p+total),rows,days:totalDays};
+}
+function externalResolver(series,start){
+ if(!Array.isArray(series)||!series.length)throw Error("En az bir oran dönemi girilmelidir.");
+ const a=series.map((x,i)=>{const from=String(x?.from||"").trim(),rate=Number(x?.rate);if(!/^\d{4}-\d{2}-\d{2}$/.test(from))throw Error(`${i+1}. oran satırındaki tarih geçersizdir.`);D(from);if(!Number.isFinite(rate)||rate<0)throw Error(`${i+1}. oran satırındaki yıllık oran geçersizdir.`);return{from,rate}}).sort((x,y)=>x.from.localeCompare(y.from));
+ for(let i=1;i<a.length;i++)if(a[i].from===a[i-1].from)throw Error(`Aynı başlangıç tarihi iki kez girilemez: ${a[i].from}`);
+ if(D(a[0].from)>D(start))throw Error("İlk oran dönemi faiz başlangıç tarihini kapsamıyor.");
+ return d=>rateAt(d,a);
+}
+function allocate(state,amount,accessoriesOverdue){
+ let amt=Number(amount),before={...state};if(!Number.isFinite(amt))throw Error("Ödeme tutarı geçerli bir sayı olmalıdır.");amt=M(amt);for(const k of ["principal","interest","expenses"]){if(!Number.isFinite(Number(state[k]))||Number(state[k])<0)throw Error("Mahsup bakiyesi geçersizdir.")}if(!(amt>0))return{before,after:{...state},unapplied:amt};
+ function take(k){const x=Math.min(amt,state[k]);state[k]=M(state[k]-x);amt=M(amt-x)}
+ if(accessoriesOverdue){take("expenses");take("interest");take("principal")}else{take("principal");take("expenses");take("interest")}
+ return{before,after:{...state},unapplied:amt};
+}
+function withPayments(principal,start,end,resolver,payments,{expenses=0,accessoriesOverdue=true,dayMode="start_out_end_in",basis=365}={}){
+ const rawPrincipal=Number(principal),rawExpenses=Number(expenses||0);if(!Number.isFinite(rawPrincipal)||rawPrincipal<0)throw Error("Anapara geçerli ve sıfırdan büyük/eşit bir sayı olmalıdır.");if(!Number.isFinite(rawExpenses)||rawExpenses<0)throw Error("Gider/masraf geçerli ve negatif olmayan bir sayı olmalıdır.");
+ let state={principal:M(rawPrincipal),interest:0,expenses:M(rawExpenses)},cursor=start,trace=[],allRows=[];
+ const ps=[...(payments||[])].map((x,i)=>{if(!x||!x.date)throw Error(`${i+1}. kısmi ödemenin tarihi eksiktir.`);D(x.date);const amount=Number(x.amount);if(!Number.isFinite(amount)||amount<=0)throw Error(`${i+1}. kısmi ödemenin tutarı sıfırdan büyük olmalıdır.`);return{date:x.date,amount:M(amount)}}).sort((a,b)=>a.date.localeCompare(b.date));
+ let totalPaid=0,totalUnapplied=0;
+ for(const pay of ps){
+   if(D(pay.date)<D(cursor)||D(pay.date)>D(end))throw Error(`Kısmi ödeme tarihi hesap aralığı dışında: ${pay.date}`);
+   const x=annualByResolver(state.principal,cursor,pay.date,resolver,{basis,dayMode});state.interest=M(state.interest+x.interest);allRows.push(...x.rows);
+   const al=allocate(state,pay.amount,accessoriesOverdue);trace.push({date:pay.date,amount:pay.amount,...al});totalPaid=M(totalPaid+pay.amount);totalUnapplied=M(totalUnapplied+Math.max(0,al.unapplied));cursor=pay.date;
+ }
+ const x=annualByResolver(state.principal,cursor,end,resolver,{basis,dayMode});state.interest=M(state.interest+x.interest);allRows.push(...x.rows);
+ return{state,total:M(state.principal+state.interest+state.expenses),payments:trace,rows:allRows,totalPaid,totalUnapplied};
+}
+function isMonthEnd(d){const x=D(d);return x.getDate()===new Date(x.getFullYear(),x.getMonth()+1,0,12).getDate()}
+function addMonthsAnchored(d,n){const src=D(d),day=src.getDate(),eom=isMonthEnd(src),x=new Date(src);x.setDate(1);x.setMonth(x.getMonth()+n);const last=new Date(x.getFullYear(),x.getMonth()+1,0,12).getDate();x.setDate(eom?last:Math.min(day,last));return x}
+function dailyCoef(monthlyPct){const raw=(Number(monthlyPct)/100)/30;return Math.ceil(raw*1e6-1e-12)/1e6}
+function late6183(principal,dueDate,paymentDate){
+ const p=Number(principal);if(!Number.isFinite(p)||p<=0)throw Error("Amme alacağı aslı geçerli ve sıfırdan büyük bir sayı olmalıdır.");assertDateNotAfter(paymentDate,DATA.late6183Through,"21 Eylül 2026 sonrasındaki ödeme tarihleri için yayımlanmış gecikme zammı oranı bulunmadığından hesaplama yapılamaz.");
+ const due=D(dueDate),pay=D(paymentDate);if(pay<=due)return{interest:0,total:M(p),rows:[]};
+ let start=addDays(due,1),end=addDays(pay,1),cur=start,monthNo=1,total=0,rows=[];
+ while(cur<end){
+   const boundary=addDays(addMonthsAnchored(due,monthNo),1);
+   if(boundary<=end){const rate=rateAt(cur,DATA.late6183,"monthly"),f=M(p*rate/100);total=M(total+f);rows.push({type:"Tam ay",from:ISO(cur),to:ISO(addDays(boundary,-1)),days:Math.round((boundary-cur)/DAY),rate,interest:f});cur=boundary;monthNo++;continue}
+   const rem=Math.round((end-cur)/DAY);
+   if(rem===30){const rate=rateAt(cur,DATA.late6183,"monthly"),f=M(p*rate/100);total=M(total+f);rows.push({type:"30 günlük ay kesri = tam ay",from:ISO(cur),to:ISO(addDays(end,-1)),days:30,rate,interest:f});cur=end;continue}
+   let segStart=new Date(cur),segRate=rateAt(cur,DATA.late6183,"monthly"),segDays=0;
+   while(cur<end){const r=rateAt(cur,DATA.late6183,"monthly");if(r!==segRate&&segDays){const f=M(p*dailyCoef(segRate)*segDays);total=M(total+f);rows.push({type:"Günlük ay kesri",from:ISO(segStart),to:ISO(addDays(cur,-1)),days:segDays,rate:segRate,dailyCoef:dailyCoef(segRate),interest:f});segStart=new Date(cur);segRate=r;segDays=0}segDays++;cur=addDays(cur,1)}
+   if(segDays){const f=M(p*dailyCoef(segRate)*segDays);total=M(total+f);rows.push({type:"Günlük ay kesri",from:ISO(segStart),to:ISO(addDays(cur,-1)),days:segDays,rate:segRate,dailyCoef:dailyCoef(segRate),interest:f})}
+ }
+ if(total>0&&total<1)total=1;return{interest:M(total),total:M(p+total),rows};
+}
+function tecilCurrentSingle(amount,appDate,dueDate,payDate){
+ const amt=Number(amount);if(!Number.isFinite(amt)||amt<0)throw Error("Tecil tutarı geçerli ve negatif olmayan bir sayı olmalıdır.");const a=D(appDate),due=D(dueDate),pay=D(payDate);if(a<D("2025-11-13"))throw Error("Bu tecil hesabı 13.11.2025 ve sonrasında yapılan başvurular için kullanılabilir.");if(pay<a)throw Error("Ödeme tarihi müracaat tarihinden önce olamaz.");
+ const first=a<=due?addDays(due,1):a;if(pay<first)return{interest:0,total:M(amt),days:0,rate:39,first:ISO(first)};
+ const n=Math.round((pay-first)/DAY)+1,f=M(amt*39*n/36000),projected=pay>D(DATA.verifiedAt);return{interest:f,total:M(amt+f),days:n,rate:39,first:ISO(first),projected};
+}
+function specialMax(cat,liq){if(cat==="kdv")return 12;if(cat==="public")return 72;if(cat==="other")return 48;const x=Number(liq);if(!Number.isFinite(x)||x<0)throw Error("Likidite oranını girin.");if(x>=.50)return 36;if(x>.30)return 48;return 72}
+function special29Single(amount,appDate,payDate,{dueBy0506,unpaid1606,excluded,cat,liq}){
+ const amt=Number(amount);if(!Number.isFinite(amt)||amt<0)throw Error("Tecil tutarı geçerli ve negatif olmayan bir sayı olmalıdır.");const app=D(appDate),pay=D(payDate);if(app<D("2026-06-16")||app>D("2026-08-31"))throw Error("Seri B No:20 başvurusu 16.06.2026–31.08.2026 aralığında olmalıdır.");if(pay<app)throw Error("Ödeme tarihi başvurudan önce olamaz.");if(!dueBy0506)throw Error("Borç 05.06.2026 itibarıyla vadesi gelmiş olmalıdır.");if(!unpaid1606)throw Error("Borç 16.06.2026 tarihine kadar ödenmemiş olmalıdır.");if(excluded)throw Error("Kapsam dışı olarak işaretlenen borç için özel tecil hesabı yapılamaz.");
+ const max=specialMax(cat,liq),n=Math.round((pay-app)/DAY)+1,f=M(amt*29*n/36000);return{interest:f,total:M(amt+f),days:n,rate:29,max};
+}
+function prevMonthKey(d){const x=new Date(d.getFullYear(),d.getMonth(),1,12);x.setMonth(x.getMonth()-1);return `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}`}
+function sgkCalc(principal,dueDate,paymentDate){
+ const raw=Number(principal);if(!Number.isFinite(raw)||raw<=0)throw Error("Prim aslı geçerli ve sıfırdan büyük bir sayı olmalıdır.");const p=M(raw);const due=D(dueDate),pay=D(paymentDate);if(due<D("2024-04-01"))throw Error("SGK prim borcu hesabı 01.04.2024 ve sonrasındaki vadeler için kullanılabilir.");assertDateNotAfter(paymentDate,DATA.sgkPaymentThrough,"30.09.2026 sonrasındaki ödeme tarihleri için gerekli DİBS oranı henüz yayımlanmadığından hesaplama yapılamaz.");if(pay<=due)return{charge:0,total:p,rows:[]};
+ let start=addDays(due,1),end=addDays(pay,1),cur=start,period=1,balance=p,rows=[];
+ while(cur<end){
+   const boundary=addDays(addMonthsAnchored(due,period),1),full=boundary<=end,stop=full?boundary:end;
+   let penalty=0;if(period<=3){penalty=M(p*.03);balance=M(balance+penalty)}
+   const key=prevMonthKey(cur),rate=DATA.sgkDibs[key];if(rate==null)throw Error(`SGK'nın yayımladığı DİBS tablosunda ${key} oranı bulunmadığından tahmin yapılmadı.`);
+   const n=Math.round((stop-cur)/DAY),dibsCharge=full?M(balance*Number(rate)/100):M(balance*Number(rate)*n/3000);balance=M(balance+dibsCharge);
+   rows.push({period,from:ISO(cur),to:ISO(addDays(stop,-1)),full,days:n,penalty,rate,dibsCharge,balance,key});cur=stop;period++;
+ }
+ return{charge:M(balance-p),total:balance,rows};
+}
+function cardOneMonth(principal,month,category,type){const p=Number(principal);if(!Number.isFinite(p)||p<0)throw Error("Tutar geçerli ve negatif olmayan bir sayı olmalıdır.");const data=DATA.card2026[month];if(!data)throw Error("Seçilen ay için TCMB faiz oranı bulunamadı.");const arr=data[category];if(!arr)throw Error("Kart kategorisi seçilemedi.");const rate=arr[type==="late"?1:0],f=M(p*rate/100);return{rate,interest:f,total:M(p+f),reference:data.ref}}
+function ttkCost(date){const d=D(date);if(d>D("2026-12-31"))throw Error("2027 yılı TTK m.1530 asgari tahsil gideri henüz ilan edilmedi.");return Number(rateRowAt(d,DATA.ttk1530).cost)}
+function tbk55Calc({knownAmount,knownStart,unknownAmount,judgmentDate,endDate,dayMode,basis}){const event=D(knownStart);if(event<LIMIT_TBK55)throw Error("7589 sayılı Kanunun geçiş hükmü nedeniyle bu hesap yalnız 31.07.2026 ve sonrasında meydana gelen olaylar için kullanılabilir.");const ka=Number(knownAmount||0),ua=Number(unknownAmount||0);if(ka<0||ua<0)throw Error("Zarar tutarları negatif olamaz.");let a={interest:0,total:M(ka),rows:[],days:0},b={interest:0,total:M(ua),rows:[],days:0};if(ka>0)a=annualByResolver(ka,knownStart,endDate,legalRate,{dayMode,basis});if(ua>0){if(!judgmentDate)throw Error("Bilinmeyen kazanç bileşeni için hüküm tarihi girilmelidir.");if(D(judgmentDate)<event)throw Error("Hüküm tarihi zarar tarihinden önce olamaz.");b=annualByResolver(ua,judgmentDate,endDate,legalRate,{dayMode,basis})}const principal=M(ka+ua),interest=M(a.interest+b.interest);return{known:a,unknown:b,principal,interest,total:M(principal+interest)}}
+
+window.FaizEngine={annualByResolver,legalRate,commercialRate,ttkRate,externalResolver,withPayments,allocate,dailyCoef,late6183,tecilCurrentSingle,specialMax,special29Single,sgkCalc,cardOneMonth,ttkCost,tbk55Calc,rateAt,addMonthsAnchored,isMonthEnd};
+</script>
+<script>
+"use strict";
+const $ = id => document.getElementById(id) || { addEventListener: () => {}, value: '', checked: false, style: {}, classList: { add: () => {}, remove: () => {} }, dataset: {} };
+const money=(n,currency="TRY")=>new Intl.NumberFormat("tr-TR",{style:"currency",currency,minimumFractionDigits:2,maximumFractionDigits:2}).format(Number(n)||0);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const MODE_INFO={
+ legal:{name:"Kanuni (Yasal) Faiz",law:"3095 sayılı Kanuni Faiz ve Temerrüt Faizine İlişkin Kanun m.1",plain:"Özel bir faiz türü kararlaştırılmamışsa veya kanunda başka bir faiz öngörülmemişse uygulanan genel yasal faizdir.",example:"Mahkeme kararında yalnızca ‘yasal faiz’ denmişse ya da alacak için özel bir faiz kuralı yoksa bu seçenek kullanılır."},
+ commercial:{name:"Ticari Temerrüt Faizi",law:"3095 sayılı Kanuni Faiz ve Temerrüt Faizine İlişkin Kanun m.2/2",plain:"Ticari nitelikteki bir para borcunun zamanında ödenmemesi hâlinde, şartları varsa uygulanan temerrüt faizidir.",example:"Ticari işletmeler arasındaki bir para borcu vadesinde ödenmemişse gündeme gelir. İşlemin ticari nitelikte olup olmadığı ayrıca değerlendirilir."},
+ ttk:{name:"Mal ve Hizmet Tedarikinde Geç Ödeme Faizi",law:"6102 sayılı Türk Ticaret Kanunu m.1530",plain:"Ticari işletmeler arasındaki mal ve hizmet tedarikinde geç ödeme hâlleri için düzenlenen özel faizdir.",example:"Bir şirket, teslim aldığı malın veya hizmetin bedelini süresinde ödemezse ve TTK m.1530 şartları varsa bu seçenek kullanılır."},
+ late6183:{name:"Kamu Alacağında Gecikme Zammı",law:"6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun m.51",plain:"Vergi ve 6183 kapsamındaki diğer kamu borçları vadesinde ödenmediğinde hesaplanan gecikme zammıdır.",example:"Vadesi geçmiş vergi veya başka bir kamu borcunun gecikme tutarını hesaplamak için kullanılır."},
+ tecil:{name:"Kamu Borcunda Tecil Faizi",law:"6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun m.48",plain:"Kamu borcu ertelendiğinde veya taksitlendirildiğinde tecil süresi için hesaplanan faizdir.",example:"Vergi dairesince kabul edilmiş bir tecil veya taksit planındaki taksidin faizini hesaplamak için kullanılır."},
+ special29:{name:"2026 Özel %29 Tecil Faizi",law:"Tahsilat Genel Tebliği Seri B Sıra No:20",plain:"2026 yılında belirli şartları taşıyan kamu borçları için getirilen %29 tecil uygulamasına ilişkin hesaplamadır.",example:"Yalnız Tebliğdeki başvuru ve borç şartlarını taşıyan başvurular için kullanılmalıdır."},
+ sgk:{name:"SGK Prim Borcu Gecikmesi",law:"5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu m.89",plain:"Süresinde ödenmeyen SGK primlerinde gecikme cezası ve DİBS oranına bağlı gecikme zammını ön hesaplar.",example:"Vadesinde ödenmemiş SGK prim borçları için kullanılır. Gerekli DİBS oranı yayımlanmamışsa hesaplama durur."},
+ card:{name:"Kredi Kartı / KMH Azami Faizi",law:"TCMB tarafından ilan edilen azami kredi kartı faiz oranları",plain:"Kredi kartı ve kredili mevduat hesabında uygulanabilecek aylık azami akdi veya gecikme faizini gösterir.",example:"Bu sonuç bankanın ekstresi değildir; TCMB tarafından belirlenen üst sınır üzerinden bir aylık hesaplamadır."},
+ reeskont:{name:"TCMB Reeskont Oranına Göre Faiz",law:"1211 sayılı TCMB Kanunu m.45 kapsamında ilan edilen reeskont oranı",plain:"Seçilen tarihte geçerli TCMB reeskont oranını esas alarak basit faiz hesabı yapar.",example:"Yalnız hukuki ilişkinizde reeskont oranının esas alınması gerekiyorsa kullanın."},
+ advance:{name:"TCMB Avans Oranına Göre Faiz",law:"1211 sayılı TCMB Kanunu m.45 kapsamında ilan edilen avans oranı",plain:"Seçilen tarihte geçerli TCMB kısa vadeli avans oranını esas alarak basit faiz hesabı yapar.",example:"Ticari temerrüt hesabı için doğrudan ‘Ticari Temerrüt Faizi’ seçeneği daha uygundur."},
+ labor:{name:"İşçilik Alacağı Faizi",law:"Alacak türüne göre 1475 sayılı İş Kanunu m.14, 4857 sayılı İş Kanunu m.34 ve ilgili hükümler",plain:"Kıdem tazminatı, ücret, fazla çalışma, yıllık izin ve ihbar tazminatında uygulanacak faiz aynı değildir.",example:"Önce alacak türünü seçin. En yüksek mevduat faizi gereken kalemlerde ilgili dönem için bankaların ilan ettiği oranları girin."},
+ foreign:{name:"Yabancı Para Alacağında Faiz",law:"3095 sayılı Kanuni Faiz ve Temerrüt Faizine İlişkin Kanun m.4/A",plain:"Yabancı para borçlarında, sözleşmede daha yüksek bir oran yoksa devlet bankalarının o para birimiyle açılmış bir yıl vadeli mevduata ödediği en yüksek oran esas alınabilir.",example:"USD veya EUR gibi yabancı para alacaklarında, ilgili para birimi için devlet bankalarının ilan ettiği dönemsel oranlar kullanılmalıdır."},
+ custom:{name:"Sözleşmede Yazılı Özel Faiz",law:"6098 sayılı Türk Borçlar Kanunu m.88 ve m.120",plain:"Sözleşmede yıllık faiz oranı açıkça kararlaştırılmışsa girilen oran üzerinden matematiksel hesap yapılır.",example:"Adi işlerde TBK sınırları ayrıca gösterilir; ticari iş, tüketici işlemi ve özel kanunlarda farklı kurallar uygulanabilir."},
+ tbk55:{name:"Çalışma Gücü Kaybı / Destekten Yoksun Kalma Faizi",law:"6098 sayılı Türk Borçlar Kanunu m.55 ve 7589 sayılı Kanun",plain:"Çalışma gücünün azalması veya yitirilmesi ile destekten yoksun kalma zararlarında bilinen ve bilinmeyen kazanç dönemleri için farklı faiz başlangıçlarını uygular.",example:"Yalnız 31.07.2026 ve sonrasında meydana gelen olaylarda bu iki zarar türü için kullanılmalıdır; diğer bedensel zarar kalemleri bu özel hesapta değildir."}
+};
+function pct(n){return Number(n).toLocaleString("tr-TR",{minimumFractionDigits:0,maximumFractionDigits:4})}
+function sourceLinks(keys){return `<div class="sourcechips">${[...new Set(keys)].map(k=>{const s=DATA.sources[k];return s?`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`:""}).join("")}</div>`}
+function metricCards(items,currency){return `<div class="metric-grid">${items.map(x=>`<div class="metric"><small>${esc(x[0])}</small><strong>${money(x[1],x[2]||currency)}</strong></div>`).join("")}</div>`}
+function rowsTable(rows,type="annual",currency="TRY"){
+ if(!rows?.length)return "";
+ if(type==="6183")return `<table><thead><tr><th>Tür</th><th>Dönem</th><th>Gün</th><th>Aylık oran</th><th>Tutar</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.type)}</td><td>${esc(x.from)} – ${esc(x.to)}</td><td>${x.days}</td><td>%${pct(x.rate)}</td><td>${money(x.interest,currency)}</td></tr>`).join("")}</tbody></table>`;
+ if(type==="sgk")return `<table><thead><tr><th>Dönem</th><th>Tarih</th><th>%3 ceza</th><th>DİBS</th><th>DİBS zammı</th><th>Bakiye</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${x.period}</td><td>${esc(x.from)} – ${esc(x.to)}</td><td>${money(x.penalty,currency)}</td><td>%${pct(x.rate)}${x.full?" aylık":` × ${x.days}/30`}</td><td>${money(x.dibsCharge,currency)}</td><td>${money(x.balance,currency)}</td></tr>`).join("")}</tbody></table>`;
+ return `<table><thead><tr><th>Dahil dönem</th><th>Gün</th><th>Yıllık oran</th><th>Faiz</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.from)} – ${esc(x.to)}</td><td>${x.days}</td><td>%${pct(x.rate)}</td><td>${money(x.interest,currency)}</td></tr>`).join("")}</tbody></table>`;
+}
+function paymentTable(items,currency="TRY"){if(!items?.length)return "";return `<table><thead><tr><th>Ödeme</th><th>Tutar</th><th>Önce anapara</th><th>Önce faiz</th><th>Önce gider</th><th>Son anapara</th><th>Son faiz</th><th>Son gider</th><th>Aşan ödeme</th></tr></thead><tbody>${items.map(x=>`<tr><td>${esc(x.date)}</td><td>${money(x.amount,currency)}</td><td>${money(x.before.principal,currency)}</td><td>${money(x.before.interest,currency)}</td><td>${money(x.before.expenses,currency)}</td><td>${money(x.after.principal,currency)}</td><td>${money(x.after.interest,currency)}</td><td>${money(x.after.expenses,currency)}</td><td>${money(Math.max(0,x.unapplied),currency)}</td></tr>`).join("")}</tbody></table>`}
+let lastSummary="";
+function render(label,principal,interest,total,{expense=0,rows="",note="",sources=[],badge="Hesaplandı",currency="TRY",metrics=null}={}){
+ const result=$("result");result.hidden=false;const caution=/tahmin|kontrol|girilen oran|ön hesap/i.test(badge);
+ const cards=metrics?metricCards(metrics,currency):metricCards([["Anapara",principal],["Faiz / gecikme tutarı",interest],...(expense>0?[["Gider / masraf",expense]]:[]),["Toplam",total]],currency);
+ result.innerHTML=`<div class="result-title"><h2>${esc(label)}</h2><span class="badge ${caution?"badgeb":""}">${esc(badge)}</span></div>${cards}${note?`<div class="good">${note}</div>`:""}${rows}${sourceLinks(sources)}<div class="result-actions"><button type="button" id="copyResult" class="secondary">Sonucu kopyala</button><button type="button" id="printResult" class="secondary">Yazdır</button></div>`;
+ lastSummary=result.innerText.trim();$("copyResult").onclick=copyResult;$("printResult").onclick=()=>window.print();result.focus({preventScroll:true});result.scrollIntoView({behavior:"smooth",block:"start"});scheduleHeight();
+}
+async function copyResult(){try{await navigator.clipboard.writeText(lastSummary);$("copyResult").textContent="Kopyalandı";setTimeout(()=>{const b=$("copyResult");if(b)b.textContent="Sonucu kopyala"},1500)}catch(_){const ta=document.createElement("textarea");ta.value=lastSummary;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove()}}
+function errorBox(e){const result=$("result");result.hidden=false;result.innerHTML=`<div class="result-title"><h2>Hesaplama tamamlanamadı</h2><span class="badge badgeb">Bilgi gerekli</span></div><div class="bad">${esc(e?.message||e)}</div><p class="muted">Eksik bilgi varsa veya seçilen dönem için yayımlanmış oran bulunmuyorsa hesaplama yapılmaz.</p>`;result.focus({preventScroll:true});result.scrollIntoView({behavior:"smooth",block:"start"});scheduleHeight()}
+
+let payId=0;function addPayment(date="",amount=""){const d=document.createElement("div");d.className="payrow";d.dataset.id=String(++payId);d.innerHTML=`<input type="date" class="pdate" aria-label="Kısmi ödeme tarihi" value="${esc(date)}"><input type="number" min="0" step="0.01" class="pamt" placeholder="Ödeme tutarı" aria-label="Kısmi ödeme tutarı" value="${esc(amount)}"><button type="button" class="small">Sil</button>`;d.querySelector("button").onclick=()=>{d.remove();scheduleHeight()};$("payments").appendChild(d);scheduleHeight()}
+$("addPayment").onclick=()=>addPayment();
+function payments(){const out=[];for(const [i,row] of [...document.querySelectorAll(".payrow")].entries()){const date=row.querySelector(".pdate").value,raw=row.querySelector(".pamt").value.trim();if(!date&&!raw)continue;if(!date)throw Error(`${i+1}. kısmi ödemenin tarihi eksiktir.`);if(!raw)throw Error(`${i+1}. kısmi ödemenin tutarı eksiktir.`);const amount=Number(raw);if(!Number.isFinite(amount)||amount<=0)throw Error(`${i+1}. kısmi ödemenin tutarı sıfırdan büyük olmalıdır.`);out.push({date,amount})}return out}
+let rateId=0;function addRateRow(from="",rate=""){const d=document.createElement("div");d.className="rate-row";d.dataset.id=String(++rateId);d.innerHTML=`<label>Oranın başlangıç tarihi<input class="rdate" type="date" value="${esc(from)}"></label><label>Yıllık oran (%)<input class="rrate" type="number" min="0" step="0.0001" inputmode="decimal" value="${esc(rate)}"></label><button type="button" class="small">Sil</button>`;d.querySelector("button").onclick=()=>{d.remove();scheduleHeight()};$("rateRows").appendChild(d);scheduleHeight()}
+$("addRate").onclick=()=>addRateRow();
+function rateSeries(){const rows=[...document.querySelectorAll(".rate-row")];const out=[];for(const [i,row] of rows.entries()){const from=row.querySelector(".rdate").value,raw=row.querySelector(".rrate").value.trim();if(!from&&!raw)continue;if(!from)throw Error(`${i+1}. oran döneminin başlangıç tarihi eksiktir.`);if(!raw)throw Error(`${i+1}. oran döneminin yıllık oranı eksiktir.`);const rate=Number(raw);if(!Number.isFinite(rate)||rate<0)throw Error(`${i+1}. oran döneminin yıllık oranı geçersizdir.`);out.push({from,rate})}return out}
+function externalFromUi(start){return FaizEngine.externalResolver(rateSeries(),start)}
+function dayInfo(){const dm=$("dayMode").value,b=Number($("yearBasis").value);return `${dm==="start_out_end_in"?"Başlangıç hariç, bitiş dahil":"Başlangıç dahil, bitiş hariç"} • ${b} gün esası`}
+function specialInfo(){const status=$("specialStatus").value;if(status==="existing"){$("specialMax").innerHTML="16.06.2026 tarihinde yürürlükte olan ve düzenli ödenen tecillerde, bu tarihten sonraki taksitlere %29 oranı başvuru aranmaksızın uygulanır. 16.06.2026 öncesi dönem ise o tarihlerde geçerli tecil oranlarıyla hesaplanır. Bu nedenle mevcut ödeme planı ve ilk tecil müracaat tarihi görülmeden tek oranla doğru toplam üretilemez. Daha uzun yeni taksit süreleri istenmişse 31.08.2026’ya kadar yeniden başvuru gerekiyordu.";return}if(status==="pending"){$("specialMax").innerHTML="16.06.2026 tarihinde değerlendirme aşamasında olan tecil talebinin Seri B No:20 hükümlerinden yararlanabilmesi için 31.08.2026’ya kadar başvuru yapılması gerekiyordu. Bu süre sona ermiştir. İdari karar ve ödeme planı görülmeden bu bölüm tutar üretmez.";return}try{const c=$("specialCat").value,liq=$("liquidity").value,max=FaizEngine.specialMax(c,liq);$("specialMax").innerHTML=`Girilen bilgilere göre <b>azami ${max} eşit taksit</b> uygulanabilir. Daha az taksit istenebilir; kesin plan tahsil dairesince belirlenir.`}catch(e){$("specialMax").textContent=e.message}}
+$("specialStatus").onchange=specialInfo;$("specialCat").onchange=()=>{const active=$("specialCat").value==="active";$("liqLabel").hidden=!active;specialInfo()};$("liquidity").oninput=specialInfo;
+function fillLabor(){const sel=$("laborClaim");sel.innerHTML="";for(const [k,v] of Object.entries(DATA.laborClaims)){const o=document.createElement("option");o.value=k;o.textContent=v.label;sel.appendChild(o)}laborInfo()}
+function laborInfo(){const x=DATA.laborClaims[$("laborClaim").value];const fullBasis=x.basis.replace("1475 m.14","1475 sayılı İş Kanunu m.14").replace("4857 m.34","4857 sayılı İş Kanunu m.34");$("laborInfo").innerHTML=`<b>Seçilen alacak:</b> ${esc(x.label)}<br><b>Hukuki dayanak:</b> ${esc(fullBasis)}<br><b>Oran kaynağı:</b> ${x.source==="external"?"Girilen dönemsel en yüksek mevduat faiz oranları":"3095 sayılı Kanuna göre kanuni (yasal) faiz"}<br>${esc(x.hint)}`;switchMode()}
+$("laborClaim").onchange=laborInfo;
+function updateModeHelp(){const x=MODE_INFO[$("mode").value];$("modeHelp").innerHTML=x?`<div class="mh-title">${esc(x.name)}</div><div class="mh-law">${esc(x.law)}</div><div class="mh-plain">${esc(x.plain)}</div><div class="mh-example"><b>Ne zaman kullanılır?</b> ${esc(x.example)}</div>`:""}
+function selectedCurrency(){const m=$("mode").value;if(m==="foreign")return $("currency").value;if(m==="card"&&$("cardCat").value==="fx")return $("cardCurrency").value;return"TRY"}
+function updateCurrencyLabels(){const c=selectedCurrency();$("expensesText").textContent=`Başlangıç gider / masraf (${c})`;const m=$("mode").value;$("principalText").textContent=(m==="tecil"||m==="special29")?"Hesaplanacak taksit tutarı":m==="card"?`Hesaplanacak tutar (${c})`:m==="foreign"?`Yabancı para alacak tutarı (${c})`:"Anapara / alacak tutarı"}
+function switchMode(){
+ const m=$("mode").value,annual=["legal","commercial","ttk","reeskont","advance","labor","foreign","custom"].includes(m);
+ $("annualBox").hidden=!annual;$("ttkBox").hidden=m!=="ttk";$("lateBox").hidden=m!=="late6183";$("tecilBox").hidden=m!=="tecil";$("specialBox").hidden=m!=="special29";$("cardBox").hidden=m!=="card";$("sgkBox").hidden=m!=="sgk";$("laborBox").hidden=m!=="labor";$("customBox").hidden=m!=="custom";$("tbk55Box").hidden=m!=="tbk55";
+ const ext=m==="foreign"||(m==="labor"&&DATA.laborClaims[$("laborClaim").value]?.source==="external");$("externalBox").hidden=!ext;$("currencyWrap").hidden=m!=="foreign";
+ if(ext){$("rateTitle").textContent=m==="foreign"?"Devlet bankalarının dönemsel yıllık mevduat faiz oranları":"Bankaların mevduata uyguladığı dönemsel en yüksek yıllık faiz oranları";$("rateHelp").textContent=m==="foreign"?"Seçilen para birimi için bir yıl vadeli mevduata uygulanan en yüksek oranları girin.":"Alacağın ilgili olduğu dönemlerdeki en yüksek mevduat faiz oranlarını girin."}
+ $("paymentsBox").hidden=!annual;$("principalLabel").hidden=m==="tbk55";$("cardCurrencyWrap").hidden=!(m==="card"&&$("cardCat").value==="fx");if(m==="special29")specialInfo();updateCurrencyLabels();updateModeHelp();scheduleHeight();
+}
+$("mode").onchange=switchMode;$("cardCat").onchange=()=>{switchMode()};$("currency").onchange=updateCurrencyLabels;$("cardCurrency").onchange=updateCurrencyLabels;
+
+function customReview(rate,start){const kind=$("customKind").value;if(kind==="math")return{label:"Yalnız matematiksel özel faiz",extra:"Girilen oran yalnız matematiksel olarak uygulanmıştır; hukuki geçerlilik değerlendirmesi yapılmamıştır.",badge:"Girilen oran"};const base=FaizEngine.legalRate(D(start)),cap=kind==="contract"?base*1.5:base*2,label=kind==="contract"?"Akdi faiz — 6098 sayılı TBK m.88":"Temerrüt faizi — 6098 sayılı TBK m.120";const over=rate>cap+1e-9;return{label,extra:`Faiz başlangıcındaki kanuni oran %${pct(base)}; adi işlerde gösterge üst sınır %${pct(cap)}. ${over?`Girilen %${pct(rate)} oran bu gösterge sınırın üzerindedir.`:"Girilen oran bu gösterge sınırı aşmıyor."} Ticari işler, tüketici işlemleri ve özel hükümler ayrıca incelenmelidir.`,badge:over?"TBK sınırının üzerinde":"TBK sınırı içinde"}}
+function calculate(){try{
+ const m=$("mode").value,p=Number($("principal").value),dayMode=$("dayMode").value,basis=Number($("yearBasis").value),ps=payments(),currency=selectedCurrency();
+ if(m==="late6183"){const r=FaizEngine.late6183(p,$("due6183").value,$("pay6183").value);render("Kamu Alacağında Gecikme Zammı — 6183 sayılı Kanun m.51",p,r.interest,r.total,{rows:rowsTable(r.rows,"6183"),note:"Vade günü hariç, ödeme günü dahil edilmiştir. Ay sonuna rastlayan vadelerde izleyen ayların son günleri esas alınır. Tam aylar aylık, ay kesirleri günlük hesaplanır.",sources:["gib6183","gibTahsilatA1"]});return}
+ if(m==="tecil"){const r=FaizEngine.tecilCurrentSingle(p,$("tecilApp").value,$("tecilDue").value,$("tecilPay").value);render("Kamu Borcunda Tecil Faizi — 6183 sayılı Kanun m.48",p,r.interest,r.total,{note:`%39 yıllık tecil faizi • ${r.days} gün • faiz başlangıcı ${esc(r.first)} • taksit × oran × gün / 36.000${r.projected?" • 21.09.2026 sonrasındaki ödeme için mevcut %39 oran üzerinden tahmini sonuçtur; resmî ödeme planı esas alınmalıdır.":""}`,sources:["gib6183","gibTecil39","gib7582"],badge:r.projected?"Mevcut oran üzerinden":"Hesaplandı"});return}
+ if(m==="special29"){const status=$("specialStatus").value;if(status==="existing")throw Error("16.06.2026 tarihinde yürürlükte olan ve düzenli ödenen tecillerde bu tarihten sonraki taksitlere %29 tecil faizi başvuru aranmaksızın uygulanır. 16.06.2026 öncesi süre için ise o tarihlerde geçerli tecil oranları uygulanır. İlk tecil müracaat tarihi ve mevcut ödeme planı girilmeden doğru bölünmüş hesap yapılamaz. Daha uzun yeni taksit sürelerinden yararlanmak için 31.08.2026’ya kadar yeniden başvuru gerekiyordu.");if(status==="pending")throw Error("16.06.2026 tarihinde değerlendirme aşamasında olan tecil talebinin Seri B No:20 hükümlerinden yararlanabilmesi için 31.08.2026’ya kadar başvuru yapılması gerekiyordu. Bu süre sona ermiştir; idari karar ve ödeme planı görülmeden tutar hesaplanamaz.");const r=FaizEngine.special29Single(p,$("specialApp").value,$("specialPay").value,{dueBy0506:$("debt0506").checked,unpaid1606:$("unpaid1606").checked,excluded:$("excludedDebt").checked,cat:$("specialCat").value,liq:$("liquidity").value});render("2026 Özel %29 Tecil — Tahsilat Genel Tebliği Seri B Sıra No:20",p,r.interest,r.total,{note:`%29 yıllık • ${r.days} gün • seçilen borçlu/borç grubunda azami ${r.max} eşit taksit. İlk taksit Eylül 2026'da başlar. Son başvuru tarihi 31.08.2026'da sona ermiştir; bu hesap yalnız süresinde yapılmış başvuruların kontrolü içindir. Bu hesap seçilen tek taksit için ön hesaptır; kesin plan tahsil dairesince düzenlenir.`,sources:["gibSpecial","gibSpecialGuide","gib7582"],badge:"Tebliğ kapsamı kontrol edilmeli"});return}
+ if(m==="card"){if(!(p>=0))throw Error("Tutarı girin.");const r=FaizEngine.cardOneMonth(p,$("cardMonth").value,$("cardCat").value,$("cardType").value);render("Kredi Kartı / KMH Azami Faiz — TCMB",p,r.interest,r.total,{currency,note:`${esc($("cardMonth").value)} dönemi • aylık azami oran %${pct(r.rate)} • TCMB referans oranı %${pct(r.reference)}. Banka daha düşük oran uygulayabilir; vergiler ve ekstreye özgü hesaplamalar dahil değildir.`,sources:["tcmbCard"],badge:"Bir aylık azami oran"});return}
+ if(m==="sgk"){const r=FaizEngine.sgkCalc(p,$("sgkDue").value,$("sgkPay").value);render("SGK Prim Borcu Gecikmesi — 5510 sayılı Kanun m.89",p,r.charge,r.total,{rows:rowsTable(r.rows,"sgk"),note:"İlk üç aylık sürede her ay prim aslı üzerinden %3 gecikme cezası eklenmiş; DİBS gecikme zammı bileşik, ödeme ayı için günlük hesaplanmıştır. SGK'nın resmî ekranı esas alınmalıdır.",sources:["sgkPrim","sgkDibs","sgkFormula"],badge:"SGK ön hesabı"});return}
+ if(m==="tbk55"){const r=FaizEngine.tbk55Calc({knownAmount:+$("knownAmount").value,knownStart:$("knownStart").value,unknownAmount:+$("unknownAmount").value,judgmentDate:$("judgmentDate").value,endDate:$("tbkEnd").value,dayMode,basis});const rows=`<div class="subhead" style="margin-top:14px">Bilinen kazanç bileşeni</div>${rowsTable(r.known.rows)}<div class="subhead" style="margin-top:14px">Bilinmeyen kazanç bileşeni</div>${rowsTable(r.unknown.rows)}`;render("Çalışma Gücü Kaybı / Destekten Yoksun Kalma Faizi — 6098 sayılı TBK m.55",r.principal,r.interest,r.total,{rows,note:`Bilinen kazanç bileşeninde zarar tarihi; bilinmeyen kazanç bileşeninde hüküm tarihi başlangıç alınmıştır. ${dayInfo()}. 7589 sayılı Kanunun geçiş hükmü uygulanmıştır.`,sources:["law7589"],badge:"Dosyaya göre kontrol edilmeli"});return}
+ if(!(p>=0))throw Error("Anapara girin.");const start=$("start").value,end=$("end").value;let resolver,label,sources=[],extra="",badge="Hesaplandı";
+ if(m==="legal"){resolver=FaizEngine.legalRate;label="Kanuni (Yasal) Faiz — 3095 sayılı Kanun m.1";sources=["law7589","law3095","cb8485","tcmbRates","tbbLegalHistory"]}
+ else if(m==="commercial"){resolver=FaizEngine.commercialRate;label="Ticari Temerrüt Faizi — 3095 sayılı Kanun m.2/2";sources=["law3095","tcmbRates"];extra="3095 sayılı Kanun m.2/2 şartları varsa kanuni faizden yüksek olan kısa vadeli avans oranı uygulanır. Borcun ticari nitelikte olup olmadığı ayrıca değerlendirilmelidir."}
+ else if(m==="ttk"){resolver=FaizEngine.ttkRate;label="Mal/Hizmet Tedarikinde Geç Ödeme — 6102 sayılı TTK m.1530";sources=["tcmbTtk"];extra="Bu seçenek yalnız TTK m.1530 kapsamındaki mal ve hizmet tedarikinde geç ödeme hâlleri içindir."}
+ else if(m==="reeskont"){resolver=resolverFromTable(DATA.reeskont,{maxDate:DATA.marketDataThrough,maxMessage:"21.09.2026 sonrasındaki dönem için reeskont oranı değişebileceğinden hesaplama yapılamaz."});label="TCMB Reeskont Oranına Göre Faiz";sources=["tcmbRates"]}
+ else if(m==="advance"){resolver=resolverFromTable(DATA.advance,{maxDate:DATA.marketDataThrough,maxMessage:"21.09.2026 sonrasındaki dönem için avans oranı değişebileceğinden hesaplama yapılamaz."});label="TCMB Avans Oranına Göre Faiz";sources=["tcmbRates"]}
+ else if(m==="custom"){const rate=Number($("customRate").value);if(!Number.isFinite(rate)||rate<0)throw Error("Özel oranı girin.");resolver=()=>rate;const review=customReview(rate,start);label=review.label;sources=["tbk","law3095"];extra=review.extra;badge=review.badge}
+ else if(m==="foreign"){resolver=externalFromUi(start);label="Yabancı Para Alacağı Faizi — 3095 sayılı Kanun m.4/A";sources=["law3095"];extra=`Hesap, ${esc(currency)} cinsinden girilen anapara ve doğruladığınız devlet bankası oranları üzerinden yapılmıştır. Türk lirasına çevrim yapılmamıştır.`;badge="Girilen oranlarla hesaplandı"}
+ else if(m==="labor"){const claimKey=$("laborClaim").value,c=DATA.laborClaims[claimKey];if(c.source==="legal")resolver=FaizEngine.legalRate;else resolver=externalFromUi(start);label=`İşçilik Alacağı — ${c.label}`;sources=c.source==="legal"?["law3095","law4857"]:(claimKey==="severance"?["law1475"]:["law4857"]);extra=`${esc(c.basis)}. ${esc(c.hint)}`;badge="Dosyaya göre kontrol edilmeli"}
+ else throw Error("Hesap türü seçilemedi.");
+ const userExpense=Number($("expenses").value||0);if(!Number.isFinite(userExpense)||userExpense<0)throw Error("Gider/masraf negatif olamaz.");const ttkExpense=m==="ttk"&&$("addTtkCost").checked?FaizEngine.ttkCost(start):0,initialExpense=M(userExpense+ttkExpense);const opts={expenses:initialExpense,accessoriesOverdue:$("allocation").value==="overdue",dayMode,basis};
+ if(ps.length){const r=FaizEngine.withPayments(p,start,end,resolver,ps,opts);const metrics=[["Kalan anapara",r.state.principal],["Kalan işlemiş faiz",r.state.interest],["Kalan gider",r.state.expenses],["Kalan toplam",r.total],["Toplam kısmi ödeme",r.totalPaid],...(r.totalUnapplied>0?[["Aşan / mahsup edilemeyen",r.totalUnapplied]]:[])];const rows=`${paymentTable(r.payments,currency)}${rowsTable(r.rows,"annual",currency)}`;render(label,r.state.principal,r.state.interest,r.total,{currency,metrics,rows,note:`${dayInfo()}. Kısmi ödemeler seçilen mahsup sırasına göre uygulanmıştır.${ttkExpense?` TTK m.1530 asgari giderim ${money(ttkExpense,"TRY")} başlangıç giderine eklenmiş ve ödemelerden mahsup edilmiştir.`:""} ${extra}`,sources:[...sources,"tbk"],badge});return}
+ const r=FaizEngine.annualByResolver(p,start,end,resolver,{dayMode,basis}),total=M(r.total+initialExpense);render(label,p,r.interest,total,{currency,expense:initialExpense,rows:rowsTable(r.rows,"annual",currency),note:`${dayInfo()} • ${r.days} faiz günü.${ttkExpense?` TTK m.1530 asgari tahsil gideri ${money(ttkExpense,"TRY")} gider olarak eklenmiştir.`:""} ${extra}`,sources,badge});
+ }catch(e){errorBox(e)}}
+$("calculatorForm").addEventListener("submit",e=>{e.preventDefault();calculate()});
+
+function resetForm(){HTMLFormElement.prototype.reset.call($("calculatorForm"));$("mode").value="legal";$("expenses").value="0";$("cardMonth").value="2026-09";$("currency").value="USD";$("cardCurrency").value="USD";$("specialStatus").value="new";$("payments").innerHTML="";$("rateRows").innerHTML="";addRateRow();$("result").hidden=true;lastSummary="";switchMode()}
+$("reset").onclick=resetForm;
+function runTests(){const t=[];function test(name,fn){try{fn();t.push({name,ok:true})}catch(e){t.push({name,ok:false,msg:e.message})}}function eq(a,b,tol=.01){if(Math.abs(Number(a)-Number(b))>tol)throw Error(`${a} ≠ ${b}`)}
+ test("Kanuni faiz 30.07.2026 = %24",()=>eq(FaizEngine.legalRate(D("2026-07-30")),24,0));test("Kanuni faiz 31.07.2026 = %31",()=>eq(FaizEngine.legalRate(D("2026-07-31")),31,0));test("Ticari temerrüt 2026 = %39,75",()=>eq(FaizEngine.commercialRate(D("2026-08-01")),39.75,0));test("TTK 2026 = %43",()=>eq(FaizEngine.ttkRate(D("2026-02-01")),43,0));test("TTK giderim = 2.020 TL",()=>eq(FaizEngine.ttkCost("2026-02-01"),2020,0));
+ test("350.000 / 22.04–11.08 = 26.350,68",()=>eq(FaizEngine.annualByResolver(350000,"2026-04-22","2026-08-11",FaizEngine.legalRate,{dayMode:"start_out_end_in",basis:365}).interest,26350.68));test("Alternatif gün hesabı = 26.283,56",()=>eq(FaizEngine.annualByResolver(350000,"2026-04-22","2026-08-11",FaizEngine.legalRate,{dayMode:"start_in_end_out",basis:365}).interest,26283.56));
+ test("6183 resmî örnek 541,70",()=>eq(FaizEngine.late6183(10000,"2006-07-31","2006-10-05").interest,541.70));test("6183 resmî örnek 20,28",()=>eq(FaizEngine.late6183(120,"2004-12-26","2005-05-15").interest,20.28));test("6183 ay sonu bir tam ay",()=>eq(FaizEngine.late6183(1000,"2026-04-30","2026-05-31").interest,37));test("6183 30 günlük kesir tam ay",()=>eq(FaizEngine.late6183(1000,"2026-04-30","2026-05-30").interest,37));
+ test("SGK ilk üç ceza prim aslı üzerinden",()=>{const r=FaizEngine.sgkCalc(10000,"2026-04-30","2026-07-31");eq(r.rows[0].penalty,300);eq(r.rows[1].penalty,300);eq(r.rows[2].penalty,300)});test("SGK Ağustos DİBS oranı Eylül ödemesinde %2,91",()=>{const r=FaizEngine.sgkCalc(10000,"2026-08-31","2026-09-30");eq(r.rows[0].rate,2.91,0)});test("Kart Eylül 2026",()=>eq(FaizEngine.cardOneMonth(100000,"2026-09","tl_30_180","contract").interest,3750));test("Yapılandırılmış kart borcu akdi üst sınırı",()=>eq(FaizEngine.cardOneMonth(100000,"2026-09","restructured","contract").interest,3110));test("Geçersiz takvim tarihi reddedilir",()=>{let ok=false;try{D("2026-02-31")}catch(_){ok=true}if(!ok)throw Error("geçersiz tarih kabul edildi")});test("TBK100 aşan ödeme",()=>{const r=FaizEngine.withPayments(100,"2026-08-01","2026-08-02",()=>0,[{date:"2026-08-02",amount:150}],{});eq(r.totalUnapplied,50)});test("2027 bloklanır",()=>{let ok=false;try{FaizEngine.legalRate(D("2027-01-01"))}catch(_){ok=true}if(!ok)throw Error("bloklanmadı")});
+ const ok=t.filter(x=>x.ok).length;$("testStatus").hidden=false;$("testStatus").innerHTML=`<div class="testline"><span class="dot ${ok===t.length?"ok":"fail"}"></span><b>${ok}/${t.length} tarayıcı regresyon testi geçti.</b></div>${t.filter(x=>!x.ok).map(x=>`<div class="bad">${esc(x.name)}: ${esc(x.msg)}</div>`).join("")}`;return{ok,total:t.length,tests:t}}
+function initSources(){$("allSources").innerHTML=Object.values(DATA.sources).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`).join("")}
+function initDataStatus(){const today=ISO(new Date());if(today>=DATA.reviewDue){$("dataStatus").hidden=false;$("dataStatus").innerHTML=`Faiz oranları <b>${DATA.verifiedAt}</b> tarihindeki resmî verilere göre hazırlanmıştır. Daha yeni bir dönem için işlem yapıyorsanız aşağıdaki resmî kaynaklardan güncel oranı kontrol edin.`}}
+let heightTimer;function scheduleHeight(){clearTimeout(heightTimer);heightTimer=setTimeout(()=>{try{window.parent.postMessage({type:"faiz-tool-height",height:Math.ceil(document.documentElement.scrollHeight)},"*")}catch(_){}},50)}
+if("ResizeObserver" in window)new ResizeObserver(scheduleHeight).observe(document.documentElement);window.addEventListener("load",scheduleHeight);window.addEventListener("resize",scheduleHeight);
+fillLabor();initSources();addRateRow();switchMode();initDataStatus();if(new URLSearchParams(location.search).get("test")==="1")runTests();
+</script>
+</main>
+
+<script>
+  // Sync theme with parent site
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'theme') {
+      if (event.data.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  });
+  // Read initial theme from parent
+  try {
+    if (window.parent && window.parent.document) {
+      var isDark = window.parent.document.documentElement.classList.contains('dark');
+      if (isDark) document.documentElement.classList.add('dark');
+    }
+  } catch(e) {}
+  if (typeof ResizeObserver !== 'undefined') {
+    let lastHeight = 0;
+    const sendHeight = () => {
+      const root = document.getElementById('root') || document.querySelector('.shell') || document.body;
+      const height = root.offsetHeight || root.scrollHeight;
+      if (Math.abs(lastHeight - height) > 5) {
+        lastHeight = height;
+        window.parent.postMessage({ type: 'resize', height: height }, '*');
+      }
+    };
+    const resizeObserver = new ResizeObserver(sendHeight);
+    window.addEventListener('load', () => {
+      const root = document.getElementById('root') || document.querySelector('.shell') || document.body;
+      resizeObserver.observe(root);
+      sendHeight();
+    });
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 1500);
+  }
+</script>
+</body>
+</html>

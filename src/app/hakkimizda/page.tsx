@@ -55,13 +55,12 @@ export default function AboutPage() {
                 Av. Nedim Aslan
               </h2>
               
-              <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify">
-                {t('about.bio1')}
-              </p>
-              
-              <p className="text-sm text-text-secondary font-light leading-relaxed text-justify">
-                {t('about.bio2')}
-              </p>
+              <div className="flex flex-col gap-4 text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify">
+                <p>{t('about.bio1')}</p>
+                <p>{t('about.bio2')}</p>
+                <p>{t('about.bio3')}</p>
+                <p>{t('about.bio4')}</p>
+              </div>
 
               {/* Social Channels */}
               <div className="flex gap-4 mt-8 border-t border-navy-primary/10 pt-6 w-full justify-center lg:justify-start">

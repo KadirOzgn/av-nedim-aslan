@@ -83,9 +83,10 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               </span> {t('hero.titleLast')}
             </h1>
 
-            <p className="text-sm sm:text-base 2xl:text-lg text-text-secondary font-light leading-relaxed max-w-xl 2xl:max-w-2xl mb-6 sm:mb-8 px-1 sm:px-0">
-              {t('hero.subtitle')}
-            </p>
+            <div className="flex flex-col gap-3 text-sm sm:text-base 2xl:text-lg text-text-secondary font-light leading-relaxed max-w-xl 2xl:max-w-2xl mb-6 sm:mb-8 px-1 sm:px-0">
+              <p>{t('hero.subtitle1')}</p>
+              <p>{t('hero.subtitle2')}</p>
+            </div>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 w-full sm:w-auto">
               <Link
@@ -148,16 +149,19 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                 {t('about.badge')}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-serif font-bold text-text-primary mb-4 sm:mb-6">
-                Av. Nedim Aslan
+                {t('about.title')}
               </h2>
-              <p className="text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify max-w-2xl">
-                {t('about.bio1')}
-              </p>
+              <div className="flex flex-col gap-3 text-sm text-text-secondary font-light leading-relaxed mb-6 text-justify max-w-2xl">
+                <p>{t('about.bio1')}</p>
+                <p>{t('about.bio2')}</p>
+                <p>{t('about.bio3')}</p>
+                <p>{t('about.bio4')}</p>
+              </div>
               <Link
                 href="/hakkimizda"
                 className="text-xs font-sans font-semibold tracking-widest uppercase px-5 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg w-full sm:w-auto text-center"
               >
-                Daha Fazla Bilgi
+                {language === 'en' ? 'Read More' : 'Daha Fazla Bilgi'}
               </Link>
             </div>
           </div>
@@ -172,7 +176,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               {t('practice.badge')}
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
-              Öne Çıkan Çalışma Alanları
+              {language === 'en' ? 'Featured Practice Areas' : 'Öne Çıkan Çalışma Alanları'}
             </h2>
           </div>
 
@@ -211,7 +215,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               href="/faaliyet-alanlari"
               className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-lg inline-block"
             >
-              Tüm Faaliyet Alanları
+              {language === 'en' ? 'All Practice Areas' : 'Tüm Faaliyet Alanları'}
             </Link>
           </div>
         </div>
@@ -225,7 +229,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               {t('articles.badge')}
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-text-primary mb-4 relative inline-block pb-3 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-[1px] after:bg-navy-primary">
-              Son Yayınlar
+              {language === 'en' ? 'Recent Publications' : 'Son Yayınlar'}
             </h2>
           </div>
 
@@ -249,7 +253,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                     <span className="text-navy-primary">{article.category}</span>
                     <span className="flex items-center gap-1">
                       <Calendar size={10} />
-                      {new Date(article.createdAt).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                      {new Date(article.createdAt).toLocaleDateString(language === 'en' ? 'en-US' : 'tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
                     </span>
                   </div>
                   <h3 className="text-base font-serif font-semibold text-text-primary mb-3 leading-snug group-hover:text-navy-primary transition-colors">
@@ -274,7 +278,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
               href="/makaleler"
               className="text-xs font-sans font-semibold tracking-widest uppercase px-6 py-3 border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white transition-all duration-300 rounded-sm inline-block"
             >
-              Tüm Makaleler
+              {language === 'en' ? 'All Articles' : 'Tüm Makaleler'}
             </Link>
           </div>
         </div>
@@ -289,10 +293,12 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                 {t('contact.badge')}
               </span>
               <h2 className="text-2xl sm:text-3xl font-serif font-bold text-text-primary">
-                Hukuki Danışmanlık ve Temsil
+                {language === 'en' ? 'Legal Consulting and Representation' : 'Hukuki Danışmanlık ve Temsil'}
               </h2>
               <p className="text-sm text-text-secondary font-light leading-relaxed mb-2 sm:mb-4">
-                Sorularınız, dosyalarınız veya dava süreçleriniz için bizimle irtibata geçebilir, ofisimizden randevu alarak hukuki yardım talep edebilirsiniz.
+                {language === 'en' 
+                  ? 'You can contact us for your questions, cases, or litigation processes, and request legal assistance by making an appointment at our office.'
+                  : 'Sorularınız, dosyalarınız veya dava süreçleriniz için bizimle irtibata geçebilir, ofisimizden randevu alarak hukuki yardım talep edebilirsiniz.'}
               </p>
 
               <div className="flex flex-col gap-4 text-sm font-light">
@@ -302,7 +308,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                 </div>
                 <div className="flex gap-3 items-center">
                   <Mail size={16} className="text-navy-primary" />
-                  <span>info@nedimaslan.av.tr</span>
+                  <span>info@avnedimaslan.com</span>
                 </div>
                 <div className="flex gap-3 items-start">
                   <MapPin size={16} className="text-navy-primary mt-1" />
@@ -371,7 +377,9 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                 {/* Floating Logo Badge on Map */}
                 <div className="absolute top-4 left-4 bg-bg-primary/95 dark:bg-stone-950/95 backdrop-blur-md border border-stone-200/60 dark:border-white/10 px-3 py-2 rounded-xl shadow-lg flex items-center gap-2 pointer-events-none z-30 transition-all duration-300 group-hover:-translate-y-0.5">
                   <AslanLogo size={24} className="text-navy-primary" />
-                  <span className="text-[0.6rem] font-sans font-bold text-text-primary tracking-widest uppercase">Konumumuz</span>
+                  <span className="text-[0.6rem] font-sans font-bold text-text-primary tracking-widest uppercase">
+                    {language === 'en' ? 'Our Location' : 'Konumumuz'}
+                  </span>
                 </div>
 
                 {/* Clickable Overlay Link to Google Maps */}
@@ -384,7 +392,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                 >
                   {/* Hover Indicator */}
                   <div className="absolute bottom-4 right-4 bg-bg-primary/95 dark:bg-stone-950/95 backdrop-blur-md border border-stone-200/60 dark:border-white/10 px-3 py-1.5 rounded-xl shadow-lg text-[0.6rem] font-sans font-bold tracking-widest text-text-primary uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Haritada Aç
+                    {language === 'en' ? 'Open in Map' : 'Haritada Aç'}
                   </div>
                 </a>
               </div>
@@ -393,7 +401,7 @@ export default function HomeClient({ articles, practiceAreas }: HomeClientProps)
                   href="/iletisim"
                   className="text-[0.65rem] font-sans font-semibold tracking-widest uppercase px-5 sm:px-6 py-3 sm:py-3.5 bg-navy-primary text-white hover:bg-navy-secondary transition-all duration-300 rounded-xl shadow-md cursor-pointer w-full sm:w-auto text-center"
                 >
-                  Detaylı İletişim Formu ve Harita
+                  {language === 'en' ? 'Detailed Contact Form and Map' : 'Detaylı İletişim Formu ve Harita'}
                 </Link>
               </div>
             </div>

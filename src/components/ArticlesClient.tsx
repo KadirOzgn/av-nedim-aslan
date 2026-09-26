@@ -67,7 +67,7 @@ export default function ArticlesClient({ articles }: ArticlesClientProps) {
                       <span className="text-navy-primary">{article.category}</span>
                       <span className="flex items-center gap-1">
                         <Calendar size={10} />
-                        {new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                        {new Date(article.date).toLocaleDateString(language === 'en' ? 'en-US' : 'tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
                       </span>
                     </div>
                     <h3 className="text-base font-serif font-semibold text-text-primary mb-3 leading-snug group-hover:text-navy-primary transition-colors">

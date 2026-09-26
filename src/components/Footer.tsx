@@ -108,7 +108,7 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 items-start">
               <Mail size={16} className="text-navy-light mt-0.5 flex-shrink-0" />
-              <span>info@nedimaslan.av.tr</span>
+              <span>info@avnedimaslan.com</span>
             </li>
             <li className="flex gap-3 items-start">
               <MapPin size={16} className="text-navy-light mt-0.5 flex-shrink-0" />

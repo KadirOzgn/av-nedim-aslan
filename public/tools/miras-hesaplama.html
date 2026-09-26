@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<script>
+  (function(){
+    try {
+      if (window.location.search.includes('embed=1') || window.location.hash.includes('embed=1')) {
+        document.documentElement.classList.add('embed');
+        
+        function enforceTheme() {
+          try {
+            var isDark = window.parent.document.documentElement.classList.contains('dark');
+            var targetTheme = isDark ? 'dark' : 'light';
+            if (document.documentElement.dataset.theme !== targetTheme) {
+              document.documentElement.dataset.theme = targetTheme;
+            }
+            if (isDark) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } catch(e) {}
+        }
+        
+        enforceTheme();
+        
+        // Prevent React from overriding the theme
+        var selfObserver = new MutationObserver(enforceTheme);
+        selfObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+        
+        // Listen to parent theme changes
+        try {
+          var parentObserver = new MutationObserver(enforceTheme);
+          parentObserver.observe(window.parent.document.documentElement, { attributes: true, attributeFilter: ['class'] });
+        } catch(e) {}
+      }
+    } catch(e) {}
+  })();
+</script>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<meta content="#0b132b" name="theme-color"/>
+<title>Miras Payı Hesaplama | Aslan Hukuk</title>
+<meta content="Yasal miras payı, saklı pay ve isteğe bağlı tereke tutarı hesabı. 4721 sayılı Türk Medeni Kanunu esas alınır." name="description"/>
+<style>
+:root{
+  --bg:#fcfbf9;
+  --paper:#ffffff;
+  --ink:#0b132b;
+  --navy:#1c2541;
+  --steel:#3a506b;
+  --gold:#b6925b;
+  --gold-soft:#f5ecdd;
+  --muted:#667085;
+  --line:#e4e0d9;
+  --soft:#f4f2ee;
+  --success:#21614c;
+  --success-soft:#edf7f2;
+  --warning:#825b1c;
+  --warning-soft:#fff7e9;
+  --danger:#913e3e;
+  --danger-soft:#fff1f1;
+  --radius:10px;
+  --shadow:0 6px 18px rgba(11,19,43,.055);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size:15px;line-height:1.5;
+}
+button,input,select{font:inherit}
+button{touch-action:manipulation}
+a{color:inherit}
+.site-header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(11,19,43,.97);color:#fff;
+  border-bottom:3px solid var(--gold);
+  box-shadow:0 5px 18px rgba(0,0,0,.13);
+}
+.header-inner{
+  max-width:1240px;margin:0 auto;padding:13px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{
+  width:42px;height:42px;flex:0 0 42px;border-radius:50%;
+  display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);
+  color:#f2d9a8;font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;
+}
+.brand-name{font-weight:800;letter-spacing:.07em;font-size:14px}
+.brand-sub{font-size:11px;opacity:.7;margin-top:2px}
+.top-actions{display:flex;align-items:center;gap:8px}
+.top-actions button{
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;
+  padding:8px 11px;border-radius:7px;cursor:pointer;font-weight:700;font-size:12px;
+}
+.top-actions button:hover{background:rgba(255,255,255,.12)}
+.page{max-width:1240px;margin:0 auto;padding:34px 20px 52px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;margin-bottom:22px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,5vw,54px);line-height:1.08;margin:8px 0 12px;color:var(--ink);font-weight:700}
+.hero-copy{max-width:820px;color:var(--muted);font-size:16px;line-height:1.7;margin:0}
+.review-box{
+  min-width:210px;background:var(--paper);border:1px solid var(--line);border-radius:6px;
+  padding:13px 15px;box-shadow:none;font-size:12px;color:var(--muted);
+}
+.review-box b{display:block;color:var(--ink);font-size:13px;margin-bottom:2px}
+.toolbar{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 17px;box-shadow:none;margin-bottom:20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.mode-wrap{display:flex;align-items:center;gap:12px}
+.mode-label{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.mode-switch{display:flex;background:var(--soft);padding:4px;border-radius:7px;border:1px solid var(--line)}
+.mode-switch button{
+  border:0;background:transparent;color:var(--muted);padding:8px 14px;border-radius:6px;
+  font-weight:800;font-size:12px;cursor:pointer;
+}
+.mode-switch button.active{background:var(--paper);color:var(--ink);box-shadow:none}
+.examples{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.examples>span{font-size:12px;color:var(--muted);font-weight:700;margin-right:2px}
+.examples button{
+  border:1px solid var(--line);background:#fff;color:var(--steel);padding:7px 10px;border-radius:6px;
+  font-size:11px;font-weight:700;cursor:pointer;
+}
+.examples button:hover{border-color:var(--gold);color:var(--ink);background:#fffaf1}
+.calculator-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(355px,.88fr);gap:22px;align-items:start}
+.calculator-card,.result-panel{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+}
+.card-title{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.card-title h2{margin:0;font-size:19px;color:var(--ink)}
+.card-title p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.required-note{font-size:11px;color:var(--muted);white-space:nowrap;padding-top:3px}
+.form-section{padding:21px 22px;border-bottom:1px solid var(--line)}
+.form-section:last-of-type{border-bottom:0}
+.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.basic-grid{margin-bottom:18px}
+.advanced-grid{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.estate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field.wide{max-width:560px}
+.field>span,.field-title{font-size:13px;font-weight:800;color:var(--ink)}
+.field>span b{color:var(--danger)}
+.field small,.compact span,.fixed-copy small,.person-foot small,.special-details small{
+  color:var(--muted);font-size:11px;line-height:1.45;
+}
+input,select{
+  width:100%;min-height:43px;border:1px solid #d8d5cf;background:#fff;color:var(--ink);
+  border-radius:7px;padding:10px 11px;outline:none;
+}
+input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(182,146,91,.14)}
+.group-question{margin-top:4px}
+.group-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:9px}
+.group-card{
+  text-align:left;border:1px solid var(--line);background:#fff;border-radius:6px;padding:12px 13px;
+  cursor:pointer;color:var(--ink);min-height:72px;
+}
+.group-card b{display:block;font-size:13px;margin-bottom:3px}
+.group-card small{display:block;font-size:11px;color:var(--muted);line-height:1.35}
+.group-card:hover{border-color:#c7b083;background:#fffdf8}
+.group-card.selected{border-color:var(--gold);background:#fffaf1;box-shadow:none}
+.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:15px}
+.section-heading>div{min-width:0}
+.section-heading h2{margin:0;color:var(--ink);font-size:18px;display:inline}
+.section-heading h2 small{font-size:11px;color:var(--muted);font-weight:500;margin-left:4px}
+.section-heading p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.55;max-width:680px}
+.step-no{
+  display:inline-grid;place-items:center;width:25px;height:25px;border-radius:50%;background:var(--ink);color:#fff;
+  font-size:11px;font-weight:800;margin-right:8px;vertical-align:2px;
+}
+.primary,.secondary,.subtle,.remove-btn{
+  border:0;cursor:pointer;font-weight:800;border-radius:7px;transition:.15s ease;
+}
+.primary{background:var(--ink);color:#fff;padding:12px 19px;box-shadow:none}
+.primary:hover{background:var(--navy);transform:none}
+.primary.small{padding:10px 15px;font-size:12px}
+.secondary{background:var(--soft);color:var(--ink);border:1px solid var(--line);padding:9px 12px;font-size:12px}
+.secondary:hover{background:#ece8e1;border-color:#d3cabd}
+.subtle{background:transparent;color:var(--steel);padding:6px 0;font-size:11px}
+.subtle:hover{color:var(--ink)}
+.empty-list{border:1px dashed #d8d4cc;border-radius:6px;padding:17px;text-align:center;color:var(--muted);font-size:12px;background:#fdfcf9}
+.person-card{
+  margin-top:11px;margin-left:calc(var(--level,0) * 18px);padding:13px;border:1px solid var(--line);
+  border-radius:6px;background:#fff;position:relative;
+}
+.person-card[style*="--level: 0"],.person-card[style*="--level:0"]{margin-left:0}
+.person-row{display:grid;grid-template-columns:minmax(145px,1.25fr) minmax(150px,1fr) minmax(160px,1fr) 34px;gap:10px;align-items:end}
+.compact{display:flex;flex-direction:column;gap:5px;min-width:0}
+.compact span{font-weight:700;color:var(--muted)}
+.compact input,.compact select{min-height:39px;padding:8px 9px;font-size:12px}
+.remove-btn{width:34px;height:39px;background:#fff0f0;color:var(--danger);font-size:20px}
+.remove-btn:hover{background:#f8dddd}
+.person-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 2px 0}
+.person-foot small{text-align:right}
+.children{border-left:2px solid #ebe5da;margin-left:10px;padding-left:8px}
+.fixed-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fixed-person{display:grid;grid-template-columns:minmax(0,1fr) minmax(145px,.9fr);gap:10px;align-items:end;border:1px solid var(--line);border-radius:6px;padding:12px;background:#fff}
+.fixed-person:has(.kinship){grid-template-columns:minmax(0,1fr) minmax(145px,.9fr) minmax(145px,.9fr)}
+.fixed-copy b{display:block;font-size:13px;margin-bottom:3px}
+.fixed-copy small{display:block}
+.subheading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 9px}
+.subheading h3{margin:0;font-size:14px;color:var(--ink)}
+.grand-sides{display:grid;gap:15px}
+.grand-side{border:1px solid var(--line);border-radius:6px;padding:14px;background:#fdfcf9}
+.grand-side .subheading{margin:0 0 11px}
+.notice{padding:13px 14px;border-radius:6px;font-size:12px;line-height:1.55}
+.notice.neutral{background:#f3f5f7;color:#435166;border:1px solid #e1e6eb}
+.special-details{border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden}
+.special-details>summary{list-style:none;cursor:pointer;padding:14px 15px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-weight:800;font-size:13px}
+.special-details>summary::-webkit-details-marker{display:none}
+.special-details>summary:after{content:"+";font-size:20px;color:var(--gold)}
+.special-details[open]>summary:after{content:"–"}
+.special-body{border-top:1px solid var(--line);padding:14px 15px}
+.flag-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}
+.flag{display:flex;align-items:flex-start;gap:9px;border:1px solid var(--line);border-radius:7px;padding:10px;background:#fdfcf9;font-size:12px;color:var(--ink);cursor:pointer}
+.flag input{width:16px;height:16px;min-height:0;margin:1px 0 0;accent-color:var(--ink)}
+.fine-print{font-size:11px;color:var(--muted);line-height:1.55;margin:11px 0 0}
+.action-bar{padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#f7f5f1;border-top:1px solid var(--line)}
+.action-bar .primary{min-width:160px}
+.result-panel{position:sticky;top:85px;min-height:460px}
+.result-empty{min-height:455px;display:grid;place-content:center;text-align:center;padding:34px;color:var(--muted)}
+.scale-mark{width:54px;height:54px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;color:var(--gold);font-family:Georgia,serif;font-size:28px;background:#fffaf1}
+.result-empty h2{margin:0 0 8px;color:var(--ink);font-size:19px}
+.result-empty p{margin:0 auto;max-width:330px;font-size:13px;line-height:1.6}
+.empty-points{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:16px}
+.empty-points span{font-size:10px;padding:6px 8px;border-radius:6px;background:var(--soft);border:1px solid var(--line);color:var(--steel)}
+.result-head{padding:22px;color:#fff}
+.result-head>span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:800;opacity:.75}
+.result-head h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;margin:5px 0 5px}
+.result-head p{margin:0;font-size:12px;opacity:.82}
+.result-head.success{background:var(--ink)}
+.result-head.error{background:#7d3434}
+.result-head.special{background:#6f511e}
+.result-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.result-meta b,.result-meta span{font-size:10px;border:1px solid rgba(255,255,255,.22);border-radius:6px;padding:5px 8px;background:rgba(255,255,255,.07)}
+.result-body{padding:18px 19px 20px}
+.stale{padding:10px 14px;background:#fff0d6;color:#755117;border-bottom:1px solid #edd8b0;font-size:11px;font-weight:800}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+.result-table{font-size:12px}
+.result-table th,.mini-table th{text-align:left;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.04em;padding:9px 7px;border-bottom:1px solid var(--line);white-space:nowrap}
+.result-table td,.mini-table td{padding:11px 7px;border-bottom:1px solid #eeeae4;vertical-align:top}
+.result-table td b{display:block;color:var(--ink);font-size:12px}
+.result-table td small{display:block;color:var(--muted);font-size:10px;margin-top:2px}
+.result-table td em{display:inline-block;font-style:normal;font-size:9px;color:var(--warning);background:var(--warning-soft);border-radius:6px;padding:3px 6px;margin-top:4px}
+.result-table td strong{font-size:14px;color:var(--ink)}
+.result-details{margin-top:12px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
+.result-details>summary{list-style:none;cursor:pointer;padding:12px 13px;font-size:12px;font-weight:800;color:var(--ink);display:flex;justify-content:space-between;align-items:center}
+.result-details>summary::-webkit-details-marker{display:none}
+.result-details>summary:after{content:"+";color:var(--gold);font-size:18px}
+.result-details[open]>summary:after{content:"–"}
+.detail-body{border-top:1px solid var(--line);padding:13px;color:#465166;font-size:12px;line-height:1.6}
+.detail-body p:first-child{margin-top:0}
+.detail-body ul{padding-left:18px;margin:0}
+.detail-body li+li{margin-top:5px}
+.mini-table{font-size:11px}
+.summary-line{display:flex;justify-content:space-between;gap:16px;padding:9px 1px;border-top:1px solid #eeeae4;font-size:11px}
+.estate-summary{display:grid;gap:0}
+.estate-summary>div{display:flex;justify-content:space-between;gap:15px;padding:8px 0;border-bottom:1px solid #eeeae4}
+.estate-summary>div:last-child{border-bottom:0}
+.messages{display:grid;gap:8px;margin-bottom:11px}
+.message{padding:11px 12px;border-radius:7px;font-size:11px;line-height:1.55;border-left:3px solid transparent}
+.message.warning{background:var(--warning-soft);color:#654615;border-left-color:#c38b32}
+.message.error{background:var(--danger-soft);color:#713333;border-left-color:var(--danger)}
+.message.info{background:#f1f5f8;color:#42546a;border-left-color:var(--steel)}
+.compact-messages{margin:0}.compact-messages .message:last-child{margin-bottom:0}
+.source-links{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}
+.source-links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:8px 9px;color:var(--steel);font-size:10px;font-weight:700;background:#fdfcf9}
+.source-links a:hover{border-color:var(--gold);color:var(--ink)}
+.result-actions{display:flex;gap:8px;margin-top:15px}
+.result-actions button{flex:1}
+.legal-note{font-size:10px;color:var(--muted);line-height:1.5;margin:13px 0 0;text-align:center}
+.toast{position:fixed;right:20px;bottom:20px;z-index:100;background:var(--ink);color:#fff;padding:11px 14px;border-radius:7px;box-shadow:0 10px 30px rgba(0,0,0,.22);font-size:12px;opacity:0;transform:translateY(10px);pointer-events:none;transition:.2s}
+.toast.show{opacity:1;transform:translateY(0)}
+.page-footer{max-width:1240px;margin:0 auto;padding:0 20px 36px;color:var(--muted);font-size:11px;line-height:1.65}
+.footer-box{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:24px}
+.footer-box p{margin:0;max-width:900px}
+.footer-date{white-space:nowrap;font-weight:700;color:var(--steel)}
+body[data-mode="citizen"] .lawyer-only{display:none!important}
+@media(max-width:980px){
+  .calculator-layout{grid-template-columns:1fr}
+  .result-panel{position:static;min-height:360px}
+  .result-empty{min-height:340px}
+  .hero{grid-template-columns:1fr}.review-box{max-width:320px}
+}
+@media(max-width:720px){
+  .site-header{position:static}.header-inner{padding:11px 14px}.brand-mark{width:38px;height:38px;flex-basis:38px}.brand-sub{display:none}
+  .top-actions button{padding:7px 9px}.top-actions button span{display:none}
+  .page{padding:24px 12px 38px}.hero{gap:17px}.hero-copy{font-size:14px}.toolbar{padding:13px}
+  .mode-wrap{width:100%;justify-content:space-between}.examples{width:100%}.examples>span{width:100%}
+  .field-grid,.basic-grid,.advanced-grid,.estate-grid,.fixed-grid,.flag-grid{grid-template-columns:1fr}
+  .group-cards{grid-template-columns:1fr}
+  .person-row{grid-template-columns:1fr 1fr 34px}
+  .person-row .grow{grid-column:1 / -1}.person-row .relation{grid-column:1}.person-row .status{grid-column:2}.person-row .remove-btn{grid-column:3;grid-row:2}
+  .fixed-person,.fixed-person:has(.kinship){grid-template-columns:1fr}.person-foot{align-items:flex-start;flex-direction:column}.person-foot small{text-align:left}
+  .form-section,.card-title{padding-left:15px;padding-right:15px}.action-bar{padding:14px 15px;position:sticky;bottom:0;z-index:10}
+  .action-bar .primary{min-width:0;flex:1}.source-links{grid-template-columns:1fr}.footer-box{display:block}.footer-date{margin-top:8px}
+  .person-card{margin-left:calc(var(--level,0) * 8px)}
+}
+@media(max-width:440px){
+  .brand-name{font-size:12px}.top-actions #printTop{display:none}.header-inner{gap:7px}
+  h1{font-size:34px}.review-box{min-width:0;width:100%}
+  .section-heading{display:block}.section-heading .secondary{margin-top:11px;width:100%}
+  .person-row{grid-template-columns:1fr 34px}.person-row .relation,.person-row .status{grid-column:1}.person-row .remove-btn{grid-column:2;grid-row:2 / span 2;align-self:center}
+}
+@media print{
+  @page{size:A4;margin:14mm}
+  body{background:#fff;font-size:11pt}.site-header,.hero,.toolbar,.calculator-card,.page-footer,.result-actions,.toast{display:none!important}
+  .page{max-width:none;padding:0}.calculator-layout{display:block}.result-panel{position:static;border:0;box-shadow:none;overflow:visible}
+  .result-head{color:#000;background:#fff!important;border-bottom:2px solid #000;padding:0 0 12px}.result-head>span,.result-head p,.result-meta{color:#333;opacity:1}
+  .result-body{padding:12px 0}.result-details{break-inside:avoid}.result-details>summary{display:none}.result-details:not([open]) .detail-body{display:block!important}
+  .source-links{display:none}.stale{display:none!important}
+}
+html.dark{
+  --bg:#0e1628;--paper:#151f35;--ink:#e8edf4;--navy:#8fb8e8;--steel:#7fa0bf;
+  --gold:#d4a85c;--gold-soft:#2a2218;--muted:#94a3b8;--line:#2a3a52;--soft:#1a253a;
+  --success:#5bc9a2;--success-soft:#12312a;--warning:#e5c06c;--warning-soft:#2e2614;
+  --danger:#f5a0a0;--danger-soft:#351c22;--radius:10px;
+  --shadow:0 6px 18px rgba(0,0,0,.25);
+  color-scheme:dark;
+}
+html.dark body{background:var(--bg);color:var(--ink)}
+html.dark .site-header{background:var(--paper);border-bottom-color:var(--line)}
+html.dark .toolbar{background:var(--paper);border-color:var(--line)}
+html.dark .calculator-card{background:var(--paper);border-color:var(--line)}
+html.dark .result-panel{background:var(--paper);border-color:var(--line)}
+html.dark .result-head{background:#1a253a}
+html.dark input,html.dark select{background:var(--soft);color:var(--ink);border-color:var(--line)}
+html.dark .card-title{border-bottom-color:var(--line)}
+html.dark .form-section{border-top-color:var(--line)}
+html.dark .group-card{background:var(--soft);border-color:var(--line)}
+html.dark .person-card{background:var(--paper);border-color:var(--line)}
+html.dark .message.warning{background:var(--warning-soft);color:var(--warning);border-left-color:var(--warning)}
+html.dark .message.error{background:var(--danger-soft);color:var(--danger);border-left-color:var(--danger)}
+html.dark .message.info{background:var(--soft);color:var(--steel);border-left-color:var(--steel)}
+html.dark .page-footer{color:var(--muted)}
+html.dark .footer-box{border-top-color:var(--line)}
+html.dark .footer-date{color:var(--steel)}
+html.dark .action-bar{background:var(--paper);border-top-color:var(--line)}
+html.dark .section-heading{border-bottom-color:var(--line)}
+html.dark .examples>span{background:var(--soft);border-color:var(--line);color:var(--ink)}
+html.dark .hero{background:var(--paper)}
+</style>
+<style>
+/* Embed mode overrides to match infaz-hesaplama theme structure */
+html.embed, html.embed body { background: transparent !important; }
+html.embed body main { max-width: 100%; overflow: hidden; padding-top: 0; }
+html.embed body .hero, html.embed body .page-footer { display: none !important; }
+html.embed body .calculator-card { border: none; background: transparent !important; box-shadow: none !important; }
+</style>
+<style>.brand-block .brand-mark, .brand-block .eyebrow { display: none !important; }</style>
+</head>
+<body data-mode="citizen" >
+
+<main class="page">
+
+<section aria-label="Hesaplama seçenekleri" class="toolbar">
+<div class="mode-wrap">
+<span class="mode-label">Görünüm</span>
+<div class="mode-switch">
+<button aria-pressed="true" class="active" data-mode="citizen" type="button">Standart</button>
+<button aria-pressed="false" data-mode="lawyer" type="button">Ayrıntılı</button>
+</div>
+</div>
+<div class="examples">
+<span>Hazır örnekler</span>
+<button data-example="spouse2" type="button">Eş + 2 çocuk</button>
+<button data-example="twoChildren" type="button">2 çocuk</button>
+<button data-example="spouseParents" type="button">Eş + anne-baba</button>
+<button data-example="siblings" type="button">Kardeşler</button>
+<button data-example="spouseOnly" type="button">Yalnız eş</button>
+<button data-example="state" type="button">Devlet</button>
+</div>
+</section>
+<div class="calculator-layout">
+<section aria-label="Miras payı bilgileri" class="calculator-card">
+<div class="card-title">
+<div><h2>Miras Bilgileri</h2><p>Ölüm tarihini ve mirasçıları girerek başlayın.</p></div>
+<span class="required-note">* Zorunlu alan</span>
+</div>
+<div class="form-section" id="basicFields"></div>
+<div class="form-section" id="heirSection"></div>
+<div class="form-section" id="estateSection"></div>
+<div class="form-section" id="specialSection"></div>
+<div class="action-bar">
+<button class="secondary" id="resetBtn" type="button">Bilgileri Temizle</button>
+<button class="primary" id="calculateBtn" type="button">Hesapla</button>
+</div>
+</section>
+<aside aria-label="Hesap sonucu" aria-live="polite" class="result-panel" id="resultPanel"></aside>
+</div>
+</main>
+<footer class="page-footer">
+<div class="footer-box">
+<p>Bu araç, girilen bilgilere göre yasal miras paylarını ve saklı payları hesaplar. Hesap sonucu mirasçılık belgesi yerine geçmez. Vasiyetname, miras sözleşmesi, ret, mirastan yoksunluk, mirasçılıktan çıkarma, tenkis, denkleştirme veya mal rejimi tasfiyesi bulunan dosyalarda belgeler ayrıca incelenmelidir.</p>
+<div class="footer-date">ASLAN HUKUK · 2026</div>
+</div>
+</footer>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script>(function (root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.AslnMirasEngine = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+
+  class Fraction {
+    constructor(n, d = 1n) {
+      n = BigInt(n); d = BigInt(d);
+      if (d === 0n) throw new Error('Payda sıfır olamaz.');
+      if (d < 0n) { n = -n; d = -d; }
+      const g = Fraction.gcd(n < 0n ? -n : n, d);
+      this.n = n / g; this.d = d / g;
+    }
+    static gcd(a, b) { while (b !== 0n) { const t = a % b; a = b; b = t; } return a || 1n; }
+    static zero() { return new Fraction(0n, 1n); }
+    static one() { return new Fraction(1n, 1n); }
+    static from(v) {
+      if (v instanceof Fraction) return v;
+      if (typeof v === 'string' && v.includes('/')) { const [n,d] = v.split('/'); return new Fraction(BigInt(n), BigInt(d)); }
+      return new Fraction(BigInt(v), 1n);
+    }
+    add(o) { o = Fraction.from(o); return new Fraction(this.n*o.d + o.n*this.d, this.d*o.d); }
+    sub(o) { o = Fraction.from(o); return new Fraction(this.n*o.d - o.n*this.d, this.d*o.d); }
+    mul(o) { o = Fraction.from(o); return new Fraction(this.n*o.n, this.d*o.d); }
+    div(o) { o = Fraction.from(o); if (o.n === 0n) throw new Error('Sıfıra bölme.'); return new Fraction(this.n*o.d, this.d*o.n); }
+    eq(o) { o = Fraction.from(o); return this.n === o.n && this.d === o.d; }
+    isZero() { return this.n === 0n; }
+    gt(o) { o = Fraction.from(o); return this.n*o.d > o.n*this.d; }
+    toNumber() { return Number(this.n) / Number(this.d); }
+    toString() { return this.d === 1n ? String(this.n) : `${this.n}/${this.d}`; }
+    toJSON() { return this.toString(); }
+  }
+
+  const ELIGIBLE = new Set(['alive','after_death','conceived']);
+  const REPRESENTABLE = new Set(['predeceased','simultaneous','rejected','unworthy','disinherited','renounced_gratuitous','renounced_compensated_person_only']);
+  const BLOCKING = new Set(['renounced_compensated','not_legal_heir']);
+  const UNCERTAIN = new Set(['unknown','gaip','contested','pending_case','pending_divorce','annulment_pending','renunciation_unclear']);
+  const NON_LEGAL_DESCENDANT_TYPES = new Set(['stepchild','filiation_not_established']);
+  const NON_LEGAL_PARENT_KINSHIP = new Set(['adoptive_parent','step_parent','no_filiation']);
+  const NON_LEGAL_SIBLING_TYPES = new Set(['step','adoptive']);
+
+  const statusLabels = {
+    alive:'Hayatta ve mirasçı', after_death:'Mirasbırakandan sonra öldü', conceived:'Cenin (sağ doğma koşullu)',
+    predeceased:'Mirasbırakandan önce öldü', simultaneous:'Ölüm sırası belirlenemiyor / aynı anda ölmüş sayılır',
+    rejected:'Mirası geçerli olarak reddetti', unworthy:'Mirastan yoksun',
+    disinherited:'Geçerli şekilde mirasçılıktan çıkarıldı', renounced_gratuitous:'Karşılıksız feragat etti',
+    renounced_compensated:'Karşılık sağlanarak feragat; altsoyu da etkiliyor', renounced_compensated_person_only:'Karşılık sağlanarak feragat; sözleşme gereği yalnız feragat edeni etkiliyor', not_legal_heir:'Yasal mirasçı değil',
+    unknown:'Durumu bilinmiyor', gaip:'Gaiplik veya hayatta olma durumu belirsiz', contested:'Mirasçılık durumu çekişmeli',
+    pending_case:'Mahkeme kararı bekleniyor', pending_divorce:'Boşanma davası ölüm tarihinde devam ediyor', annulment_pending:'Evliliğin geçerliliği / butlanı çekişmeli',
+    renunciation_unclear:'Feragat sözleşmesinin kapsamı belirsiz'
+  };
+
+  function uid(prefix='p') { return `${prefix}_${Math.random().toString(36).slice(2,10)}`; }
+  function normalizePerson(p, defaults={}) {
+    const x = Object.assign({id:uid(), name:'İsimsiz kişi', status:'alive', children:[], category:'other', relation:''}, defaults, p||{});
+    x.children = Array.isArray(x.children) ? x.children.map(c => normalizePerson(c)) : [];
+    return x;
+  }
+
+
+  const MAX_INPUT_NODES = 500;
+  const MAX_INPUT_DEPTH = 40;
+  const MONEY_FIELDS = ['gross','debts','funeral','inventory','maintenance','tenkisAdditions','insuranceSurrender'];
+
+  function inputRoots(input) {
+    const p2=input?.parentela2||{}, p3=input?.parentela3||{};
+    return [
+      input?.spouse,
+      ...(input?.descendants||[]),
+      p2.mother,p2.father,...(p2.siblings||[]),
+      p3.paternal?.grandfather,p3.paternal?.grandmother,...(p3.paternal?.parentSiblings||[]),
+      p3.maternal?.grandfather,p3.maternal?.grandmother,...(p3.maternal?.parentSiblings||[])
+    ].filter(Boolean);
+  }
+
+  function validateInputStructure(input,ctx) {
+    const seen=new Map(); let count=0; let stopped=false;
+    const walk=(node,path,depth)=>{
+      if (!node || typeof node!=='object' || stopped) return;
+      count++;
+      if (count>MAX_INPUT_NODES) { addError(ctx,'INPUT_NODE_LIMIT',`Soy ağacında ${MAX_INPUT_NODES} kişilik teknik işlem sınırı aşıldı. Kayıtların bölünerek incelenmesi gerekir.`); stopped=true; return; }
+      if (depth>MAX_INPUT_DEPTH) { addError(ctx,'INPUT_DEPTH_LIMIT',`Soy ağacında ${MAX_INPUT_DEPTH} derecelik teknik işlem derinliği aşıldı. Hukuken temsil her derecede mümkün olmakla birlikte bu kayıt için ayrı inceleme gerekir.`); stopped=true; return; }
+      const id=String(node.id||'').trim();
+      const placeholder=node.status==='not_legal_heir' && (!Array.isArray(node.children) || node.children.length===0);
+      if (!id) addError(ctx,'MISSING_PERSON_ID',`${path} kaydında kişi kimliği bulunmuyor.`);
+      else if (seen.has(id)) {
+        const previous=seen.get(id);
+        // Arayüzdeki boş anne/baba/büyük ebeveyn kökleri sabit kimlik taşır. Bu saf
+        // yer tutucular, başka bir gerçek kişi kaydıyla aynı kimliği tesadüfen taşısa
+        // bile pay birleştirmesine katılmaz. İki maddi kişi kaydı aynı kimliği taşıyorsa
+        // aynı kimlikle girilen maddi kişi kayıtlarında hesap yapılmaz.
+        if (!placeholder && !previous.placeholder) addError(ctx,'DUPLICATE_PERSON_ID',`“${id}” kişi kimliği birden fazla maddi kayıtta kullanılmış. Yanlış pay birleştirmesini önlemek için her gerçek kişi tek kayıtla girilmelidir.`);
+        else if (!placeholder && previous.placeholder) seen.set(id,{path,placeholder:false});
+      } else seen.set(id,{path,placeholder});
+      if (node.children!=null && !Array.isArray(node.children)) addError(ctx,'INVALID_CHILDREN',`${path} kaydının altsoy alanı liste biçiminde değildir.`);
+      (Array.isArray(node.children)?node.children:[]).forEach((ch,i)=>walk(ch,`${path} > altsoy ${i+1}`,depth+1));
+    };
+    inputRoots(input).forEach((r,i)=>walk(r,`Kişi ${i+1}`,0));
+  }
+
+  function canonicalMoneyString(value) {
+    if (value===null || value===undefined || value==='') return '0.00';
+    if (typeof value==='bigint') return `${value}.00`;
+    if (typeof value==='number') {
+      if (!Number.isFinite(value) || Math.abs(value)>Number.MAX_SAFE_INTEGER/100) return null;
+      const cents=value*100;
+      if (Math.abs(cents-Math.round(cents))>1e-7) return null;
+      return (Math.round(cents)/100).toFixed(2);
+    }
+    let s=String(value).trim().replace(/\s+/g,'').replace(/₺|TL/gi,'');
+    if (!s) return '0.00';
+    let sign='';
+    if (s[0]==='-' || s[0]==='+') { sign=s[0]==='-'?'-':''; s=s.slice(1); }
+    if (!s || !/^[0-9.,]+$/.test(s)) return null;
+
+    const grouped=(part,sep)=>{
+      const pieces=part.split(sep);
+      return pieces.length>1 && /^\d{1,3}$/.test(pieces[0]) && pieces.slice(1).every(x=>/^\d{3}$/.test(x));
+    };
+    const normalizeInteger=(part,sep='')=>{
+      if (/^\d+$/.test(part)) return part;
+      if (sep && grouped(part,sep)) return part.split(sep).join('');
+      return null;
+    };
+
+    const commas=(s.match(/,/g)||[]).length, dots=(s.match(/\./g)||[]).length;
+    let integerPart=s, decimalPart='';
+    if (commas && dots) {
+      const decSep=s.lastIndexOf(',')>s.lastIndexOf('.')?',':'.';
+      const thousandSep=decSep===','?'.':',';
+      if ((decSep===','?commas:dots)!==1) return null;
+      const idx=s.lastIndexOf(decSep);
+      integerPart=s.slice(0,idx); decimalPart=s.slice(idx+1);
+      if (!/^\d{1,2}$/.test(decimalPart)) return null;
+      integerPart=normalizeInteger(integerPart,thousandSep);
+      if (integerPart===null) return null;
+    } else if (commas || dots) {
+      const sep=commas?',':'.', count=commas||dots;
+      if (count>1) {
+        if (!grouped(s,sep)) return null;
+        integerPart=s.split(sep).join('');
+      } else {
+        const idx=s.indexOf(sep), before=s.slice(0,idx), after=s.slice(idx+1);
+        if (!/^\d+$/.test(before) || !/^\d+$/.test(after)) return null;
+        if (after.length===1 || after.length===2) {
+          integerPart=before; decimalPart=after;
+        } else if (after.length===3 && /^\d{1,3}$/.test(before) && before!=='0') {
+          integerPart=before+after;
+        } else return null;
+      }
+    } else if (!/^\d+$/.test(s)) return null;
+
+    integerPart=(integerPart||'0').replace(/^0+(?=\d)/,'');
+    decimalPart=(decimalPart+'00').slice(0,2);
+    return `${sign}${integerPart}.${decimalPart}`;
+  }
+
+  function parseMoneyCents(value) {
+    const s=canonicalMoneyString(value); if (s===null) return null;
+    const neg=s.startsWith('-'), abs=neg?s.slice(1):s;
+    const [i='0',d='00']=abs.split('.');
+    const cents=BigInt(i)*100n+BigInt((d+'00').slice(0,2));
+    return neg?-cents:cents;
+  }
+
+  function centsToNumber(cents) {
+    const n=Number(cents)/100;
+    return Number.isFinite(n)?n:null;
+  }
+
+  function centsToDecimal(cents) {
+    const neg=cents<0n, a=neg?-cents:cents;
+    const i=a/100n, d=String(a%100n).padStart(2,'0');
+    return `${neg?'-':''}${i}.${d}`;
+  }
+
+  function validateEstateInput(input,ctx) {
+    const e=input?.estate||{};
+    for (const key of MONEY_FIELDS) {
+      const cents=parseMoneyCents(e[key]);
+      if (cents===null) addError(ctx,'INVALID_MONEY',`${key} alanında geçerli bir para tutarı girilmelidir.`);
+      else if (cents<0n) addError(ctx,'NEGATIVE_MONEY',`${key} alanı negatif olamaz. Borç ve giderler kendi alanlarına pozitif tutar olarak girilmelidir.`);
+    }
+  }
+
+  function descendantRelation(p, fallback='Altsoy') {
+    const labels={
+      biological:'Çocuk / altsoy', adopted:'Evlatlık / evlatlığın altsoyu', adopted_elsewhere:'Başka ailece evlat edinilmiş biyolojik altsoy',
+      filiation_established:'Soybağı hukuken kurulmuş çocuk / altsoy', stepchild:'Üvey çocuk — yasal mirasçı değil',
+      filiation_not_established:'Soybağı hukuken kurulmamış kişi — bu sıfatla yasal mirasçı değil'
+    };
+    return labels[p?.type] || fallback;
+  }
+
+  function normalizeCategoryTree(p, category, relation, depth=0) {
+    const rel = category==='descendant' ? descendantRelation(p,relation) : relation;
+    const x = normalizePerson(p,{category,relation:rel});
+    x.category = category;
+    x.relation = x.relation || rel;
+
+    if (category==='descendant') {
+      if (NON_LEGAL_DESCENDANT_TYPES.has(x.type)) x.status='not_legal_heir';
+      // TMK m.500 uyarınca evlât edinme, evlâtlık ile evlât edinen arasında mirasçılık
+      // doğurur. Alt derecedeki bir kişinin başka biri tarafından evlât edinilmiş çocuğu,
+      // sırf bu ilişki nedeniyle asıl mirasbırakanın yasal mirasçısı olmaz.
+      if (depth>0 && x.type==='adopted') x.status='not_legal_heir';
+    }
+    if (category==='sibling' || category==='uncle_aunt') {
+      if (NON_LEGAL_SIBLING_TYPES.has(x.type) || NON_LEGAL_DESCENDANT_TYPES.has(x.type)) x.status='not_legal_heir';
+      if (depth>0 && x.type==='adopted') x.status='not_legal_heir';
+    }
+
+    x.children = (p && Array.isArray(p.children) ? p.children : []).map(c => normalizeCategoryTree(c,category,'Altsoy',depth+1));
+    return x;
+  }
+
+  function personEligible(p) { return p && ELIGIBLE.has(p.status); }
+  function personRepresentable(p) { return p && REPRESENTABLE.has(p.status); }
+  function personBlocking(p) { return !p || BLOCKING.has(p.status); }
+  function personUncertain(p) { return p && UNCERTAIN.has(p.status); }
+
+  function addWarning(ctx, code, message, severity='warning') {
+    if (!ctx.warnings.some(w => w.code === code && w.message === message)) ctx.warnings.push({code,message,severity});
+  }
+  function addError(ctx, code, message) {
+    if (!ctx.errors.some(w => w.code === code && w.message === message)) ctx.errors.push({code,message,severity:'error'});
+  }
+  function addShare(ctx, person, share, route, meta={}) {
+    if (share.isZero()) return;
+    const id = person.id || uid('anon');
+    const existing = ctx.shares.get(id) || {
+      id, name:person.name || 'İsimsiz kişi', share:Fraction.zero(), category:person.category||meta.category||'other',
+      relation:person.relation||meta.relation||'', statuses:new Set(), routes:[], conditional:false
+    };
+    existing.share = existing.share.add(share);
+    existing.category = existing.category || meta.category || 'other';
+    existing.relation = existing.relation || meta.relation || '';
+    existing.statuses.add(person.status || 'alive');
+    existing.routes.push({route, share:share.toString()});
+    if (person.status === 'conceived') existing.conditional = true;
+    ctx.shares.set(id, existing);
+    if (person.status === 'after_death') addWarning(ctx,'AFTER_DEATH',`${existing.name}, miras açıldıktan sonra öldüğü için payı kendi terekesine geçer.`,'info');
+    if (person.status === 'conceived') addWarning(ctx,'CONCEIVED',`${existing.name} için mirasçılık sağ doğma koşuluna bağlıdır (TMK m. 28 ve 582).`,'warning');
+  }
+
+  function branchHasRecipient(node, maxDepth=Infinity, depth=0, ctx=null) {
+    if (!node) return false;
+    if (personUncertain(node)) {
+      if (ctx) addError(ctx,'UNCERTAIN_STATUS',`${node.name}: “${statusLabels[node.status] || node.status}” nedeniyle kesin pay hesabı yapılamaz.`);
+      return false;
+    }
+    if (personEligible(node)) return true;
+    if (personBlocking(node)) return false;
+    if (personRepresentable(node) && depth < maxDepth) {
+      return (node.children||[]).some(ch => branchHasRecipient(ch,maxDepth,depth+1,ctx));
+    }
+    return false;
+  }
+
+  function distributeNode(node, share, ctx, route, maxDepth=Infinity, depth=0) {
+    if (!node || share.isZero()) return;
+    if (personUncertain(node)) { addError(ctx,'UNCERTAIN_STATUS',`${node.name}: “${statusLabels[node.status] || node.status}” nedeniyle kesin pay hesabı yapılamaz.`); return; }
+    if (personEligible(node)) { addShare(ctx,node,share,route); return; }
+    if (personBlocking(node)) {
+      if (node.status === 'renounced_compensated') addWarning(ctx,'RENOUNCE_DESC',`${node.name} bakımından karşılık sağlanarak yapılan feragatin, sözleşmede aksi belirtilmediği kabulüyle altsoyu da etkilediği dikkate alınmıştır. Sözleşme hükmü ayrıca denetlenmelidir.`,'warning');
+      return;
+    }
+    if (personRepresentable(node)) {
+      if (depth >= maxDepth) {
+        if ((node.children||[]).length) addWarning(ctx,'REPRESENTATION_CAP',`${node.name} kolunda temsil, sağ kalan eşle üçüncü zümre birlikteliği nedeniyle daha aşağı dereceye yürütülmedi.`,'info');
+        return;
+      }
+      distributeBranches(node.children||[],share,ctx,`${route} → ${node.name} altsoyu`,maxDepth,depth+1);
+    }
+  }
+
+  function distributeBranches(nodes, total, ctx, route, maxDepth=Infinity, depth=0) {
+    const active = (nodes||[]).filter(n => branchHasRecipient(n,maxDepth,depth,ctx));
+    if (!active.length) return false;
+    const each = total.div(new Fraction(BigInt(active.length),1n));
+    active.forEach(n => distributeNode(n,each,ctx,`${route} / ${n.name}`,maxDepth,depth));
+    return true;
+  }
+
+  function cloneProxy(person, defaults={}) {
+    return normalizePerson(Object.assign({}, person, defaults, {children:(person.children||[])}));
+  }
+
+  function buildParentBranch(root, siblings, side) {
+    const relevant = (siblings||[])
+      .filter(s => !NON_LEGAL_SIBLING_TYPES.has(s.type) && (s.type === 'full' || s.type === side))
+      .map(s => normalizeCategoryTree(s,'sibling',s.type==='full'?'Öz kardeş':(side==='maternal'?'Anne bir kardeş':'Baba bir kardeş'),0));
+    const out = normalizePerson(root,{category:'parent',relation:side==='maternal'?'Anne':'Baba'});
+    if (NON_LEGAL_PARENT_KINSHIP.has(out.kinship)) out.status='not_legal_heir';
+    out.children = relevant;
+    return out;
+  }
+
+  function buildGrandparentBranch(root, relatives, rootKey, sideLabel) {
+    const relevant = (relatives||[])
+      .filter(r => r.type === 'full' || r.type === rootKey)
+      .map(r => normalizeCategoryTree(r,'uncle_aunt',`${sideLabel} ${r.label || 'amca/hala/dayı/teyze'}`,0));
+    const out = normalizePerson(root,{category:'grandparent',relation:root.relation||'Büyükanne/büyükbaba'});
+    if (NON_LEGAL_PARENT_KINSHIP.has(out.kinship)) out.status='not_legal_heir';
+    out.children = relevant;
+    return out;
+  }
+
+  function branchPreview(root, maxDepth, ctx) {
+    const pctx={shares:new Map(),warnings:ctx.warnings,errors:ctx.errors};
+    distributeNode(root,Fraction.one(),pctx,'önizleme',maxDepth,0);
+    return {active:pctx.shares.size>0, shares:pctx.shares};
+  }
+
+  function evaluateParentela2(data, total, ctx, write=true) {
+    const mother = buildParentBranch(data.mother||{name:'Anne',status:'not_legal_heir'},data.siblings||[],'maternal');
+    const father = buildParentBranch(data.father||{name:'Baba',status:'not_legal_heir'},data.siblings||[],'paternal');
+    const ma = branchHasRecipient(mother,Infinity,0,ctx), fa = branchHasRecipient(father,Infinity,0,ctx);
+    if (!ma && !fa) return false;
+    if (!write) return true;
+    if (ma && fa) {
+      distributeNode(mother,total.div(new Fraction(2n)),ctx,'İkinci zümre / anne kolu');
+      distributeNode(father,total.div(new Fraction(2n)),ctx,'İkinci zümre / baba kolu');
+    } else if (ma) distributeNode(mother,total,ctx,'İkinci zümre / yalnız anne kolu');
+    else distributeNode(father,total,ctx,'İkinci zümre / yalnız baba kolu');
+    return true;
+  }
+
+  function evaluateGrandSide(sideData,total,ctx,withSpouse,sideName,write=true,oldLaw=false) {
+    const maxDepth = withSpouse ? (oldLaw ? 0 : 1) : Infinity;
+    const gf = buildGrandparentBranch(sideData.grandfather||{name:`${sideName} büyükbaba`,status:'not_legal_heir'},sideData.parentSiblings||[],'grandfather',sideName);
+    const gm = buildGrandparentBranch(sideData.grandmother||{name:`${sideName} büyükanne`,status:'not_legal_heir'},sideData.parentSiblings||[],'grandmother',sideName);
+    const gfa=branchHasRecipient(gf,maxDepth,0,ctx), gma=branchHasRecipient(gm,maxDepth,0,ctx);
+    if (!gfa && !gma) return false;
+    if (!write) return true;
+    if (gfa && gma) {
+      distributeNode(gf,total.div(new Fraction(2n)),ctx,`Üçüncü zümre / ${sideName} büyükbaba kolu`,maxDepth);
+      distributeNode(gm,total.div(new Fraction(2n)),ctx,`Üçüncü zümre / ${sideName} büyükanne kolu`,maxDepth);
+    } else if (gfa) distributeNode(gf,total,ctx,`Üçüncü zümre / ${sideName} büyükbaba kolu`,maxDepth);
+    else distributeNode(gm,total,ctx,`Üçüncü zümre / ${sideName} büyükanne kolu`,maxDepth);
+    return true;
+  }
+
+  function evaluateParentela3(data,total,ctx,withSpouse,write=true,oldLaw=false) {
+    const paternalActive = evaluateGrandSide(data.paternal||{},Fraction.one(),ctx,withSpouse,'Baba tarafı',false,oldLaw);
+    const maternalActive = evaluateGrandSide(data.maternal||{},Fraction.one(),ctx,withSpouse,'Anne tarafı',false,oldLaw);
+    if (!paternalActive && !maternalActive) return false;
+    if (!write) return true;
+    if (paternalActive && maternalActive) {
+      evaluateGrandSide(data.paternal||{},total.div(new Fraction(2n)),ctx,withSpouse,'Baba tarafı',true,oldLaw);
+      evaluateGrandSide(data.maternal||{},total.div(new Fraction(2n)),ctx,withSpouse,'Anne tarafı',true,oldLaw);
+    } else if (paternalActive) evaluateGrandSide(data.paternal||{},total,ctx,withSpouse,'Baba tarafı',true,oldLaw);
+    else evaluateGrandSide(data.maternal||{},total,ctx,withSpouse,'Anne tarafı',true,oldLaw);
+    return true;
+  }
+
+  function parseDate(s) {
+    if (typeof s!=='string' || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
+    const [y,m,d]=s.split('-').map(Number); const dt=new Date(Date.UTC(y,m-1,d));
+    return dt.getUTCFullYear()===y && dt.getUTCMonth()===m-1 && dt.getUTCDate()===d ? dt : null;
+  }
+  function lawVersion(dateStr) {
+    const d=parseDate(dateStr); if(!d) return {code:'invalid',label:'Geçersiz tarih'};
+    const d1926=parseDate('1926-10-04'), d1990=parseDate('1990-11-23'), d2002=parseDate('2002-01-01'), d2007=parseDate('2007-05-10');
+    if (d < d1926) return {code:'PRE_1926',label:'4.10.1926 öncesi — tarihsel hukuk incelemesi'};
+    if (d < d1990) return {code:'EMK_PRE_1990',label:'743 sayılı Kanun – 4.10.1926–22.11.1990'};
+    if (d < d2002) return {code:'EMK_1990_2001',label:'743 sayılı Kanun – 23.11.1990–31.12.2001'};
+    if (d < d2007) return {code:'TMK_2002_2007',label:'4721 sayılı TMK – 1.1.2002–9.5.2007'};
+    return {code:'TMK_CURRENT',label:'4721 sayılı TMK – 10.5.2007 ve sonrası'};
+  }
+
+  function spouseEligible(spouse,ctx) {
+    if (!spouse || spouse.status==='none' || spouse.status==='not_legal_heir' || spouse.status==='predeceased' || spouse.status==='simultaneous' || spouse.status==='rejected' || spouse.status==='unworthy' || spouse.status==='disinherited' || spouse.status==='renounced_gratuitous' || spouse.status==='renounced_compensated') return false;
+    if (personUncertain(spouse)) { addError(ctx,'SPOUSE_UNCERTAIN','Sağ kalan eşin mirasçılığı kesin değil. Özellikle ölüm tarihinde devam eden boşanma davası TMK m.181/2 kapsamında dosya incelemesi gerektirir.'); return false; }
+    return personEligible(spouse);
+  }
+
+  function spouseExistedAtDeath(spouse) {
+    const status=spouse?.status || 'none';
+    return !new Set(['none','not_legal_heir','predeceased']).has(status);
+  }
+
+  function validateStatusContexts(input,ctx) {
+    const fixed=[input?.spouse,input?.parentela2?.mother,input?.parentela2?.father,
+      input?.parentela3?.paternal?.grandfather,input?.parentela3?.paternal?.grandmother,
+      input?.parentela3?.maternal?.grandfather,input?.parentela3?.maternal?.grandmother].filter(Boolean);
+    fixed.forEach(p=>{
+      if (p.status==='conceived') addError(ctx,'INVALID_CONCEIVED_STATUS',`${p.name || 'Kişi'} bakımından cenin statüsü bu hısımlık konumunda kullanılamaz.`);
+    });
+  }
+
+  function validateDisinheritanceEligibility(input,ctx,version) {
+    const bad=(p,label)=>{
+      if (p?.status==='disinherited') addError(ctx,'INVALID_DISINHERITANCE',`${label}: Mirasçılıktan çıkarma (TMK m.510-511) yalnız saklı paylı mirasçı hakkında uygulanabilir. Bu hısımlık için “mirasçılıktan çıkarıldı” seçimiyle pay hesabı yapılamaz.`);
+    };
+    const walkDesc=(nodes=[])=>nodes.forEach(p=>{ (p.children||[]).forEach(c=>walkDesc([c])); });
+    // Altsoy, ana-baba ve sağ kalan eş saklı paylı mirasçı olabilir. Bu gruplarda seçim ayrıca geçerlilik uyarısıyla değerlendirilir.
+    walkDesc(input.descendants||[]);
+    const siblings=input.parentela2?.siblings||[];
+    const allowSibling=version.code==='TMK_2002_2007';
+    const walkSibling=(p,depth=0)=>{
+      if (p?.status==='disinherited' && !(allowSibling && depth===0)) bad(p,p?.name||'Kardeş/altsoy');
+      (p?.children||[]).forEach(c=>walkSibling(c,depth+1));
+    };
+    siblings.forEach(p=>walkSibling(p,0));
+    const p3=input.parentela3||{};
+    for (const root of [p3.paternal?.grandfather,p3.paternal?.grandmother,p3.maternal?.grandfather,p3.maternal?.grandmother]) bad(root,root?.name||'Büyükanne/büyükbaba');
+    const walkThird=(p)=>{ bad(p,p?.name||'Üçüncü zümre hısmı'); (p?.children||[]).forEach(walkThird); };
+    (p3.paternal?.parentSiblings||[]).forEach(walkThird);
+    (p3.maternal?.parentSiblings||[]).forEach(walkThird);
+  }
+
+  function scanRelationWarnings(input,ctx) {
+    const walk=(nodes=[])=>nodes.forEach(p=>{
+      if (p.type==='stepchild') addWarning(ctx,'STEPCHILD',`${p.name || 'Üvey çocuk'}, sırf üvey çocuk olması nedeniyle yasal mirasçı değildir.`,'info');
+      if (p.type==='filiation_not_established') addWarning(ctx,'FILIATION',`${p.name || 'Çocuk'} bakımından mirasbırakanla soybağı hukuken kurulmadığı seçildi; bu sıfatla yasal mirasçı sayılmadı.`,'warning');
+      if (p.status==='renounced_compensated') addWarning(ctx,'RENOUNCE_DESC',`${p.name || 'Mirasçı'} bakımından karşılık sağlanarak feragatin sözleşmede aksi yoksa altsoyu da etkilediği kabul edildi. Sözleşme kapsamı farklıysa veri düzeltilmelidir.`,'warning');
+      if (p.status==='disinherited') addWarning(ctx,'DISINHERITANCE_ASSUMED',`${p.name || 'Mirasçı'} bakımından mirasçılıktan çıkarma işleminin geçerli olduğu ve mirasbırakanın bu pay için ayrıca farklı bir tasarrufta bulunmadığı kabul edilmiştir. Sebep, tasarruf veya ispat çekişmeliyse sonuç ayrıca değerlendirilmelidir.`,'warning');
+      if (p.status==='unworthy') addWarning(ctx,'UNWORTHINESS_ASSUMED',`${p.name || 'Mirasçı'} bakımından mirastan yoksunluk sebebinin gerçekleştiği ve mirasbırakanın affının bulunmadığı kabul edilerek hesaplama yapılmıştır.`,'warning');
+      (p.children||[]).forEach(c=>walk([c]));
+    });
+    walk(input.descendants||[]);
+    const scanAdoptionDepth=(nodes=[],category='descendant',depth=0)=>nodes.forEach(p=>{
+      if (depth>0 && p?.type==='adopted') addWarning(ctx,'INDIRECT_ADOPTION',`${p.name || 'Kişi'}, başka bir kişinin evlâtlığı olarak kaydedildiğinden asıl mirasbırakana sırf evlât edinme ilişkisiyle mirasçı sayılmadı. Evlât edinme ilişkisi, evlâtlık ile evlât edinen arasında sonuç doğurur (TMK m.500).`,'info');
+      (p?.children||[]).forEach(c=>scanAdoptionDepth([c],category,depth+1));
+    });
+    scanAdoptionDepth(input.descendants||[],'descendant',0);
+    scanAdoptionDepth(input.parentela2?.siblings||[],'sibling',0);
+    scanAdoptionDepth(input.parentela3?.paternal?.parentSiblings||[],'uncle_aunt',0);
+    scanAdoptionDepth(input.parentela3?.maternal?.parentSiblings||[],'uncle_aunt',0);
+    (input.parentela2?.siblings||[]).forEach(p=>{
+      if (p.type==='step') addWarning(ctx,'STEP_SIBLING',`${p.name || 'Üvey kardeş'} ile mirasbırakan arasında ortak anne veya baba bulunmadığı seçildi; bu sıfatla yasal mirasçı değildir.`,'info');
+      if (p.type==='adoptive') addWarning(ctx,'ADOPTIVE_SIBLING',`${p.name || 'Evlat edinme yoluyla kardeş'} evlat edinme ilişkisinden dolayı kardeş sıfatıyla yasal mirasçı değildir.`,'info');
+    });
+    for (const [side,p] of [['anne',input.parentela2?.mother],['baba',input.parentela2?.father]]) {
+      if (p && NON_LEGAL_PARENT_KINSHIP.has(p.kinship)) addWarning(ctx,'NON_BLOOD_PARENT',`${side==='anne'?'Anne':'Baba'} alanında kan hısımlığı bulunmadığı bildirildi; evlât edinen veya üvey ebeveyn, evlâtlığa bu sıfatla yasal mirasçı olmaz (TMK m.500).`,'info');
+    }
+    const grandRoots=[
+      input.parentela3?.paternal?.grandfather,input.parentela3?.paternal?.grandmother,
+      input.parentela3?.maternal?.grandfather,input.parentela3?.maternal?.grandmother
+    ].filter(Boolean);
+    grandRoots.forEach(p=>{
+      if (NON_LEGAL_PARENT_KINSHIP.has(p.kinship)) addWarning(ctx,'NON_BLOOD_GRANDPARENT',`${p.name || 'Büyükanne/büyükbaba'} bakımından kan hısımlığı bulunmadığı bildirildi; evlât edinme veya üvey hısımlık bu yönde yasal mirasçılık doğurmaz.`,'info');
+    });
+    const seen=new Set();
+    const scanStatus=(v)=>{
+      if (!v) return;
+      if (Array.isArray(v)) { v.forEach(scanStatus); return; }
+      if (typeof v!=='object') return;
+      if (v.id && !seen.has(v.id)) {
+        seen.add(v.id);
+        if (v.status==='renounced_compensated') addWarning(ctx,'RENOUNCE_DESC',`${v.name || 'Mirasçı'} bakımından karşılık sağlanarak feragatin sözleşmede aksi yoksa altsoyu da etkilediği kabul edildi. Sözleşme kapsamı farklıysa veri düzeltilmelidir.`,'warning');
+        if (v.status==='disinherited') addWarning(ctx,'DISINHERITANCE_ASSUMED',`${v.name || 'Mirasçı'} bakımından mirasçılıktan çıkarma işleminin geçerli olduğu ve mirasbırakanın bu pay için ayrıca farklı bir tasarrufta bulunmadığı kabul edilmiştir. Sebep, tasarruf veya ispat çekişmeliyse sonuç ayrıca değerlendirilmelidir.`,'warning');
+        if (v.status==='unworthy') addWarning(ctx,'UNWORTHINESS_ASSUMED',`${v.name || 'Mirasçı'} bakımından mirastan yoksunluk sebebinin gerçekleştiği ve mirasbırakanın affının bulunmadığı kabul edilerek hesaplama yapılmıştır.`,'warning');
+      }
+      Object.values(v).forEach(scanStatus);
+    };
+    scanStatus({spouse:input.spouse,parentela2:input.parentela2,parentela3:input.parentela3});
+  }
+
+  function makeCtx() { return {shares:new Map(), warnings:[], errors:[], basis:[], flags:{}, classNo:0, spouseShare:Fraction.zero(), relativeShare:Fraction.zero(), special:null}; }
+
+  function isLegalFirstDegreeDescendant(p) {
+    return !!p && !NON_LEGAL_DESCENDANT_TYPES.has(p.type) && p.status !== 'not_legal_heir';
+  }
+
+  function detectAllDescendantHeirsRejected(desc, hasSpouse) {
+    const cohort=uniquePeople((desc||[]).flatMap(n=>collectOpeningHeirsFromNode(n,Infinity,0)));
+    if (!cohort.length || !cohort.every(p=>p.status==='rejected')) return null;
+    return {
+      code:hasSpouse?'TMK_613':'TMK_612',
+      automatic:true,
+      count:cohort.length,
+      names:cohort.map(p=>p.name||'İsimsiz altsoy')
+    };
+  }
+
+  function collectOpeningHeirsFromNode(node,maxDepth=Infinity,depth=0) {
+    if (!node || personBlocking(node)) return [];
+    if (personUncertain(node)) return [];
+    if (personEligible(node) || node.status==='rejected') return [node];
+    if (personRepresentable(node) && depth<maxDepth) {
+      return (node.children||[]).flatMap(ch=>collectOpeningHeirsFromNode(ch,maxDepth,depth+1));
+    }
+    return [];
+  }
+
+  function uniquePeople(nodes) {
+    const m=new Map();
+    (nodes||[]).forEach((n,i)=>{ if(n) m.set(n.id||`opening_${i}_${n.name||''}`,n); });
+    return [...m.values()];
+  }
+
+  function detectAllClosestRejected(input,spouse,hasSpouse,desc) {
+    const spouseOpening=(hasSpouse || spouse?.status==='rejected') ? [spouse] : [];
+    let classNo=0;
+    let relatives=uniquePeople((desc||[]).flatMap(n=>collectOpeningHeirsFromNode(n,Infinity,0)));
+    if (relatives.length) classNo=1;
+    if (!relatives.length) {
+      const p2=input.parentela2||{};
+      const mother=buildParentBranch(p2.mother||{name:'Anne',status:'not_legal_heir'},p2.siblings||[],'maternal');
+      const father=buildParentBranch(p2.father||{name:'Baba',status:'not_legal_heir'},p2.siblings||[],'paternal');
+      relatives=uniquePeople([...collectOpeningHeirsFromNode(mother),...collectOpeningHeirsFromNode(father)]);
+      if (relatives.length) classNo=2;
+    }
+    if (!relatives.length) {
+      const p3=input.parentela3||{};
+      const spousePresentAtOpening=hasSpouse || spouse?.status==='rejected';
+      const maxDepth=spousePresentAtOpening?1:Infinity;
+      const roots=[];
+      for (const [sideData,sideName] of [[p3.paternal||{},'Baba tarafı'],[p3.maternal||{},'Anne tarafı']]) {
+        roots.push(buildGrandparentBranch(sideData.grandfather||{name:`${sideName} büyükbaba`,status:'not_legal_heir'},sideData.parentSiblings||[],'grandfather',sideName));
+        roots.push(buildGrandparentBranch(sideData.grandmother||{name:`${sideName} büyükanne`,status:'not_legal_heir'},sideData.parentSiblings||[],'grandmother',sideName));
+      }
+      relatives=uniquePeople(roots.flatMap(n=>collectOpeningHeirsFromNode(n,maxDepth,0)));
+      if (relatives.length) classNo=3;
+    }
+    const cohort=uniquePeople([...spouseOpening,...relatives]);
+    if (!cohort.length || !cohort.every(p=>p.status==='rejected')) return null;
+    return {code:'TMK_612',automatic:true,classNo,count:cohort.length,names:cohort.map(p=>p.name||'İsimsiz mirasçı')};
+  }
+
+  function containsStatus(value,status) {
+    if (!value) return false;
+    if (Array.isArray(value)) return value.some(v=>containsStatus(v,status));
+    if (typeof value==='object') return value.status===status || Object.values(value).some(v=>containsStatus(v,status));
+    return false;
+  }
+
+  function calculate(input) {
+    const ctx=makeCtx();
+    const version=lawVersion(input.deathDate);
+    ctx.lawVersion=version;
+    if (version.code==='invalid') addError(ctx,'DATE','Geçerli ölüm tarihi girilmelidir.');
+    const death=parseDate(input.deathDate);
+    const now=new Date();
+    const today=new Date(Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()));
+    if (death && death>today) addError(ctx,'FUTURE_DATE','Ölüm tarihi bugünden ileri bir tarih olamaz.');
+    if (['PRE_1926','EMK_PRE_1990','EMK_1990_2001'].includes(version.code)) addError(ctx,'HISTORICAL_LAW','1.1.2002 öncesi ölümlerde 743 sayılı Kanun ve tarihsel geçiş hükümleri uygulanabileceğinden bu dosyada kesin pay hesabı yapılmadı.');
+    if (input.foreignMode && input.foreignMode!=='none' && input.foreignMode!=='turkish_immovable_only') addError(ctx,'FOREIGN','Yabancılık unsurlu veya karma malvarlıklı mirasta MÖHUK m.20 uyarınca uygulanacak hukuk ayrıştırılmadan tek pay tablosu düzenlenemez.');
+    if (input.foreignMode==='turkish_immovable_only') addWarning(ctx,'FOREIGN_IMMOVABLE','Hesap, yalnız Türkiye’de bulunan taşınmazlar bakımından Türk hukukunun uygulanacağı kabulüyle yapılmıştır; diğer tereke kalemleri bu sonuca dahil değildir.','warning');
+    if (input.caseFlags?.hasMultiRouteSamePerson) addError(ctx,'MULTI_ROUTE_PERSON','Aynı kişinin birden fazla soy kolundan mirasçı olabileceği bildirildi. Farklı kollardan doğan payların aynı kişi üzerinde birleştirilmesi gerekir; kişi eşleştirmesi yapılmadan kesin pay hesabı düzenlenemez.');
+
+    validateInputStructure(input,ctx);
+    validateEstateInput(input,ctx);
+    validateStatusContexts(input,ctx);
+    validateDisinheritanceEligibility(input,ctx,version);
+    scanRelationWarnings(input,ctx);
+    const spouse=normalizePerson(input.spouse||{id:'spouse',name:'Sağ kalan eş',status:'none'},{id:'spouse',category:'spouse',relation:'Sağ kalan eş'});
+    const hasSpouse=spouseEligible(spouse,ctx);
+    if (ctx.errors.length) return finalize(ctx,input);
+
+    const desc=Array.isArray(input.descendants)?input.descendants.map(p=>normalizeCategoryTree(p,'descendant','Altsoy')):[];
+    const automaticAllDescendantsRejected=detectAllDescendantHeirsRejected(desc,hasSpouse);
+    const automaticAllClosestRejected=detectAllClosestRejected(input,spouse,hasSpouse,desc);
+
+    if (input.special?.allClosestHeirsRejected || automaticAllClosestRejected) {
+      if (input.special?.allClosestHeirsRejected && !containsStatus(input,'rejected')) addWarning(ctx,'REJECTION_ASSERTION','En yakın mirasçıların tamamının reddi seçildi; ancak kişi kayıtlarında “reddetti” statüsü bulunmuyor. Pay hesabı kullanıcı beyanı doğrulanmadan yapılmadı.','warning');
+      if (automaticAllClosestRejected) addWarning(ctx,'AUTO_TMK_612',`TMK m.612 hükmü, mirasın açıldığı anda en yakın ${automaticAllClosestRejected.count} yasal mirasçının tamamının mirası reddettiği bildirildiğinden uygulanmıştır.`,'info');
+      ctx.special='TMK_612';
+      ctx.basis.push('En yakın yasal mirasçıların tamamının reddi nedeniyle TMK m.612 uyarınca tereke iflas hükümlerine göre tasfiye edilir; sıradaki zümreye basit pay geçişi yapılmaz.');
+      return finalize(ctx,input);
+    }
+
+    if (input.special?.allDescendantsRejected && !desc.length) {
+      addError(ctx,'REJECTION_NO_DESC','Altsoyun tamamının reddi seçildi; ancak yasal altsoy kaydı girilmedi.');
+      return finalize(ctx,input);
+    }
+
+    if (input.special?.allDescendantsRejected && !automaticAllDescendantsRejected) {
+      addError(ctx,'REJECTION_ASSERTION_MISMATCH','Altsoyun tamamının reddi seçildi; ancak girilen soy ağacında mirasçı olabilecek altsoyun tamamı “reddetti” statüsünde değil. TMK m.613 koşulları doğrulanamadığından pay hesabı yapılmadı.');
+      return finalize(ctx,input);
+    }
+
+    if (automaticAllDescendantsRejected) {
+      if (hasSpouse) {
+        addShare(ctx,spouse,Fraction.one(),'TMK m.613 – mirasçı olabilecek altsoyun tamamının reddi');
+        ctx.classNo=1; ctx.spouseShare=Fraction.one(); ctx.special='TMK_613';
+        ctx.basis.push('Mirasçı olabilecek altsoyun tamamının mirası reddetmesi ve sağ kalan eşin mirası kabul edebilir durumda olması nedeniyle reddedilen altsoy payı sağ kalan eşe geçti (TMK m.613). Reddeden altsoy yerine daha aşağı altsoy geçirilmedi.');
+        addWarning(ctx,'AUTO_TMK_613',`TMK m.613 hükmü, mirasın açıldığı anda mirasçı olabilecek ${automaticAllDescendantsRejected.count} altsoy kaydının tamamının mirası reddettiği bildirildiğinden uygulanmıştır.`,'info');
+        return finalize(ctx,input);
+      }
+      ctx.special='TMK_612';
+      ctx.basis.push('Mirasçı olabilecek altsoyun tamamı mirası reddetti ve mirası kabul eden sağ kalan eş bulunmadı. En yakın yasal mirasçıların toplu reddi nedeniyle TMK m.612 uyarınca resmî tasfiye sonucu doğar; tereke sonraki zümreye doğrudan dağıtılmaz.');
+      addWarning(ctx,'AUTO_TMK_612',`TMK m.612 hükmü, mirasın açıldığı anda mirasçı olabilecek ${automaticAllDescendantsRejected.count} altsoy kaydının tamamının mirası reddettiği bildirildiğinden uygulanmıştır.`,'info');
+      return finalize(ctx,input);
+    }
+
+    const descActive=desc.some(n=>branchHasRecipient(n,Infinity,0,ctx));
+    const oldLaw=false;
+    let p2Active=false,p3Active=false;
+    if (!descActive) p2Active=evaluateParentela2(input.parentela2||{},Fraction.one(),ctx,false);
+    if (!descActive && !p2Active) p3Active=evaluateParentela3(input.parentela3||{},Fraction.one(),ctx,hasSpouse,false,oldLaw);
+
+    if (ctx.errors.length) return finalize(ctx,input);
+
+    if (descActive) {
+      ctx.classNo=1;
+      const s=hasSpouse?new Fraction(1n,4n):Fraction.zero(); const r=Fraction.one().sub(s);
+      if(hasSpouse)addShare(ctx,spouse,s,'TMK m.499/1');
+      distributeBranches(desc,r,ctx,'Birinci zümre / altsoy');
+      ctx.spouseShare=s;ctx.relativeShare=r;
+      ctx.basis.push('Altsoy bulunduğu için sonraki zümreler mirasçı olamaz; çocuk kolları eşit, temsil her derecede yürür (TMK m.495).');
+      if(hasSpouse)ctx.basis.push('Sağ kalan eş altsoy ile birlikte mirasın 1/4’ünü alır (TMK m.499/1).');
+    } else if (p2Active) {
+      ctx.classNo=2;
+      const s=hasSpouse?new Fraction(1n,2n):Fraction.zero(); const r=Fraction.one().sub(s);
+      if(hasSpouse)addShare(ctx,spouse,s,'TMK m.499/2');
+      evaluateParentela2(input.parentela2||{},r,ctx,true);
+      ctx.spouseShare=s;ctx.relativeShare=r;
+      ctx.basis.push('Altsoy bulunmadığı için ana-baba zümresi uygulandı; anne ve baba kolları ayrı, bir taraf boşsa diğer taraf tamamını alır (TMK m.496).');
+      if(hasSpouse)ctx.basis.push('Sağ kalan eş ana-baba zümresi ile birlikte mirasın 1/2’sini alır (TMK m.499/2).');
+    } else if (p3Active) {
+      ctx.classNo=3;
+      const s=hasSpouse?new Fraction(3n,4n):Fraction.zero(); const r=Fraction.one().sub(s);
+      if(hasSpouse)addShare(ctx,spouse,s,'TMK m.499/3');
+      evaluateParentela3(input.parentela3||{},r,ctx,hasSpouse,true,oldLaw);
+      ctx.spouseShare=s;ctx.relativeShare=r;
+      ctx.basis.push('İlk iki zümre bulunmadığı için büyükanne-büyükbaba zümresi uygulandı (TMK m.497).');
+      if(hasSpouse)ctx.basis.push('Sağ kalan eş üçüncü zümre ile birlikte 3/4 pay aldı; temsil büyükanne ve büyükbabanın çocuklarıyla sınırlı uygulandı (TMK m.497/5 ve 499/3).');
+    } else if (hasSpouse) {
+      ctx.classNo=0;addShare(ctx,spouse,Fraction.one(),'TMK m.499/3 son cümle');ctx.spouseShare=Fraction.one();
+      ctx.basis.push('İlk üç zümrede mirasçı bulunmadığı için mirasın tamamı sağ kalan eşe kaldı (TMK m.499).');
+    } else {
+      ctx.classNo=0; const state={id:'state',name:'Türkiye Cumhuriyeti Devleti',status:'alive',category:'state',relation:'Devlet'};
+      addShare(ctx,state,Fraction.one(),'TMK m.501');
+      ctx.basis.push('Sağ kalan eş ve ilk üç zümrede yasal mirasçı bulunmadığı için miras Devlete geçti (TMK m.501).');
+    }
+
+    const hasRejected=containsStatus(input,'rejected');
+    if (hasRejected && !ctx.special && !input.special?.allClosestHeirsRejected && !input.special?.allDescendantsRejected) addWarning(ctx,'REJECTION_CHECK','Mirasın reddi bulunan olayda TMK m.611 uyarınca yeniden dağıtım yapılmıştır. En yakın yasal mirasçıların tamamının reddi söz konusuysa TMK m.612 koşulları ayrıca doğrulanmalıdır.','warning');
+    return finalize(ctx,input);
+  }
+
+  function estateCalc(input) {
+    const e=input.estate||{};
+    const get=k=>parseMoneyCents(e[k])??0n;
+    const grossCents=get('gross'), debtsCents=get('debts'), funeralCents=get('funeral'), inventoryCents=get('inventory'), maintenanceCents=get('maintenance'), giftsCents=get('tenkisAdditions'), insuranceCents=get('insuranceSurrender');
+    const netCents=grossCents-debtsCents-funeralCents-inventoryCents-maintenanceCents;
+    const distributableCents=netCents>0n?netCents:0n;
+    const rawCalculation=netCents+giftsCents+insuranceCents;
+    const calculationCents=rawCalculation>0n?rawCalculation:0n;
+    const hasValues=MONEY_FIELDS.some(k=>e[k]!==null && e[k]!==undefined && String(e[k]).trim()!=='');
+    const out={grossCents,debtsCents,funeralCents,inventoryCents,maintenanceCents,giftsCents,insuranceCents,netCents,distributableCents,calculationCents,isInsolvent:netCents<0n,hasValues};
+    for (const k of ['gross','debts','funeral','inventory','maintenance','gifts','insurance','net','distributable','calculation']) {
+      const c=out[`${k}Cents`]; out[k]=centsToNumber(c); out[`${k}Exact`]=centsToDecimal(c);
+    }
+    return out;
+  }
+
+  function roundedFractionCents(totalCents,fraction) {
+    if (totalCents<=0n || fraction.isZero()) return 0n;
+    const num=totalCents*fraction.n, q=num/fraction.d, r=num%fraction.d;
+    return q + (r*2n>=fraction.d?1n:0n);
+  }
+
+  function allocateFractionCents(totalCents,entries,getFraction,targetFraction=Fraction.one()) {
+    const result=new Map();
+    if (!entries.length || targetFraction.isZero() || totalCents<0n) return result;
+    if (totalCents===0n) { entries.forEach(e=>result.set(e.id,0n)); return result; }
+    const rows=entries.map(e=>{
+      const f=getFraction(e), num=totalCents*f.n, floor=num/f.d, rem=num%f.d;
+      return {e,f,floor,rem,den:f.d};
+    });
+    let used=rows.reduce((a,r)=>a+r.floor,0n);
+    let target=roundedFractionCents(totalCents,targetFraction);
+    let left=target-used;
+    rows.sort((a,b)=>{
+      const lhs=a.rem*b.den, rhs=b.rem*a.den;
+      if (lhs===rhs) return String(a.e.id).localeCompare(String(b.e.id));
+      return lhs>rhs?-1:1;
+    });
+    for (const row of rows) { result.set(row.e.id,row.floor); }
+    let i=0;
+    while (left>0n && rows.length) {
+      const row=rows[i%rows.length]; result.set(row.e.id,(result.get(row.e.id)||0n)+1n); left--; i++;
+    }
+    return result;
+  }
+
+  function reservedMultiplier(entry,ctx) {
+    if (ctx.lawVersion.code==='EMK_1990_2001') {
+      if (entry.category==='descendant') return new Fraction(3n,4n);
+      if (entry.category==='parent') return new Fraction(1n,2n);
+      if (entry.category==='sibling') return new Fraction(1n,4n);
+      if (entry.category==='spouse') return ctx.classNo===1 ? Fraction.one() : new Fraction(1n,2n);
+      return Fraction.zero();
+    }
+    if (entry.category==='descendant') return new Fraction(1n,2n);
+    if (entry.category==='parent') return new Fraction(1n,4n);
+    if (entry.category==='spouse') return (ctx.classNo===1||ctx.classNo===2)?Fraction.one():new Fraction(3n,4n);
+    if (entry.category==='sibling' && ctx.lawVersion.code==='TMK_2002_2007') return new Fraction(1n,8n);
+    return Fraction.zero();
+  }
+
+  function finalize(ctx,input) {
+    const reservedAvailable=ctx.special!=='TMK_613' && ctx.special!=='TMK_612' && ctx.errors.length===0;
+    const entries=[...ctx.shares.values()].map(e=>{
+      const multiplier=reservedAvailable?reservedMultiplier(e,ctx):Fraction.zero(); const reserved=e.share.mul(multiplier);
+      return {id:e.id,name:e.name,category:e.category,relation:e.relation,share:e.share,shareText:e.share.toString(),reservedMultiplier:multiplier,reserved:reserved,reservedText:reserved.toString(),statuses:[...e.statuses],routes:e.routes,conditional:e.conditional};
+    }).sort((a,b)=>b.share.toNumber()-a.share.toNumber() || a.name.localeCompare(b.name,'tr'));
+    const sum=entries.reduce((a,e)=>a.add(e.share),Fraction.zero());
+    const reservedSum=entries.reduce((a,e)=>a.add(e.reserved),Fraction.zero());
+    const estate=estateCalc(input);
+    if (ctx.special!=='TMK_612' && !ctx.errors.length && entries.length && !sum.eq(Fraction.one())) addError(ctx,'SUM',`Pay toplamı 1/1 yerine ${sum.toString()} çıktı. Sonuç kullanılmamalıdır.`);
+    if (reservedSum.gt(Fraction.one())) addError(ctx,'RESERVED_SUM',`Saklı pay toplamı 1/1'i aştı (${reservedSum.toString()}). Sonuç kullanılmamalıdır.`);
+    const marriageAtDeath=spouseExistedAtDeath(input.spouse);
+    const maritalReady=!marriageAtDeath || input.estate?.afterMaritalLiquidation===true;
+    if (estate.hasValues && marriageAtDeath && !maritalReady) addWarning(ctx,'MATRIMONIAL','Ölüm tarihinde evlilik mevcut olduğu hâlde mal rejimi tasfiyesinin tamamlanmadığı bildirildi. Sağ kalan eş mirasçı olmasa veya mirası reddetmiş olsa dahi mal rejiminden doğan alacaklar tereke tutarını etkileyebilir; bu nedenle parasal karşılık gösterilmedi (TMK m.202 vd.; 4722 m.10).','warning');
+    if (estate.isInsolvent) addWarning(ctx,'INSOLVENT_ESTATE',`Tereke aktif-pasif hesabı ${estate.netExact} TL ile negatif çıktı. Hükmen ret (TMK m.605/2), ret hakkı ve resmî tasfiye ayrıca değerlendirilmelidir; pozitif pay tutarı gösterilmedi.`,'warning');
+    if (ctx.special==='TMK_613') addWarning(ctx,'TMK_613_RESERVED_REVIEW','Altsoyun tamamının reddi sonucunda bunların payı sağ kalan eşe geçmiştir. Bu özel durumda saklı pay ve tasarruf edilebilir kısım, reddin ölüme bağlı tasarruflara etkisiyle birlikte ayrıca değerlendirilmelidir; bu bölümde yalnız yasal miras payı gösterilmiştir.','warning');
+
+    const legalAlloc=estate.hasValues&&!estate.isInsolvent&&maritalReady&&!ctx.errors.length&&ctx.special!=='TMK_612'?allocateFractionCents(estate.distributableCents,entries,e=>e.share,Fraction.one()):new Map();
+    const reservedAlloc=estate.hasValues&&maritalReady&&reservedAvailable?allocateFractionCents(estate.calculationCents,entries,e=>e.reserved,reservedSum):new Map();
+    entries.forEach(e=>{
+      const lc=legalAlloc.has(e.id)?legalAlloc.get(e.id):null, rc=reservedAlloc.has(e.id)?reservedAlloc.get(e.id):null;
+      e.legalAmountCents=lc===null?null:String(lc); e.legalAmountExact=lc===null?null:centsToDecimal(lc); e.legalAmount=lc===null?null:centsToNumber(lc);
+      e.reservedAmountCents=rc===null?null:String(rc); e.reservedAmountExact=rc===null?null:centsToDecimal(rc); e.reservedAmount=rc===null?null:centsToNumber(rc);
+    });
+    const disposable=reservedAvailable?Fraction.one().sub(reservedSum):Fraction.zero();
+    const reservedTotalCents=estate.hasValues&&maritalReady&&reservedAvailable?roundedFractionCents(estate.calculationCents,reservedSum):null;
+    const disposableCents=estate.hasValues&&maritalReady&&reservedAvailable?estate.calculationCents-(reservedTotalCents||0n):null;
+    estate.reservedTotalAmountCents=reservedTotalCents===null?null:String(reservedTotalCents);
+    estate.reservedTotalAmountExact=reservedTotalCents===null?null:centsToDecimal(reservedTotalCents);
+    estate.reservedTotalAmount=reservedTotalCents===null?null:centsToNumber(reservedTotalCents);
+    estate.disposableAmountCents=disposableCents===null?null:String(disposableCents);
+    estate.disposableAmountExact=disposableCents===null?null:centsToDecimal(disposableCents);
+    estate.disposableAmount=disposableCents===null?null:centsToNumber(disposableCents);
+
+    const stateEntry=entries.find(e=>e.category==='state');
+    if (stateEntry) addWarning(ctx,'STATE_LIMITED_LIABILITY','Mirasın Devlete geçmesi hâlinde resmî defter re’sen düzenlenir; Devlet, deftere yazılan borçlardan yalnız miras yoluyla edindiği değerler ölçüsünde sorumludur (TMK m.631).','info');
+    else if (entries.length) {
+      addWarning(ctx,'HEIR_DEBT_LIABILITY','Yasal miras payı, tereke borçlarına karşı sorumluluk oranı değildir. Mirasın kabulü, ret, resmî defter ve resmî tasfiye seçenekleri ayrıca değerlendirilmelidir (TMK m.599, 605 vd.).','info');
+      if (entries.length>1) addWarning(ctx,'ESTATE_COMMUNITY','Birden çok mirasçı varsa paylaşmaya kadar tereke üzerinde miras ortaklığı ve elbirliği mülkiyeti doğar; tabloda görülen oran, belirli bir mal üzerinde tek başına tasarruf yetkisi vermez (TMK m.640).','info');
+      if (entries.length>1) addWarning(ctx,'JOINT_DEBT_LIABILITY','Birden çok mirasçı tereke borçlarından kural olarak müteselsilen sorumludur; iç ilişkide pay oranı ayrıca rücu hesabına konu olabilir (TMK m.641 ve 681-682).','info');
+    }
+    if (entries.some(e=>e.conditional)) addWarning(ctx,'PARTITION_POSTPONED_FOR_FETUS','Mirasçı olabilecek cenin varsa paylaşma doğuma kadar ertelenir (TMK m.643).','info');
+
+    const flags=input.caseFlags||{};
+    if (flags.hasWill || flags.hasInheritanceContract) addWarning(ctx,'DISPOSITION_SCOPE','Vasiyetname veya miras sözleşmesi bulunduğu bildirildi. Bu tablo yasal miras paylarını gösterir; atanmış mirasçı, belirli mal bırakma, saklı pay ihlali ve tenkis sonucu ayrıca hesaplanmalıdır.','warning');
+    if (flags.hasLifetimeGifts && !(estate.giftsCents>0n)) addWarning(ctx,'GIFT_REVIEW','Sağlararası kazandırma bulunduğu bildirildi; ancak saklı pay hesabına eklenecek tutar girilmedi. Kazandırmanın denkleştirme veya tenkise tabi olup olmadığı hukuken belirlenmelidir.','warning');
+    if (flags.hasAgriculturalLand) addWarning(ctx,'AGRICULTURAL_LAND','Terekede tarımsal arazi bulunduğu bildirildi. Yasal miras oranı, arazinin aynı oranda fiziksel bölüneceği anlamına gelmez; 5403 sayılı Kanundaki devir ve yeter gelirli arazi kuralları ayrıca uygulanabilir.','warning');
+    if (flags.hasFamilyHome && entries.some(e=>e.category==='spouse')) addWarning(ctx,'FAMILY_HOME','Terekede aile konutu veya ev eşyası bulunduğu bildirildi. Sağ kalan eş koşulları varsa miras hakkına mahsuben özgüleme talep edebilir; bu hak yasal miras oranını kendiliğinden değiştirmez (TMK m.652).','info');
+    if (flags.hasCompanyInterest) addWarning(ctx,'COMPANY_INTEREST','Terekede şirket payı veya ticari işletme bulunduğu bildirildi. Yasal miras oranının yanında şirket sözleşmesi, TTK ve payın geçişine ilişkin özel hükümler ayrıca incelenmelidir.','info');
+    if (flags.hasPotentialNonEstateBenefits) addWarning(ctx,'NON_ESTATE_BENEFIT','Ölüm aylığı, destekten yoksun kalma tazminatı veya belirlenmiş lehtara doğrudan ödenen bazı sigorta bedelleri her durumda tereke kalemi değildir. Brüt malvarlığına eklenmeden önce hakkın kimin kişiliğinde doğduğu ayrıca sınıflandırılmalıdır.','warning');
+    if (flags.hasDisputedTransfers) addWarning(ctx,'DISPUTED_TRANSFER','Mirasbırakanın sağlığındaki devirler bakımından muris muvazaası, tenkis ve denkleştirme farklı hukuki kurumlardır. Bu devirler kendiliğinden terekeye eklenmemiştir; işlem ve belge niteliği ayrıca incelenmelidir.','warning');
+    if (flags.hasIndivisibleAsset) addWarning(ctx,'INDIVISIBLE_ASSET','Terekede bölünmesi güç veya ekonomik bütünlüğü olan mal bulunduğu bildirildi. Yasal pay kesri, malın fiziksel olarak aynı kesirde bölüneceği anlamına gelmez; özgüleme, değer farkı veya satış gündeme gelebilir. Tüm maliklerin miras yoluyla edindiği ve üçüncü kişi malik bulunmayan taşınmazlarda ortaklığın satış suretiyle giderilmesinde, 7589 sayılı Kanunla değişik İİK m.114 uyarınca ilk artırmanın yalnız malik mirasçılar arasında yapılmasına ilişkin özel kural ayrıca dikkate alınmalıdır.','info');
+    if (estate.giftsCents>0n) addWarning(ctx,'TENKIS_ADDITION_ASSUMPTION','Girilen kazandırma tutarı, saklı pay hesabına ekleneceği hukuken belirlenmiş bir değer olarak dikkate alınmıştır. Bu sonuç somut tenkis sırasını veya denkleştirme hesabını içermez.','info');
+    if (estate.insuranceCents>0n) addWarning(ctx,'INSURANCE_VALUE_SCOPE','Girilen hayat sigortası değeri TMK m.509 kapsamındaki satın alma değeri olarak saklı pay hesabına eklenmiştir; poliçe lehtarlığı ile ödenecek bedelin terekeye dahil olup olmadığı ayrıca değerlendirilmelidir.','info');
+    if (flags.suspectedInsolvency && !estate.isInsolvent) addWarning(ctx,'DEEMED_REJECTION_REVIEW','Terekenin borca batık olabileceği bildirildi. Hükmen ret için borca batıklığın ölüm tarihinde açıkça belli veya resmen tespit edilmiş olup olmadığı ayrıca incelenmelidir (TMK m.605/2).','warning');
+    return {
+      ok:ctx.errors.length===0 && ctx.special!=='TMK_612', special:ctx.special, lawVersion:ctx.lawVersion,
+      classNo:ctx.classNo, spouseShare:ctx.spouseShare.toString(), relativeShare:ctx.relativeShare.toString(),
+      shares:entries, sum:sum.toString(), reservedAvailable, reservedSum:reservedSum.toString(), disposable:disposable.toString(),
+      estate, warnings:ctx.warnings, errors:ctx.errors, basis:ctx.basis, version:'2026.09.24'
+    };
+  }
+
+  return {Fraction,calculate,lawVersion,statusLabels,normalizePerson,uid,canonicalMoneyString,parseMoneyCents,centsToDecimal,spouseExistedAtDeath};
+});</script>
+<script>(function(){
+'use strict';
+const E=window.AslnMirasEngine;
+if(!E){throw new Error('Hesaplama bileşeni yüklenemedi.');}
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const state={mode:'citizen',familyGroup:'descendants',simpleEstate:'',input:null,result:null,dirty:false};
+let serial=0;
+
+const STATUS={
+ alive:'Hayatta ve mirasçı', after_death:'Mirasbırakandan sonra öldü', conceived:'Cenin (sağ doğma koşullu)',
+ predeceased:'Mirasbırakandan önce öldü', simultaneous:'Ölüm sırası belirlenemiyor', rejected:'Mirası reddetti',
+ unworthy:'Mirastan yoksun', disinherited:'Mirasçılıktan çıkarıldı', renounced_gratuitous:'Karşılıksız mirastan feragat etti',
+ renounced_compensated:'Karşılık sağlanarak feragat; altsoyu da etkiliyor',
+ renounced_compensated_person_only:'Karşılık sağlanarak feragat; yalnız feragat edeni etkiliyor',
+ not_legal_heir:'Yok / yasal mirasçı değil', gaip:'Gaiplik veya sağlık durumu belirsiz', contested:'Mirasçılık durumu çekişmeli',
+ pending_case:'Mahkeme kararı bekleniyor', pending_divorce:'Ölüm tarihinde boşanma davası devam ediyordu',
+ annulment_pending:'Evliliğin geçerliliği çekişmeli', renunciation_unclear:'Feragat sözleşmesinin kapsamı belirsiz', none:'Sağ kalan eş yok'
+};
+const COMMON_PERSON=['alive','predeceased','rejected','not_legal_heir'];
+const FULL_PERSON=['alive','after_death','conceived','predeceased','simultaneous','rejected','unworthy','disinherited','renounced_gratuitous','renounced_compensated','renounced_compensated_person_only','not_legal_heir','gaip','contested','pending_case','renunciation_unclear'];
+const COMMON_FIXED=['alive','predeceased','rejected','not_legal_heir'];
+const FULL_FIXED=['alive','after_death','predeceased','simultaneous','rejected','unworthy','disinherited','renounced_gratuitous','renounced_compensated','renounced_compensated_person_only','not_legal_heir','gaip','contested','pending_case','renunciation_unclear'];
+const COMMON_SPOUSE=['none','alive','rejected','not_legal_heir'];
+const FULL_SPOUSE=['none','alive','after_death','predeceased','rejected','unworthy','disinherited','renounced_gratuitous','renounced_compensated','renounced_compensated_person_only','not_legal_heir','pending_divorce','annulment_pending','contested'];
+
+function uid(prefix='p'){serial++;return `${prefix}_${Date.now().toString(36)}_${serial}`;}
+function localISODate(){const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10);}
+function no(id,name,relation){return {id,name,status:'not_legal_heir',children:[],relation,kinship:'biological'};}
+function person(name,status='alive',extra={}){return {id:uid(),name,status,children:[],...extra};}
+function emptyInput(){return {
+ deathDate:localISODate(),foreignMode:'none',
+ spouse:{id:'spouse',name:'Sağ kalan eş',status:'none',category:'spouse'},
+ descendants:[],
+ parentela2:{mother:no('mother','Anne','Anne'),father:no('father','Baba','Baba'),siblings:[]},
+ parentela3:{
+  paternal:{grandfather:no('pgf','Baba tarafından büyükbaba','Baba tarafından büyükbaba'),grandmother:no('pgm','Baba tarafından büyükanne','Baba tarafından büyükanne'),parentSiblings:[]},
+  maternal:{grandfather:no('mgf','Anne tarafından büyükbaba','Anne tarafından büyükbaba'),grandmother:no('mgm','Anne tarafından büyükanne','Anne tarafından büyükanne'),parentSiblings:[]}
+ },
+ special:{allClosestHeirsRejected:false,allDescendantsRejected:false},
+ caseFlags:{hasWill:false,hasInheritanceContract:false,hasLifetimeGifts:false,hasAgriculturalLand:false,hasFamilyHome:false,hasCompanyInterest:false,hasPotentialNonEstateBenefits:false,hasDisputedTransfers:false,hasIndivisibleAsset:false,suspectedInsolvency:false,hasMultiRouteSamePerson:false},
+ estate:{gross:'',debts:'',funeral:'',inventory:'',maintenance:'',tenkisAdditions:'',insuranceSurrender:'',afterMaritalLiquidation:true}
+};}
+state.input=emptyInput();
+
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function deepClone(v){return JSON.parse(JSON.stringify(v));}
+function fmtDate(iso){if(!iso)return '—';const [y,m,d]=iso.split('-');return `${d}.${m}.${y}`;}
+function fmtMoneyExact(v){if(v===null||v===undefined||v==='')return '—';const s=String(v);const neg=s.startsWith('-'),a=neg?s.slice(1):s;const [i='0',d='00']=a.split('.');let w;try{w=new Intl.NumberFormat('tr-TR',{maximumFractionDigits:0}).format(BigInt(i));}catch(_){w=i;}return `${neg?'-':''}${w},${(d+'00').slice(0,2)} ₺`;}
+function pct(fr){if(!fr)return '—';const [n,d='1']=String(fr).split('/').map(Number);return `%${new Intl.NumberFormat('tr-TR',{maximumFractionDigits:4}).format(n/d*100)}`;}
+function fractionZero(fr){return !fr||fr==='0'||fr==='0/1';}
+function modeIsLawyer(){return state.mode==='lawyer';}
+
+function markDirty(){
+ if(state.result){state.dirty=true;const bar=$('#staleBar');if(bar)bar.hidden=false;}
+}
+function hasEnteredHeirData(){
+ const i=state.input;
+ return i.descendants.length||i.parentela2.siblings.length||i.parentela3.paternal.parentSiblings.length||i.parentela3.maternal.parentSiblings.length||
+ [i.parentela2.mother,i.parentela2.father,i.parentela3.paternal.grandfather,i.parentela3.paternal.grandmother,i.parentela3.maternal.grandfather,i.parentela3.maternal.grandmother].some(x=>x.status!=='not_legal_heir');
+}
+function clearHeirs(){
+ const fresh=emptyInput();
+ state.input.descendants=[];state.input.parentela2=fresh.parentela2;state.input.parentela3=fresh.parentela3;
+}
+function switchGroup(group){
+ if(group===state.familyGroup)return;
+ if(hasEnteredHeirData()&&!confirm('Mirasçı grubu değiştirildiğinde önceki hısım bilgileri temizlenecektir. Devam edilsin mi?'))return;
+ clearHeirs();state.familyGroup=group;markDirty();renderForm();
+}
+
+function optionList(values,current){
+ const arr=[...values];if(current&&!arr.includes(current))arr.push(current);
+ return arr.map(v=>`<option value="${esc(v)}"${v===current?' selected':''}>${esc(STATUS[v]||v)}</option>`).join('');
+}
+function spouseSelect(){const vals=modeIsLawyer()?FULL_SPOUSE:COMMON_SPOUSE;return `<select id="spouseStatus">${optionList(vals,state.input.spouse.status)}</select>`;}
+function personStatusSelect(p,fixed=false){let vals=modeIsLawyer()?(fixed?FULL_FIXED:FULL_PERSON):(fixed?COMMON_FIXED:COMMON_PERSON);return `<select class="person-status">${optionList(vals,p.status)}</select>`;}
+
+function renderHeaderState(){
+ $$('.mode-switch [data-mode]').forEach(b=>{b.classList.toggle('active',b.dataset.mode===state.mode);b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode));});
+ document.body.dataset.mode=state.mode;
+}
+
+function renderBasic(){
+ const basic=$('#basicFields');
+ basic.innerHTML=`
+ <div class="field-grid basic-grid">
+  <label class="field"><span>Ölüm tarihi <b>*</b></span><input id="deathDate" type="date" value="${esc(state.input.deathDate)}"><small>Uygulanacak hükümler ölüm tarihine göre belirlenir.</small></label>
+  <label class="field"><span>Sağ kalan eş</span>${spouseSelect()}<small>Boşanmış eş yasal mirasçı değildir. Çekişmeli veya özel durumlar Ayrıntılı görünümde ayrıca belirtilebilir.</small></label>
+ </div>
+ <div class="group-question">
+  <span class="field-title">En yakın hısım grubu</span>
+  <div class="group-cards" role="radiogroup" aria-label="En yakın hısım grubu">
+   ${[
+    ['descendants','Çocuk veya torun var','Çocuk kolları ve temsil yoluyla mirasçılık'],
+    ['parents','Çocuk veya torun yok','Anne, baba, kardeş ve yeğenler'],
+    ['grandparents','Daha yakın hısım yok','Büyükanne, büyükbaba ve bunların altsoyu'],
+    ['none','Bu gruplarda hısım yok','Yalnız eş veya Devlet']
+   ].map(([v,t,h])=>`<button type="button" class="group-card${state.familyGroup===v?' selected':''}" data-family="${v}" role="radio" aria-checked="${state.familyGroup===v}"><b>${t}</b><small>${h}</small></button>`).join('')}
+  </div>
+ </div>
+ ${modeIsLawyer()?`
+ <div class="field-grid advanced-grid">
+  <label class="field"><span>Yabancılık unsuru</span><select id="foreignMode">
+   <option value="none"${state.input.foreignMode==='none'?' selected':''}>Yok; Türk hukuku uygulanacak</option>
+   <option value="turkish_immovable_only"${state.input.foreignMode==='turkish_immovable_only'?' selected':''}>Yalnız Türkiye'deki taşınmazlar hesaplanacak</option>
+   <option value="mixed_or_other"${state.input.foreignMode==='mixed_or_other'?' selected':''}>Yabancı kişi, yurt dışı mal veya karma tereke var</option>
+  </select><small>Karma tereke bakımından uygulanacak hukuk ayrıştırılmadan tek pay tablosu düzenlenmez.</small></label>
+  <label class="field"><span>Mal rejimi tasfiyesi</span><select id="maritalDone"><option value="yes"${state.input.estate.afterMaritalLiquidation?' selected':''}>Tereke tutarı tasfiyeden sonra belirlendi</option><option value="no"${!state.input.estate.afterMaritalLiquidation?' selected':''}>Tasfiye yapılmadı veya bilinmiyor</option></select><small>Sağ kalan eşin mal rejiminden doğan alacağı, miras payından ayrıdır.</small></label>
+ </div>`:''}`;
+ $('#deathDate').addEventListener('change',e=>{state.input.deathDate=e.target.value;markDirty();});
+ $('#spouseStatus').addEventListener('change',e=>{state.input.spouse.status=e.target.value;markDirty();renderEstate();});
+ $$('[data-family]',basic).forEach(b=>b.addEventListener('click',()=>switchGroup(b.dataset.family)));
+ $('#foreignMode')?.addEventListener('change',e=>{state.input.foreignMode=e.target.value;markDirty();});
+ $('#maritalDone')?.addEventListener('change',e=>{state.input.estate.afterMaritalLiquidation=e.target.value==='yes';markDirty();});
+}
+
+function rootDescTypeOptions(depth){
+ if(depth===0){
+  const a=[['biological','Çocuk / kan hısımı'],['adopted','Mirasbırakanın evlatlığı'],['stepchild','Üvey çocuk; ortak soybağı yok']];
+  if(modeIsLawyer())a.splice(2,0,['adopted_elsewhere','Başka ailece evlat edinilmiş biyolojik çocuk'],['filiation_established','Soybağı hukuken kurulmuş çocuk'],['filiation_not_established','Soybağı hukuken kurulmamış kişi']);
+  return a;
+ }
+ const a=[['biological','Kan hısımı altsoy']];
+ if(modeIsLawyer())a.push(['filiation_established','Soybağı hukuken kurulmuş altsoy'],['adopted_elsewhere','Başka ailece evlat edinilmiş biyolojik altsoy'],['adopted','Bu kişinin evlatlığı'],['stepchild','Üvey altsoy'],['filiation_not_established','Soybağı kurulmamış kişi']);
+ return a;
+}
+function siblingTypeOptions(){const a=[['full','Öz kardeş'],['maternal','Anne bir kardeş'],['paternal','Baba bir kardeş'],['step','Ortak anne veya baba bulunmayan üvey kardeş']];if(modeIsLawyer())a.push(['adoptive','Yalnız evlat edinme ilişkisiyle kardeş']);return a;}
+function uncleTypeOptions(){return [['full','Her iki büyük ebeveynin ortak çocuğu'],['grandfather','Yalnız büyükbabanın çocuğu'],['grandmother','Yalnız büyükannenin çocuğu']];}
+function typeSelect(p,opts){return `<select class="person-type">${opts.map(([v,l])=>`<option value="${v}"${p.type===v?' selected':''}>${esc(l)}</option>`).join('')}</select>`;}
+
+function personCard(p,list,index,opts={},depth=0){
+ const el=document.createElement('article');el.className='person-card';el.style.setProperty('--level',depth);
+ const tOpts=opts.typeOptions?opts.typeOptions(depth):null;
+ el.innerHTML=`
+ <div class="person-row">
+  <span class="branch-line" aria-hidden="true"></span>
+  <label class="compact grow"><span>${esc(depth?opts.childNameLabel||'Altsoyun adı':opts.nameLabel||'Adı')}</span><input class="person-name" value="${esc(p.name)}" placeholder="Ad veya açıklama"></label>
+  ${tOpts?`<label class="compact relation"><span>Hısımlık</span>${typeSelect(p,tOpts)}</label>`:''}
+  <label class="compact status"><span>Durumu</span>${personStatusSelect(p,false)}</label>
+  <button type="button" class="remove-btn" title="Kaldır" aria-label="Kişiyi kaldır">×</button>
+ </div>
+ <div class="person-foot">
+  <button type="button" class="subtle add-child">+ Altsoy ekle</button>
+  <small>${esc(opts.childHint||'Bu kişi mirasçı olamıyorsa varsa altsoyu temsil yoluyla değerlendirilebilir.')}</small>
+ </div>
+ <div class="children"></div>`;
+ $('.person-name',el).addEventListener('input',e=>{p.name=e.target.value.trim()||'İsimsiz kişi';markDirty();});
+ $('.person-status',el).addEventListener('change',e=>{p.status=e.target.value;markDirty();renderHeirs();});
+ $('.person-type',el)?.addEventListener('change',e=>{p.type=e.target.value;markDirty();});
+ $('.remove-btn',el).addEventListener('click',()=>{list.splice(index,1);markDirty();renderHeirs();});
+ $('.add-child',el).addEventListener('click',()=>{p.children=p.children||[];p.children.push(person(`Altsoy ${p.children.length+1}`,'alive',{type:'biological'}));markDirty();renderHeirs();});
+ const ch=$('.children',el);(p.children||[]).forEach((c,ci)=>ch.appendChild(personCard(c,p.children,ci,{...opts,typeOptions:rootDescTypeOptions,nameLabel:'Altsoyun adı'},depth+1)));
+ return el;
+}
+function fixedPersonRow(p,label,help,kinship=false){
+ const el=document.createElement('div');el.className='fixed-person';
+ el.innerHTML=`<div class="fixed-copy"><b>${esc(label)}</b><small>${esc(help)}</small></div>
+ ${modeIsLawyer()&&kinship?`<label class="compact relation"><span>Hukuki bağ</span><select class="kinship"><option value="biological"${(p.kinship||'biological')==='biological'?' selected':''}>Kan hısımlığı / soybağı var</option><option value="adoptive_parent"${p.kinship==='adoptive_parent'?' selected':''}>Evlat edinen ebeveyn</option><option value="step_parent"${p.kinship==='step_parent'?' selected':''}>Üvey ebeveyn</option><option value="no_filiation"${p.kinship==='no_filiation'?' selected':''}>Soybağı yok</option></select></label>`:''}
+ <label class="compact fixed-status"><span>Durumu</span>${personStatusSelect(p,true)}</label>`;
+ $('.person-status',el).addEventListener('change',e=>{p.status=e.target.value;markDirty();renderHeirs();});
+ $('.kinship',el)?.addEventListener('change',e=>{p.kinship=e.target.value;markDirty();});
+ return el;
+}
+function emptyList(text){return `<div class="empty-list">${esc(text)}</div>`;}
+
+function renderDescendants(container){
+ container.innerHTML=`<div class="section-heading"><div><span class="step-no">2</span><h2>Çocuklar ve torunlar</h2><p>Her çocuk ayrı bir kol oluşturur. Önceden ölen veya mirası reddeden kişinin varsa altsoyu aynı kol içinde değerlendirilir.</p></div><button type="button" class="secondary" id="addDesc">+ Çocuk ekle</button></div><div id="descList"></div>`;
+ const list=$('#descList');if(!state.input.descendants.length)list.innerHTML=emptyList('Henüz çocuk veya altsoy eklenmedi.');
+ state.input.descendants.forEach((p,i)=>list.appendChild(personCard(p,state.input.descendants,i,{nameLabel:'Çocuk / kol adı',childNameLabel:'Altsoyun adı',typeOptions:rootDescTypeOptions,childHint:'Önceden ölüm, ret, yoksunluk veya çıkarma hâlinde altsoy bilgisi önem taşır.'},0)));
+ $('#addDesc').addEventListener('click',()=>{state.input.descendants.push(person(`Çocuk ${state.input.descendants.length+1}`,'alive',{type:'biological'}));markDirty();renderHeirs();});
+}
+function renderParents(container){
+ container.innerHTML=`<div class="section-heading"><div><span class="step-no">2</span><h2>Anne, baba ve kardeşler</h2><p>Anne ve baba kolları ayrı değerlendirilir. Öz kardeş iki koldan; anne bir veya baba bir kardeş yalnız ilgili koldan pay alabilir.</p></div><button type="button" class="secondary" id="addSibling">+ Kardeş ekle</button></div><div id="parentFixed" class="fixed-grid"></div><div class="subheading"><h3>Kardeşler ve altsoyları</h3></div><div id="siblingList"></div>`;
+ const fixed=$('#parentFixed');fixed.appendChild(fixedPersonRow(state.input.parentela2.mother,'Anne','Hayattaysa anne kolundaki kardeşler mirasçı olmaz.',true));fixed.appendChild(fixedPersonRow(state.input.parentela2.father,'Baba','Hayattaysa baba kolundaki kardeşler mirasçı olmaz.',true));
+ const list=$('#siblingList');if(!state.input.parentela2.siblings.length)list.innerHTML=emptyList('Henüz kardeş eklenmedi.');
+ state.input.parentela2.siblings.forEach((p,i)=>list.appendChild(personCard(p,state.input.parentela2.siblings,i,{nameLabel:'Kardeşin adı',childNameLabel:'Yeğen / altsoy adı',typeOptions:()=>siblingTypeOptions(),childHint:'Kardeş mirasçı olamıyorsa varsa çocukları ve daha aşağı altsoyu temsil yoluyla gelebilir.'},0)));
+ $('#addSibling').addEventListener('click',()=>{if(state.input.parentela2.mother.status==='not_legal_heir'&&state.input.parentela2.father.status==='not_legal_heir'){state.input.parentela2.mother.status='predeceased';state.input.parentela2.father.status='predeceased';}state.input.parentela2.siblings.push(person(`Kardeş ${state.input.parentela2.siblings.length+1}`,'alive',{type:'full'}));markDirty();renderHeirs();});
+}
+function grandSideBlock(side,key,title){
+ const wrap=document.createElement('section');wrap.className='grand-side';wrap.innerHTML=`<div class="subheading"><h3>${esc(title)}</h3><button type="button" class="secondary add-relative">+ Hısım ekle</button></div><div class="fixed-grid grand-fixed"></div><div class="relative-list"></div>`;
+ const fixed=$('.grand-fixed',wrap);fixed.appendChild(fixedPersonRow(side.grandfather,'Büyükbaba','Hayatta değilse kendi çocukları aynı kökten gelebilir.',true));fixed.appendChild(fixedPersonRow(side.grandmother,'Büyükanne','Hayatta değilse kendi çocukları aynı kökten gelebilir.',true));
+ const list=$('.relative-list',wrap);if(!side.parentSiblings.length)list.innerHTML=emptyList('Bu tarafta amca, hala, dayı veya teyze eklenmedi.');
+ side.parentSiblings.forEach((p,i)=>list.appendChild(personCard(p,side.parentSiblings,i,{nameLabel:'Amca / hala / dayı / teyze',childNameLabel:'Bunların altsoyu',typeOptions:()=>uncleTypeOptions(),childHint:'Sağ kalan eş varsa temsil bu kişilerin çocuklarından daha aşağıya ilerlemez.'},0)));
+ $('.add-relative',wrap).addEventListener('click',()=>{if(side.grandfather.status==='not_legal_heir'&&side.grandmother.status==='not_legal_heir'){side.grandfather.status='predeceased';side.grandmother.status='predeceased';}side.parentSiblings.push(person(`${title} hısım ${side.parentSiblings.length+1}`,'alive',{type:'full'}));markDirty();renderHeirs();});
+ return wrap;
+}
+function renderGrandparents(container){
+ container.innerHTML=`<div class="section-heading"><div><span class="step-no">2</span><h2>Büyükanne, büyükbaba ve bunların altsoyu</h2><p>Bu bölüm yalnız çocuk, torun, anne, baba, kardeş veya bunların altsoyu bulunmadığında kullanılır.</p></div></div><div id="grandSides" class="grand-sides"></div>`;
+ const gs=$('#grandSides');gs.appendChild(grandSideBlock(state.input.parentela3.paternal,'paternal','Baba tarafı'));gs.appendChild(grandSideBlock(state.input.parentela3.maternal,'maternal','Anne tarafı'));
+}
+function renderNone(container){container.innerHTML=`<div class="section-heading"><div><span class="step-no">2</span><h2>Başka yasal hısım bulunmuyor</h2><p>Sağ kalan eş varsa mirasın tamamı eşe; eş de yoksa miras Devlete geçer. Bu seçim, ilk üç zümrede gerçekten mirasçı bulunmadığı kabulüyle değerlendirilir.</p></div></div><div class="notice neutral"><b>Kontrol:</b> Çocuk ve torunlar; anne, baba, kardeş ve yeğenler; büyükanne, büyükbaba ile bunların kanunda belirtilen altsoyları bulunmuyorsa bu seçeneği kullanın.</div>`;}
+function renderHeirs(){const c=$('#heirSection');c.innerHTML='';if(state.familyGroup==='descendants')renderDescendants(c);else if(state.familyGroup==='parents')renderParents(c);else if(state.familyGroup==='grandparents')renderGrandparents(c);else renderNone(c);}
+
+function renderEstate(){
+ const c=$('#estateSection');
+ if(!modeIsLawyer()){
+  c.innerHTML=`<div class="section-heading"><div><span class="step-no">3</span><h2>Tereke tutarı <small>isteğe bağlı</small></h2><p>Yalnız oran hesabı için boş bırakabilirsiniz.</p></div></div><label class="field wide"><span>Paylaştırmaya esas net tereke</span><input id="simpleEstate" type="text" inputmode="decimal" value="${esc(state.simpleEstate)}" placeholder="Ör. 2.500.000,00"><small>Bu tutar; varsa mal rejimi tasfiyesi yapıldıktan, tereke borçları ve giderler düşüldükten sonraki net tutar olmalıdır.</small></label>`;
+  $('#simpleEstate').addEventListener('input',e=>{state.simpleEstate=e.target.value;markDirty();});return;
+ }
+ const e=state.input.estate;
+ const fields=[
+  ['gross','Ölüm günündeki brüt malvarlığı','Taşınır, taşınmaz, para ve alacakların toplamı'],['debts','Mirasbırakanın borçları','Terekeden indirilecek borçlar'],['funeral','Cenaze giderleri','TMK m.507'],['inventory','Mühürleme ve tereke yazımı giderleri','TMK m.507'],['maintenance','Üç aylık bakım ve geçim gideri','TMK m.507'],['tenkisAdditions','Tenkis hesabına eklenecek kazandırmalar','Yalnız hukuken tenkise tabi olduğu belirlenen değerler'],['insuranceSurrender','Hayat sigortasının satın alma değeri','TMK m.509 kapsamındaki değer']
+ ];
+ c.innerHTML=`<div class="section-heading"><div><span class="step-no">3</span><h2>Tereke ve saklı pay hesabı <small>isteğe bağlı</small></h2><p>Brüt değer, borç ve kanuni giderler ayrı girilir. Sonuçta net tereke ile saklı pay hesabına esas değer ayrıca gösterilir.</p></div></div><div class="field-grid estate-grid">${fields.map(([k,l,h])=>`<label class="field"><span>${esc(l)}</span><input type="text" inputmode="decimal" data-estate="${k}" value="${esc(e[k])}" placeholder="0,00"><small>${esc(h)}</small></label>`).join('')}</div>`;
+ $$('[data-estate]',c).forEach(inp=>inp.addEventListener('input',ev=>{e[ev.target.dataset.estate]=ev.target.value;markDirty();}));
+}
+
+function flagRows(){
+ const all=[
+  ['hasWill','Vasiyetname var'],['hasInheritanceContract','Miras sözleşmesi var'],['hasLifetimeGifts','Sağlararası bağış veya karşılıksız kazandırma var'],['hasAgriculturalLand','Terekede tarım arazisi var'],['hasFamilyHome','Aile konutu veya ev eşyası var'],['hasCompanyInterest','Şirket payı veya ticari işletme var'],['hasPotentialNonEstateBenefits','Ölüm aylığı, tazminat veya sigorta ödemesi var'],['hasDisputedTransfers','Muris muvazaası veya tartışmalı devir iddiası var'],['hasIndivisibleAsset','Bölünmesi güç mal var'],['suspectedInsolvency','Terekenin borca batık olma ihtimali var'],['hasMultiRouteSamePerson','Aynı kişi birden fazla soy kolundan gelebilir']
+ ];
+ return modeIsLawyer()?all:all.filter(([k])=>['hasWill','hasInheritanceContract','hasLifetimeGifts','hasAgriculturalLand','hasFamilyHome','suspectedInsolvency'].includes(k));
+}
+function renderSpecial(){
+ const c=$('#specialSection'),f=state.input.caseFlags;
+ c.innerHTML=`<details class="special-details"><summary><span>Dosyada özel bir durum var mı?</span><small>Yalnız varsa işaretleyin</small></summary><div class="special-body">
+ ${!modeIsLawyer()?`<label class="field"><span>Yabancılık unsuru</span><select id="foreignModeSimple"><option value="none"${state.input.foreignMode==='none'?' selected':''}>Yok</option><option value="turkish_immovable_only"${state.input.foreignMode==='turkish_immovable_only'?' selected':''}>Yalnız Türkiye'deki taşınmazlar hesaplanacak</option><option value="mixed_or_other"${state.input.foreignMode==='mixed_or_other'?' selected':''}>Yabancı kişi, yurt dışı mal veya karma tereke var</option></select></label>`:''}
+ <div class="flag-grid">${flagRows().map(([k,l])=>`<label class="flag"><input type="checkbox" data-flag="${k}"${f[k]?' checked':''}><span>${esc(l)}</span></label>`).join('')}</div>
+ <p class="fine-print">Bu seçimler yasal miras oranını kendiliğinden değiştirmez. Sonuç bölümünde ayrıca incelenmesi gereken hususlar gösterilir.</p></div></details>`;
+ $('#foreignModeSimple')?.addEventListener('change',e=>{state.input.foreignMode=e.target.value;markDirty();});
+ $$('[data-flag]',c).forEach(inp=>inp.addEventListener('change',e=>{f[e.target.dataset.flag]=e.target.checked;markDirty();}));
+}
+
+function renderForm(){renderHeaderState();renderBasic();renderHeirs();renderEstate();renderSpecial();}
+
+function groupHasData(){
+ const i=state.input;
+ if(state.familyGroup==='descendants')return i.descendants.length>0;
+ if(state.familyGroup==='parents')return i.parentela2.mother.status!=='not_legal_heir'||i.parentela2.father.status!=='not_legal_heir'||i.parentela2.siblings.length>0;
+ if(state.familyGroup==='grandparents')return [i.parentela3.paternal.grandfather,i.parentela3.paternal.grandmother,i.parentela3.maternal.grandfather,i.parentela3.maternal.grandmother].some(x=>x.status!=='not_legal_heir')||i.parentela3.paternal.parentSiblings.length||i.parentela3.maternal.parentSiblings.length;
+ return true;
+}
+function preparedInput(){
+ const x=deepClone(state.input),fresh=emptyInput();
+ if(state.familyGroup==='descendants'){x.parentela2=fresh.parentela2;x.parentela3=fresh.parentela3;}
+ else if(state.familyGroup==='parents'){x.descendants=[];x.parentela3=fresh.parentela3;}
+ else if(state.familyGroup==='grandparents'){x.descendants=[];x.parentela2=fresh.parentela2;}
+ else{x.descendants=[];x.parentela2=fresh.parentela2;x.parentela3=fresh.parentela3;}
+ x.special={allClosestHeirsRejected:false,allDescendantsRejected:false};
+ if(!modeIsLawyer())x.estate={gross:state.simpleEstate,debts:'',funeral:'',inventory:'',maintenance:'',tenkisAdditions:'',insuranceSurrender:'',afterMaritalLiquidation:true};
+ return x;
+}
+function validateUI(){
+ const msgs=[];if(!state.input.deathDate)msgs.push('Ölüm tarihini girin.');if(!groupHasData())msgs.push('Seçilen hısım grubuna en az bir kişi veya kol bilgisi ekleyin.');return msgs;
+}
+function calculate(){
+ const uiErrors=validateUI();
+ if(uiErrors.length){renderUIErrors(uiErrors);return;}
+ const input=preparedInput();state.result=E.calculate(input);state.dirty=false;renderResult(input);$('#resultPanel').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function renderUIErrors(messages){
+ const panel=$('#resultPanel');panel.innerHTML=`<div class="result-head error"><span>Bilgi eksik</span><h2>Hesaplama yapılamadı</h2></div><div class="result-body"><div class="message error"><b>Lütfen aşağıdaki alanları tamamlayın:</b><ul>${messages.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
+}
+function classLabel(r){if(r.classNo===1)return 'Altsoy';if(r.classNo===2)return 'Anne-baba zümresi';if(r.classNo===3)return 'Büyükanne-büyükbaba zümresi';if(r.shares.some(x=>x.category==='state'))return 'Devlet';if(r.shares.some(x=>x.category==='spouse'))return 'Sağ kalan eş';return '—';}
+function resultTable(r){
+ const hasAmount=r.shares.some(x=>x.legalAmountExact!==null);
+ return `<div class="table-wrap"><table class="result-table"><thead><tr><th>Mirasçı</th><th>Yasal pay</th><th>Oran</th>${hasAmount?'<th>Tutar</th>':''}</tr></thead><tbody>${r.shares.map(s=>`<tr><td><b>${esc(s.name)}</b><small>${esc(s.relation||'')}</small>${s.conditional?'<em>Sağ doğma koşullu</em>':''}</td><td><strong>${esc(s.shareText)}</strong></td><td>${esc(pct(s.shareText))}</td>${hasAmount?`<td>${fmtMoneyExact(s.legalAmountExact)}</td>`:''}</tr>`).join('')}</tbody></table></div>`;
+}
+function reservedBlock(r){
+ if(!r.reservedAvailable)return '';
+ const rows=r.shares.filter(s=>!fractionZero(s.reservedText));if(!rows.length)return `<details class="result-details"><summary>Saklı pay ve tasarruf edilebilir kısım</summary><div class="detail-body"><p>Bu mirasçı grubu bakımından saklı pay bulunmamaktadır. Mirasbırakan, diğer sınırlamalar saklı kalmak üzere terekenin tamamında tasarruf edebilir.</p></div></details>`;
+ const hasAmount=rows.some(x=>x.reservedAmountExact!==null);
+ return `<details class="result-details"><summary>Saklı pay ve tasarruf edilebilir kısım</summary><div class="detail-body"><p class="fine-print"><b>Saklı pay</b>, kanunun belirli mirasçılar için koruduğu asgari miras payıdır. Aşağıdaki oranlar, girilen aile bilgilerine göre hesaplanmıştır.</p><div class="table-wrap"><table class="mini-table"><thead><tr><th>Mirasçı</th><th>Yasal pay</th><th>Saklı pay</th>${hasAmount?'<th>Tutar</th>':''}</tr></thead><tbody>${rows.map(s=>`<tr><td>${esc(s.name)}</td><td>${esc(s.shareText)}</td><td>${esc(s.reservedText)}</td>${hasAmount?`<td>${fmtMoneyExact(s.reservedAmountExact)}</td>`:''}</tr>`).join('')}</tbody></table></div><div class="summary-line"><span>Toplam saklı pay</span><b>${esc(r.reservedSum)} (${esc(pct(r.reservedSum))})</b></div><div class="summary-line"><span>Tasarruf edilebilir kısım</span><b>${esc(r.disposable)} (${esc(pct(r.disposable))})${r.estate.disposableAmountExact!==null?` · ${fmtMoneyExact(r.estate.disposableAmountExact)}`:''}</b></div><p class="fine-print">Bu bölüm saklı payın genel hesabını gösterir. Tenkis sırası, kazandırmaların niteliği ve denkleştirme somut olaya göre ayrıca değerlendirilir.</p></div></details>`;
+}
+function estateBlock(r){if(!r.estate.hasValues)return '';
+ return `<details class="result-details"><summary>Tereke hesabının özeti</summary><div class="detail-body estate-summary"><div><span>Brüt malvarlığı</span><b>${fmtMoneyExact(r.estate.grossExact)}</b></div><div><span>Toplam borç ve giderler</span><b>${fmtMoneyExact(E.centsToDecimal(BigInt(r.estate.debtsCents)+BigInt(r.estate.funeralCents)+BigInt(r.estate.inventoryCents)+BigInt(r.estate.maintenanceCents)))}</b></div><div><span>Net tereke</span><b>${fmtMoneyExact(r.estate.netExact)}</b></div>${modeIsLawyer()?`<div><span>Saklı pay hesabına esas değer</span><b>${fmtMoneyExact(r.estate.calculationExact)}</b></div>`:''}</div></details>`;}
+function warningBlocks(r){
+ const warnings=r.warnings.filter(w=>w.severity!=='info');const infos=r.warnings.filter(w=>w.severity==='info');
+ let out='';if(warnings.length)out+=`<div class="messages">${warnings.map(w=>`<div class="message warning">${esc(w.message)}</div>`).join('')}</div>`;
+ if(infos.length)out+=`<details class="result-details"><summary>Hukuki açıklamalar</summary><div class="detail-body messages compact-messages">${infos.map(w=>`<div class="message info">${esc(w.message)}</div>`).join('')}</div></details>`;
+ return out;
+}
+function sourceBlock(r){
+ const basis=r.basis.length?`<ul>${r.basis.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'<p>Hukuki dayanak bilgisi bulunmuyor.</p>';
+ return `<details class="result-details"><summary>Mevzuat ve kaynaklar</summary><div class="detail-body">${basis}<div class="source-links"><a href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D21/Y2/T1/KanunMetni/1cbadba3-a22d-43fd-a5e4-dfb3b69b962b.html" target="_blank" rel="noopener">4721 sayılı Türk Medenî Kanunu</a><a href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D22/Y5/T2/KanunMetni/f111ed47-b656-4e4f-8504-2497d07c7d38.html" target="_blank" rel="noopener">5650 sayılı Değişiklik Kanunu</a><a href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D21/Y2/T1/KanunMetni/367385ed-ee36-4e6f-a373-945cd3edbbdc.html" target="_blank" rel="noopener">4722 sayılı Yürürlük Kanunu</a><a href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D23/Y2/T1/KanunMetni/d73bf6b0-c947-465e-9532-071d580f9be5.html" target="_blank" rel="noopener">5718 sayılı MÖHUK</a><a href="https://cdn.tbmm.gov.tr/KKBSPublicFile/D28/Y4/KanunMetni/b074aa2a-c1eb-4bd5-b5d9-4b61a9ac3924.htm" target="_blank" rel="noopener">7589 sayılı Kanun (2026 paylaşım/satış değişiklikleri)</a></div></div></details>`;
+}
+function special612(r){return `<div class="result-head special"><span>Mirasın reddi</span><h2>Resmî tasfiye gerekir</h2><p>En yakın yasal mirasçıların tamamının mirası reddettiği bildirildi.</p></div><div class="result-body"><div class="message warning">TMK m.612 uyarınca tereke sulh mahkemesince iflâs hükümlerine göre tasfiye edilir. Miras, sıradaki zümreye doğrudan paylaştırılmaz. Tasfiye sonunda artan değer bulunursa hak sahiplerine, reddetmemişler gibi verilir.</div>${sourceBlock(r)}</div>`;}
+function renderResult(input){
+ const r=state.result,panel=$('#resultPanel');if(!r)return;
+ if(r.special==='TMK_612'&&!r.errors.length){panel.innerHTML=special612(r);return;}
+ if(r.errors.length){panel.innerHTML=`<div class="result-head error"><span>Ek inceleme gerekiyor</span><h2>Pay hesabı tamamlanamadı</h2><p>Seçilen durumlarda pay oranı yalnız bu bilgilerle belirlenemiyor. Aşağıdaki hususların ayrıca incelenmesi gerekir.</p></div><div class="result-body"><div class="messages">${r.errors.map(e=>`<div class="message error">${esc(e.message)}</div>`).join('')}</div>${warningBlocks(r)}${sourceBlock(r)}</div>`;return;}
+ const amountNote=r.estate.hasValues&&!r.shares.some(x=>x.legalAmountExact!==null)?'<div class="message warning">Pay oranları hesaplandı; ancak tereke tutarının kesinleşmesi için sonuçta belirtilen hususlar tamamlanmadan parasal karşılık gösterilmedi.</div>':'';
+ panel.innerHTML=`<div id="staleBar" class="stale" hidden>Bilgiler değişti. Sonucu yenilemek için tekrar hesaplayın.</div><div class="result-head success"><span>Sonuç</span><h2>Yasal miras payları</h2><p>${esc(fmtDate(input.deathDate))} tarihli ölüm esas alınmıştır.</p><div class="result-meta"><b>${esc(classLabel(r))}</b><span>${esc(r.lawVersion.label)}</span></div></div><div class="result-body">${amountNote}${resultTable(r)}${warningBlocks(r)}${estateBlock(r)}${reservedBlock(r)}${sourceBlock(r)}<div class="result-actions"><button type="button" class="secondary" id="copyResult">Sonucu kopyala</button><button type="button" class="primary small" id="printResult">Yazdır</button></div><p class="legal-note">Bu sonuç, yalnız girilen bilgiler esas alınarak hazırlanmış yasal miras ve saklı pay ön hesabıdır. Mirasçılık belgesi yerine geçmez.</p></div>`;
+ $('#copyResult').addEventListener('click',copyResult);$('#printResult').addEventListener('click',()=>window.print());
+}
+function textSummary(){
+ const r=state.result;if(!r||r.errors.length||r.special==='TMK_612')return 'Hesap sonucu düzenlenemedi.';
+ const lines=['ASLAN HUKUK – Miras Payı Hesabı',`Ölüm tarihi: ${fmtDate(state.input.deathDate)}`,`Uygulanan grup: ${classLabel(r)}`,''];
+ r.shares.forEach(s=>lines.push(`${s.name}: ${s.shareText} (${pct(s.shareText)})${s.legalAmountExact!==null?' – '+fmtMoneyExact(s.legalAmountExact):''}`));
+ lines.push('',`Toplam pay: ${r.sum}`);if(r.reservedAvailable)lines.push(`Toplam saklı pay: ${r.reservedSum}`,`Tasarruf edilebilir kısım: ${r.disposable}`);lines.push('','Not: Bu çıktı mirasçılık belgesi yerine geçmez.');return lines.join('\n');
+}
+async function copyResult(){const t=textSummary();try{await navigator.clipboard.writeText(t);toast('Sonuç panoya kopyalandı.');}catch(_){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();toast('Sonuç panoya kopyalandı.');}}
+function toast(text){const el=$('#toast');el.textContent=text;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2200);}
+
+function applyExample(name){
+ const x=emptyInput();state.simpleEstate='';state.familyGroup='descendants';
+ if(name==='spouse2'){x.spouse.status='alive';x.descendants=[person('Çocuk 1','alive',{type:'biological'}),person('Çocuk 2','alive',{type:'biological'})];}
+ if(name==='twoChildren'){x.descendants=[person('Çocuk 1','alive',{type:'biological'}),person('Çocuk 2','alive',{type:'biological'})];}
+ if(name==='spouseParents'){state.familyGroup='parents';x.spouse.status='alive';x.parentela2.mother.status='alive';x.parentela2.father.status='alive';}
+ if(name==='siblings'){state.familyGroup='parents';x.parentela2.mother.status='predeceased';x.parentela2.father.status='predeceased';x.parentela2.siblings=[person('Öz kardeş','alive',{type:'full'}),person('Anne bir kardeş','alive',{type:'maternal'}),person('Baba bir kardeş','alive',{type:'paternal'})];}
+ if(name==='spouseOnly'){state.familyGroup='none';x.spouse.status='alive';}
+ if(name==='state'){state.familyGroup='none';}
+ state.input=x;state.result=null;state.dirty=false;renderForm();renderInitial();calculate();
+}
+function renderInitial(){
+ $('#resultPanel').innerHTML=`<div class="result-empty"><div class="scale-mark">§</div><h2>Miras payını hesaplayın</h2><p>Ölüm tarihi ile mirasçı bilgilerini girip <b>Hesapla</b> düğmesine basın.</p><div class="empty-points"><span>Yasal miras payı</span><span>Saklı pay</span><span>İsteğe bağlı TL karşılığı</span></div></div>`;
+}
+function resetAll(){if(!confirm('Girilen bütün bilgiler silinsin mi?'))return;state.input=emptyInput();state.familyGroup='descendants';state.simpleEstate='';state.result=null;state.dirty=false;renderForm();renderInitial();window.scrollTo({top:0,behavior:'smooth'});}
+
+function bindGlobal(){
+ $$('.mode-switch [data-mode]').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.mode;renderForm();markDirty();}));
+ $$('[data-example]').forEach(b=>b.addEventListener('click',()=>applyExample(b.dataset.example)));
+ $('#calculateBtn').addEventListener('click',calculate);$('#resetBtn').addEventListener('click',resetAll);if($('#resetTop')) $('#resetTop').addEventListener('click',resetAll);if($('#printTop')) $('#printTop').addEventListener('click',()=>window.print());
+}
+
+renderForm();renderInitial();bindGlobal();
+})();
+</script>
+
+<script>
+  // Sync theme with parent site
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'theme') {
+      if (event.data.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  });
+  // Read initial theme from parent
+  try {
+    if (window.parent && window.parent.document) {
+      var isDark = window.parent.document.documentElement.classList.contains('dark');
+      if (isDark) document.documentElement.classList.add('dark');
+    }
+  } catch(e) {}
+  if (typeof ResizeObserver !== 'undefined') {
+    let lastHeight = 0;
+    const sendHeight = () => {
+      const root = document.getElementById('root') || document.querySelector('.shell') || document.body;
+      const height = root.offsetHeight || root.scrollHeight;
+      if (Math.abs(lastHeight - height) > 5) {
+        lastHeight = height;
+        window.parent.postMessage({ type: 'resize', height: height }, '*');
+      }
+    };
+    const resizeObserver = new ResizeObserver(sendHeight);
+    window.addEventListener('load', () => {
+      const root = document.getElementById('root') || document.querySelector('.shell') || document.body;
+      resizeObserver.observe(root);
+      sendHeight();
+    });
+    setTimeout(sendHeight, 500);
+    setTimeout(sendHeight, 1500);
+  }
+</script>
+</body>
+</html>

@@ -44,13 +44,42 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
             <article className="max-w-4xl mx-auto px-6 md:px-12 pb-8">
               <div 
                 className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-serif prose-headings:text-navy-primary prose-a:text-accent-blue hover:prose-a:text-navy-primary"
-                dangerouslySetInnerHTML={{ __html: tool.content }}
+                dangerouslySetInnerHTML={{ __html: tool.content.replace(/<script.*?>.*?<\/script>/gi, '') }}
               />
             </article>
           )}
         </div>
         <main className="min-h-screen bg-bg-primary pb-0 flex flex-col">
           <InfazIframe versionInfo={tool.versionInfo} />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // Yeni HTML araçları için iframe sarmalayıcısı
+  const htmlTools = ['faiz-hesaplama', 'sure-hesaplama', 'miras-hesaplama', 'harc-hesaplama', 'iscilik-hesaplama'];
+  if (htmlTools.includes(resolvedParams.slug)) {
+    return (
+      <>
+        <Navbar />
+        <div className="bg-bg-primary pt-24">
+          {tool.content && tool.content.trim() !== '<p></p>' && (
+            <article className="max-w-4xl mx-auto px-6 md:px-12 pb-8">
+              <div 
+                className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-serif prose-headings:text-navy-primary prose-a:text-accent-blue hover:prose-a:text-navy-primary"
+                dangerouslySetInnerHTML={{ __html: tool.content.replace(/<script.*?>.*?<\/script>/gi, '') }}
+              />
+            </article>
+          )}
+        </div>
+        <main className="min-h-screen bg-bg-primary pb-0 flex flex-col">
+          <iframe
+            src={`/tools/${resolvedParams.slug}.html`}
+            title={tool.title}
+            loading="lazy"
+            className="w-full flex-grow border-0 min-h-[900px]"
+          />
         </main>
         <Footer />
       </>
@@ -89,7 +118,7 @@ export default async function ToolDetailPage({ params }: { params: Promise<{ slu
           {tool.content && (
             <div 
               className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-serif prose-headings:text-navy-primary prose-a:text-accent-blue hover:prose-a:text-navy-primary mb-12"
-              dangerouslySetInnerHTML={{ __html: tool.content }}
+              dangerouslySetInnerHTML={{ __html: tool.content.replace(/<script.*?>.*?<\/script>/gi, '') }}
             />
           )}
 

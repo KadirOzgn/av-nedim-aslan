@@ -45,20 +45,32 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
       setStatus('loading');
-      setTimeout(() => {
-        setStatus('success');
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          subject: '',
-          message: ''
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
         });
-      }, 1000);
+        
+        if (response.ok) {
+          setStatus('success');
+          setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        } else {
+          setStatus('error');
+        }
+      } catch (error) {
+        setStatus('error');
+      }
     } else {
       setStatus('error');
     }
@@ -104,7 +116,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-sans font-bold text-xs tracking-widest text-text-primary dark:text-stone-300 uppercase mb-1.5">{t('contact.email')}</h4>
-                  <p className="text-sm font-semibold text-text-secondary dark:text-white">info@nedimaslan.av.tr</p>
+                  <p className="text-sm font-semibold text-text-secondary dark:text-white">info@avnedimaslan.com</p>
                 </div>
               </div>
 

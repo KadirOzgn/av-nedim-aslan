@@ -232,7 +232,7 @@ if (window !== window.top) {
   };
   window.addEventListener('load', sendHeight);
   if (window.ResizeObserver) {
-    new ResizeObserver(sendHeight).observe(document.body);
+    window.addEventListener('DOMContentLoaded', () => new ResizeObserver(sendHeight).observe(document.body));
   } else {
     setInterval(sendHeight, 500);
   }
@@ -289,6 +289,7 @@ if (window !== window.top) {
     });
   })();
 </script>
+<style>.brand-block .brand-mark, .brand-block .eyebrow { display: none !important; }</style>
 </head><body data-mode="citizen">
 <main>
 <header>
@@ -1985,7 +1986,7 @@ window.createInfazEngine=function(R){
  window.InfazModules={creditPeriods,life,lifeMedicalHome,openPrison,historical,confidence,stateCode,encode,decode,childEducationHome,frameworkLaw,selfTest,fmtDays};
 })();</script><script>"use strict";
 let RULES,ENGINE,LAST_INPUT=null,LAST_RESULT=null;
-const $=id=>document.getElementById(id);
+const $ = id => document.getElementById(id) || { addEventListener: () => {}, value: '', checked: false, style: {}, classList: { add: () => {}, remove: () => {} }, dataset: {} };
 const fmt=s=>{if(!s)return"—";let [y,m,d]=s.split("-");return`${d}.${m}.${y}`};
 const fd=n=>InfazModules.fmtDays(n);
 const legalRatio=r=>Math.abs(r-.75)<.001?"3/4":Math.abs(r-2/3)<.001?"2/3":Math.abs(r-.5)<.001?"1/2":String(r);

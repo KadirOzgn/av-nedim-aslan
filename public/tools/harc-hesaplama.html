@@ -7,33 +7,6 @@
     try {
       if (window.location.search.includes('embed=1') || window.location.hash.includes('embed=1')) {
         document.documentElement.classList.add('embed');
-        
-        function enforceTheme() {
-          try {
-            var isDark = window.parent.document.documentElement.classList.contains('dark');
-            var targetTheme = isDark ? 'dark' : 'light';
-            if (document.documentElement.dataset.theme !== targetTheme) {
-              document.documentElement.dataset.theme = targetTheme;
-            }
-            if (isDark) {
-              document.documentElement.classList.add('dark');
-            } else {
-              document.documentElement.classList.remove('dark');
-            }
-          } catch(e) {}
-        }
-        
-        enforceTheme();
-        
-        // Prevent React from overriding the theme
-        var selfObserver = new MutationObserver(enforceTheme);
-        selfObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-        
-        // Listen to parent theme changes
-        try {
-          var parentObserver = new MutationObserver(enforceTheme);
-          parentObserver.observe(window.parent.document.documentElement, { attributes: true, attributeFilter: ['class'] });
-        } catch(e) {}
       }
     } catch(e) {}
   })();
@@ -196,8 +169,10 @@ const today=new Date();$("#date").value=today.getFullYear()+"-"+String(today.get
     if (event.data && event.data.type === 'theme') {
       if (event.data.theme === 'dark') {
         document.documentElement.dataset.theme = 'dark';
+        document.documentElement.classList.add('dark');
       } else {
         document.documentElement.dataset.theme = 'light';
+        document.documentElement.classList.remove('dark');
       }
     }
   });

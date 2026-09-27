@@ -18,6 +18,7 @@ export default function ContactForm() {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<'success' | 'error' | 'loading' | null>(null);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const validate = () => {
     const tempErrors: Record<string, string> = {};
@@ -49,6 +50,7 @@ export default function ContactForm() {
     e.preventDefault();
     if (validate()) {
       setStatus('loading');
+      setServerError(null);
       try {
         const response = await fetch('/api/contact', {
           method: 'POST',
@@ -66,13 +68,17 @@ export default function ContactForm() {
             message: ''
           });
         } else {
+          const data = await response.json().catch(() => ({}));
           setStatus('error');
+          setServerError(data.error || 'Sunucu hatası, lütfen daha sonra tekrar deneyin.');
         }
       } catch (error) {
         setStatus('error');
+        setServerError('Bağlantı hatası, lütfen internetinizi kontrol edip tekrar deneyin.');
       }
     } else {
       setStatus('error');
+      setServerError(t('contact.formError'));
     }
   };
   return (
@@ -322,7 +328,7 @@ export default function ContactForm() {
 
                 {status === 'error' && (
                   <div className="p-4 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800/30 text-xs font-semibold text-center rounded-xl mt-2">
-                    {t('contact.formError')}
+                    {serverError || t('contact.formError')}
                   </div>
                 )}
               </form>

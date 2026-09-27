@@ -203,8 +203,8 @@ export const translations = {
     about: {
       badge: "ATTORNEY",
       title: "Atty. Nedim Aslan",
-      bio1: "Nedim Aslan, a graduate of İzmir Bakırçay University Faculty of Law, provides legal consultancy services to individual and corporate clients with a boutique approach centered on theoretical background and current case law in resolving disputes.",
-      bio2: "In line with his professional experience, he conducts litigation processes in various legal fields, with a primary focus on criminal law. His work is based on mastery of current legislation, transparency, and professional confidentiality.",
+      bio1: "Atty. Nedim Aslan provides legal services with a working philosophy that believes legal disputes should be evaluated not only on paper but also by taking into account the conditions and needs of the individual.",
+      bio2: "He provides legal support to individual and corporate clients primarily in criminal law and private law, as well as in labor law, commercial law, law of obligations, family and inheritance law, real estate law, enforcement and bankruptcy law, compensation and insurance law, and foreigners law.",
       bio3: "In addition to litigation and investigation processes, he actively works in legal consultancy and dispute resolution. Considering that each case is unique, he attaches importance to conducting the process in an understandable and transparent manner for his clients; clearly presenting the legal options.",
       bio4: "He continues his professional work by closely following current legislation and judicial decisions within the framework of trust, care, and professional confidentiality principles.",
       cta: "CONTACT",

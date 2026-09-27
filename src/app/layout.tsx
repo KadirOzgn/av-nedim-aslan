@@ -42,10 +42,6 @@ export const metadata: Metadata = {
     description: "Avukat Nedim Aslan - Ceza Hukuku, Aile Hukuku ve Ticaret Hukuku uzmanı.",
     images: ["https://www.avnedimaslan.com/icon.png"],
   },
-  icons: {
-    icon: '/icon.png',
-    apple: '/icon.png',
-  },
 };
 
 export default function RootLayout({

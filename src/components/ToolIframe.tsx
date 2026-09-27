@@ -78,10 +78,10 @@ export default function ToolIframe({ versionInfo, toolSlug }: { versionInfo?: st
   
   // infaz-hesaplama is in /araclar/, others are in /tools/
   const isInfaz = toolSlug === 'infaz-hesaplama' || toolSlug === 'infaz-hesaplama-en';
-  let path = `/tools/${toolSlug}.html?embed=1${vQuery}&v=1.3`;
+  let path = `/tools/${toolSlug}.html?embed=1${vQuery}&v=1.4`;
   
   if (isInfaz) {
-    path = `/araclar/${language === 'en' ? 'infaz-hesaplama-en.html' : 'infaz-hesaplama.html'}?embed=1${vQuery}&v=1.3`;
+    path = `/araclar/${language === 'en' ? 'infaz-hesaplama-en.html' : 'infaz-hesaplama.html'}?embed=1${vQuery}&v=1.4`;
   }
 
   const handleIframeLoad = () => {

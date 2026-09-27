@@ -27,11 +27,9 @@
 .tab.active { background: var(--n) !important; color: #fff !important; }
 </style>
 <style>
-/* Embed mode overrides to match infaz-hesaplama theme structure */
-html.embed, html.embed body { background: transparent !important; }
+/* Embed mode overrides */
 html.embed body .wrap { padding-top: 0; max-width: 100%; overflow: hidden; }
 html.embed body .top, html.embed body .foot { display: none !important; }
-html.embed body .card { border: none; background: transparent !important; box-shadow: none !important; padding: 0 !important; }
 </style>
 <style>.brand-block .brand-mark, .brand-block .eyebrow { display: none !important; }</style>
 </head>
@@ -170,9 +168,11 @@ const today=new Date();$("#date").value=today.getFullYear()+"-"+String(today.get
       if (event.data.theme === 'dark') {
         document.documentElement.dataset.theme = 'dark';
         document.documentElement.classList.add('dark');
+        document.documentElement.style.colorScheme = 'dark';
       } else {
         document.documentElement.dataset.theme = 'light';
         document.documentElement.classList.remove('dark');
+        document.documentElement.style.colorScheme = 'light';
       }
     }
   });
